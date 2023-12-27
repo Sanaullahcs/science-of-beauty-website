@@ -1,0 +1,31 @@
+.latest-bg {
+  background-image: url(../images/latestblogbanner.png);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.latestblog-minheading {
+  color: #ecbfd3;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%; /* 23.175px */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.latestblog-heading {
+  color: #f7e5c1;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 66px */
+  letter-spacing: -0.55px;
+  margin: 0px;
+}

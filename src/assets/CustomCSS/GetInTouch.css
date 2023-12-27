@@ -1,0 +1,71 @@
+.touch-preheading {
+  color: #422a3c;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.touch-heading {
+  color: #141414;
+  font-family: Playfair Display;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: left;
+  letter-spacing: -0.45px;
+  max-width: 435px;
+  margin: 0;
+}
+.touch-description {
+  color: #141414;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  line-height: 175%; /* 31.5px */
+  max-width: 534px;
+}
+.touch-contact-heading {
+  color: #141414;
+  font-family: Playfair Display;
+  text-align: left;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 30px */
+  margin: 0;
+}
+.touch-contact-preheading {
+  color: #141414;
+  text-align: left;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+.getInTouch-outer-div {
+  margin-top: 10%;
+}
+.minor-margin-left {
+  margin-left: 2%;
+}
+.getInTouch {
+  width: 100%;
+  max-width: 611px;
+}
+.getInTouch-grid-container {
+  display: flex;
+  justify-content: center;
+}
+.margin-container {
+  margin: 10px 0px;
+}

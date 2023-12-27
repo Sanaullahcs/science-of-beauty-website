@@ -1,0 +1,71 @@
+.blog-textarea-date {
+  color: #422a3c;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+.blog-textarea-heading {
+  color: #422a3c;
+  font-family: Lora;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 54.348% */
+  text-align: left;
+  margin-top: 0;
+}
+.blog-textarea-description {
+  text-align: left;
+  color: #422a3c;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+}
+.blog-textarea-minHeading {
+  opacity: 0.7;
+  color: #422a3c;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  text-align: left;
+}
+.blog-read-more {
+  border-radius: 16px !important;
+  background: #ba7894 !important;
+  color: #eee !important;
+  text-align: center !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  width: 275px;
+  height: 78px;
+}
+.lady {
+  max-width: 100%;
+}
+.blogs-divider {
+  margin: 10px 0px !important;
+}
+.blog-read-more {
+  margin-top: 10px !important;
+  margin-bottom: 10% !important;
+}
+
+/* CSS for screens with width less than 420px */
+@media (max-width: 419px) {
+  .blog-textarea-heading {
+    font-size: 35px;
+  }
+  .blog-post {
+    width: 100%;
+  }
+}

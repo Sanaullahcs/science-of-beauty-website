@@ -1,0 +1,39 @@
+.blog-heading {
+  color: #141414;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 45px;
+  margin-top: 5%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 58.5px */
+  letter-spacing: -0.45px;
+}
+.slide {
+  display: flex !important;
+  justify-content: center;
+}
+.blog-container {
+  padding: 5% 0px 7% 0px;
+}
+.slick-dots {
+  margin-bottom: -25px;
+}
+.slick-dots .slick-active button:before {
+  display: none;
+}
+.slick-dots li button:before {
+  display: none;
+}
+.slick-dots .slick-active button {
+  width: 15px;
+  height: 15px;
+  background-color: #a91079;
+  border-radius: 100%;
+}
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+}

@@ -1,0 +1,69 @@
+.min-heading {
+  color: #ba7894;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%; /* 23.175px */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.heading {
+  color: #422a3c;
+  font-family: Playfair Display;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 58.5px */
+  letter-spacing: -0.45px;
+  text-align: left;
+}
+.description {
+  color: #555;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 31.5px */
+  text-align: left;
+}
+.meta-heading {
+  color: #141414;
+  font-family: Playfair Display;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: -0.22px;
+  text-align: left;
+}
+.meta-prehead {
+  color: var(--Dark, #141414);
+  font-family: Manrope;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%; /* 38px */
+  text-align: left;
+}
+.meta-predescription {
+  color: #555;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 31.5px */
+  text-align: left;
+}
+.what-includes-side-div {
+  max-width: 700px;
+}
+.side-grid {
+  display: flex;
+  justify-content: center;
+}
+.whatincludes-section-grid {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,127 @@
+.bg-home-banner {
+  background-image: url(../images/homeBanner.png);
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.salon-img {
+  width: 22px;
+  height: 25px;
+}
+.img-text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-text-div {
+  display: flex;
+  justify-content: start;
+}
+.text-img-heading {
+  color: #353535;
+  font-family: Manrope;
+  font-size: 15px;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%; /* 23.175px */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.header-header-by {
+  text-align: left;
+}
+.heading-header {
+  color: #422a3c;
+  font-family: Manrope;
+  font-size: 72px;
+  text-align: left;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 86.4px */
+}
+.preHeading1 {
+  color: #422a3c;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 55.2px */
+  letter-spacing: -0.48px;
+}
+.preHeading2 {
+  color: #422a3c;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.48px;
+}
+.banner-description {
+  color: #353535;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 30.6px */
+  max-width: 508px;
+  text-align: left;
+}
+.searchBtnHeader {
+  border-radius: 56px !important;
+  background: #ba7894 !important;
+  color: #f8f8f8 !important;
+  font-family: Manrope;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 211px;
+  height: 66px;
+  margin: 10px !important;
+}
+.header-form-wrapper {
+  min-height: 88px;
+  max-width: 50vw;
+  border-radius: 61.333px;
+  background: #fff;
+  box-shadow: -1.333px 0px 17.333px 0px rgba(0, 0, 0, 0.1);
+}
+.form-field {
+  margin: 0;
+  color: #ba7894;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left !important;
+}
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.form-field-text-area {
+  max-width: 280px;
+}
+.search-div-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width: 1279px) {
+  .search-div-wrapper {
+    justify-content: start;
+  }
+  .header-form-wrapper {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
