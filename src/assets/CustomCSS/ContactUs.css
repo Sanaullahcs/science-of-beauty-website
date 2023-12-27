@@ -1,0 +1,138 @@
+.contact-card {
+  margin: 0px 5%;
+  padding: 0px 8%;
+  border-radius: 24px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.08);
+}
+.starting-contact-heading {
+  color: #141414;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 58.5px */
+  letter-spacing: -0.45px;
+}
+.contact-heading {
+  color: #141414;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 607px;
+  text-align: left;
+}
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cool-span {
+  color: #ba7894;
+}
+.contact-buttons {
+  border-radius: 16px !important;
+  background: #ba7894 !important;
+  color: #fff !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  text-transform: lowercase !important;
+  max-width: 451px;
+  max-height: 78px;
+}
+.social-row {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 200px;
+}
+.social-icons-span {
+  min-width: 50px !important;
+  min-height: 50px !important;
+  border-radius: 100%;
+  background-color: #ba7894;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  cursor: pointer;
+}
+.contact-interested-heading {
+  color: #2e0249;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+.category-btn {
+  width: 190px !important;
+  height: 62px !important;
+  border-radius: 8px !important;
+  background: #ba7894 !important;
+  color: #eee !important;
+  text-align: center !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin: 3px !important;
+}
+.btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 654px;
+}
+.contact-textField-div {
+  display: flex;
+  flex-direction: column;
+}
+.send-message-btn {
+  width: 315px !important;
+  height: 78px !important;
+  border-radius: 16px !important;
+  background: #ba7894 !important;
+  color: #eee !important;
+  text-align: center !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin-top: 150px !important;
+}
+.contact-form-fields {
+  margin-top: 30px !important;
+}
+.contact-form-fields .MuiInput-underline:after {
+  border-bottom: 2px solid #ba7894;
+}
+.contact-form-fields .MuiFormLabel-root.Mui-focused {
+  color: #ba7894;
+}
+.additional-div {
+  border-radius: 24px;
+  background: #fcfcfc;
+  padding: 5%;
+  margin: 30px 0px;
+}
+@media (max-width: 419px) {
+  .contact-heading {
+    font-size: 35px;
+  }
+  .contact-buttons {
+    max-width: 250px !important;
+  }
+  .send-message-btn {
+    width: 100% !important;
+  }
+}
