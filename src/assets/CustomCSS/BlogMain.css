@@ -59,13 +59,46 @@
   margin-top: 10px !important;
   margin-bottom: 10% !important;
 }
-
-/* CSS for screens with width less than 420px */
-@media (max-width: 419px) {
+.hide-post-blog {
+  max-width: 375px;
+  height: 100%;
+}
+@media (max-width: 1219px) {
+  .blog-textarea-date {
+    font-size: 18px;
+  }
   .blog-textarea-heading {
     font-size: 35px;
   }
+  .blog-textarea-description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 519px) {
+  .blog-textarea-heading {
+    font-size: 35px;
+  }
+  .blog-read-more {
+    width: 210px;
+    height: 60px;
+    font-size: 18px !important;
+  }
+  .hide-post-blog {
+    width: 100%;
+  }
+}
+/* CSS for screens with width less than 420px */
+ @media (max-width: 419px) {
   .blog-post {
     width: 100%;
+  }
+  .blog-textarea-heading {
+    font-size: 26px;
+  }
+  .blog-textarea-description {
+    font-size: 13px;
+  }
+  .blog-textarea-minHeading {
+    font-size: 16px;
   }
 }

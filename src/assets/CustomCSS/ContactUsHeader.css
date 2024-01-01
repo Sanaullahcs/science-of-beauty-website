@@ -30,3 +30,20 @@
   margin: 0px;
   max-width: 649px;
 }
+.contactus-heading-wrapper {
+  padding: 0% 5%;
+}
+@media (max-width: 1219px) {
+  .ContactUsHeader-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 519px) {
+  .ContactUsHeader-minheading {
+    font-size: 13px;
+  }
+  .ContactUsHeader-heading {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}

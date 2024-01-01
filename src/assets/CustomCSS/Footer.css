@@ -44,6 +44,7 @@ p a {
 }
 .img-holder {
   margin-left: 35px;
+  min-width: 40px;
 }
 .footer-social-div {
   display: flex;

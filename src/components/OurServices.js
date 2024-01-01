@@ -9,7 +9,7 @@ import img4 from "../assets/images/Frisorsalon.png";
 import img5 from "../assets/images/Massageklinik.png";
 import img6 from "../assets/images/fodterapeut.png";
 import "../assets/CustomCSS/OurServices.css";
-import { Grid } from "@material-ui/core";
+// import { Grid } from "@material-ui/core";
 import ser1 from "../assets/images/services-1.png";
 import ser2 from "../assets/images/services-2.png";
 import ser3 from "../assets/images/services-3.png";
@@ -114,7 +114,7 @@ const OurServices = () => {
           ))}
         </Slider>
       </div>
-      <div>
+      <div className="ourservices-second-wrapper">
         <div>
           <p className="sub-heading">
             We are Experienced in making you very Beautiful

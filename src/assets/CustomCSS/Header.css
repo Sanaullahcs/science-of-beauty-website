@@ -4,6 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3% 5%;
 }
 .salon-img {
   width: 22px;
@@ -104,11 +105,17 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 40px;
+  padding-left: 25px;
   padding-top: 10px;
 }
 .form-field-text-area {
   max-width: 280px;
+}
+.form-field-text-area .MuiFormLabel-root.Mui-focused {
+  color: #ba7894;
+}
+.form-field-text-area .MuiInput-underline:after {
+  border-bottom: 2px solid #ba7894;
 }
 .search-div-wrapper {
   display: flex;
@@ -124,4 +131,50 @@
     box-shadow: none;
   }
 }
-
+@media only screen and (max-width: 959px) {
+  .heading-header {
+    font-size: 55px;
+  }
+  .text-img-heading {
+    font-size: 12px;
+  }
+  .banner-description {
+    font-size: 15px;
+  }
+  .searchBtnHeader {
+    font-size: 20px !important;
+    width: 180px;
+    height: 50px;
+  }
+  .header-header-by {
+    margin-top: 0;
+  }
+  .preHeading1 {
+    font-size: 40px !important;
+  }
+  .preHeading2 {
+    font-size: 40px !important;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading-header {
+    font-size: 45px;
+  }
+  .text-img-heading {
+    font-size: 10px;
+  }
+  .preHeading1 {
+    font-size: 30px !important;
+  }
+  .preHeading2 {
+    font-size: 30px !important;
+  }
+  .searchBtnHeader {
+    font-size: 18px !important;
+    width: 160px;
+    height: 45px;
+  }
+  .form-field {
+    font-size: 15px;
+  }
+}

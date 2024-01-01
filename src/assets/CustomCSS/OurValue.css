@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
 }
+.ourValueMainWrapper {
+  padding: 10% 0px 5% 0%;
+}
 .ourvalue-heading {
   color: #ba7894;
   text-align: center;
@@ -17,7 +20,7 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-.heading {
+.ourvalue-mainheading {
   color: #141414;
   text-align: center;
   font-family: Playfair Display;
@@ -105,6 +108,9 @@
   display: flex;
   justify-content: center;
 }
+.ourvalues-grid-wrapper {
+  padding: 5% 3%;
+}
 
 @media only screen and (max-width: 1280px) {
   .second-section-img-holder {
@@ -116,5 +122,39 @@
   .towel-img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 1219px) {
+  .ourvalue-mainheading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 959px) {
+  .min-heading {
+    text-align: center !important;
+  }
+  .min-description {
+    text-align: center !important;
+  }
+  .img-holder {
+    margin-left: 0;
+  }
+  .towel-img {
+    max-width: 430px;
+  }
+}
+@media (max-width: 519px) {
+  .ourvalue-mainheading {
+    margin-top: 0px;
+    font-size: 30px;
+  }
+  .min-description {
+    font-size: 15px;
+  }
+  .second-section-heading {
+    font-size: 35px;
+  }
+  .second-section-description {
+    font-size: 15px;
   }
 }

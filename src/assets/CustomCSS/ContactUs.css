@@ -35,7 +35,7 @@
   color: #ba7894;
 }
 .contact-buttons {
-  border-radius: 16px !important;
+  border-radius: 8px !important;
   background: #ba7894 !important;
   color: #fff !important;
   font-family: Poppins !important;
@@ -49,7 +49,7 @@
 }
 .social-row {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding: 10px;
   margin-top: 200px;
 }
@@ -124,6 +124,30 @@
   background: #fcfcfc;
   padding: 5%;
   margin: 30px 0px;
+}
+.send-messages-span {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 520px) {
+  .starting-contact-heading {
+    font-size: 35px;
+  }
+  .contact-heading {
+    font-size: 33px;
+  }
+  .contact-buttons {
+    font-size: 15px !important;
+  }
+  .category-btn {
+    font-size: 15px !important;
+    width: 170px !important;
+    height: 52px !important;
+  }
+  .send-message-btn {
+    width: 250px !important;
+    height: 65px !important;
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 419px) {
   .contact-heading {

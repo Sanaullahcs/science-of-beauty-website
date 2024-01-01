@@ -19,11 +19,12 @@ import ServicesHeaders from "./components/ServicesHeader";
 import ServicesMain from "./components/ServicesMain";
 import BlogsHeader from "./components/BlogsHeader";
 import BlogsMain from "./components/BlogsMain";
+import Products from "./components/Products/index";
+import SubProducts from "./components/Products/SubProducts";
 import React from "react";
-import './assets/CustomCSS/Main.css'
+import "./assets/CustomCSS/Main.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import "./App.css";
 
 function App() {
@@ -89,7 +90,7 @@ function App() {
               </>
             }
           />
-            <Route
+          <Route
             exact
             path={"/blogs"}
             element={
@@ -97,6 +98,30 @@ function App() {
                 <Navbar />
                 <BlogsHeader />
                 <BlogsMain />
+                <Testimonials />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/products"}
+            element={
+              <>
+                <Navbar />
+                <Products />
+                <Testimonials />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/sub-products/:productId"}
+            element={
+              <>
+                <Navbar />
+                <SubProducts />
                 <Testimonials />
                 <Footer />
               </>

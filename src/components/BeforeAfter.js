@@ -15,7 +15,7 @@ function BeforeAfter() {
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div style={{ maxWidth: "668px" }}>
+              <div style={{ maxWidth: "668px", padding: "3%" }}>
                 <p className="main-head">Before & After</p>
                 <p className="main-description">
                   Health and viatlity, once only available to a fortunate few,

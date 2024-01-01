@@ -29,8 +29,24 @@
 .whoweare-wrapper {
   max-width: 604px;
   text-align: left;
+  padding: 3% 5%;
 }
 .whoWeAreImg-main {
   width: 100%;
   max-width: 540px;
+}
+.whoweare-the-wrapper-img {
+  display: flex;
+  justify-content: end;
+  padding: 0% 5%;
+}
+@media (max-width: 959px) {
+  .whoweare-the-wrapper-img {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .www-description {
+    font-size: 15px;
+  }
 }

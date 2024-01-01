@@ -44,8 +44,38 @@
 .blog-main-div {
   margin: 10px 8%;
 }
-@media (max-width: 455px) {
+.main-main-blogs {
+  justify-content: center;
+}
+@media (max-width: 1279px) {
   .blog-main-heading {
-    font-size: 40px;
+    text-align: center;
+  }
+  .blog-description-heading {
+    text-align: center;
+  }
+  .contactus-btn-div {
+    justify-content: center;
+  }
+}
+@media (max-width: 1219px) {
+  .blog-main-heading {
+    font-size: 45px;
+  }
+  .blog-description-heading {
+    font-size: 17px;
+  }
+}
+@media (max-width: 519px) {
+  .blog-main-heading {
+    font-size: 35px;
+  }
+  .blog-description-heading {
+    font-size: 15px;
+  }
+  .blog-contact-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 17px !important;
   }
 }

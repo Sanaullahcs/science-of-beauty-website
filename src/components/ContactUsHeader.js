@@ -6,7 +6,7 @@ function ContactUsHeader() {
     <>
       <div>
         <div className="ContactUsHeader-bg">
-          <div>
+          <div className="contactus-heading-wrapper">
             <p className="ContactUsHeader-minheading">Get in touch with us</p>
             <p className="ContactUsHeader-heading">
               We Are Ready To Assist You In 24x7

@@ -38,8 +38,9 @@ function Header() {
                         <div className="field-wrapper">
                           <p className="form-field">Service Name</p>
                           <TextField
+                            className="form-field-text-area"
                             id="standard-basic"
-                            label="Book your services..."
+                            label="Book now..."
                             variant="standard"
                             InputProps={{
                               endAdornment: (

@@ -69,3 +69,31 @@
 .margin-container {
   margin: 10px 0px;
 }
+.getInTouch-text-wrapper {
+  padding: 3% 5%;
+}
+@media (max-width: 599px) {
+  .touch-contact-heading {
+    text-align: center;
+  }
+  .touch-contact-preheading {
+    text-align: center;
+  }
+}
+@media (max-width: 519px) {
+  .touch-preheading {
+    font-size: 14px;
+  }
+  .touch-heading {
+    font-size: 35px;
+  }
+  .touch-description {
+    font-size: 15px;
+  }
+  .touch-contact-heading {
+    font-size: 20px;
+  }
+  .touch-contact-preheading {
+    font-size: 13px;
+  }
+}
