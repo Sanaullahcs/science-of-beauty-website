@@ -79,6 +79,14 @@ function Testimonials() {
     },
     {
       imgSrc: require("../assets/images/testimonial.png"),
+      testimonial1: "David Watson",
+      testimonial2: "London, England",
+      testimonialHeading: "Neque porro quisquam est qui dolum",
+      testimonialDescription:
+        "The point of using Lorem of distribution it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page is when looking at its layout.",
+    },
+    {
+      imgSrc: require("../assets/images/testimonial.png"),
       testimonial1: "John Doe",
       testimonial2: "New York, USA",
       testimonialHeading: "Lorem Ipsum is simply dummy text",

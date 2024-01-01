@@ -16,18 +16,25 @@ function Pricing() {
   const NextArrow = (props) => {
     return (
       <div
+        className="pricing-next-arrow-btn"
         {...props}
         style={{
           ...props.style,
           display: "block",
           background: `url(${next})`,
           backgroundSize: "cover",
-          right: "20px",
+          right: "10px",
           marginTop: "2%",
           width: "50px",
           height: "50px",
           zIndex: "22",
           opacity: "0.5",
+          borderRadius: "100%",
+          boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+          "@media (max-width: 520px)": {
+            width: "30px",
+            height: "30px",
+          },
         }}
       >
         Next
@@ -44,12 +51,14 @@ function Pricing() {
           display: "block",
           background: `url(${prev})`,
           backgroundSize: "cover",
-          left: "20px",
+          left: "10px",
+          boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
           zIndex: "28",
           marginTop: "2%",
           width: "50px",
           height: "50px",
           opacity: "0.5",
+          borderRadius: "100%",
         }}
       >
         Prev
@@ -90,7 +99,7 @@ function Pricing() {
   });
   return (
     <>
-      <div>
+      <div className="pricing-div-wrapper">
         <div>
           <p className="pre-heading">Pricing</p>
           <p className="heading">Right plan for you</p>

@@ -11,7 +11,7 @@ function ServicesMain() {
     <>
       <div>
         <div className="main-blog-content">
-          <Grid container>
+          <Grid container className="main-main-blogs">
             <Grid items lg={6}>
               <div className="blog-main-div">
                 <p className="blog-main-heading">Makeup-Artist</p>

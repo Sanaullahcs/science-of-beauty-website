@@ -86,9 +86,33 @@
 .pricing-slider .slick-prev:before {
   display: none;
 }
+.pricing-div-wrapper {
+  padding: 5% 0%;
+}
 /* .slick-current {
   background-color: #ba7894;
 } */
 /* .pricing-slider .slick-current .card {
-  background-color: #BA7894;
+  background-color: #080808;
 } */
+@media only screen and (max-width: 520px) {
+  .pre-heading {
+    font-size: 13px;
+  }
+  .heading {
+    font-size: 35px;
+  }
+  .card-heading {
+    font-size: 28px;
+  }
+  .card-pricing {
+    font-size: 20px;
+  }
+  .card-info {
+    font-size: 15px;
+  }
+  /* .pricing-prev-arrow-btn {
+    max-width: 35px !important;
+    max-height: 35px !important;
+  } */
+}

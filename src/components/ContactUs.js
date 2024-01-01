@@ -90,7 +90,7 @@ function ContactUs() {
                 <div>
                   <Button className="send-message-btn">
                     <img src={send} />
-                    <span>Send Messages</span>
+                    <span className="send-messages-span">Send Messages</span>
                   </Button>
                 </div>
               </div>

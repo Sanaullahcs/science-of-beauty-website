@@ -46,3 +46,21 @@
 .aboutbtn:hover {
   background: #ba7894;
 }
+@media (max-width: 1219px) {
+  .aboutHeading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 519px) {
+  .aboutPreHeading {
+    font-size: 13px;
+  }
+  .aboutHeading {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .aboutbtn {
+    width: 140px !important;
+    height: 50px !important;
+  }
+}

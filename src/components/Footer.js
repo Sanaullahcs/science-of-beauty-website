@@ -7,6 +7,12 @@ import twitter from "../assets/images/twitter.png";
 import "../assets/CustomCSS/Footer.css";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="main-footer">
@@ -15,20 +21,20 @@ function Footer() {
             <div>
               <h1 className="footer-heading">Explore</h1>
               <p className="common-txt">
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={scrollToTop}>Home</Link>
               </p>
               <p className="common-txt">
-                <Link to="/about">About Us</Link>
+                <Link to="/about" onClick={scrollToTop}>About Us</Link>
               </p>
               <p className="common-txt">
                 {" "}
-                <Link to="/services">Services</Link>
+                <Link to="/services" onClick={scrollToTop}>Services</Link>
               </p>
               <p className="common-txt">
-                <Link to="/blogs">Blog</Link>
+                <Link to="/blogs" onClick={scrollToTop}>Blog</Link>
               </p>
               <p className="common-txt">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={scrollToTop}>Contact</Link>
               </p>
             </div>
           </Grid>

@@ -29,3 +29,18 @@
   letter-spacing: -0.55px;
   margin: 0px;
 }
+
+@media (max-width: 1219px) {
+  .servicespage-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 519px) {
+  .servicespage-minheading {
+    font-size: 13px;
+  }
+  .servicespage-heading {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}

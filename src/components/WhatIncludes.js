@@ -12,8 +12,10 @@ function WhatIncludes() {
           <Grid container className="whatincludes-section-grid">
             <Grid items className="side-grid" lg={7}>
               <div className="what-includes-side-div">
-                <p className="min-heading">WHAT INCLUDES?</p>
-                <p className="heading">The start of the journey</p>
+                <p className="whatIncludes-min-heading">WHAT INCLUDES?</p>
+                <p className="what-includes-heading">
+                  The start of the journey
+                </p>
                 <p className="description">
                   ServiceMarket.dk was founded in 2021 by two young
                   entrepreneurs who saw a problem with the fragmented service
@@ -29,12 +31,12 @@ function WhatIncludes() {
                 <p className="meta-heading">Our Methodology :</p>
                 <div>
                   <Grid container>
-                    <Grid items>
-                      <img src={check} />
+                    <Grid items lg={1} md={1} sm={1} xs={1}>
+                      <img className="check" src={check} />
                     </Grid>
-                    <Grid items>
+                    <Grid items lg={11} md={11} sm={11} xs={11}>
                       {" "}
-                      <div>
+                      <div style={{ paddingLeft: "20px" }}>
                         <h1 className="meta-prehead">The Assessment Stage</h1>
                         <p className="meta-predescription">
                           The point of using Lorem Ipsum is that it has a
@@ -44,12 +46,12 @@ function WhatIncludes() {
                     </Grid>
                   </Grid>
                   <Grid container>
-                    <Grid items>
-                      <img src={check} />
+                    <Grid items lg={1} md={1} sm={1} xs={1}>
+                      <img className="check" src={check} />
                     </Grid>
-                    <Grid items>
+                    <Grid items lg={11} md={11} sm={11} xs={11}>
                       {" "}
-                      <div>
+                      <div style={{ paddingLeft: "20px" }}>
                         <h1 className="meta-prehead">
                           The Initialisation Stage
                         </h1>
@@ -61,11 +63,11 @@ function WhatIncludes() {
                     </Grid>
                   </Grid>
                   <Grid container>
-                    <Grid items>
-                      <img src={check} />
+                    <Grid items lg={1} md={1} sm={1} xs={1}>
+                      <img className="check" src={check} />
                     </Grid>
-                    <Grid items>
-                      <div>
+                    <Grid items lg={11} md={11} sm={11} xs={11}>
+                      <div style={{ paddingLeft: "20px" }}>
                         <h1 className="meta-prehead">The Treatment Stage</h1>
                         <p className="meta-predescription">
                           The point of using Lorem Ipsum is that it has a

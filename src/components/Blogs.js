@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import blog1 from "../assets/images/Blog-1.png";
-import blog2 from "../assets/images/Blog-2.png";
-import blog3 from "../assets/images/Blog-3.png";
 import Slider from "react-slick";
+import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Blog.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
@@ -59,7 +57,7 @@ function Blogs() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1500,
         settings: {
           slidesToShow: 2,
         },
@@ -79,16 +77,68 @@ function Blogs() {
           <h1 className="blog-heading">Blog</h1>
           <Slider style={{ marginleft: "50px" }} {...sliderSettings}>
             <div className="slide">
-              <img src={blog1} />
+              <div className="blog-bg-1 blog-bg">
+                <div className="fashion-div-wrapper">
+                  <Button className="fashion-btn">FASHION</Button>
+                </div>
+                <p className="blog-card-date">08.08.2021</p>
+                <p className="blog-card-heading">
+                  Richird Norton photorealistic rendering as real photos
+                </p>
+                <p className="blog-card-description">
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
             <div className="slide">
-              <img src={blog2} />
+              <div className="blog-bg-2 blog-bg">
+                <div className="fashion-div-wrapper">
+                  <Button className="fashion-btn">FASHION</Button>
+                </div>
+                <p className="blog-card-date">08.08.2021</p>
+                <p className="blog-card-heading">
+                  Richird Norton photorealistic rendering as real photos
+                </p>
+                <p className="blog-card-description">
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
             <div className="slide">
-              <img src={blog3} />
+              <div className="blog-bg-3 blog-bg">
+                <div className="fashion-div-wrapper">
+                  <Button className="fashion-btn">FASHION</Button>
+                </div>
+                <p className="blog-card-date">08.08.2021</p>
+                <p className="blog-card-heading">
+                  Richird Norton photorealistic rendering as real photos
+                </p>
+                <p className="blog-card-description">
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
             <div className="slide">
-              <img src={blog1} />
+              <div className="blog-bg-1 blog-bg">
+                <div className="fashion-div-wrapper">
+                  <Button className="fashion-btn">FASHION</Button>
+                </div>
+                <p className="blog-card-date">08.08.2021</p>
+                <p className="blog-card-heading">
+                  Richird Norton photorealistic rendering as real photos
+                </p>
+                <p className="blog-card-description">
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
           </Slider>
         </div>

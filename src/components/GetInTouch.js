@@ -18,63 +18,65 @@ function GetInTouch() {
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div>
-                <p className="touch-preheading">Get in Touch!</p>
-                <p className="touch-heading">
-                  We are here to help you always...
-                </p>
-                <p className="touch-description">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, buying to many desktop publishing packages.
-                </p>
-              </div>
-              <div>
-                <Grid container className="margin-container">
-                  <Grid items lg={1} >
-                    <div>
-                      <img src={icon1} />
-                    </div>
+              <div className="getInTouch-text-wrapper">
+                <div>
+                  <p className="touch-preheading">Get in Touch!</p>
+                  <p className="touch-heading">
+                    We are here to help you always...
+                  </p>
+                  <p className="touch-description">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, buying to many desktop publishing packages.
+                  </p>
+                </div>
+                <div>
+                  <Grid container className="margin-container">
+                    <Grid items lg={1} md={2} sm={2} xs={12}>
+                      <div>
+                        <img src={icon1} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={11} md={10} sm={10} xs={12}>
+                      <div className="minor-margin-left">
+                        <p className="touch-contact-heading">Visit Us:</p>
+                        <p className="touch-contact-preheading">
+                          Mariendalsvej 50D 2 2000 Frederiksberg.
+                        </p>
+                      </div>
+                    </Grid>
                   </Grid>
-                  <Grid items lg={11} >
-                    <div className="minor-margin-left">
-                      <p className="touch-contact-heading">Visit Us:</p>
-                      <p className="touch-contact-preheading">
-                        Mariendalsvej 50D 2 2000 Frederiksberg.
-                      </p>
-                    </div>
+                  <Grid container className="margin-container">
+                    <Grid items lg={1} md={2} sm={2} xs={12}>
+                      <div>
+                        <img src={icon2} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={11} md={10} sm={10} xs={12}>
+                      <div className="minor-margin-left">
+                        <p className="touch-contact-heading">Drop Us :</p>
+                        <p className="touch-contact-preheading">
+                          support@beautyness.com
+                        </p>
+                      </div>
+                    </Grid>
                   </Grid>
-                </Grid>
-                <Grid container className="margin-container">
-                  <Grid items lg={1} >
-                    <div>
-                      <img src={icon2} />
-                    </div>
+                  <Grid container className="margin-container">
+                    <Grid items lg={1} md={2} sm={2} xs={12}>
+                      <div>
+                        <img src={icon2} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={11} md={10} sm={10} xs={12}>
+                      <div className="minor-margin-left">
+                        <p className="touch-contact-heading">Call Us :</p>
+                        <p className="touch-contact-preheading">
+                          Call: 1-800-123-9999
+                        </p>
+                      </div>
+                    </Grid>
                   </Grid>
-                  <Grid items lg={11} >
-                    <div className="minor-margin-left">
-                      <p className="touch-contact-heading">Drop Us :</p>
-                      <p className="touch-contact-preheading">
-                        support@beautyness.com
-                      </p>
-                    </div>
-                  </Grid>
-                </Grid>
-                <Grid container className="margin-container">
-                  <Grid items lg={1} >
-                    <div>
-                      <img src={icon2} />
-                    </div>
-                  </Grid>
-                  <Grid items lg={11} >
-                    <div className="minor-margin-left">
-                      <p className="touch-contact-heading">Call Us :</p>
-                      <p className="touch-contact-preheading">
-                        Call: 1-800-123-9999
-                      </p>
-                    </div>
-                  </Grid>
-                </Grid>
+                </div>
               </div>
             </Grid>
           </Grid>

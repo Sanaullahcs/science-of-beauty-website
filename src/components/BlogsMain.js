@@ -99,19 +99,19 @@ function BlogsMain() {
         {!isContentVisible && (
           <div style={{ margin: "0px 5%" }}>
             <Grid container>
-              <Grid items lg={4}>
+              <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div>
-                  <img src={blog1} />
+                  <img className="hide-post-blog" src={blog1} />
                 </div>
               </Grid>
-              <Grid items lg={4}>
+              <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div>
-                  <img src={blog2} />
+                  <img className="hide-post-blog" src={blog2} />
                 </div>
               </Grid>
-              <Grid items lg={4}>
+              <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div>
-                  <img src={blog3} />
+                  <img className="hide-post-blog" src={blog3} />
                 </div>
               </Grid>
             </Grid>

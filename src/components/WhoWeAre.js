@@ -10,7 +10,7 @@ function WhoWeAre() {
         <div className="whoWeAre-container">
           <Grid container>
             <Grid items lg="6" md="6" sm="12" xs="12">
-              <div>
+              <div className="whoweare-the-wrapper-img">
                 <img className="whoWeAreImg-main" src={whoWeAre} />
               </div>
             </Grid>

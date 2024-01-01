@@ -33,6 +33,7 @@
   list-style: none;
   display: flex;
   z-index: 1;
+  padding-left: 0;
 }
 
 .nav-links li {
@@ -87,8 +88,142 @@ ul a {
   width: 100px;
   margin-top: -8px !important;
 }
+.chatbot-icons {
+  /* style={{ position: "fixed", bottom: "5px", right: "5px", zIndex: "5" }} */
+  position: fixed;
+  bottom: 3%;
+  right: 1.5%;
+  z-index: 23;
+}
+.chatscreen {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  min-width: 280px;
+  min-height: 380px;
+  margin-bottom: 86px;
+  position: relative;
+}
+.search-field-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.search-field-wrapper .MuiInputBase-root {
+  border-radius: 40px;
+  background: #ededed;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 222;
+  height: 50px;
+}
+
+.proper-chat-screen {
+  max-height: 314px;
+  overflow-x: auto;
+}
+.proper-chat-screen::-webkit-scrollbar {
+  width: 5px;
+}
+
+.proper-chat-screen::-webkit-scrollbar-thumb {
+  background-color: #ba7894;
+  border-radius: 6px;
+}
+
+.proper-chat-screen::-webkit-scrollbar-track {
+  display: none;
+}
+.search-field-for-chatbot {
+  margin: 15px 15px !important;
+}
+.search-field-for-chatbot .MuiFilledInput-underline:after {
+  display: none;
+}
+.search-field-for-chatbot .MuiFilledInput-underline:before {
+  display: none;
+}
+.search-field-for-chatbot .MuiFilledInput-input {
+  margin-top: 0px;
+  padding-top: 10px;
+}
+.camera-input-label svg {
+  background: white;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px 0px;
+}
+/* Add these styles to your CSS file */
+.chatscreen {
+  display: none;
+}
+.send-icon .camera-icon {
+  cursor: pointer;
+}
+.chatscreen-date {
+  opacity: 0.5;
+  color: #353535;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 154.5%;
+  margin-top: 10px !important;
+}
+.chatscreen.visible {
+  display: block;
+}
+.chatbot-profile {
+  margin: 5px !important;
+  box-shadow: none !important;
+}
+.fab-icons-chatbot {
+  position: absolute !important;
+  right: 10px !important;
+  bottom: 10px !important;
+}
+.bot-chat {
+  border-radius: 30px;
+  background: #ededed;
+  color: #353535;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 154.5%;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.my-chat {
+  border-radius: 30px;
+  margin: 5px;
+  background: #ba7894;
+  color: #fff;
+  text-align: right;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 154.5%;
+  /* text-transform: uppercase; */
+  padding: 10px;
+}
+.chat-reply {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.my-reply {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 
 /* Media query for mobile responsiveness */
+@media only screen and (max-width: 1279px) {
+  .nav-links a {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 1209px) {
   .menu-icon {
     display: flex;
@@ -111,5 +246,27 @@ ul a {
 
   .nav-links li {
     margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .navbar-top-dail {
+    margin-bottom: 0;
+  }
+  .navbar-top-email {
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .navbar-top-dail {
+    font-size: 14px;
+  }
+  .navbar-top-email {
+    font-size: 14px;
+  }
+  .web-logo {
+    width: 110px;
+  }
+  .hamburger-react div {
+    width: 24px !important;
   }
 }
