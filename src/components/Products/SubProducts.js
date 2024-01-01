@@ -5,40 +5,20 @@ import "../../assets/CustomCSS/Products.css";
 import { Grid, Divider } from "@material-ui/core";
 import Rating from "@mui/material/Rating";
 import { useNavigate } from "react-router-dom";
-import productImg from "../../assets/images/product1.png";
-import product1 from "../../assets/images/product1.png";
-import product2 from "../../assets/images/product2.png";
-import product3 from "../../assets/images/product3.png";
-import product4 from "../../assets/images/product4.png";
+import { useParams } from 'react-router-dom';
+import productsData from '../../JSONData/productData'
+import relatedProductsData from "../../JSONData/relatedProductData";
 
-const productsData = [
-  {
-    id: 1,
-    image: product1,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 2,
-    image: product2,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 3,
-    image: product3,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 4,
-    image: product4,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-];
 
 function SubProducts() {
+  const [activeSection, setActiveSection] = useState("description");
+  const handleSelectClick = (section) => {
+    setActiveSection(section);
+  };
+  const { productId } = useParams();
+  const selectedProductId = parseInt(productId, 10);
+  const selectedProduct = productsData.find((product) => product.id === selectedProductId);
+
   const [hoveredProductId, setHoveredProductId] = useState(null);
   const [quantity, setQuantity] = useState(1);
   useEffect(() => {
@@ -46,6 +26,7 @@ function SubProducts() {
   }, []);
   const navigate = useNavigate();
   const handleButtonClick = (id) => {
+    window.scrollTo(0, 0);
     navigate(`/sub-products/${id}`);
   };
 
@@ -65,7 +46,7 @@ function SubProducts() {
           <div className="subProductsHeader-bg">
             <div className="subproducts-heading-wrapper">
               <p className="subproductsHeader-minheading">PRODUCTS</p>
-              <p className="subproductsHeader-heading">Uplifting Serum</p>
+              <p className="subproductsHeader-heading">{selectedProduct && selectedProduct.name}</p>
             </div>
           </div>
         </div>
@@ -76,38 +57,38 @@ function SubProducts() {
                 <div className="subproduct-img-div small-img-div">
                   <img
                     className="subproduct-original-img small-imgs"
-                    src={productImg}
+                    src={selectedProduct && selectedProduct.image}
                   />
                 </div>
                 <div className="subproduct-img-div small-img-div">
                   <img
                     className="subproduct-original-img small-imgs"
-                    src={productImg}
+                    src={selectedProduct && selectedProduct.image}
                   />
                 </div>
                 <div className="subproduct-img-div small-img-div">
                   <img
                     className="subproduct-original-img small-imgs"
-                    src={productImg}
+                    src={selectedProduct && selectedProduct.image}
                   />
                 </div>
                 <div className="subproduct-img-div">
                   <img
-                    className="subproduct-original-img big-img"
-                    src={productImg}
+                    className="subproduct-original-img small-imgs "
+                    src={selectedProduct && selectedProduct.image}
                   />
                 </div>
               </div>
             </Grid>
             <Grid items lg={6} md={6} sm={12} xs={12}>
               <div className="subproducts-info-wrapper">
-                <p className="subproduct-title">Uplifting Serum</p>
-                <p className="subproduct-pricing">$33.00</p>
+                <p className="subproduct-title">{selectedProduct && selectedProduct.name}</p>
+                <p className="subproduct-pricing">{selectedProduct && selectedProduct.price}</p>
                 <div className="subproduct-rating-div">
                   <Rating
                     className="subproduct-rating"
                     name="read-only"
-                    value="4"
+                    value={selectedProduct && selectedProduct.rating}
                     readOnly
                   />
                 </div>
@@ -144,38 +125,69 @@ function SubProducts() {
         <div style={{ padding: "3% 5%" }}>
           <div>
             <div className="subproducts-descriptive-btn-wrapper">
-              <Button className="subproducts-description-btn">
+              <Button className={`subproducts-description-btn ${activeSection === "description" ? "active" : ""
+                }`}
+                onClick={() => handleSelectClick("description")}>
                 Description
               </Button>
-              <Button className="subproducts-additionalinfo-btn">
+              <Button
+                className={`subproducts-additionalinfo-btn ${activeSection === "additionalInfo" ? "active" : ""
+                  }`}
+                onClick={() => handleSelectClick("additionalInfo")}
+              >
                 Additional Info
               </Button>
-              <Button className="subproducts-rating-btn">Rating(1)</Button>
+              <Button
+                className={`subproducts-rating-btn ${activeSection === "rating" ? "active" : ""
+                  }`}
+                onClick={() => handleSelectClick("rating")}
+              >
+                Rating(1)
+              </Button>
             </div>
           </div>
           <Divider className="subproduct-divider" />
+
           <div>
-            <p className="subproduct-description">
-              ServiceMarket.dk was founded in 2021 by two young entrepreneurs
-              who saw a problem with the fragmented service industry in Denmark.
-              There were thousands of small businesses offering services, but it
-              was difficult for consumers to find them and know which ones to
-              choose. ServiceMarket.dk was founded in 2021 by two young
-              entrepreneurs who saw a problem with the fragmented service
-              industry in Denmark. There were thousands of small businesses
-              offering services, but it was difficult for consumers to find them
-              and know which ones to choose.{" "}
-            </p>
+            {activeSection === "description" && (
+              <p className="subproduct-description">
+                ServiceMarket.dk was founded in 2021 by two young entrepreneurs
+                who saw a problem with the fragmented service industry in Denmark.
+                There were thousands of small businesses offering services, but it
+                was difficult for consumers to find them and know which ones to
+                choose. ServiceMarket.dk was founded in 2021 by two young
+                entrepreneurs who saw a problem with the fragmented service
+                industry in Denmark. There were thousands of small businesses
+                offering services, but it was difficult for consumers to find them
+                and know which ones to choose
+              </p>
+            )}
+            {activeSection === "additionalInfo" && (
+              <p className="subproduct-description">
+                Elit proident ad amet duis. Eu nulla in sint quis non dolore aliquip veniam ut id anim. Exercitation amet magna sint amet. Exercitation ad fugiat do magna commodo aliqua. Lorem id sint elit consectetur id mollit laborum veniam ipsum mollit tempor esse incididunt. Commodo esse elit minim ipsum ex eu magna nulla cillum.
+                Est enim cillum fugiat elit ea. Reprehenderit sunt exercitation officia duis tempor magna pariatur minim labore. Ea velit culpa laborum occaecat.<br />
+
+                Esse incididunt ut sint consectetur consectetur ipsum. Irure consequat exercitation duis laboris fugiat amet commodo irure officia commodo adipisicing ea id dolor. Culpa eu ex Lorem fugiat. Laboris incididunt ad occaecat commodo aute ea adipisicing aliqua magna et quis. Culpa ut amet est enim non laboris ut.<br />
+
+                Pariatur labore laboris magna ullamco excepteur elit reprehenderit ipsum labore anim consequat nulla eu. Magna aute officia consequat reprehenderit exercitation commodo velit ipsum quis in. Laboris dolore magna consectetur dolore aute eu exercitation ipsum pariatur id sit dolor mollit eu.
+              </p>
+            )}
+            {activeSection === "rating" && (
+              <p className="subproduct-description">
+                {/* Rating content goes here */}
+                In irure duis reprehenderit consequat adipisicing aliqua dolor amet eu proident labore duis elit. Non laborum ipsum consequat eu veniam qui occaecat irure occaecat proident cillum ea ut. Adipisicing labore aliquip fugiat exercitation.
+              </p>
+            )}
           </div>
           <Divider className="subproduct-divider" />
         </div>
-        <div>
+        <div className="related-products-wrapper">
           <div>
             <p className="related-products-heading">Related Products</p>
           </div>
           <div>
             <Grid container>
-              {productsData.map((product) => (
+              {relatedProductsData.map((product) => (
                 <Grid
                   key={product.id}
                   item

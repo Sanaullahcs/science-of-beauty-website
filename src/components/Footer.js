@@ -18,7 +18,7 @@ function Footer() {
       <div className="main-footer">
         <Grid container>
           <Grid item lg={4} md={12} sm={12} xs={12}>
-            <div>
+            <div className="footer-1-wrapper">
               <h1 className="footer-heading">Explore</h1>
               <p className="common-txt">
                 <Link to="/" onClick={scrollToTop}>Home</Link>
@@ -39,36 +39,40 @@ function Footer() {
             </div>
           </Grid>
           <Grid item lg={4} md={12} sm={12} xs={12}>
-            <h1 className="footer-heading">Utility Pages</h1>
-            <p className="common-txt">
-              <Link to="/">Privacy Policy</Link>
-            </p>
-            <p className="common-txt">
-              <Link to="/">Terms of Use</Link>
-            </p>
+            <div className="footer-2-wrapper">
+              <h1 className="footer-heading">Utility Pages</h1>
+              <p className="common-txt">
+                <Link to="/">Privacy Policy</Link>
+              </p>
+              <p className="common-txt">
+                <Link to="/">Terms of Use</Link>
+              </p>
+            </div>
           </Grid>
           <Grid item lg={4} md={12} sm={12} xs={12}>
-            <h1 className="footer-heading">Keep in Touch</h1>
-            <p className="common-txt">
-              <span className="bold">Address</span>: Mariendalsvej 50D 2 2000{" "}
-              <br /> Frederiksberg.
-            </p>
-            <p className="common-txt">
-              <span className="bold">Mail:</span>: support@servicemarket.com
-            </p>
-            <p className="common-txt">
-              <span className="bold">Phone :</span>(+22) 123 - 4567 - 900
-            </p>
-            <div className="footer-social-div">
-              <span className="img-holder">
-                <img src={facebook} />
-              </span>
-              <span className="img-holder">
-                <img src={insta} />
-              </span>
-              <span className="img-holder">
-                <img src={twitter} />
-              </span>
+            <div className="footer-3-wrapper">
+              <h1 className="footer-heading">Keep in Touch</h1>
+              <p className="common-txt">
+                <span className="bold">Address</span>: Mariendalsvej 50D 2 2000{" "}
+                <br /> Frederiksberg.
+              </p>
+              <p className="common-txt">
+                <span className="bold">Mail:</span>: support@servicemarket.com
+              </p>
+              <p className="common-txt">
+                <span className="bold">Phone :</span>(+22) 123 - 4567 - 900
+              </p>
+              <div className="footer-social-div">
+                <span className="img-holder">
+                  <img src={facebook} />
+                </span>
+                <span className="img-holder">
+                  <img src={insta} />
+                </span>
+                <span className="img-holder">
+                  <img src={twitter} />
+                </span>
+              </div>
             </div>
           </Grid>
         </Grid>

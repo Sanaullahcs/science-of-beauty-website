@@ -1,7 +1,9 @@
 .slide-pricing {
   /* position: relative; */
-  text-align: center; /* Center horizontally */
+  text-align: center;
+  /* Center horizontally */
 }
+
 .card {
   /* position: absolute; */
   display: inline-block;
@@ -13,6 +15,11 @@
   max-height: 475px;
   padding: 5%;
 }
+
+.middle-carousel {
+  background-color: black !important;
+}
+
 /* * {
   margin: 0;
   padding: 0;
@@ -25,10 +32,13 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
+
 .heading {
   color: #141414;
   text-align: center;
@@ -36,20 +46,26 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
+  margin-top: 0;
+  margin-bottom: 5%;
 }
+
 .card-heading {
   color: #ffffff;
   font-family: Playfair Display;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 46.8px */
+  line-height: 130%;
+  /* 46.8px */
   letter-spacing: -0.36px;
   text-align: left;
   margin: 0;
 }
+
 .card-pricing {
   color: #fff;
   text-align: left;
@@ -58,37 +74,46 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 31.2px */
+  line-height: 130%;
+  /* 31.2px */
   letter-spacing: -0.24px;
 }
+
 .card-info {
   color: #ffffff;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 210%; /* 42px */
+  line-height: 210%;
+  /* 42px */
   letter-spacing: -0.2px;
   margin: 0;
 }
+
 .card-row {
   display: flex;
   justify-content: space-between;
 }
+
 .card-row-items-center {
   display: flex;
   align-items: center;
   color: white;
 }
+
 .pricing-slider .slick-next:before {
   display: none;
 }
+
 .pricing-slider .slick-prev:before {
   display: none;
 }
+
 .pricing-div-wrapper {
   padding: 5% 0%;
 }
+
 /* .slick-current {
   background-color: #ba7894;
 } */
@@ -99,18 +124,23 @@
   .pre-heading {
     font-size: 13px;
   }
+
   .heading {
     font-size: 35px;
   }
+
   .card-heading {
     font-size: 28px;
   }
+
   .card-pricing {
     font-size: 20px;
   }
+
   .card-info {
     font-size: 15px;
   }
+
   /* .pricing-prev-arrow-btn {
     max-width: 35px !important;
     max-height: 35px !important;

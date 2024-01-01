@@ -29,6 +29,7 @@
   font-weight: 700;
   line-height: 130%; /* 58.5px */
   letter-spacing: -0.45px;
+  margin-top: 0;
 }
 .min-heading {
   color: #141414;

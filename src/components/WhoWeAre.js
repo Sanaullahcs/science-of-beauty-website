@@ -23,16 +23,16 @@ function WhoWeAre() {
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua diam valupat.
                 </p>
-                <p>
+                <p style={{marginBottom: '5px'}}>
                   Nulla malesuada pellentesque elit eget gravida cum sociis
                   natoque penatibus. Consequat semper viverra nam libero justo
                   laoreet sit.
                 </p>
-                <p>
+                <p style={{marginTop: '0'}}>
                   Facibus scelerisque eleifend donec pretium vulputate sapien.
                   Dui nunc mattis enim ut tellus elemntum suscipt biben.
                 </p>
-                <Button className="more-about-us-btn ">MORE ABOUT US</Button>
+                <Button className="more-about-us-btn ">More About Us</Button>
               </div>
             </Grid>
           </Grid>

@@ -6,6 +6,7 @@
   background: #fff;
   box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.08);
 }
+
 .starting-contact-heading {
   color: #141414;
   text-align: center;
@@ -13,9 +14,11 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
 }
+
 .contact-heading {
   color: #141414;
   font-family: Poppins;
@@ -26,18 +29,21 @@
   max-width: 607px;
   text-align: left;
 }
+
 .btn-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 .cool-span {
   color: #ba7894;
 }
+
 .contact-buttons {
-  border-radius: 8px !important;
-  background: #ba7894 !important;
-  color: #fff !important;
+  border-radius: 16px !important;
+  /* background: #ba7894 !important; */
+  color: #000000 !important;
   font-family: Poppins !important;
   font-size: 20px !important;
   font-style: normal;
@@ -45,25 +51,48 @@
   line-height: normal;
   text-transform: lowercase !important;
   max-width: 451px;
-  max-height: 78px;
+  min-height: 78px;
+  display: flex !important;
+  justify-content: start !important;
+  padding: 0px 25px !important;
 }
+
+.contact-buttons svg {
+  margin-right: 20px;
+}
+
+.active-contact-btn {
+  background: #ba7894 !important;
+  color: #fff !important;
+}
+
+.active-contact-btn svg {
+  color: #fff !important;
+}
+
 .social-row {
   display: flex;
   justify-content: start;
   padding: 10px;
   margin-top: 200px;
 }
+
 .social-icons-span {
   min-width: 50px !important;
   min-height: 50px !important;
   border-radius: 100%;
-  background-color: #ba7894;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3px;
   cursor: pointer;
 }
+
+.active-social-btn {
+  background-color: #ba7894;
+}
+
 .contact-interested-heading {
   color: #2e0249;
   font-family: Poppins;
@@ -73,12 +102,14 @@
   line-height: normal;
   text-align: left;
 }
+
 .category-btn {
-  width: 190px !important;
+  width: 190px;
   height: 62px !important;
   border-radius: 8px !important;
-  background: #ba7894 !important;
-  color: #eee !important;
+  /* background: #ba7894 !important; */
+  border: 2px solid rgba(46, 2, 73, 0.30) !important;
+  color: rgba(46, 2, 73, 0.30) !important;
   text-align: center !important;
   font-family: Poppins !important;
   font-size: 20px !important;
@@ -86,16 +117,30 @@
   font-weight: 500 !important;
   line-height: normal !important;
   margin: 3px !important;
+  text-transform: capitalize !important;
 }
+
+.other-contact-btn {
+  width: 90px !important;
+}
+
+.active-category-btn {
+  background: #ba7894 !important;
+  color: #eee !important;
+  border: 0 !important;
+}
+
 .btn-wrap {
   display: flex;
   flex-wrap: wrap;
   max-width: 654px;
 }
+
 .contact-textField-div {
   display: flex;
   flex-direction: column;
 }
+
 .send-message-btn {
   width: 315px !important;
   height: 78px !important;
@@ -109,53 +154,67 @@
   font-weight: 500 !important;
   line-height: normal !important;
   margin-top: 150px !important;
+  text-transform: capitalize !important;
 }
+
 .contact-form-fields {
   margin-top: 30px !important;
 }
+
 .contact-form-fields .MuiInput-underline:after {
   border-bottom: 2px solid #ba7894;
 }
+
 .contact-form-fields .MuiFormLabel-root.Mui-focused {
   color: #ba7894;
 }
+
 .additional-div {
   border-radius: 24px;
   background: #fcfcfc;
   padding: 5%;
   margin: 30px 0px;
 }
+
 .send-messages-span {
   margin-left: 10px;
 }
+
 @media only screen and (max-width: 520px) {
   .starting-contact-heading {
     font-size: 35px;
   }
+
   .contact-heading {
     font-size: 33px;
   }
+
   .contact-buttons {
     font-size: 15px !important;
   }
+
   .category-btn {
     font-size: 15px !important;
     width: 170px !important;
     height: 52px !important;
   }
+
   .send-message-btn {
     width: 250px !important;
     height: 65px !important;
     font-size: 16px !important;
   }
 }
+
 @media (max-width: 419px) {
   .contact-heading {
     font-size: 35px;
   }
+
   .contact-buttons {
     max-width: 250px !important;
   }
+
   .send-message-btn {
     width: 100% !important;
   }

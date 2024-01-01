@@ -15,10 +15,12 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 .subproductsHeader-heading {
   color: #f7e5c1;
   text-align: center;
@@ -26,35 +28,42 @@
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 66px */
+  line-height: 120%;
+  /* 66px */
   letter-spacing: -0.55px;
   margin: 0px;
   max-width: 649px;
 }
+
 .subproducts-heading-wrapper {
   padding: 0% 5%;
 }
+
 .quantity-btn-wrapper {
   display: flex;
   justify-content: start;
   margin: 10px 0px;
 }
+
 .add-cart-btn-div-wrapper {
   display: flex;
   justify-content: start;
   margin: 10px 0px;
 }
+
 .subproduct-title {
   color: #422a3c;
   font-family: Playfair Display;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   text-align: left;
   margin-bottom: 0;
 }
+
 .subproduct-pricing {
   color: #ba7894;
   font-family: Playfair Display;
@@ -65,11 +74,13 @@
   line-height: normal;
   margin: 12px 0px;
 }
+
 .subproduct-rating-div {
   display: flex;
   justify-content: start;
   padding: 8px 0px 20px 0px;
 }
+
 .quantity-btn {
   text-transform: lowercase !important;
   color: #141414 !important;
@@ -83,6 +94,7 @@
   border: 1px solid rgba(20, 20, 20, 0.3) !important;
   margin: 0px 5px !important;
 }
+
 .subproduct-addtocart-btn {
   border-radius: 5px !important;
   background: #ba7894 !important;
@@ -98,6 +110,7 @@
   line-height: 24px !important;
   text-transform: capitalize !important;
 }
+
 .quantity {
   border-radius: 5px;
   border: 1px solid rgba(20, 20, 20, 0.3);
@@ -106,6 +119,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .subproduct-description {
   color: #555;
   font-family: Manrope;
@@ -115,30 +129,46 @@
   line-height: 175%;
   text-align: left;
 }
+
 .max-width-700 {
   max-width: 747px;
 }
+
 .subproduct-img-wrapper {
   display: grid;
   gap: 5px;
   grid-template-areas: "one" "two" "three" "four";
 }
+
 .small-imgs {
   max-width: 187px;
 }
+
 .big-img {
   max-width: 500px;
 }
+
 .subproducts-descriptive-btn-wrapper {
   display: flex;
   justify-content: start;
 }
+
+.subproducts-descriptive-btn-wrapper .active {
+  background: #ba7894 !important;
+  color: #eee !important;
+  border: 0px !important;
+}
+
+.related-products-wrapper {
+  padding: 5% 0 10% 0;
+}
+
 .subproducts-description-btn {
   border-radius: 8px !important;
-  background: #ba7894 !important;
+  border: 1px solid rgba(20, 20, 20, 0.3) !important;
   width: 166px;
   height: 56px;
-  color: #eee !important;
+  color: #422a3c !important;
   text-align: center;
   font-family: Poppins !important;
   font-size: 16px !important;
@@ -149,6 +179,7 @@
   text-transform: capitalize !important;
 
 }
+
 .subproducts-additionalinfo-btn {
   border-radius: 8px !important;
   border: 1px solid rgba(20, 20, 20, 0.3) !important;
@@ -165,6 +196,7 @@
   text-transform: capitalize !important;
 
 }
+
 .subproducts-rating-btn {
   border-radius: 8px !important;
   border: 1px solid rgba(20, 20, 20, 0.3) !important;
@@ -181,6 +213,7 @@
   text-transform: capitalize !important;
 
 }
+
 .subproduct-img-div {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -189,6 +222,7 @@
   align-items: center;
   margin: 10px;
 }
+
 .related-products-heading {
   color: #141414;
   text-align: center;
@@ -199,36 +233,46 @@
   line-height: 130%;
   letter-spacing: -0.45px;
 }
+
 .small-img-div {
   max-width: 200px;
   margin-left: auto;
 }
+
 .subproduct-img-div:nth-child(1) {
   grid-area: one;
 }
+
 .subproduct-img-div:nth-child(2) {
   grid-area: two;
 }
+
 .subproduct-img-div:nth-child(3) {
   grid-area: three;
 }
+
 .subproduct-img-div:nth-child(4) {
   grid-area: four;
 }
+
 .subproduct-original-img {
-  width: 100%;
+  min-width: 100%;
 }
+
 .subproduct-divider {
   margin: 2% 0% !important;
 }
+
 .subproducts-info-wrapper {
   padding: 5% 3%;
 }
+
 @media (min-width: 600px) {
   .subproduct-img-wrapper {
     grid-template-areas: "one four four" "two four four" "three four four";
   }
 }
+
 @media (max-width: 599px) {
   .subproduct-img-wrapper {
     grid-template-areas: "one four four" "two four four" "three four four";
@@ -240,10 +284,12 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 519px) {
   .subproductsHeader-minheading {
     font-size: 13px;
   }
+
   .subproductsHeader-heading {
     font-size: 30px;
     margin-top: 0;

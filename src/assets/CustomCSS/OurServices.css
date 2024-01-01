@@ -24,6 +24,12 @@
   font-weight: 700;
   line-height: 130%; /* 58.5px */
   letter-spacing: -0.45px;
+  margin: -10px 0px 5% 0px;
+}
+.ourservices-heading-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sub-heading {
   color: #422a3c;
@@ -34,6 +40,8 @@
   font-weight: 700;
   line-height: 130%; /* 58.5px */
   letter-spacing: -0.45px;
+  max-width: 720px;
+  margin-bottom: 0;
 }
 .sub-description {
   color: #555;
@@ -43,6 +51,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
+  margin-bottom: 3%;
 }
 .services-slider .slick-next:before {
   display: none;

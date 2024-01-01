@@ -115,7 +115,7 @@ const OurServices = () => {
         </Slider>
       </div>
       <div className="ourservices-second-wrapper">
-        <div>
+        <div className="ourservices-heading-wrapper">
           <p className="sub-heading">
             We are Experienced in making you very Beautiful
           </p>

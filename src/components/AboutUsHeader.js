@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
 import '../assets/CustomCSS/aboutUsHeader.css'
 
 /*
@@ -19,7 +18,6 @@ function AboutUsHeader() {
            <p 
            className="aboutHeading"
            > The big story behind, our beautyness center</p>
-           <Button className="aboutbtn">CONTACT US</Button>
           </div>
         </div>
          

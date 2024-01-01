@@ -14,7 +14,7 @@ function Header() {
       <div className="bg-home-banner">
         <div>
           <Grid container>
-            <Grid items lg={6}>
+            <Grid items lg={7}>
               <div>
                 <div className="img-text-div">
                   <img className="salon-img" src={salon} />
@@ -76,7 +76,7 @@ function Header() {
                 </div>
               </div>
             </Grid>
-            <Grid items lg={6}></Grid>
+            <Grid items lg={0}></Grid>
           </Grid>
         </div>
       </div>

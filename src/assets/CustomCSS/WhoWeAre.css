@@ -1,13 +1,15 @@
 .main-main {
-  font-family: Manrope;
+  font-family: Playfair Display;
   font-weight: 800;
   line-height: 47.81px;
   text-align: left;
   font-size: 35px;
 }
+
 .whoWeAre-container {
   padding: 5% 0%;
 }
+
 .www-description {
   font-family: Manrope;
   font-weight: 400;
@@ -15,6 +17,7 @@
   text-align: left;
   font-size: 18px;
 }
+
 .more-about-us-btn {
   border-radius: 4px;
   border: 1px solid #353535 !important;
@@ -25,26 +28,33 @@
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal;
+  text-transform: capitalize !important;
+  margin-top: 5% !important;
 }
+
 .whoweare-wrapper {
   max-width: 604px;
   text-align: left;
   padding: 3% 5%;
 }
+
 .whoWeAreImg-main {
   width: 100%;
   max-width: 540px;
 }
+
 .whoweare-the-wrapper-img {
   display: flex;
   justify-content: end;
   padding: 0% 5%;
 }
+
 @media (max-width: 959px) {
   .whoweare-the-wrapper-img {
     justify-content: center;
   }
 }
+
 @media only screen and (max-width: 520px) {
   .www-description {
     font-size: 15px;
