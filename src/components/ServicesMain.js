@@ -27,12 +27,12 @@ function ServicesMain() {
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div>
+              <div className="services-img-holderHolder">
                 <img className="blog-img-holder" src={ser1} />
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div>
+              <div  className="services-img-holderHolder">
                 <img className="blog-img-holder" src={ser2} />
               </div>
             </Grid>
@@ -65,12 +65,12 @@ function ServicesMain() {
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div>
+              <div  className="services-img-holderHolder">
                 <img className="blog-img-holder" src={ser3} />
               </div>
             </Grid>
             <Grid items lg={6}>
-              <div>
+              <div  className="services-img-holderHolder">
                 <img className="blog-img-holder" src={ser4} />
               </div>
             </Grid>

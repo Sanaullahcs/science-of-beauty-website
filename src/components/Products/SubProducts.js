@@ -51,7 +51,7 @@ function SubProducts() {
           </div>
         </div>
         <div style={{ padding: " 5% 0 0 0" }}>
-          <Grid container>
+          <Grid container style={{ padding: '0 5%' }}>
             <Grid items lg={6} md={6} sm={12} xs={12}>
               <div className="subproduct-img-wrapper">
                 <div className="subproduct-img-div small-img-div">
@@ -74,7 +74,7 @@ function SubProducts() {
                 </div>
                 <div className="subproduct-img-div">
                   <img
-                    className="subproduct-original-img small-imgs "
+                    className="subproduct-original-img small-imgs"
                     src={selectedProduct && selectedProduct.image}
                   />
                 </div>

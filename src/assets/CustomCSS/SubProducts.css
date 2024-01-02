@@ -236,7 +236,7 @@
 
 .small-img-div {
   max-width: 200px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .subproduct-img-div:nth-child(1) {

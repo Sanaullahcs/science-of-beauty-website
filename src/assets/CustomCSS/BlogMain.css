@@ -7,16 +7,28 @@
   line-height: normal;
   text-align: left;
 }
+
+.blogPageContainer-wrapper {
+  margin: 5% 0;
+}
+
+.blog-postWrapper {
+  margin-bottom: 10%;
+}
+
 .blog-textarea-heading {
   color: #422a3c;
   font-family: Lora;
   font-size: 46px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 54.348% */
+  line-height: 40px;
+  /* 54.348% */
   text-align: left;
   margin-top: 0;
+  margin-bottom: 30px;
 }
+
 .blog-textarea-description {
   text-align: left;
   color: #422a3c;
@@ -24,8 +36,10 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
+  /* 130% */
 }
+
 .blog-textarea-minHeading {
   opacity: 0.7;
   color: #422a3c;
@@ -33,9 +47,11 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 130% */
+  line-height: 26px;
   text-align: left;
+  margin-bottom: -15px;
 }
+
 .blog-read-more {
   border-radius: 16px !important;
   background: #ba7894 !important;
@@ -49,55 +65,73 @@
   width: 275px;
   height: 78px;
 }
+
+.lady-div-wrapper {
+  margin: 0 5%;
+}
+
 .lady {
-  max-width: 100%;
+  width: 100%;
 }
+
 .blogs-divider {
-  margin: 10px 0px !important;
+  margin: 30px 0px !important;
 }
+
 .blog-read-more {
-  margin-top: 10px !important;
+  margin-top: 5% !important;
   margin-bottom: 10% !important;
 }
+
 .hide-post-blog {
   max-width: 375px;
   height: 100%;
 }
+
 @media (max-width: 1219px) {
   .blog-textarea-date {
     font-size: 18px;
   }
+
   .blog-textarea-heading {
     font-size: 35px;
   }
+
   .blog-textarea-description {
     font-size: 15px;
   }
 }
+
 @media (max-width: 519px) {
   .blog-textarea-heading {
     font-size: 35px;
   }
+
   .blog-read-more {
     width: 210px;
     height: 60px;
     font-size: 18px !important;
   }
+
   .hide-post-blog {
     width: 100%;
   }
 }
+
 /* CSS for screens with width less than 420px */
- @media (max-width: 419px) {
+@media (max-width: 419px) {
   .blog-post {
     width: 100%;
   }
+
   .blog-textarea-heading {
     font-size: 26px;
   }
+
   .blog-textarea-description {
     font-size: 13px;
   }
+
   .blog-textarea-minHeading {
     font-size: 16px;
   }

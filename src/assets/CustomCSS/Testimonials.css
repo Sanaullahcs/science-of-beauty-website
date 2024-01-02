@@ -71,7 +71,7 @@
 
 .main-testimonial {
   background: linear-gradient(128deg, #fdfdfd 5.48%, #f0f0f0 89.93%);
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .testimonial-prehead {
@@ -90,7 +90,7 @@
 
 .testimonial-heading {
   color: #141414;
-  text-align: left !important;
+  text-align: center !important;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: 700;

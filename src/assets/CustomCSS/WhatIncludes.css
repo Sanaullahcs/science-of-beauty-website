@@ -4,98 +4,122 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 0;
 }
+
 .whatincludes-section-grid {
   margin: 8% 0% 5%;
 }
+
 .what-includes-heading {
   color: #422a3c;
   font-family: Playfair Display;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   text-align: left;
   margin-top: 0;
 }
+
 .description {
   color: #555;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 175%; /* 31.5px */
+  line-height: 175%;
+  /* 31.5px */
   text-align: left;
 }
+
 .meta-heading {
   color: #141414;
   font-family: Playfair Display;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 28.6px */
+  line-height: 130%;
+  /* 28.6px */
   letter-spacing: -0.22px;
   text-align: left;
 }
+
 .meta-prehead {
   color: var(--Dark, #141414);
   font-family: Manrope;
   font-size: 19px;
   font-style: normal;
   font-weight: 700;
-  line-height: 200%; /* 38px */
+  line-height: 200%;
+  /* 38px */
   text-align: left;
   margin-bottom: 0;
 }
+
 .meta-predescription {
   color: #555;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 175%; /* 31.5px */
+  line-height: 175%;
+  /* 31.5px */
   text-align: left;
   margin: 0;
+  max-width: 440px;
 }
+
 .what-includes-side-div {
   max-width: 700px;
 }
+
 .side-grid {
   display: flex;
   justify-content: center;
-  padding: 5% 3%;
+  /* padding: 5% 3%; */
 }
+
 .whatincludes-section-grid {
   display: flex;
   justify-content: center;
 }
+
 .check {
   margin-top: 12px;
 }
+
 @media (max-width: 519px) {
   .whatIncludes-min-heading {
     margin-bottom: 0px;
   }
+
   .what-includes-heading {
     font-size: 35px;
   }
+
   .description {
     font-size: 15px;
   }
+
   .meta-heading {
     font-size: 20px;
   }
+
   .meta-prehead {
     font-size: 17px;
   }
+
   .meta-predescription {
     font-size: 15px;
   }
+
   .check {
     width: 30px;
   }

@@ -1,14 +1,17 @@
-.center-div {
+/* .center-div {
   max-width: 650px;
-}
+} */
+
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .ourValueMainWrapper {
-  padding: 10% 0px 5% 0%;
+  padding: 8% 0px 5% 0%;
 }
+
 .ourvalue-heading {
   color: #ba7894;
   text-align: center;
@@ -19,7 +22,9 @@
   line-height: 154.5%;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
+
 .ourvalue-mainheading {
   color: #141414;
   text-align: center;
@@ -27,10 +32,13 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   margin-top: 0;
+  margin-bottom: 5%;
 }
+
 .min-heading {
   color: #141414;
   font-family: Playfair Display;
@@ -39,76 +47,109 @@
   font-weight: 700;
   line-height: 120%;
   text-align: left;
+  margin-bottom: 0;
 }
+
 .min-description {
   color: #555;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 175%; /* 31.5px */
+  line-height: 175%;
+  /* 31.5px */
   text-align: left;
+  max-width: 475px;
+  margin-top: 0;
 }
+
+.ourValuesSmall-gridWrapper {
+  margin: 3% 0;
+}
+
 .img-holder {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
+
 .about-second-section {
   background: #eed7e1;
   box-shadow: 0px 37px 60px 0px rgba(0, 0, 0, 0.02);
 }
+
 .second-section-about {
   color: #fff;
   font-family: Manrope;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: left;
 }
+
 .second-section-heading {
   color: #fff;
   font-family: Playfair Display;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   max-width: 460px;
   text-align: left;
+  margin-bottom: 0;
 }
+
 .second-section-description {
   color: #fff;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 175%; /* 31.5px */
+  line-height: 175%;
+  /* 31.5px */
   text-align: left;
   max-width: 508px;
+  margin-top: 10px;
 }
+
 .section-div {
   background: #422a3c;
   max-width: 650px;
-  padding: 20px 0px 20px 10px;
+  padding: 3% 8%;
 }
+
 .second-section-img-holder {
   display: flex;
   justify-content: end;
 }
+
+.ourvalueMainImag {
+  max-width: 670px !important;
+  width: 100%;
+}
+
+.ourvalueMainImag-grid {
+  width: 100%;
+}
+
 .section-holder {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
+
 .about-second-section-grid {
   display: flex;
   justify-content: center;
 }
+
 .ourvalues-grid-wrapper {
   padding: 5% 3%;
 }
@@ -117,44 +158,55 @@
   .second-section-img-holder {
     justify-content: center;
   }
+
   .section-holder {
     justify-content: center;
   }
+
   .towel-img {
     width: 100%;
     height: 100%;
   }
 }
+
 @media (max-width: 1219px) {
   .ourvalue-mainheading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 959px) {
   .min-heading {
     text-align: center !important;
   }
+
   .min-description {
     text-align: center !important;
   }
+
   .img-holder {
     margin-left: 0;
   }
+
   .towel-img {
     max-width: 430px;
   }
 }
+
 @media (max-width: 519px) {
   .ourvalue-mainheading {
     margin-top: 0px;
     font-size: 30px;
   }
+
   .min-description {
     font-size: 15px;
   }
+
   .second-section-heading {
     font-size: 35px;
   }
+
   .second-section-description {
     font-size: 15px;
   }

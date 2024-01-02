@@ -32,7 +32,7 @@ function ContactUs() {
   };
   return (
     <>
-      <div>
+      <div style={{ padding: '4 % 0' }}>
         <p className="starting-contact-heading">Contact us</p>
         <div className="contact-card">
           <Grid container>

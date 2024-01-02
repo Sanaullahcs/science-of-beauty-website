@@ -99,7 +99,7 @@ function Testimonials() {
     <div className="main-testimonial">
       <p className="testimonial-prehead">Testimonials</p>
       <p className="testimonial-heading">What our Customers says...</p>
-      <Slider className="slider-carausel" style={{ padding: "0px 10%", margin: "5% 0px" }} {...settings}>
+      <Slider className="slider-carausel" style={{ padding: "0px 10%", margin: "3% 0px" }} {...settings}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index} className="sliders">
             <Grid container className="testimonial-slider">
