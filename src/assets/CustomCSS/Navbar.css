@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #fff;
   color: #000000;
-  padding: 1rem;
+  padding: 1rem 5%;
 }
 
 .logo {
@@ -39,24 +39,29 @@
 .nav-links li {
   margin: 0 1rem;
 }
+
 ul a {
   color: #000;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   letter-spacing: 0.88px;
   text-decoration: none;
 }
+
 .img-margin {
   margin-bottom: -3px;
   margin-right: 5px;
 }
+
 .langauge-select .MuiFormControl-root {
   min-width: 77px;
   margin-top: -8px;
 }
+
 /* .langauge-select .MuiInput-underline {
   display: none;
 } */
@@ -73,7 +78,9 @@ ul a {
   line-height: 24px !important;
   width: 92px;
   margin-top: -8px !important;
+  text-transform: capitalize !important;
 }
+
 .signup-btn {
   border-radius: 5px !important;
   background: #ba7894 !important;
@@ -87,7 +94,10 @@ ul a {
   line-height: 24px !important;
   width: 100px;
   margin-top: -8px !important;
+  text-transform: capitalize !important;
+
 }
+
 .chatbot-icons {
   /* style={{ position: "fixed", bottom: "5px", right: "5px", zIndex: "5" }} */
   position: fixed;
@@ -95,6 +105,7 @@ ul a {
   right: 1.5%;
   z-index: 23;
 }
+
 .chatscreen {
   background-color: white;
   border-radius: 20px;
@@ -104,11 +115,13 @@ ul a {
   margin-bottom: 86px;
   position: relative;
 }
+
 .search-field-wrapper {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
+
 .search-field-wrapper .MuiInputBase-root {
   border-radius: 40px;
   background: #ededed;
@@ -121,6 +134,7 @@ ul a {
   max-height: 314px;
   overflow-x: auto;
 }
+
 .proper-chat-screen::-webkit-scrollbar {
   width: 5px;
 }
@@ -133,32 +147,40 @@ ul a {
 .proper-chat-screen::-webkit-scrollbar-track {
   display: none;
 }
+
 .search-field-for-chatbot {
   margin: 15px 15px !important;
 }
+
 .search-field-for-chatbot .MuiFilledInput-underline:after {
   display: none;
 }
+
 .search-field-for-chatbot .MuiFilledInput-underline:before {
   display: none;
 }
+
 .search-field-for-chatbot .MuiFilledInput-input {
   margin-top: 0px;
   padding-top: 10px;
 }
+
 .camera-input-label svg {
   background: white;
   padding: 7px;
   border-radius: 100%;
   margin: 5px 0px;
 }
+
 /* Add these styles to your CSS file */
 .chatscreen {
   display: none;
 }
+
 .send-icon .camera-icon {
   cursor: pointer;
 }
+
 .chatscreen-date {
   opacity: 0.5;
   color: #353535;
@@ -169,18 +191,22 @@ ul a {
   line-height: 154.5%;
   margin-top: 10px !important;
 }
+
 .chatscreen.visible {
   display: block;
 }
+
 .chatbot-profile {
   margin: 5px !important;
   box-shadow: none !important;
 }
+
 .fab-icons-chatbot {
   position: absolute !important;
   right: 10px !important;
   bottom: 10px !important;
 }
+
 .bot-chat {
   border-radius: 30px;
   background: #ededed;
@@ -193,6 +219,7 @@ ul a {
   text-transform: uppercase;
   padding: 10px;
 }
+
 .my-chat {
   border-radius: 30px;
   margin: 5px;
@@ -207,15 +234,63 @@ ul a {
   /* text-transform: uppercase; */
   padding: 10px;
 }
+
 .chat-reply {
   display: flex;
   justify-content: start;
   align-items: center;
 }
+
 .my-reply {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.fabIcon-Img {
+  width: 70px;
+}
+
+.languageSelecter .MuiInput-underline:before {
+  display: none;
+}
+
+.languageSelecter .MuiSelect-select.MuiSelect-select {
+  font-family: Manrope;
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 30px;
+}
+/* .languageSelecter .MuiSelect-select.MuiSelect-select:active{
+  background-color: red;
+} */
+
+.langauge-select svg {
+  display: none;
+}
+
+.down-arrow {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+.languageSelect li {
+  font-family: Manrope;
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.languageSelecter .MuiInput-underline:after {
+  display: none;
 }
 
 /* Media query for mobile responsiveness */
@@ -224,6 +299,7 @@ ul a {
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 1209px) {
   .menu-icon {
     display: flex;
@@ -248,24 +324,30 @@ ul a {
     margin: 1rem 0;
   }
 }
+
 @media only screen and (max-width: 959px) {
   .navbar-top-dail {
     margin-bottom: 0;
   }
+
   .navbar-top-email {
     margin-top: 8px;
   }
 }
+
 @media only screen and (max-width: 520px) {
   .navbar-top-dail {
     font-size: 14px;
   }
+
   .navbar-top-email {
     font-size: 14px;
   }
+
   .web-logo {
     width: 110px;
   }
+
   .hamburger-react div {
     width: 24px !important;
   }

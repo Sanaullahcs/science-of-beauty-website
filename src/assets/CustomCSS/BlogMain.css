@@ -14,6 +14,8 @@
 
 .blog-postWrapper {
   margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .blog-textarea-heading {
@@ -27,6 +29,12 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
 }
 
 .blog-textarea-description {

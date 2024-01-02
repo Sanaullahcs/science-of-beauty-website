@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import { Grid, TextField } from "@material-ui/core";
 import SearchIcon from "@mui/icons-material/Search";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import searchIcon from '../assets/images/searchIcon.svg'
 // import InputAdornment from '@mui/material/InputAdornment';
 // import AccountCircle from '@mui/icons-material/AccountCircle';
 
@@ -68,7 +69,9 @@ function Header() {
                       </Grid>
                       <Grid items lg="4" md="6" sm="12" xs="12">
                         <div className="search-div-wrapper">
-                          <Button className="searchBtnHeader">Search</Button>
+                          <Button className="searchBtnHeader">
+                            <img className="searchIcon-svg" src={searchIcon} />
+                            Search</Button>
                         </div>
                       </Grid>
                     </Grid>

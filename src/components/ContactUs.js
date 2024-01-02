@@ -146,7 +146,7 @@ function ContactUs() {
                     variant="standard"
                   />
                 </div>
-                <div>
+                <div className="sendMessageBtn-div">
                   <Button className="send-message-btn">
                     <img src={send} />
                     <span className="send-messages-span">Send Messages</span>

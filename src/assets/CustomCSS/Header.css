@@ -97,6 +97,11 @@
   width: 211px;
   height: 66px;
   margin: 10px !important;
+  text-transform: capitalize !important;
+}
+
+.searchIcon-svg {
+  margin-right: 20px;
 }
 
 .header-form-wrapper {

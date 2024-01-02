@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Button, Divider, Grid } from "@material-ui/core";
-import blog1 from "../assets/images/Blog-1.png";
-import blog2 from "../assets/images/Blog-2.png";
-import blog3 from "../assets/images/Blog-3.png";
 import lady from "../assets/images/lady.png";
 import "../assets/CustomCSS/BlogMain.css";
+import "../assets/CustomCSS/Blog.css"
 
 function BlogsMain() {
   const [isContentVisible, setIsContentVisible] = useState(true);
@@ -19,32 +17,110 @@ function BlogsMain() {
           <Grid container className="blogPageContainer-wrapper">
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog1} />
+                <div className="blog-bg-1 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog2} />
+                <div className="blog-bg-2 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog3} />
+                <div className="blog-bg-3 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog1} />
+                <div className="blog-bg-1 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog2} />
+                <div className="blog-bg-2 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
               <div className="blog-postWrapper">
-                <img className="blog-post" src={blog3} />
+                <div className="blog-bg-3 blog-bg">
+                  <div className="fashion-div-wrapper">
+                    <Button className="fashion-btn">FASHION</Button>
+                  </div>
+                  <p className="blog-card-date">08.08.2021</p>
+                  <p className="blog-card-heading">
+                    Richird Norton photorealistic rendering as real photos
+                  </p>
+                  <p className="blog-card-description">
+                    Progressively incentivize cooperative systems through
+                    technically sound functionalities. The credibly productivate
+                    seamless data.
+                  </p>
+                </div>
               </div>
             </Grid>
           </Grid>
@@ -100,18 +176,60 @@ function BlogsMain() {
           <div style={{ margin: "4% 0 0 0" }}>
             <Grid container>
               <Grid items lg={4} md={6} sm={12} xs={12}>
-                <div>
-                  <img className="hide-post-blog" src={blog1} />
+                <div className="flex-center">
+                 
+                  <div className="blog-bg-1 blog-bg">
+                    <div className="fashion-div-wrapper">
+                      <Button className="fashion-btn">FASHION</Button>
+                    </div>
+                    <p className="blog-card-date">08.08.2021</p>
+                    <p className="blog-card-heading">
+                      Richird Norton photorealistic rendering as real photos
+                    </p>
+                    <p className="blog-card-description">
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly productivate
+                      seamless data.
+                    </p>
+                  </div>
                 </div>
               </Grid>
               <Grid items lg={4} md={6} sm={12} xs={12}>
-                <div>
-                  <img className="hide-post-blog" src={blog2} />
+                <div className="flex-center">
+                  
+                  <div className="blog-bg-2 blog-bg">
+                    <div className="fashion-div-wrapper">
+                      <Button className="fashion-btn">FASHION</Button>
+                    </div>
+                    <p className="blog-card-date">08.08.2021</p>
+                    <p className="blog-card-heading">
+                      Richird Norton photorealistic rendering as real photos
+                    </p>
+                    <p className="blog-card-description">
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly productivate
+                      seamless data.
+                    </p>
+                  </div>
                 </div>
               </Grid>
               <Grid items lg={4} md={6} sm={12} xs={12}>
-                <div>
-                  <img className="hide-post-blog" src={blog3} />
+                <div className="flex-center">
+                  
+                  <div className="blog-bg-3 blog-bg">
+                    <div className="fashion-div-wrapper">
+                      <Button className="fashion-btn">FASHION</Button>
+                    </div>
+                    <p className="blog-card-date">08.08.2021</p>
+                    <p className="blog-card-heading">
+                      Richird Norton photorealistic rendering as real photos
+                    </p>
+                    <p className="blog-card-description">
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly productivate
+                      seamless data.
+                    </p>
+                  </div>
                 </div>
               </Grid>
             </Grid>

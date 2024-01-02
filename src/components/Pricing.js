@@ -111,7 +111,7 @@ function Pricing() {
             {...sliderSettings}
           >
             {images.map((img, index) => (
-              <div  className={`slide-pricing ${index === Math.floor(images.length / 2) ? "middle-carousel" : ""}`} key={index}>
+              <div className='slide-pricing' key={index}>
                 <div className="card">
                   <div>
                     <img src={img} alt={`Card ${index + 1}`} />

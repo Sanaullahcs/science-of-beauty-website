@@ -16,6 +16,7 @@ import chatbot from "../assets/images/chatbot.png";
 import InputAdornment from "@mui/material/InputAdornment";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import SendIcon from "@mui/icons-material/Send";
+import down from '../assets/images/chevon-down.svg'
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
   const toggleChatVisibility = () => {
     setIsChatVisible((prev) => !prev);
   };
-  const [age, setAge] = useState("");
+  const [age, setAge] = useState(10);
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -108,16 +109,18 @@ function Navbar() {
             </Link>
           </li>
           <li className="langauge-select">
-            <FormControl sx={{ m: 1, minWidth: 300 }}>
+            <FormControl sx={{ m: 1, minWidth: 300 }} className="languageSelecter">
+              <img className="down-arrow" src={down} />
               <Select
                 labelId="demo-select-small-label"
                 id="demo-select-small"
                 value={age}
                 onChange={handleChange}
+                className="languageSelect"
               >
-                <MenuItem value="">
+                {/* <MenuItem value="">
                   <em>None</em>
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem value={10}>EN</MenuItem>
                 <MenuItem value={20}>ES</MenuItem>
                 <MenuItem value={30}>FR</MenuItem>
@@ -200,7 +203,7 @@ function Navbar() {
           className="fab-icons-chatbot"
           onClick={toggleChatVisibility}
         >
-          <img src={fabIcon} />
+          <img className="fabIcon-Img" src={fabIcon} />
         </Fab>
       </div>
     </>
