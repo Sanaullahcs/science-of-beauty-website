@@ -16,41 +16,41 @@ function BlogsMain() {
     <>
       <div>
         <div>
-          <Grid container>
+          <Grid container className="blogPageContainer-wrapper">
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog1} />
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog2} />
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog3} />
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog1} />
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog2} />
               </div>
             </Grid>
             <Grid items lg={4} md={6} sm={12} xs={12}>
-              <div>
+              <div className="blog-postWrapper">
                 <img className="blog-post" src={blog3} />
               </div>
             </Grid>
           </Grid>
         </div>
         <div>
-          <div>
+          <div className="lady-div-wrapper">
             <img className="lady" src={lady} />
           </div>
         </div>
@@ -97,7 +97,7 @@ function BlogsMain() {
         </div>
 
         {!isContentVisible && (
-          <div style={{ margin: "0px 5%" }}>
+          <div style={{ margin: "4% 0 0 0" }}>
             <Grid container>
               <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div>

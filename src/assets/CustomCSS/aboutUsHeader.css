@@ -7,6 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .aboutPreHeading {
   color: var(--Secondary, #ecbfd3);
   text-align: center;
@@ -14,10 +15,12 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 .aboutHeading {
   color: #f7e5c1;
   text-align: center;
@@ -27,7 +30,10 @@
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.55px;
+  margin: 0px;
+  max-width: 649px;
 }
+
 .aboutbtn {
   background: #ba7894 !important;
   color: #fff !important;
@@ -43,22 +49,27 @@
   height: 65px;
   border-radius: 0px !important;
 }
+
 .aboutbtn:hover {
   background: #ba7894;
 }
+
 @media (max-width: 1219px) {
   .aboutHeading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 519px) {
   .aboutPreHeading {
     font-size: 13px;
   }
+
   .aboutHeading {
     font-size: 30px;
     margin-top: 0;
   }
+
   .aboutbtn {
     width: 140px !important;
     height: 50px !important;

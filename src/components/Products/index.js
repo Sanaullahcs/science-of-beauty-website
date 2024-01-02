@@ -3,89 +3,15 @@ import Button from "@material-ui/core/Button";
 import { useNavigate } from "react-router-dom";
 import "../../assets/CustomCSS/Products.css";
 import { Grid } from "@material-ui/core";
-import product1 from "../../assets/images/product1.png";
-import product2 from "../../assets/images/product2.png";
-import product3 from "../../assets/images/product3.png";
-import product4 from "../../assets/images/product4.png";
+import productsData from '../../JSONData/productData'
 
-const productsData = [
-  {
-    id: 1,
-    image: product1,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 2,
-    image: product2,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 3,
-    image: product3,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 4,
-    image: product4,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 5,
-    image: product1,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 6,
-    image: product2,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 7,
-    image: product3,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 8,
-    image: product4,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 9,
-    image: product1,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 10,
-    image: product2,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 11,
-    image: product3,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-  {
-    id: 12,
-    image: product4,
-    name: "Uplifting Serum",
-    price: "$33.00",
-  },
-
-];
 
 function Products() {
   const [hoveredProductId, setHoveredProductId] = useState(null);
+  const [displayedProducts, setDisplayedProducts] = useState(12)
+  const handleViewMoreClick = () => {
+    setDisplayedProducts((prevDisplayed) => prevDisplayed + 12);
+  };
   const navigate = useNavigate();
   const handleButtonClick = (id) => {
     navigate(`/sub-products/${id}`);
@@ -103,8 +29,8 @@ function Products() {
           </div>
         </div>
         <div>
-          <Grid container>
-            {productsData.map((product) => (
+          <Grid container className="product-grid-container">
+            {productsData.slice(0, displayedProducts).map((product) => (
               <Grid
                 key={product.id}
                 item
@@ -136,8 +62,14 @@ function Products() {
                 </div>
               </Grid>
             ))}
+
           </Grid>
         </div>
+        {displayedProducts < productsData.length && (
+          <div className="view-more-button">
+            <Button className="products-view-more-btn" onClick={handleViewMoreClick}>View More</Button>
+          </div>
+        )}
       </div>
     </>
   );

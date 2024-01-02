@@ -5,6 +5,7 @@ import beautyExpert from "../assets/images/beauty-expert.png";
 import greatServices from "../assets/images/great-services.png";
 import Genuine from "../assets/images/genuine.png";
 import towel from "../assets/images/towel.png";
+import ourValueImg from '../assets/images/whatIncludes.jpg'
 
 function OurValues() {
   return (
@@ -16,55 +17,64 @@ function OurValues() {
             <p className="ourvalue-mainheading">
               The work values we thrive for
             </p>
-            <div className="ourvalues-grid-wrapper">
-              <Grid container>
-                <Grid items lg={3} md={3} sm={12} xs={12}>
-                  <div className="img-holder">
-                    <img src={beautyExpert} />
-                  </div>
-                </Grid>
-                <Grid items lg={9} md={9} sm={12} xs={12}>
-                  <h3 className="min-heading">Beauty Experts</h3>
-                  <p className="min-description">
-                    The majority have suffered alteration in some form, buying
-                    to injected humour, or randomised words which desktop
-                    publishing packages.
-                  </p>
-                </Grid>
+            <Grid container>
+              <Grid items lg={6} >
+                <div className="ourvalues-grid-wrapper">
+                  <Grid container className="ourValuesSmall-gridWrapper">
+                    <Grid items lg={2} md={2} sm={12} xs={12}>
+                      <div className="img-holder">
+                        <img src={beautyExpert} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={10} md={10} sm={12} xs={12}>
+                      <h3 className="min-heading">Beauty Experts</h3>
+                      <p className="min-description">
+                        The majority have suffered alteration in some form, buying
+                        to injected humour, or randomised words which desktop
+                        publishing packages.
+                      </p>
+                    </Grid>
+                  </Grid>
+                  <Divider light />
+                  <Grid container className="ourValuesSmall-gridWrapper">
+                    <Grid items lg={2} md={2} sm={12} xs={12}>
+                      <div className="img-holder">
+                        <img src={greatServices} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={10} md={10} sm={12} xs={12}>
+                      <h3 className="min-heading">Great Services</h3>
+                      <p className="min-description">
+                        The majority have suffered alteration in some form, buying
+                        to injected humour, or randomised words which desktop
+                        publishing packages.
+                      </p>
+                    </Grid>
+                  </Grid>
+                  <Divider light />
+                  <Grid container className="ourValuesSmall-gridWrapper">
+                    <Grid items lg={2} md={2} sm={12} xs={12}>
+                      <div className="img-holder">
+                        <img src={Genuine} />
+                      </div>
+                    </Grid>
+                    <Grid items lg={10} md={10} sm={12} xs={12}>
+                      <h3 className="min-heading">100% Genuine</h3>
+                      <p className="min-description">
+                        The majority have suffered alteration in some form, buying
+                        to injected humour, or randomised words which desktop
+                        publishing packages.
+                      </p>
+                    </Grid>
+                  </Grid>
+                </div>
               </Grid>
-              <Divider light />
-              <Grid container>
-                <Grid items lg={3} md={3} sm={12} xs={12}>
-                  <div className="img-holder">
-                    <img src={greatServices} />
-                  </div>
-                </Grid>
-                <Grid items lg={9} md={9} sm={12} xs={12}>
-                  <h3 className="min-heading">Great Services</h3>
-                  <p className="min-description">
-                    The majority have suffered alteration in some form, buying
-                    to injected humour, or randomised words which desktop
-                    publishing packages.
-                  </p>
-                </Grid>
+              <Grid items lg={6} className="ourvalueMainImag-grid">
+                <div className="ourvalueMainImag-holder">
+                  <img className="ourvalueMainImag" src={ourValueImg} />
+                </div>
               </Grid>
-              <Divider light />
-              <Grid container>
-                <Grid items lg={3} md={3} sm={12} xs={12}>
-                  <div className="img-holder">
-                    <img src={Genuine} />
-                  </div>
-                </Grid>
-                <Grid items lg={9} md={9} sm={12} xs={12}>
-                  <h3 className="min-heading">100% Genuine</h3>
-                  <p className="min-description">
-                    The majority have suffered alteration in some form, buying
-                    to injected humour, or randomised words which desktop
-                    publishing packages.
-                  </p>
-                </Grid>
-              </Grid>
-            </div>
+            </Grid>
           </div>
         </div>
         <div className="about-second-section">
@@ -93,7 +103,7 @@ function OurValues() {
             </Grid>
           </Grid>
         </div>
-      </div>
+      </div >
     </>
   );
 }

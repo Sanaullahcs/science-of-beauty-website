@@ -9,6 +9,7 @@
   text-transform: uppercase;
   text-align: left;
 }
+
 .touch-heading {
   color: #141414;
   font-family: Playfair Display;
@@ -21,6 +22,7 @@
   max-width: 435px;
   margin: 0;
 }
+
 .touch-description {
   color: #141414;
   font-family: Manrope;
@@ -28,9 +30,11 @@
   font-style: normal;
   text-align: left;
   font-weight: 400;
-  line-height: 175%; /* 31.5px */
+  line-height: 175%;
+  /* 31.5px */
   max-width: 534px;
 }
+
 .touch-contact-heading {
   color: #141414;
   font-family: Playfair Display;
@@ -38,9 +42,11 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 125%; /* 30px */
+  line-height: 125%;
+  /* 30px */
   margin: 0;
 }
+
 .touch-contact-preheading {
   color: #141414;
   text-align: left;
@@ -48,51 +54,65 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 20px */
+  line-height: 125%;
+  /* 20px */
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
+
 .getInTouch-outer-div {
-  margin-top: 10%;
+  margin: 5% 0;
 }
+
 .minor-margin-left {
   margin-left: 2%;
 }
+
 .getInTouch {
   width: 100%;
   max-width: 611px;
 }
+
 .getInTouch-grid-container {
   display: flex;
   justify-content: center;
 }
+
 .margin-container {
   margin: 10px 0px;
 }
+
 .getInTouch-text-wrapper {
   padding: 3% 5%;
 }
+
 @media (max-width: 599px) {
   .touch-contact-heading {
     text-align: center;
   }
+
   .touch-contact-preheading {
     text-align: center;
   }
 }
+
 @media (max-width: 519px) {
   .touch-preheading {
     font-size: 14px;
   }
+
   .touch-heading {
     font-size: 35px;
   }
+
   .touch-description {
     font-size: 15px;
   }
+
   .touch-contact-heading {
     font-size: 20px;
   }
+
   .touch-contact-preheading {
     font-size: 13px;
   }
