@@ -160,7 +160,7 @@
 }
 
 .related-products-wrapper {
-  padding: 5% 0 10% 0;
+  padding: 0 0 10% 0;
 }
 
 .subproducts-description-btn {
@@ -232,10 +232,11 @@
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.45px;
+  margin-top: 0;
 }
 
 .small-img-div {
-  max-width: 200px;
+  /* max-width: 200px; */
   /* margin-left: auto; */
 }
 
@@ -268,14 +269,25 @@
 }
 
 @media (min-width: 600px) {
-  .subproduct-img-wrapper {
+
+  /* .subproduct-img-wrapper {
     grid-template-areas: "one four four" "two four four" "three four four";
+  } */
+  .subproduct-img-wrapper {
+    grid-template-areas:
+      "one four four four four four four four four four four"
+      "two four four four four four four four four four four"
+      "three four four four four four four four four four four";
   }
 }
 
 @media (max-width: 599px) {
   .subproduct-img-wrapper {
-    grid-template-areas: "one four four" "two four four" "three four four";
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
   }
 }
 
