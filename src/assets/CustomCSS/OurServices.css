@@ -3,7 +3,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all 1s ease;
 }
+
+.slider:hover {
+  transform: scale(1.2);
+}
+
+.services-slider .slick-track {
+  height: 235px;
+  padding-top: 4%;
+}
+
 .services-preheading {
   color: #ba7894;
   text-align: center;
@@ -11,10 +22,12 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 .services-heading {
   color: #141414;
   text-align: center;
@@ -22,15 +35,18 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   margin: -10px 0px 5% 0px;
 }
-.ourservices-heading-wrapper{
+
+.ourservices-heading-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .sub-heading {
   color: #422a3c;
   text-align: center;
@@ -38,11 +54,13 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
   max-width: 720px;
   margin-bottom: 0;
 }
+
 .sub-description {
   color: #555;
   text-align: center;
@@ -50,65 +68,82 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
   margin-bottom: 3%;
 }
+
 .services-slider .slick-next:before {
   display: none;
 }
+
 .services-slider .slick-prev:before {
   display: none;
 }
-.ourservices-second-wrapper{
+
+.ourservices-second-wrapper {
   background: rgba(235, 243, 245, 0.50);
   padding: 3% 5% 5% 5%;
   margin-top: 5%;
 }
+
 .main-grid-imgs {
   display: grid;
   gap: 5px;
   grid-template-areas: "one" "two" "three" "four" "five";
-  
+
 }
+
 .testi:nth-child(1) {
   grid-area: one;
 }
+
 .testi:nth-child(2) {
   grid-area: two;
 }
+
 .testi:nth-child(3) {
   grid-area: three;
 }
+
 .testi:nth-child(4) {
   grid-area: four;
 }
+
 .testi:nth-child(5) {
   grid-area: five;
 }
+
 .ser1 {
   width: 100%;
   height: 100%;
   /* max-width: 300px; */
 }
+
 .grid-system-outer-div {
   margin: 0% 5%;
 }
+
 @media (min-width: 900px) {
   .main-grid-imgs {
     grid-template-areas: "one two three" "one four five";
   }
 }
+
 @media only screen and (max-width: 520px) {
   .services-heading {
     font-size: 33px;
   }
+
   .services-preheading {
     font-size: 13px;
   }
-  .sub-heading{
+
+  .sub-heading {
     font-size: 35px;
   }
-  .sub-description{
+
+  .sub-description {
     font-size: 15px;
   }
 }

@@ -6,8 +6,27 @@ import greatServices from "../assets/images/great-services.png";
 import Genuine from "../assets/images/genuine.png";
 import towel from "../assets/images/towel.png";
 import ourValueImg from '../assets/images/whatIncludes.jpg'
+import Plx from "react-plx";
 
 function OurValues() {
+  const ParallaxDataAboutLeft = [
+    {
+      start: 900,
+      end: 1500,
+      properties: [
+        {
+          startValue: -500,
+          endValue: 0,
+          property: "translateX",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
   return (
     <>
       <div>
@@ -18,7 +37,7 @@ function OurValues() {
               The work values we thrive for
             </p>
             <Grid container>
-              <Grid items lg={6} >
+              <Grid items lg={6} md={6} sm={12} xs={12}>
                 <div className="ourvalues-grid-wrapper">
                   <Grid container className="ourValuesSmall-gridWrapper">
                     <Grid items lg={2} md={2} sm={12} xs={12}>
@@ -69,7 +88,7 @@ function OurValues() {
                   </Grid>
                 </div>
               </Grid>
-              <Grid items lg={6} className="ourvalueMainImag-grid">
+              <Grid items lg={6} md={6} sm={12} xs={12} className="ourvalueMainImag-grid">
                 <div className="ourvalueMainImag-holder">
                   <img className="ourvalueMainImag" src={ourValueImg} />
                 </div>
@@ -80,25 +99,31 @@ function OurValues() {
         <div className="about-second-section">
           <Grid container className="about-second-section-grid">
             <Grid items lg={6} md={6} sm={12} xs={12}>
+              {/* <Plx parallaxData={ParallaxDataAboutLeft}> */}
               <div className="second-section-img-holder">
-                <img className="towel-img" src={towel} />
+                <img style={{ zIndex: "99" }} className="towel-img" src={towel} />
               </div>
+              {/* </Plx> */}
             </Grid>
             <Grid items lg={6} sm={12} xs={12}>
               <div className="section-holder">
+
                 <div className="section-div">
-                  <p className="second-section-about">ABOUT US</p>
-                  <h1 className="second-section-heading">
-                    It’s the bridge between service companies and consumers.
-                  </h1>
-                  <p className="second-section-description">
-                    ServiceMarket.dk is a Copenhagen-based technology company
-                    known for our overview platform. Our aim is to simplify and
-                    improve everyday life for citizens in Denmark. One platform
-                    that brings together all services in an easy and controlled
-                    environment.
-                  </p>
+                  <Plx parallaxData={ParallaxDataAboutLeft}>
+                    <p className="second-section-about">ABOUT US</p>
+                    <h1 className="second-section-heading">
+                      It’s the bridge between service companies and consumers.
+                    </h1>
+                    <p className="second-section-description">
+                      ServiceMarket.dk is a Copenhagen-based technology company
+                      known for our overview platform. Our aim is to simplify and
+                      improve everyday life for citizens in Denmark. One platform
+                      that brings together all services in an easy and controlled
+                      environment.
+                    </p>
+                  </Plx>
                 </div>
+
               </div>
             </Grid>
           </Grid>

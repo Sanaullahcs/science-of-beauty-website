@@ -58,8 +58,9 @@ function App() {
                 <Navbar />
                 <AboutUsHeaders />
                 <OurValues />
-                <WhatIncludes />
                 <Testimonials />
+                <WhatIncludes />
+
                 <Footer />
               </>
             }

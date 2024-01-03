@@ -14,19 +14,38 @@
 
 .blog-bg-1 {
   background-image: url(../images/Blog-Image-1.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
 }
+
+.blog-bg-1:hover {
+  background-position: right;
+}
+
 
 .blog-bg-2 {
   background-image: url(../images/Blog-Image-2.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
 }
+
+.blog-bg-2:hover {
+  background-position: right;
+}
+
 
 .blog-bg-3 {
   background-image: url(../images/Blog-Image-3.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-3:hover {
+  background-position: right;
 }
 
 .blog-bg {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   width: 390px;
   height: 350px;

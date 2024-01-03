@@ -15,6 +15,7 @@ import ser2 from "../assets/images/services-2.png";
 import ser3 from "../assets/images/services-3.png";
 import ser4 from "../assets/images/services-4.png";
 import ser5 from "../assets/images/services-5.png";
+import Plx from "react-plx";
 
 const serviceData = [
   { img: img1, title: "Makeup-artist" },
@@ -37,7 +38,7 @@ const OurServices = () => {
           background: `url(${next})`,
           backgroundSize: "cover",
           right: "20px",
-          marginTop: "2%",
+          top: '50%',
           width: "50px",
           height: "50px",
           zIndex: "22",
@@ -58,8 +59,8 @@ const OurServices = () => {
           background: `url(${prev})`,
           backgroundSize: "cover",
           left: "20px",
+          top: '50%',
           zIndex: "2",
-          marginTop: "2%",
           width: "50px",
           height: "50px",
         }}
@@ -98,14 +99,72 @@ const OurServices = () => {
     ],
   });
 
+  const parallaxDataServices = [
+    {
+      start: 800,
+      end: 1200,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+    {
+      start: 1000,
+      end: 1400,
+      properties: [
+
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+
+      ],
+    },
+  ];
+  const parallaxDataGrid = [
+    {
+      start: 1500,
+      end: 2000,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+    {
+      start: 1700,
+      end: 2300,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    }
+  ];
+
+
+
   return (
     <>
-      <div>
-        <p className="services-preheading">SERVICES</p>
-        <p className="services-heading">Our Services</p>
+      <div style={{ overflowX: 'hidden' }}>
+        <Plx parallaxData={parallaxDataServices}>
+          <div>
+            <p className="services-preheading">SERVICES</p>
+            <p className="services-heading">Our Services</p>
+          </div>
+        </Plx>
+        {/* <Plx className="MyAwesomeParallax" parallaxDataServices={parallaxDataServices}> */}
         <Slider className="services-slider" {...sliderSettings}>
           {serviceData.map((service, index) => (
-            <div key={index}>
+            <div className="harm" key={index}>
               <div className="slider">
                 <img src={service.img} alt={`Service ${index + 1}`} />
                 <p>{service.title}</p>
@@ -113,6 +172,8 @@ const OurServices = () => {
             </div>
           ))}
         </Slider>
+        {/* </Plx> */}
+
       </div>
       <div className="ourservices-second-wrapper">
         <div className="ourservices-heading-wrapper">
@@ -125,23 +186,36 @@ const OurServices = () => {
           </p>
         </div>
         <div className="grid-system-outer-div">
-          <div className="main-grid-imgs">
-            <div className="testi">
-              <img className="ser1" src={ser1} />
+          <Plx parallaxData={parallaxDataGrid}>
+            <div className="main-grid-imgs">
+
+              <div className="testi">
+
+                <img className="ser1" src={ser1} />
+              </div>
+
+              <div className="testi">
+
+                <img className="ser1" src={ser2} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser4} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser3} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser5} />
+
+              </div>
             </div>
-            <div className="testi">
-              <img className="ser1" src={ser2} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser3} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser4} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser5} />
-            </div>
-          </div>
+          </Plx>
         </div>
       </div>
     </>

@@ -8,9 +8,36 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import productsData from '../../JSONData/productData'
 import relatedProductsData from "../../JSONData/relatedProductData";
+import Plx from "react-plx";
+
 
 
 function SubProducts() {
+  const parallaxDataTxt = [
+    {
+      start: 0,
+      end: 500,
+      properties: [
+        {
+          startValue: 1,
+          endValue: 2,
+          property: "scale",
+        },
+
+      ],
+    },
+    {
+      start: 0,
+      end: 500,
+      properties: [
+        {
+          startValue: 1,
+          endValue: 0,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
   const [activeSection, setActiveSection] = useState("description");
   const handleSelectClick = (section) => {
     setActiveSection(section);
@@ -44,10 +71,14 @@ function SubProducts() {
       <div>
         <div>
           <div className="subProductsHeader-bg">
-            <div className="subproducts-heading-wrapper">
-              <p className="subproductsHeader-minheading">PRODUCTS</p>
-              <p className="subproductsHeader-heading">{selectedProduct && selectedProduct.name}</p>
-            </div>
+            <Plx parallaxData={parallaxDataTxt}>
+
+              <div className="subproducts-heading-wrapper">
+                <p className="subproductsHeader-minheading">PRODUCTS</p>
+                <p className="subproductsHeader-heading">{selectedProduct && selectedProduct.name}</p>
+              </div>
+            </Plx>
+
           </div>
         </div>
         <div style={{ padding: " 5% 0 0 0" }}>

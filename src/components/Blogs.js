@@ -4,6 +4,8 @@ import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Blog.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
+import Plx from "react-plx";
+
 
 function Blogs() {
   const NextArrow = (props) => {
@@ -70,13 +72,41 @@ function Blogs() {
       },
     ],
   });
+  const parallaxDataTxt = [
+    {
+      start: 5800,
+      end: 6200,
+      properties: [
+        {
+          startValue: 2,
+          endValue: 1,
+          property: "scale",
+        },
+
+      ],
+    },
+    {
+      start: 5800,
+      end: 6200,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
   return (
     <>
-      <div>
+      <div style={{ overflowX: 'hidden' }}>
         <div className="blog-container">
-          <h1 className="blog-heading">Blog</h1>
+          <Plx parallaxData={parallaxDataTxt}>
+            <h1 className="blog-heading">Blog</h1>
+          </Plx>
+
           <Slider style={{ marginleft: "50px" }} {...sliderSettings}>
-            <div className="slide">
+            <div style={{ overflow: 'hidden' }} className="slide">
               <div className="blog-bg-1 blog-bg">
                 <div className="fashion-div-wrapper">
                   <Button className="fashion-btn">FASHION</Button>
