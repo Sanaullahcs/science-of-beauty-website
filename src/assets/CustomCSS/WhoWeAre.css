@@ -8,6 +8,8 @@
 
 .whoWeAre-container {
   padding: 5% 0%;
+  background-color: #F8DBD5;
+
 }
 
 .www-description {
@@ -48,12 +50,14 @@
   justify-content: end;
   padding: 0% 5%;
 }
+
 @media (max-width: 1330px) {
   .whoWeAreImg-main {
     width: 100%;
     /* max-width: 540px; */
   }
 }
+
 @media (max-width: 959px) {
   .whoweare-the-wrapper-img {
     justify-content: center;

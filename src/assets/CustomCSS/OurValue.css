@@ -12,8 +12,12 @@
   padding: 8% 0px 5% 0%;
 }
 
+.ourvalueMainImag-holder {
+  z-index: 9;
+}
+
 .ourvalue-heading {
-  color: #ba7894;
+  color: #A75E5B;
   text-align: center;
   font-family: Manrope;
   font-size: 15px;
@@ -74,7 +78,7 @@
 }
 
 .about-second-section {
-  background: #eed7e1;
+  background: #EAE0CA;
   box-shadow: 0px 37px 60px 0px rgba(0, 0, 0, 0.02);
 }
 
@@ -119,7 +123,7 @@
 }
 
 .section-div {
-  background: #422a3c;
+  background: #A75E5B;
   max-width: 650px;
   padding: 3% 8%;
 }

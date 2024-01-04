@@ -1,5 +1,6 @@
 .subProductsHeader-bg {
-  background-color: #241520;
+  /* background-color: #241520; */
+  background-image: url(../images/greyProductBanner.png);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -66,7 +67,7 @@
 }
 
 .subproduct-pricing {
-  color: #ba7894;
+  color: #A75E5B;
   font-family: Playfair Display;
   font-size: 24px;
   text-align: left;
@@ -98,7 +99,7 @@
 
 .subproduct-addtocart-btn {
   border-radius: 5px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   width: 131px;
   height: 52px;
   color: #fff !important;
@@ -155,7 +156,7 @@
 }
 
 .subproducts-descriptive-btn-wrapper .active {
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #eee !important;
   border: 0px !important;
 }
@@ -222,6 +223,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
+  background: white;
 }
 
 .related-products-heading {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/CustomCSS/Header.css";
-import salon from "../assets/images/hair-salon-logo.png";
+import salon from "../assets/images/minLogo.svg";
 import Button from "@material-ui/core/Button";
 import { Grid, TextField } from "@material-ui/core";
 import SearchIcon from "@mui/icons-material/Search";
@@ -60,7 +60,7 @@ function Header() {
                               variant="standard"
                               InputProps={{
                                 endAdornment: (
-                                  <SearchIcon style={{ color: "#BA7894" }} />
+                                  <SearchIcon style={{ color: "#A75E5B" }} />
                                 ),
                               }}
                             />
@@ -76,7 +76,7 @@ function Header() {
                               variant="standard"
                               InputProps={{
                                 endAdornment: (
-                                  <LocationOnIcon style={{ color: "#BA7894" }} />
+                                  <LocationOnIcon style={{ color: "#A75E5B" }} />
                                 ),
                               }}
                             />

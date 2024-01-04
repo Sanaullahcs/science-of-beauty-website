@@ -1,5 +1,6 @@
 .ProductsHeader-bg {
-  background-color: #241520;
+  /* background-color: #241520; */
+  background-image: url(../images/greyProductBanner.png);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -55,7 +56,7 @@
 }
 
 .products-price {
-  color: #ba7894;
+  color: #A75E5B;
   margin-top: 0;
   text-align: center;
   font-family: Playfair Display;
@@ -74,7 +75,7 @@
   top: 45%;
   left: 30%;
   border-radius: 10px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #fff !important;
   text-align: center !important;
   font-family: Poppins !important;
@@ -92,7 +93,7 @@
 
 .products-view-more-btn {
   border-radius: 16px !important;
-  background: #BA7894 !important;
+  background: #A75E5B !important;
   color: #EEE !important;
   text-align: center;
   font-family: Poppins !important;

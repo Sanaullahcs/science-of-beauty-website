@@ -1,14 +1,68 @@
 import React from "react";
 import { Grid, Divider } from "@material-ui/core";
 import "../assets/CustomCSS/OurValue.css";
-import beautyExpert from "../assets/images/beauty-expert.png";
-import greatServices from "../assets/images/great-services.png";
-import Genuine from "../assets/images/genuine.png";
-import towel from "../assets/images/towel.png";
+import beautyExpert from "../assets/images/beauty-expert.svg";
+import greatServices from "../assets/images/great-services.svg";
+import Genuine from "../assets/images/genuine.svg";
+import towel from "../assets/images/slice.jpg";
 import ourValueImg from '../assets/images/whatIncludes.jpg'
 import Plx from "react-plx";
 
 function OurValues() {
+  const ParallaxDataAboutLeftFirst = [
+    {
+      start: 0,
+      end: 500,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateX",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const ParallaxDataAboutLeftSecond = [
+    {
+      start: 300,
+      end: 600,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateX",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const ParallaxDataAboutLeftThird = [
+    {
+      start: 400,
+      end: 700,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateX",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
   const ParallaxDataAboutLeft = [
     {
       start: 900,
@@ -29,7 +83,7 @@ function OurValues() {
   ];
   return (
     <>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div className="main ourValueMainWrapper">
           <div className="center-div">
             <p className="ourvalue-heading">OUR VALUES</p>
@@ -39,53 +93,59 @@ function OurValues() {
             <Grid container>
               <Grid items lg={6} md={6} sm={12} xs={12}>
                 <div className="ourvalues-grid-wrapper">
-                  <Grid container className="ourValuesSmall-gridWrapper">
-                    <Grid items lg={2} md={2} sm={12} xs={12}>
-                      <div className="img-holder">
-                        <img src={beautyExpert} />
-                      </div>
+                  <Plx parallaxData={ParallaxDataAboutLeftFirst}>
+                    <Grid container className="ourValuesSmall-gridWrapper">
+                      <Grid items lg={2} md={2} sm={12} xs={12}>
+                        <div className="img-holder">
+                          <img src={beautyExpert} />
+                        </div>
+                      </Grid>
+                      <Grid items lg={10} md={10} sm={12} xs={12}>
+                        <h3 className="min-heading">Beauty Experts</h3>
+                        <p className="min-description">
+                          The majority have suffered alteration in some form, buying
+                          to injected humour, or randomised words which desktop
+                          publishing packages.
+                        </p>
+                      </Grid>
                     </Grid>
-                    <Grid items lg={10} md={10} sm={12} xs={12}>
-                      <h3 className="min-heading">Beauty Experts</h3>
-                      <p className="min-description">
-                        The majority have suffered alteration in some form, buying
-                        to injected humour, or randomised words which desktop
-                        publishing packages.
-                      </p>
-                    </Grid>
-                  </Grid>
+                  </Plx>
                   <Divider light />
-                  <Grid container className="ourValuesSmall-gridWrapper">
-                    <Grid items lg={2} md={2} sm={12} xs={12}>
-                      <div className="img-holder">
-                        <img src={greatServices} />
-                      </div>
+                  <Plx parallaxData={ParallaxDataAboutLeftSecond}>
+                    <Grid container className="ourValuesSmall-gridWrapper">
+                      <Grid items lg={2} md={2} sm={12} xs={12}>
+                        <div className="img-holder">
+                          <img src={greatServices} />
+                        </div>
+                      </Grid>
+                      <Grid items lg={10} md={10} sm={12} xs={12}>
+                        <h3 className="min-heading">Great Services</h3>
+                        <p className="min-description">
+                          The majority have suffered alteration in some form, buying
+                          to injected humour, or randomised words which desktop
+                          publishing packages.
+                        </p>
+                      </Grid>
                     </Grid>
-                    <Grid items lg={10} md={10} sm={12} xs={12}>
-                      <h3 className="min-heading">Great Services</h3>
-                      <p className="min-description">
-                        The majority have suffered alteration in some form, buying
-                        to injected humour, or randomised words which desktop
-                        publishing packages.
-                      </p>
-                    </Grid>
-                  </Grid>
+                  </Plx>
                   <Divider light />
-                  <Grid container className="ourValuesSmall-gridWrapper">
-                    <Grid items lg={2} md={2} sm={12} xs={12}>
-                      <div className="img-holder">
-                        <img src={Genuine} />
-                      </div>
+                  <Plx parallaxData={ParallaxDataAboutLeftThird}>
+                    <Grid container className="ourValuesSmall-gridWrapper">
+                      <Grid items lg={2} md={2} sm={12} xs={12}>
+                        <div className="img-holder">
+                          <img src={Genuine} />
+                        </div>
+                      </Grid>
+                      <Grid items lg={10} md={10} sm={12} xs={12}>
+                        <h3 className="min-heading">100% Genuine</h3>
+                        <p className="min-description">
+                          The majority have suffered alteration in some form, buying
+                          to injected humour, or randomised words which desktop
+                          publishing packages.
+                        </p>
+                      </Grid>
                     </Grid>
-                    <Grid items lg={10} md={10} sm={12} xs={12}>
-                      <h3 className="min-heading">100% Genuine</h3>
-                      <p className="min-description">
-                        The majority have suffered alteration in some form, buying
-                        to injected humour, or randomised words which desktop
-                        publishing packages.
-                      </p>
-                    </Grid>
-                  </Grid>
+                  </Plx>
                 </div>
               </Grid>
               <Grid items lg={6} md={6} sm={12} xs={12} className="ourvalueMainImag-grid">

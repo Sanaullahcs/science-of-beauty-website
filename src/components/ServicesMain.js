@@ -82,7 +82,7 @@ function ServicesMain() {
   ];
   return (
     <>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div className="main-blog-content">
           <Grid container className="main-main-blogs">
             <Grid items lg={6}>

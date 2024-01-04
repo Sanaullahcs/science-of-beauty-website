@@ -4,21 +4,25 @@ import { Link } from "react-router-dom";
 import { Grid, Fab, TextField } from "@material-ui/core";
 import Callimg from "../assets/images/nav-call.png";
 import emailimg from "../assets/images/nav-gmail.png";
-import logoNavbar from "../assets/images/logo.png";
+import logoNavbar from "../assets/images/greyLogo.svg";
 import search from "../assets/images/search.png";
 import FormControl from "@material-ui/core/FormControl";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import { Sling as Hamburger } from "hamburger-react";
-import fabIcon from "../assets/images/fab-icons-chat.png";
-import chatbot from "../assets/images/chatbot.png";
+import fabIcon from "../assets/images/chatRobotIcon.svg";
+import chatbot from "../assets/images/chatbot.svg";
 import InputAdornment from "@mui/material/InputAdornment";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import SendIcon from "@mui/icons-material/Send";
 import down from '../assets/images/chevon-down.svg'
+import { useNavigate } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 function Navbar() {
+  const navigate = useNavigate();
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isChatVisible, setIsChatVisible] = useState(false);
   const toggleChatVisibility = () => {
@@ -38,6 +42,12 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+  };
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+    closeMenu();
+    navigate('/#pricing');
+
   };
   return (
     <>
@@ -89,9 +99,16 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="" onClick={closeMenu}>
-              PACKAGES
-            </Link>
+            {/* <Link to="" onClick={closeMenu}> */}
+            <ScrollLink to="pricing" smooth duration={500}>
+              <a
+                href='/#pricing'
+              // onClick={handleLinkClick}
+              >
+                PRICING
+              </a>
+            </ScrollLink>
+            {/* </Link> */}
           </li>
           <li>
             <Link to="/blogs" onClick={closeMenu}>

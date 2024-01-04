@@ -1,5 +1,5 @@
 .testimonial-1 {
-  color: #422A3C;
+  color: #fff;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
@@ -12,7 +12,7 @@
 }
 
 .testimonial-2 {
-  color: #a8617f;
+  color: #fff;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -24,7 +24,7 @@
 }
 
 .testimonial-heading {
-  color: #a8617f;
+  color: #422A3C;
   font-family: Playfair Display;
   font-size: 36px;
   font-style: normal;
@@ -35,7 +35,7 @@
 }
 
 .testimonial-description {
-  color: #a8617f;
+  color: #fff;
   font-family: Manrope;
   font-size: 19px;
   font-style: normal;
@@ -58,7 +58,7 @@
 
 .sliders {
   border-radius: 40px;
-  background: #ecbfd3;
+  background: #A75E5B;
   /* padding: 5% 0%; */
   padding: 5% 3%;
   width: 93% !important;
@@ -70,12 +70,12 @@
 }
 
 .main-testimonial {
-  background: linear-gradient(128deg, #fdfdfd 5.48%, #f0f0f0 89.93%);
+  background: linear-gradient(128deg, #EADFC9 5.48%, #F0F0F0 89.93%);
   padding-bottom: 100px;
 }
 
 .testimonial-prehead {
-  color: #ba7894;
+  color: #A75E5B;
   text-align: center;
   font-family: Manrope;
   font-size: 15px;
@@ -89,7 +89,20 @@
 }
 
 .testimonial-heading {
-  color: #141414;
+  color: #422A3C;
+  text-align: center !important;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  /* 58.5px */
+  letter-spacing: -0.45px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 33px;
+}
+.testimonial-subsubheading {
+  color: #fff;
   text-align: center !important;
   font-family: Playfair Display;
   font-style: normal;

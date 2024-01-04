@@ -3,12 +3,15 @@ import "../assets/CustomCSS/BeforeAfter.css";
 import { Button, Grid } from "@material-ui/core";
 import mask from "../assets/images/mask.png";
 import Plx from "react-plx";
+import { Parallax } from 'react-scroll-parallax';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 function BeforeAfter() {
   const parallaxDataTxt = [
     {
-      start: 2000,
+      start: 2400,
       end: 2900,
       properties: [
         {
@@ -20,6 +23,7 @@ function BeforeAfter() {
           startValue: 500,
           endValue: 0,
           property: "translateY",
+          factor: 0.3
         },
         {
           startValue: 0,
@@ -29,14 +33,20 @@ function BeforeAfter() {
       ],
     },
   ];
+
   return (
     <>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div className="bg-component">
           <Grid container className="afterbefore-grid">
             <Grid items lg={6}>
               <div className="mask-img-holder">
-                <img className="mask-img" src={mask} />
+                {/* <Plx parallaxData={parallaxDataMask}> */}
+                <Parallax speed={30} tagOuter="figure">
+                  <img className="mask-img" src={mask} alt="Mask" />
+                </Parallax>
+
+                {/* </Plx> */}
               </div>
             </Grid>
             <Grid items lg={6}>
@@ -53,7 +63,9 @@ function BeforeAfter() {
                   </p>
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>
-                  <Button className="main-btn"> View Gallery</Button>
+                  <ScrollLink to="gallery" smooth duration={500}>
+                    <Button className="main-btn" > View Gallery</Button>
+                  </ScrollLink>
                 </Plx>
               </div>
 
@@ -65,3 +77,4 @@ function BeforeAfter() {
   );
 }
 export default BeforeAfter;
+

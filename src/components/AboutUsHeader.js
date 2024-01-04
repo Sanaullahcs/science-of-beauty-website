@@ -38,7 +38,7 @@ const parallaxDataTxt = [
 function AboutUsHeader() {
   return (
     <>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div className="bg-aboutbanner">
           <Plx parallaxData={parallaxDataTxt}>
             <div>

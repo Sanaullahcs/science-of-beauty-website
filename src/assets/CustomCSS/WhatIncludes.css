@@ -1,5 +1,5 @@
 .whatIncludes-min-heading {
-  color: #ba7894;
+  color: #A75E5B;
   font-family: Manrope;
   font-size: 15px;
   font-style: normal;
@@ -78,6 +78,7 @@
 
 .what-includes-side-div {
   max-width: 700px;
+  padding-bottom: 4%;
 }
 
 .side-grid {

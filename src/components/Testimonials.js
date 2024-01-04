@@ -3,15 +3,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Grid } from "@material-ui/core";
-import startComma from "../assets/images/start-comma.png";
-import endComma from "../assets/images/end-comma.png";
+import startComma from "../assets/images/frontCot.svg";
+import endComma from "../assets/images/backCot.svg";
 import "../assets/CustomCSS/Testimonials.css";
 import next from "../assets/images/next-img.png";
 import prev from "../assets/images/prev-img.png";
 import Plx from "react-plx";
+import { useLocation } from 'react-router-dom';
 
 
 function Testimonials() {
+  const location = useLocation();
+  const isSubProductPage = location.pathname.includes('/sub-products/');
+
+
   // Custom component for the next button
   const NextArrow = (props) => {
     return (
@@ -96,119 +101,70 @@ function Testimonials() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi .",
     },
   ];
-  const parallaxDataTestimonial = [
-    // animation for the services page testimonial section
-    {
-      start: 1500,
-      end: 2000,
-      properties: [
-        {
-          startValue: 500,
-          endValue: 0,
-          property: "translateY",
-        },
-      ],
-    },
-    // animation for the home page testimonial section
-    {
-      start: 3000,
-      end: 3500,
-      properties: [
-        {
-          startValue: 500,
-          endValue: 0,
-          property: "translateY",
-        },
-      ],
-    },
-    {
-      start: 1000,
-      end: 1400,
-      properties: [
+  // const parallaxDataImg = [
+  //   // animation for the services page testimonial section
+  //   {
+  //     start: 2000,
+  //     end: 2400,
+  //     properties: [
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "scale",
+  //       },
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "opacity",
+  //       },
 
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "opacity",
-        },
+  //     ],
+  //   },
+  //   // animation for the home page testimonial section
+  //   {
+  //     start: 3300,
+  //     end: 3800,
+  //     properties: [
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "scale",
+  //       },
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "opacity",
+  //       },
 
-      ],
-    },
-  ];
-  const parallaxDataImg = [
-    // animation for the services page testimonial section
-    {
-      start: 2000,
-      end: 2400,
-      properties: [
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "scale",
-        },
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "opacity",
-        },
+  //     ],
+  //   },
 
-      ],
-    },
-    // animation for the home page testimonial section
-    {
-      start: 3300,
-      end: 3800,
-      properties: [
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "scale",
-        },
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "opacity",
-        },
-
-      ],
-    },
-    // {
-    //   start: 4600,
-    //   end: 5500,
-    //   properties: [
-    //     {
-    //       startValue: 0,
-    //       endValue: 1,
-    //       property: "opacity",
-    //     },
-    //   ],
-    // },
-  ];
+  // ];
 
   return (
     <div className="main-testimonial">
-      <Plx parallaxData={parallaxDataTestimonial}>
-        <div>
-          <p className="testimonial-prehead">Testimonials</p>
-          <p className="testimonial-heading">What our Customers says...</p>
-        </div>
-      </Plx>
+    
+      <div>
+        <p className="testimonial-prehead">Testimonials</p>
+        <p className="testimonial-heading">What our Customers says...</p>
+      </div>
+
 
       <Slider className="slider-carausel" style={{ padding: "0px 10%", margin: "3% 0px" }} {...settings}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index} className="sliders">
             <Grid container className="testimonial-slider">
               <Grid item lg={6}>
-                <Plx parallaxData={parallaxDataImg}>
+                {/* <Plx parallaxData={parallaxDataImg}> */}
                   <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
-                </Plx>
+                {/* </Plx> */}
               </Grid>
               <Grid item lg={6}>
                 <div className="side-holder">
                   <img src={startComma} alt="Start comma" />
                   <p className="testimonial-1">{testimonial.testimonial1}</p>
                   <p className="testimonial-2">{testimonial.testimonial2}</p>
-                  <p className="testimonial-heading">
+                  <p className="testimonial-subsubheading">
                     {testimonial.testimonialHeading}
                   </p>
                   <p className="testimonial-description">

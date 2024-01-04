@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import next from "../assets/images/services-next.png";
 import prev from "../assets/images/services-prev.png";
-import img1 from "../assets/images/makeup-artist.png";
-import img2 from "../assets/images/Wellnesscenter.png";
-import img3 from "../assets/images/Barbersalon.png";
-import img4 from "../assets/images/Frisorsalon.png";
-import img5 from "../assets/images/Massageklinik.png";
-import img6 from "../assets/images/fodterapeut.png";
+import img1 from "../assets/images/makeup.png";
+import img2 from "../assets/images/well.png";
+import img3 from "../assets/images/barber.png";
+import img4 from "../assets/images/fris.png";
+import img5 from "../assets/images/mess.png";
+import img6 from "../assets/images/fod.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
 import ser1 from "../assets/images/services-1.png";
@@ -16,6 +16,8 @@ import ser3 from "../assets/images/services-3.png";
 import ser4 from "../assets/images/services-4.png";
 import ser5 from "../assets/images/services-5.png";
 import Plx from "react-plx";
+// import { Parallax } from 'react-scroll-parallax';
+
 
 const serviceData = [
   { img: img1, title: "Makeup-artist" },
@@ -75,6 +77,8 @@ const OurServices = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -127,8 +131,8 @@ const OurServices = () => {
   ];
   const parallaxDataGrid = [
     {
-      start: 1500,
-      end: 2000,
+      start: 1800,
+      end: 2300,
       properties: [
         {
           startValue: 500,
@@ -138,8 +142,8 @@ const OurServices = () => {
       ],
     },
     {
-      start: 1700,
-      end: 2300,
+      start: 1800,
+      end: 2400,
       properties: [
         {
           startValue: 0,
@@ -154,12 +158,14 @@ const OurServices = () => {
 
   return (
     <>
-      <div style={{ overflowX: 'hidden' }}>
+      <div style={{ overflowX: 'hidden',    paddingTop: '5%' }}>
         <Plx parallaxData={parallaxDataServices}>
-          <div>
+        {/* <Parallax speed={30} tagOuter="figure"> */}
+          <div style={{ zIndex: '999' }}>
             <p className="services-preheading">SERVICES</p>
             <p className="services-heading">Our Services</p>
           </div>
+        {/* </Parallax> */}
         </Plx>
         {/* <Plx className="MyAwesomeParallax" parallaxDataServices={parallaxDataServices}> */}
         <Slider className="services-slider" {...sliderSettings}>
@@ -175,7 +181,7 @@ const OurServices = () => {
         {/* </Plx> */}
 
       </div>
-      <div className="ourservices-second-wrapper">
+      <div id="gallery" className="ourservices-second-wrapper">
         <div className="ourservices-heading-wrapper">
           <p className="sub-heading">
             We are Experienced in making you very Beautiful

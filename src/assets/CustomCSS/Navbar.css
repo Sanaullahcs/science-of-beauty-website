@@ -67,8 +67,8 @@ ul a {
 } */
 .login-btn {
   border-radius: 5px !important;
-  border: 1.5px solid var(--Dark, #141414) !important;
-  color: var(--Dark, #141414) !important;
+  border: 1.5px solid #A75E5B !important;
+  color: #A75E5B !important;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Manrope !important;
@@ -83,7 +83,7 @@ ul a {
 
 .signup-btn {
   border-radius: 5px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: var(--White, #fff) !important;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -139,8 +139,12 @@ ul a {
   width: 5px;
 }
 
+.web-logo {
+  width: 150px;
+}
+
 .proper-chat-screen::-webkit-scrollbar-thumb {
-  background-color: #ba7894;
+  background-color: #A75E5B;
   border-radius: 6px;
 }
 
@@ -223,7 +227,7 @@ ul a {
 .my-chat {
   border-radius: 30px;
   margin: 5px;
-  background: #ba7894;
+  background: #A75E5B;
   color: #fff;
   text-align: right;
   font-family: Manrope;
@@ -264,6 +268,7 @@ ul a {
   line-height: normal;
   margin-left: 30px;
 }
+
 /* .languageSelecter .MuiSelect-select.MuiSelect-select:active{
   background-color: red;
 } */

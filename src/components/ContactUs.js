@@ -34,29 +34,29 @@ function ContactUs() {
         },
       ],
     },
-    {
-      start: 4800,
-      end: 5500,
-      properties: [
-        {
-          startValue: 1.5,
-          endValue: 1,
-          property: "scale",
-        },
+    // {
+    //   start: 4200,
+    //   end: 5200,
+    //   properties: [
+    //     {
+    //       startValue: 1.5,
+    //       endValue: 1,
+    //       property: "scale",
+    //     },
 
-      ],
-    },
-    {
-      start: 4600,
-      end: 5500,
-      properties: [
-        {
-          startValue: 0,
-          endValue: 1,
-          property: "opacity",
-        },
-      ],
-    },
+    //   ],
+    // },
+    // {
+    //   start: 4000,
+    //   end: 5200,
+    //   properties: [
+    //     {
+    //       startValue: 0,
+    //       endValue: 1,
+    //       property: "opacity",
+    //     },
+    //   ],
+    // },
   ];
   const [activeButton, setActiveButton] = useState('phone');
   const [activeSocialButton, setActiveSocialButton] = useState('instagram');
@@ -80,8 +80,7 @@ function ContactUs() {
   };
   return (
     <>
-      <div style={{ padding: '4 % 0', overflowX: 'hidden', overflowY: 'hidden' }}>
-        <p className="starting-contact-heading">Contact us</p>
+      <div style={{ padding: '4 % 0', overflow: 'hidden', paddingTop: '5%' }}>
         <Plx parallaxData={parallaxDataTxt}>
           <div className="contact-card">
             <Grid container>
@@ -96,44 +95,50 @@ function ContactUs() {
                       className={`contact-buttons ${activeButton === "email" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("email")}
                     >
-                      <MailOutlineIcon style={{ color: "#BA7894" }} />
+                      <MailOutlineIcon style={{ color: "#A75E5B" }} />
                       <span>user12345@gmail.com</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "phone" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("phone")}
                     >
-                      <CallIcon style={{ color: "#BA7894" }} />
+                      <CallIcon style={{ color: "#A75E5B" }} />
                       <span>+123 456 789</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "location" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("location")}
                     >
-                      <LocationOnIcon style={{ color: "#BA7894" }} />
+                      <LocationOnIcon style={{ color: "#A75E5B" }} />
                       <span>123 Street 456 House</span>
                     </Button>
                   </div>
                   <div>
                     <div className="social-row">
+                      <a href="">
                       <div
                         className={`social-icons-span ${activeSocialButton === "facebook" ? "active-social-btn" : ""}`}
                         onClick={() => handleSocialButtonClick("facebook")}
                       >
                         <FacebookIcon style={{ color: "#eee" }} />
                       </div>
+                      </a>
+                      <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
                       <div
                         className={`social-icons-span ${activeSocialButton === "instagram" ? "active-social-btn" : ""}`}
                         onClick={() => handleSocialButtonClick("instagram")}
                       >
                         <InstagramIcon style={{ color: "#eee" }} />
                       </div>
+                      </a>
+                      <a href="">
                       <div
                         className={`social-icons-span ${activeSocialButton === "twitter" ? "active-social-btn" : ""}`}
                         onClick={() => handleSocialButtonClick("twitter")}
                       >
                         <TwitterIcon style={{ color: "#eee" }} />
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>

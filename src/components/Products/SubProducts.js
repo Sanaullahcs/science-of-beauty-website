@@ -13,7 +13,7 @@ import Plx from "react-plx";
 
 
 function SubProducts() {
-  const parallaxDataTxt = [
+  const parallaxDataHead = [
     {
       start: 0,
       end: 500,
@@ -38,6 +38,56 @@ function SubProducts() {
       ],
     },
   ];
+  const parallaxDataSub = [
+    {
+      start: 0,
+      end: 500,
+      properties: [
+        {
+          startValue: -500,
+          endValue: 0,
+          property: "translateX",
+        },
+
+      ],
+    },
+    {
+      start: 0,
+      end: 700,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  // const parallaxDataImage = [
+  //   {
+  //     start: 0,
+  //     end: 700,
+  //     properties: [
+  //       {
+  //         startValue: 1,   // Initial scale (1 is the original size)
+  //         endValue: 1.2,   // Scale to 1.2 (or any desired value for a little bigger)
+  //         property: "scale",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     start: 700,
+  //     end: 800,
+  //     properties: [
+  //       {
+  //         startValue: 1.2, // Scale back to 1.2
+  //         endValue: 1,     // Return to the original size
+  //         property: "scale",
+  //       },
+  //     ],
+  //   },
+  // ];
+
   const [activeSection, setActiveSection] = useState("description");
   const handleSelectClick = (section) => {
     setActiveSection(section);
@@ -71,7 +121,7 @@ function SubProducts() {
       <div>
         <div>
           <div className="subProductsHeader-bg">
-            <Plx parallaxData={parallaxDataTxt}>
+            <Plx parallaxData={parallaxDataHead}>
 
               <div className="subproducts-heading-wrapper">
                 <p className="subproductsHeader-minheading">PRODUCTS</p>
@@ -83,7 +133,7 @@ function SubProducts() {
         </div>
         <div style={{ padding: " 5% 0 0 0" }}>
           <Grid container style={{ padding: '0 5%' }}>
-            <Grid items lg={6} md={6} sm={12} xs={12}>
+            <Grid items lg={6} md={6} sm={12} xs={12} style={{ zIndex: "999" }}>
               <div className="subproduct-img-wrapper">
                 <div className="subproduct-img-div small-img-div">
                   <img
@@ -104,52 +154,58 @@ function SubProducts() {
                   />
                 </div>
                 <div className="subproduct-img-div">
+                  {/* <Plx parallaxData={parallaxDataImage}> */}
                   <img
                     className="subproduct-original-img small-imgs"
                     src={selectedProduct && selectedProduct.image}
                   />
+                  {/* </Plx> */}
                 </div>
               </div>
             </Grid>
             <Grid items lg={6} md={6} sm={12} xs={12}>
+
               <div className="subproducts-info-wrapper">
-                <p className="subproduct-title">{selectedProduct && selectedProduct.name}</p>
-                <p className="subproduct-pricing">{selectedProduct && selectedProduct.price}</p>
-                <div className="subproduct-rating-div">
-                  <Rating
-                    className="subproduct-rating"
-                    name="read-only"
-                    value={selectedProduct && selectedProduct.rating}
-                    readOnly
-                  />
-                </div>
-                <div className="quantity-btn-wrapper">
-                  <Button className="quantity-btn">1.5gm</Button>
-                  <Button className="quantity-btn">2.5gm</Button>
-                  <Button className="quantity-btn">3gm</Button>
-                </div>
-                <div className="add-cart-btn-div-wrapper">
-                  <Button className="quantity-btn" onClick={handleDecrement}>
-                    -
-                  </Button>
-                  <span className="quantity">{quantity}</span>
-                  <Button className="quantity-btn" onClick={handleIncrement}>
-                    +
-                  </Button>
-                  <Button className="subproduct-addtocart-btn">
-                    Add to cart
-                  </Button>
-                </div>
-                <div>
-                  <p className="subproduct-description max-width-700">
-                    ServiceMarket.dk was founded in 2021 by two young
-                    entrepreneurs who saw a problem with the fragmented service
-                    industry in Denmark. There were thousands of small
-                    businesses offering services, but it was difficult for
-                    consumers to find them and know which ones to choose.
-                  </p>
-                </div>
+                <Plx parallaxData={parallaxDataSub}>
+                  <p className="subproduct-title">{selectedProduct && selectedProduct.name}</p>
+                  <p className="subproduct-pricing">{selectedProduct && selectedProduct.price}</p>
+                  <div className="subproduct-rating-div">
+                    <Rating
+                      className="subproduct-rating"
+                      name="read-only"
+                      value={selectedProduct && selectedProduct.rating}
+                      readOnly
+                    />
+                  </div>
+                  <div className="quantity-btn-wrapper">
+                    <Button className="quantity-btn">1.5gm</Button>
+                    <Button className="quantity-btn">2.5gm</Button>
+                    <Button className="quantity-btn">3gm</Button>
+                  </div>
+                  <div className="add-cart-btn-div-wrapper">
+                    <Button className="quantity-btn" onClick={handleDecrement}>
+                      -
+                    </Button>
+                    <span className="quantity">{quantity}</span>
+                    <Button className="quantity-btn" onClick={handleIncrement}>
+                      +
+                    </Button>
+                    <Button className="subproduct-addtocart-btn">
+                      Add to cart
+                    </Button>
+                  </div>
+                  <div>
+                    <p className="subproduct-description max-width-700">
+                      ServiceMarket.dk was founded in 2021 by two young
+                      entrepreneurs who saw a problem with the fragmented service
+                      industry in Denmark. There were thousands of small
+                      businesses offering services, but it was difficult for
+                      consumers to find them and know which ones to choose.
+                    </p>
+                  </div>
+                </Plx>
               </div>
+
             </Grid>
           </Grid>
         </div>
