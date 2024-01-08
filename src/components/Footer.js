@@ -91,13 +91,19 @@ function Footer() {
               </div>
               <div className="footer-social-div">
                 <span className="img-holder">
-                  <img src={facebook} />
+                  <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
+                    <img src={facebook} />
+                  </a>
                 </span>
                 <span className="img-holder">
-                  <img src={insta} />
+                  <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                    <img src={insta} />
+                  </a>
                 </span>
                 <span className="img-holder">
-                  <img src={twitter} />
+                  <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                    <img src={twitter} />
+                  </a>
                 </span>
               </div>
             </div>

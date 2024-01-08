@@ -21,6 +21,24 @@ import BlogsHeader from "./components/BlogsHeader";
 import BlogsMain from "./components/BlogsMain";
 import Products from "./components/Products/index";
 import SubProducts from "./components/Products/SubProducts";
+import FaceAndNeck from './components/Services/FaceAndNeck'
+import BodyTightening from './components/Services/BodyTightening'
+import BodyScarring from './components/Services/BodyScarring'
+import LaserHairRemoval from './components/Services/LaserHairRemoval'
+import Pigmentation from './components/Services/Pigmentation'
+import FacialAndSpiderVeinTreatment from './components/Services/FacialAndSpiderVeinTreatment'
+import CRYOFacial from './components/Services/CRYOFacial'
+import BodyToning from './components/Services/BodyToning'
+import BodySlimming from './components/Services/BodySlimming'
+import AntiAgingFacial from './components/Services/AntiAgingFacial'
+import IlluminatingFacial from './components/Services/IlluminatingFacial'
+import BeClearPurifyingFacial from './components/Services/BeClearPurifyingFacial'
+import CustomizedChemicalPeel from './components/Services/CustomizedChemicalPeel'
+import BrowLamination from './components/Services/BrowLamination'
+import LashLiftAndTint from './components/Services/LashLiftAndTint'
+
+
+
 import React from "react";
 import "./assets/CustomCSS/Main.css";
 import "slick-carousel/slick/slick.css";
@@ -125,6 +143,172 @@ function App() {
                 <Navbar />
                 <SubProducts />
                 <Testimonials />
+                <Footer />
+              </>
+            }
+          />
+          {/* services sub routes */}
+          <Route
+            exact
+            path={"/services/face-and-neck"}
+            element={
+              <>
+                <Navbar />
+                <FaceAndNeck />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/body-tightening"}
+            element={
+              <>
+                <Navbar />
+                <BodyTightening />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/body-scarring"}
+            element={
+              <>
+                <Navbar />
+                <BodyScarring />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/LaserHairRemoval"}
+            element={
+              <>
+                <Navbar />
+                <LaserHairRemoval />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/Pigmentation"}
+            element={
+              <>
+                <Navbar />
+                <Pigmentation />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/facial-spidervein-treatment"}
+            element={
+              <>
+                <Navbar />
+                <FacialAndSpiderVeinTreatment />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/cryo-facial"}
+            element={
+              <>
+                <Navbar />
+                <CRYOFacial />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/body-toning"}
+            element={
+              <>
+                <Navbar />
+                <BodyToning />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/body-slimming"}
+            element={
+              <>
+                <Navbar />
+                <BodySlimming />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/anti-aging-facial"}
+            element={
+              <>
+                <Navbar />
+                <AntiAgingFacial />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/illuminating-facial"}
+            element={
+              <>
+                <Navbar />
+                <IlluminatingFacial />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/purifying-facial"}
+            element={
+              <>
+                <Navbar />
+                <BeClearPurifyingFacial/>
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/customized-chemicl-peel"}
+            element={
+              <>
+                <Navbar />
+                <CustomizedChemicalPeel />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/brow-lamination"}
+            element={
+              <>
+                <Navbar />
+                <BrowLamination />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            exact
+            path={"/services/lash-lift-and-tint"}
+            element={
+              <>
+                <Navbar />
+                <LashLiftAndTint />
                 <Footer />
               </>
             }

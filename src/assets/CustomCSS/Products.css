@@ -68,6 +68,7 @@
 
 .product-div-wrapper {
   position: relative;
+  border-radius: 10px;
 }
 
 .add-to-cart-btn {

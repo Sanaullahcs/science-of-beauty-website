@@ -71,8 +71,14 @@ function Products() {
                 xs={12}
                 onMouseEnter={() => setHoveredProductId(product.id)}
                 onMouseLeave={() => setHoveredProductId(null)}
+                style={{ padding: '2%' }}
               >
-                <div className="product-div-wrapper">
+                <div className="product-div-wrapper" style={{
+                  border: hoveredProductId === product.id ? '1px solid #A75E5B' : 'none',
+                  boxShadow: hoveredProductId === product.id
+                    ? '0 0 8px #A75E5B'
+                    : 'none',
+                }}>
                   <img
                     className="my-product-img"
                     src={product.image}

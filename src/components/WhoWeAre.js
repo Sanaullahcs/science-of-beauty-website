@@ -4,8 +4,17 @@ import whoWeAre1 from "../assets/images/www1.png";
 import whoWeAre2 from "../assets/images/www2.png";
 import "../assets/CustomCSS/WhoWeAre.css";
 import Plx from "react-plx";
+import { Link } from 'react-router-dom'
 
 function WhoWeAre() {
+  const goToAbout = () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const parallaxDataWWWTop = [
     {
       start: 0,
@@ -82,19 +91,19 @@ function WhoWeAre() {
   ];
   return (
     <>
-      <div style={{ overflowX: 'hidden' }}>
+      <div style={{ overflow: 'hidden' }}>
         <div className="whoWeAre-container">
           <Grid container>
             <Grid items lg="6" md="6" sm="12" xs="12">
               {/* <Plx parallaxData={parallaxDataWWWRight}> */}
-                <div className="whoweare-the-wrapper-img">
+              <div className="whoweare-the-wrapper-img">
                 <Plx parallaxData={parallaxDataWWWTop}>
                   <img className="whoWeAreImg-main" src={whoWeAre1} />
-                  </Plx>
-                  <Plx parallaxData={parallaxDataWWWBottom}>
+                </Plx>
+                <Plx parallaxData={parallaxDataWWWBottom}>
                   <img className="whoWeAreImg-main" src={whoWeAre2} />
-                  </Plx>
-                </div>
+                </Plx>
+              </div>
               {/* </Plx> */}
             </Grid>
             <Grid items lg="6" md="6" sm="12" xs="12">
@@ -116,7 +125,7 @@ function WhoWeAre() {
                     Facibus scelerisque eleifend donec pretium vulputate sapien.
                     Dui nunc mattis enim ut tellus elemntum suscipt biben.
                   </p>
-                  <Button className="more-about-us-btn ">More About Us</Button>
+                  <Link to='/about'><Button className="more-about-us-btn " onClick={goToAbout}>More About Us</Button></Link>
                 </div>
               </Plx>
             </Grid>

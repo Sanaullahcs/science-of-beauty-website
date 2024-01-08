@@ -117,8 +117,23 @@
   justify-content: center;
 }
 
+.slide {
+  margin-right: 10px;
+  /* Adjust the right margin as needed */
+}
+
+/* Alternatively, you can also adjust padding to control spacing within each blog item */
+.blog-bg {
+  padding: 10px;
+  /* Adjust the padding as needed */
+}
+
 .blog-container {
-  padding: 5% 0px 20% 0px;
+  padding: 5% 0px 5% 0px;
+}
+
+.spacer-divider-bloggers {
+  height: 50px;
 }
 
 .slick-dots {
@@ -159,4 +174,13 @@
   .blog-bg {
     width: 265px;
   }
+}
+
+
+.slider-blog-card-holder {
+  padding: 0px 10%;
+}
+
+.slider-blog-card-holder .slick-dots {
+  position: relative;
 }

@@ -22,7 +22,7 @@ function Pricing() {
           <div>
             <Grid container>
               <Grid items lg={4} md={12} sm={12} xs={12}>
-                <div className="pricingCardHolder">
+                <div className="pricingCardHolder1">
 
                   <div class="flip-card">
                     <div class="flip-card-inner">
@@ -60,7 +60,7 @@ function Pricing() {
                 </div>
               </Grid>
               <Grid items lg={4} md={12} sm={12} xs={12}>
-                <div className="pricingCardHolder">
+                <div className="pricingCardHolder2">
 
                   <div class="flip-card">
                     <div class="flip-card-inner">
@@ -98,7 +98,7 @@ function Pricing() {
                 </div>
               </Grid>
               <Grid items lg={4} md={12} sm={12} xs={12}>
-                <div className="pricingCardHolder">
+                <div className="pricingCardHolder3">
 
                   <div class="flip-card">
                     <div class="flip-card-inner">

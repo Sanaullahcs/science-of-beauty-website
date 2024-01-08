@@ -115,29 +115,29 @@ function ContactUs() {
                   </div>
                   <div>
                     <div className="social-row">
-                      <a href="">
-                      <div
-                        className={`social-icons-span ${activeSocialButton === "facebook" ? "active-social-btn" : ""}`}
-                        onClick={() => handleSocialButtonClick("facebook")}
-                      >
-                        <FacebookIcon style={{ color: "#eee" }} />
-                      </div>
+                      <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
+                        <div
+                          className={`social-icons-span ${activeSocialButton === "facebook" ? "active-social-btn" : ""}`}
+                          onClick={() => handleSocialButtonClick("facebook")}
+                        >
+                          <FacebookIcon style={{ color: "#eee" }} />
+                        </div>
                       </a>
                       <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
-                      <div
-                        className={`social-icons-span ${activeSocialButton === "instagram" ? "active-social-btn" : ""}`}
-                        onClick={() => handleSocialButtonClick("instagram")}
-                      >
-                        <InstagramIcon style={{ color: "#eee" }} />
-                      </div>
+                        <div
+                          className={`social-icons-span ${activeSocialButton === "instagram" ? "active-social-btn" : ""}`}
+                          onClick={() => handleSocialButtonClick("instagram")}
+                        >
+                          <InstagramIcon style={{ color: "#eee" }} />
+                        </div>
                       </a>
-                      <a href="">
-                      <div
-                        className={`social-icons-span ${activeSocialButton === "twitter" ? "active-social-btn" : ""}`}
-                        onClick={() => handleSocialButtonClick("twitter")}
-                      >
-                        <TwitterIcon style={{ color: "#eee" }} />
-                      </div>
+                      <a href="" target="_blank">
+                        <div
+                          className={`social-icons-span ${activeSocialButton === "twitter" ? "active-social-btn" : ""}`}
+                          onClick={() => handleSocialButtonClick("twitter")}
+                        >
+                          <TwitterIcon style={{ color: "#eee" }} />
+                        </div>
                       </a>
                     </div>
                   </div>

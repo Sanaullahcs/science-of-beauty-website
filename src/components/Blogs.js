@@ -105,7 +105,7 @@ function Blogs() {
             <h1 className="blog-heading">Blog</h1>
           </Plx>
 
-          <Slider style={{ marginleft: "50px" }} {...sliderSettings}>
+          <Slider style={{ marginleft: "50px" }} {...sliderSettings} className="slider-blog-card-holder">
             <div style={{ overflow: 'hidden' }} className="slide">
               <div className="blog-bg-1 blog-bg">
                 <div className="fashion-div-wrapper">
@@ -171,6 +171,9 @@ function Blogs() {
               </div>
             </div>
           </Slider>
+        </div>
+        <div className="spacer-divider-bloggers">
+
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #fff;
   color: #000000;
-  padding: 1rem 5%;
+  padding: 1rem 5% 5px;
 }
 
 .logo {
@@ -110,8 +110,10 @@ ul a {
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  min-width: 280px;
-  min-height: 380px;
+  /* min-width: 280px;
+  min-height: 380px; */
+  min-width: 385px;
+  min-height: 50vh;
   margin-bottom: 86px;
   position: relative;
 }
@@ -124,14 +126,43 @@ ul a {
 
 .search-field-wrapper .MuiInputBase-root {
   border-radius: 40px;
-  background: #ededed;
+  background: #ededed !important;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 222;
   height: 50px;
 }
 
+.search-field-for-chatbot .MuiFilledInput-root:hover {
+  background-color: #ededed !important;
+}
+
+.chat-head-icons-img {
+  width: 45px;
+}
+
+.chat-head-container {
+  height: 100%;
+}
+
+.chat-head-div {
+  height: 86px;
+}
+
+.chat-head-icon-wrapper {
+  /* display: block; */
+  width: 69px;
+  height: 69px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
 .proper-chat-screen {
-  max-height: 314px;
+  max-height: 308px;
   overflow-x: auto;
 }
 
@@ -255,6 +286,39 @@ ul a {
   width: 70px;
 }
 
+.chat-head-div {
+  background-color: #A75E5B;
+  border-radius: 17px 17px 0 0;
+}
+
+.chat-head-txt1 {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154.5%;
+  margin: 0;
+  text-align: left;
+  opacity: 0.7;
+  /* 21.63px */
+}
+
+.chat-head-txt2 {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154.5%;
+  margin: 0;
+  text-align: left;
+
+  /* 30.9px */
+}
+
+
+
 .languageSelecter .MuiInput-underline:before {
   display: none;
 }
@@ -356,4 +420,45 @@ ul a {
   .hamburger-react div {
     width: 24px !important;
   }
+}
+
+/* DraggableElement.css */
+
+.draggable {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 30%;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.draggable .menu-options {
+  margin-top: 10px;
+}
+
+.draggable svg {
+  margin: auto;
+  margin-top: 5px;
+}
+
+.dragger-fb {
+  margin: 10px 0 !important;
+  width: 45px;
+}
+
+.dragger-x {
+  margin: 10px 0 !important;
+  width: 45px;
+
+}
+
+.dragger-insta {
+  margin: 10px 0 !important;
+  width: 45px;
+
 }

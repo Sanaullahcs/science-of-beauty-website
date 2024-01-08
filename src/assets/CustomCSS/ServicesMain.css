@@ -1,6 +1,7 @@
 .blog-img-holder {
   width: 100% !important;
-  height: 100% !important;
+  /* height: 100% !important; */
+  max-height: 606px;
 }
 
 .services-img-holderHolder {
@@ -75,6 +76,21 @@
   .contactus-btn-div {
     justify-content: center;
   }
+}
+
+.exploreMoreBtn {
+  border-radius: 16px !important;
+  background: #A75E5B !important;
+  color: #EEE !important;
+  text-align: center;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 256px;
+  height: 78px;
+  margin: 4% 0 !important;
 }
 
 @media (max-width: 1219px) {
