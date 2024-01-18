@@ -45,7 +45,7 @@ function AboutUsHeader() {
               <p className="aboutPreHeading">Short Story About Us</p>
               <p
                 className="aboutHeading"
-              > The big story behind, our beautyness center</p>
+              > The experts behind the science of beauty</p>
             </div>
           </Plx>
 

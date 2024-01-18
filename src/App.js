@@ -76,10 +76,9 @@ function App() {
                 <Navbar />
                 <AboutUsHeaders />
                 <OurValues />
-                <Testimonials />
                 <WhatIncludes />
-
                 <Pricing />
+                <Testimonials />
                 <Footer />
               </>
             }
@@ -105,6 +104,7 @@ function App() {
                 <Navbar />
                 <ServicesHeaders />
                 <ServicesMain />
+                <Pricing />
                 <Testimonials />
                 <Footer />
               </>
@@ -159,7 +159,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/body-tightening"}
             element={
@@ -170,7 +170,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/body-scarring"}
             element={
@@ -181,7 +181,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/LaserHairRemoval"}
             element={
@@ -192,7 +192,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/Pigmentation"}
             element={
@@ -203,7 +203,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/facial-spidervein-treatment"}
             element={
@@ -214,7 +214,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/cryo-facial"}
             element={
@@ -225,7 +225,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/body-toning"}
             element={
@@ -236,7 +236,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/body-slimming"}
             element={
@@ -247,7 +247,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/anti-aging-facial"}
             element={
@@ -258,7 +258,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/illuminating-facial"}
             element={
@@ -269,18 +269,18 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/purifying-facial"}
             element={
               <>
                 <Navbar />
-                <BeClearPurifyingFacial/>
+                <BeClearPurifyingFacial />
                 <Footer />
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/customized-chemicl-peel"}
             element={
@@ -291,7 +291,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/brow-lamination"}
             element={
@@ -302,7 +302,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             exact
             path={"/services/lash-lift-and-tint"}
             element={

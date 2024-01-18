@@ -11,8 +11,23 @@
   margin-bottom: 0;
 }
 
+.viewMethDialog .MuiPaper-root {
+  background-color: #fff !important;
+  width: 80vw !important;
+  padding: 0 2% 2%;
+  border-radius: 40px;
+}
+
+.viewMethDialog .MuiDialog-paperWidthSm {
+  max-width: 1150px !important;
+}
+
 .whatincludes-section-grid {
   margin: 8% 0% 5%;
+}
+
+.viewMethBtn {
+  background-color: #fff !important;
 }
 
 .what-includes-heading {
@@ -73,7 +88,7 @@
   /* 31.5px */
   text-align: left;
   margin: 0;
-  max-width: 440px;
+  /* max-width: 440px; */
 }
 
 .what-includes-side-div {

@@ -8,25 +8,29 @@ import img3 from "../assets/images/barber.png";
 import img4 from "../assets/images/fris.png";
 import img5 from "../assets/images/mess.png";
 import img6 from "../assets/images/fod.png";
+import img7 from "../assets/images/makeup.png";
+import img8 from "../assets/images/well.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
-import ser1 from "../assets/images/services-1.png";
-import ser2 from "../assets/images/services-2.png";
-import ser3 from "../assets/images/services-3.png";
-import ser4 from "../assets/images/services-4.png";
-import ser5 from "../assets/images/services-5.png";
+import ser1 from "../assets/images/wwd1.png";
+import ser2 from "../assets/images/wwd2.png";
+import ser3 from "../assets/images/wwd3.png";
+import ser4 from "../assets/images/wwd4.png";
+import ser5 from "../assets/images/wwd5.png";
 import Plx from "react-plx";
 // import { Parallax } from 'react-scroll-parallax';
 
 
 const serviceData = [
-  { img: img1, title: "Makeup-artist" },
-  { img: img2, title: "Wellnesscenter" },
-  { img: img3, title: "Barbersalon" },
-  { img: img4, title: "Frisørsalon" },
-  { img: img5, title: "Massageklinik" },
-  { img: img6, title: "Fodterapeut" },
-  { img: img6, title: "Fodterapeut" },
+  { img: img1, title: "Morpheus 8" },
+  { img: img2, title: "NeuroToxin " },
+  { img: img3, title: "Dermal Fillers" },
+  { img: img4, title: "IV therapy" },
+  { img: img5, title: "Laser Hair Removal " },
+  { img: img6, title: "Body Contouring " },
+  { img: img6, title: "PRP Hair restoration " },
+  { img: img7, title: "Facials " },
+  { img: img8, title: "Chemical Peels" },
 ];
 
 const OurServices = () => {
@@ -158,14 +162,14 @@ const OurServices = () => {
 
   return (
     <>
-      <div style={{ overflowX: 'hidden',    paddingTop: '5%' }}>
+      <div style={{ overflowX: 'hidden', paddingTop: '5%' }}>
         <Plx parallaxData={parallaxDataServices}>
-        {/* <Parallax speed={30} tagOuter="figure"> */}
+          {/* <Parallax speed={30} tagOuter="figure"> */}
           <div style={{ zIndex: '999' }}>
             <p className="services-preheading">SERVICES</p>
             <p className="services-heading">Our Services</p>
           </div>
-        {/* </Parallax> */}
+          {/* </Parallax> */}
         </Plx>
         {/* <Plx className="MyAwesomeParallax" parallaxDataServices={parallaxDataServices}> */}
         <Slider className="services-slider" {...sliderSettings}>
@@ -184,11 +188,10 @@ const OurServices = () => {
       <div id="gallery" className="ourservices-second-wrapper">
         <div className="ourservices-heading-wrapper">
           <p className="sub-heading">
-            We are Experienced in making you very Beautiful
+            What We Do
           </p>
           <p className="sub-description">
-            Lorem ipsum dolor sit amet consectetur. Eu quis enim tempor et proin
-            neque.
+            At The Science of Beauty, we blend cutting-edge science with the artistry of aesthetics to provide meticulously tailored and scientifically proven solutions, ensuring a personalized journey to timeless beauty and wellness that builds trust through our dedication to your individual needs."
           </p>
         </div>
         <div className="grid-system-outer-div">

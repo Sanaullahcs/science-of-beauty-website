@@ -13,7 +13,7 @@ import Plx from "react-plx";
 function Header() {
   const parallaxData = [
     {
-      start: 0,
+      start: 200,
       end: 500,
       properties: [
         {
@@ -35,13 +35,13 @@ function Header() {
                   <div className="img-text-div">
                     <img className="salon-img" src={salon} />
                     <p className="text-img-heading">
-                      Hair Salon, Masseuse, Beauty Salon
+                      Science, Beauty, Wellness
                     </p>
                   </div>
                   <p className="heading-header">Face | Skin | Body</p>
                   <p className="header-header-by">
-                    <span className="preHeading1">by</span>{" "}
-                    <span className="preHeading2">ALLURE</span>
+                    {/* <span className="preHeading1">by</span>{" "} */}
+                    <span className="preHeading2">Research Based Beauty and wellness</span>
                   </p>
                   <p className="banner-description">
                     There are many variation of passages are Ipsum available,

@@ -71,6 +71,7 @@
   line-height: 30px;
   /* 150% */
   margin-bottom: 3%;
+  max-width: 900px;
 }
 
 .services-slider .slick-next:before {
@@ -90,6 +91,8 @@
 .main-grid-imgs {
   display: grid;
   gap: 5px;
+  border-radius: 40px;
+  overflow: hidden;
   grid-template-areas: "one" "two" "three" "four" "five";
 
 }

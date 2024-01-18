@@ -34,6 +34,11 @@
   display: flex;
   z-index: 1;
   padding-left: 0;
+  align-items: center;
+}
+
+.logoForLargeScreen {
+  width: 179px !important;
 }
 
 .nav-links li {
@@ -369,7 +374,21 @@ ul a {
   }
 }
 
+@media only screen and (min-width: 1209px) {
+  .logoForSmallScreen {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 1209px) {
+  .listForlogoForLargeScreen {
+    display: none;
+  }
+
   .menu-icon {
     display: flex;
   }

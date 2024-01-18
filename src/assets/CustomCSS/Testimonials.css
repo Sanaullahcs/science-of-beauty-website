@@ -101,6 +101,7 @@
   margin-top: 10px;
   font-size: 33px;
 }
+
 .testimonial-subsubheading {
   color: #fff;
   text-align: center !important;
@@ -113,6 +114,7 @@
   margin-bottom: 0;
   margin-top: 10px;
   font-size: 33px;
+  text-align: left !important;
 }
 
 .main-testimonial {

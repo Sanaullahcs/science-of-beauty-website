@@ -108,7 +108,12 @@
   text-align: left;
   margin-bottom: 0;
 }
-
+.second-section-heading-dialog{
+  max-width: 1400px !important;
+}
+.second-section-description-dialog{
+  max-width: 1400px !important;
+}
 .second-section-description {
   color: #fff;
   font-family: Manrope;
@@ -122,6 +127,23 @@
   margin-top: 10px;
 }
 
+.AboutUsReadMoreBtn {
+  width: 200px;
+  height: 60px;
+  border: 2px solid white !important;
+  border-radius: 21px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-family: 'Poppins' !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+}
+
+.aboutUsReadBtnHolder {
+  display: flex;
+  justify-content: start;
+}
+
 .section-div {
   background: #A75E5B;
   max-width: 650px;
@@ -131,6 +153,28 @@
 .second-section-img-holder {
   display: flex;
   justify-content: end;
+}
+
+.readMoreDialog .MuiPaper-root {
+  background-color: #A75E5B !important;
+  width: 80vw !important;
+  padding: 0 2%;
+}
+.readMoreDialog .MuiDialog-paperWidthSm{
+  max-width: 1150px !important;
+}
+
+.closeBtnDialogReadMore {
+  width: 110px !important;
+  border: 2px solid white !important;
+  font-family: 'Poppins' !important;
+  text-transform: capitalize !important;
+  color: white !important;
+  font-weight: 600 !important;
+  background: transparent;
+    border-radius: 25px;
+    height: 40px;
+    font-size: 18px;
 }
 
 .ourvalueMainImag {

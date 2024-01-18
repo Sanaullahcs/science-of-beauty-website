@@ -56,10 +56,7 @@ function BeforeAfter() {
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>
                   <p className="main-description">
-                    Health and viatlity, once only available to a fortunate few,
-                    are now in Huntington Beach for you. Allure Anti-Aging and
-                    Aesthetics provides you with the most advanced functional
-                    medicine with a natural, gentle approach to well-being.
+                    Explore our Before & After Gallery, a visual narrative of transformative journeys. Witness the stunning evolution from initial beauty concerns to the remarkable, radiant results achieved through our tailored treatments. Let these compelling visuals inspire your own path to rejuvenation and confidence."
                   </p>
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>

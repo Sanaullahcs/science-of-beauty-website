@@ -1,5 +1,5 @@
-import React from "react";
-import { Grid, Divider } from "@material-ui/core";
+import React, { useState } from "react";
+import { Grid, Divider, Button, Dialog, DialogActions } from "@material-ui/core";
 import "../assets/CustomCSS/OurValue.css";
 import beautyExpert from "../assets/images/beauty-expert.svg";
 import greatServices from "../assets/images/great-services.svg";
@@ -9,6 +9,15 @@ import ourValueImg from '../assets/images/whatIncludes.jpg'
 import Plx from "react-plx";
 
 function OurValues() {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  const handleOpenDialog = () => {
+    setDialogOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setDialogOpen(false);
+  };
   const ParallaxDataAboutLeftFirst = [
     {
       start: 0,
@@ -101,11 +110,9 @@ function OurValues() {
                         </div>
                       </Grid>
                       <Grid items lg={10} md={10} sm={12} xs={12}>
-                        <h3 className="min-heading">Beauty Experts</h3>
+                        <h3 className="min-heading">Personalization</h3>
                         <p className="min-description">
-                          The majority have suffered alteration in some form, buying
-                          to injected humour, or randomised words which desktop
-                          publishing packages.
+                          Tailoring treatments and recommendations to each individual's unique needs and goals. Ensuring a personalized experience through detailed consultations and customized plans.
                         </p>
                       </Grid>
                     </Grid>
@@ -119,11 +126,9 @@ function OurValues() {
                         </div>
                       </Grid>
                       <Grid items lg={10} md={10} sm={12} xs={12}>
-                        <h3 className="min-heading">Great Services</h3>
+                        <h3 className="min-heading">Expertise & Innovation</h3>
                         <p className="min-description">
-                          The majority have suffered alteration in some form, buying
-                          to injected humour, or randomised words which desktop
-                          publishing packages.
+                          Offering cutting-edge treatments backed by expertise in the latest technologies and methodologies in medical aesthetics. Staying at the forefront of innovation and research to provide top-tier services.
                         </p>
                       </Grid>
                     </Grid>
@@ -137,11 +142,9 @@ function OurValues() {
                         </div>
                       </Grid>
                       <Grid items lg={10} md={10} sm={12} xs={12}>
-                        <h3 className="min-heading">100% Genuine</h3>
+                        <h3 className="min-heading">Trust & Care</h3>
                         <p className="min-description">
-                          The majority have suffered alteration in some form, buying
-                          to injected humour, or randomised words which desktop
-                          publishing packages.
+                          Fostering a sense of trust and care through transparent communication, empathy, and a commitment to ethical practices. Prioritizing patient comfort, safety, and satisfaction throughout their entire journey.
                         </p>
                       </Grid>
                     </Grid>
@@ -172,18 +175,33 @@ function OurValues() {
                   <Plx parallaxData={ParallaxDataAboutLeft}>
                     <p className="second-section-about">ABOUT US</p>
                     <h1 className="second-section-heading">
-                      It’s the bridge between service companies and consumers.
+                      The bridge between Science & Beauty
                     </h1>
-                    <p className="second-section-description">
-                      ServiceMarket.dk is a Copenhagen-based technology company
-                      known for our overview platform. Our aim is to simplify and
-                      improve everyday life for citizens in Denmark. One platform
-                      that brings together all services in an easy and controlled
-                      environment.
-                    </p>
+                    <p className="second-section-description">Welcome to The Science of Beauty Medspa and wellness center, where expertise meets innovation to redefine the essence of beauty and wellness. Dr. Rozier, our esteemed Medical Director, brings a wealth of knowledge in ....</p>
+                    <div className="aboutUsReadBtnHolder">
+                      <Button className="AboutUsReadMoreBtn" onClick={handleOpenDialog}>
+                        Read More
+                      </Button>
+                    </div>
+                    {/* this is the dialog open when the read more is clicked  */}
+                    {/* Dialog Component */}
+                    <Dialog open={dialogOpen} onClose={handleCloseDialog} class='readMoreDialog'>
+                      <p className="second-section-about">ABOUT US</p>
+                      <h1 className="second-section-heading second-section-heading-dialog">
+                        The bridge between Science & Beauty
+                      </h1>
+                      <p className="second-section-description second-section-description-dialog">Welcome to The Science of Beauty Medspa and wellness center, where expertise meets innovation to redefine the essence of beauty and wellness. Dr. Rozier, our esteemed Medical Director, brings a wealth of knowledge in stem cell therapy, PRP treatments, and exosome applications, honed through his ownership of a leading pain management clinic. His dedication to cutting-edge medical advancements is the cornerstone of our commitment to transformative care</p>
+                      <p className="second-section-description second-section-description-dialog">Complementing this expertise is Brittany Deen, our co-owner, whose extensive background in medical aesthetics and ownership of a r enowned salon and spa infuses our approach with an artistic touch. Together, our team's collective experience spans over 35 years, fusing medical precision with aesthetic artistry to curate a space where science seamlessly intertwines with the pursuit of timeless beauty.</p>
+                      <p className="second-section-description second-section-description-dialog">At The Science of Beauty Medspa and wellness center, we blend innovation and artistry to craft personalized journeys that transcend expectations, ensuring each client receives tailored solutions backed by years of expertise and a passion for excellence. Join us in embracing the harmony of science and aesthetics, and let us guide you on your path to radiant beauty and holistic wellness.</p>
+                      <DialogActions>
+                        <Button class='closeBtnDialogReadMore' onClick={handleCloseDialog}>
+                          Close
+                        </Button>
+                      </DialogActions>
+                    </Dialog>
+                    {/* dialog ends */}
                   </Plx>
                 </div>
-
               </div>
             </Grid>
           </Grid>

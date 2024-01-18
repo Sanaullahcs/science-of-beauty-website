@@ -118,14 +118,14 @@ function Navbar() {
             <p className="navbar-top-email">
               {" "}
               <img className="img-margin" src={emailimg} />
-              email@thescienceofbeauty.com
+              Info@thescienceofbeautydallas.com
             </p>
           </Grid>
         </Grid>
       </div>
       <nav className="navbar">
         <div className="logo" style={{ zIndex: "2" }}>
-          <img className="web-logo" src={logoNavbar} alt="Logo" />
+          <img className="web-logo logoForSmallScreen" src={logoNavbar} alt="Logo" />
         </div>
         <div
           style={{ zIndex: "2" }}
@@ -143,7 +143,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/about" onClick={closeMenu}>
-              ABOUT
+              ABOUT US
             </Link>
           </li>
           <li>
@@ -151,8 +151,7 @@ function Navbar() {
               SERVICES
             </Link>
           </li>
-          <li>
-            {/* <Link to="" onClick={closeMenu}> */}
+          {/* <li>
             <ScrollLink to="pricing" smooth duration={500}>
               <a
                 href='/#pricing'
@@ -162,21 +161,25 @@ function Navbar() {
                 PRICING
               </a>
             </ScrollLink>
-            {/* </Link> */}
-          </li>
+          </li> */}
           <li>
             <Link to="/blogs" onClick={closeMenu}>
-              BLOGS
+              RESEARCH & BLOGS
             </Link>
           </li>
           <li>
             <Link to="/contact" onClick={closeMenu}>
-              CONTACT
+              CONNECT
             </Link>
+          </li>
+          <li className="listForlogoForLargeScreen">
+            <div className="logo" style={{ zIndex: "2" }}>
+              <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
+            </div>
           </li>
           <li>
             <Link to="/products" onClick={closeMenu}>
-              PRODUCTS
+              SELF CARE
             </Link>
           </li>
           <li className="langauge-select">

@@ -31,26 +31,26 @@ function Pricing() {
                           <img className="pricingCardImg" src={pricing1} />
                           <div>
                             <Button className="princg-pack-btn">
-                              FAMILY PACK
+                              Hydration Package
                             </Button>
                           </div>
                           <span className="pricngCardPrice">
-                            $310
+                            $129
                           </span>
                           <span className="perPack">/month</span>
                         </div>
                       </div>
                       <div class="flip-card-back">
                         <div className="flip-card-back-inner">
-                          <div>
-                            <p className="pricingServices">Nail Cutting and styling</p>
+                          <div className="pricingCardPackageList">
+                            <p className="pricingServices">1 IV Therapy treatment (limit 500CC)</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Hair Coloring</p>
-                            <Divider className="flip-divider" />
-                            <p className="pricingServices">Spa Therapy</p>
+                            <p className="pricingServices">10% discount on all retail and extra IV treatments</p>
+                            {/* <Divider className="flip-divider" /> */}
+                            {/* <p className="pricingServices">Spa Therapy</p>
                             <Divider className="flip-divider" />
                             <p className="pricingServices">Body massage</p>
-                            <Divider className="flip-divider" />
+                            <Divider className="flip-divider" /> */}
                           </div>
                           <Button className="flip-card-buy-btn">Buy Now</Button>
                         </div>
@@ -69,26 +69,26 @@ function Pricing() {
                           <img className="pricingCardImg" src={pricing2} />
                           <div>
                             <Button className="princg-pack-btn">
-                              MEDIUM PACK
+                              Tight & Tone package
                             </Button>
                           </div>
                           <span className="pricngCardPrice">
-                            $210
+                            $249
                           </span>
                           <span className="perPack">/month</span>
                         </div>
                       </div>
                       <div class="flip-card-back">
                         <div className="flip-card-back-inner">
-                          <div>
-                            <p className="pricingServices">Nail Cutting and styling</p>
+                          <div className="pricingCardPackageList">
+                            <p className="pricingServicesHeading">Choice of 1 of the following</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Hair Coloring</p>
+                            <p className="pricingServices">20 units of botox per month (can bank and use quarterly)</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Spa Therapy</p>
+                            <p className="pricingServices">1 Body contouring treatment per month + 1 Slim shot</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Body massage</p>
-                            <Divider className="flip-divider" />
+                            <p className="pricingServices">Receive 15% off retail and additional units of botox and Dermal fillers</p>
+                            {/* <Divider className="flip-divider" /> */}
                           </div>
                           <Button className="flip-card-buy-btn">Buy Now</Button>
                         </div>
@@ -107,26 +107,30 @@ function Pricing() {
                           <img className="pricingCardImg" src={pricing3} />
                           <div>
                             <Button className="princg-pack-btn">
-                              PREMIUM PACK
+                              Total Wellness
                             </Button>
                           </div>
                           <span className="pricngCardPrice">
-                            $410
+                            $399
                           </span>
                           <span className="perPack">/month</span>
                         </div>
                       </div>
                       <div class="flip-card-back">
                         <div className="flip-card-back-inner">
-                          <div>
-                            <p className="pricingServices">Nail Cutting and styling</p>
+                          <div className="pricingCardPackageList">
+                            <p className="pricingServicesHeading">Choose 2 of the following</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Hair Coloring</p>
+                            <p className="pricingServices">1 body contouring treatment</p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Spa Therapy</p>
+                            <p className="pricingServices">1 laser hair removal treatment </p>
                             <Divider className="flip-divider" />
-                            <p className="pricingServices">Body massage</p>
+                            <p className="pricingServices">1 IV therapy treatment (limit 500cc)</p>
                             <Divider className="flip-divider" />
+                            <p className="pricingServices">20 units of botox per month (can bank and use quarterly)</p>
+                            <Divider className="flip-divider" />
+                            <p className="pricingServices">Receive 20% off all additional spa services and retail </p>
+                            {/* <Divider className="flip-divider" /> */}
                           </div>
                           <Button className="flip-card-buy-btn">Buy Now</Button>
                         </div>

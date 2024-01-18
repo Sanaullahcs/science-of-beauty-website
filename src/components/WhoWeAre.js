@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Button } from "@material-ui/core";
-import whoWeAre1 from "../assets/images/www1.png";
-import whoWeAre2 from "../assets/images/www2.png";
+import whoWeAre1 from "../assets/images/updatedwww1.png";
+import whoWeAre2 from "../assets/images/updatedwww2.png";
 import "../assets/CustomCSS/WhoWeAre.css";
 import Plx from "react-plx";
 import { Link } from 'react-router-dom'
@@ -111,12 +111,9 @@ function WhoWeAre() {
                 <div className="whoweare-wrapper">
                   <p className="main-main">WHO WE ARE</p>
                   <p className="www-description">
-                    An award winning Hair Salon based in UK. Silverclip offers a
-                    haven of calm and indulgent luxury lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua diam valupat.
+                    At The Science of Beauty, we embody the convergence of cutting-edge science and the artistry of aesthetics. Rooted in a foundation of research-based practices, our medspa is a sanctuary where beauty meets innovation. Led by a medical director with expertise in stem cell, PRP, and exosomes, complemented by our founder's extensive background in aesthetics, we redefine beauty and wellness. Our focus revolves around the intricate fusion of scientific advancements and the pursuit of timeless beauty, specializing in anti-aging solutions. With an unwavering commitment to excellence, we strive to unveil the true essence of beauty through meticulous care and scientifically proven methodologies, setting new standards in rejuvenation and holistic wellness. Our slogan, "Research-Based Beauty and Wellness," encapsulates our dedication to leveraging scientific breakthroughs for enhancing and preserving your natural radiance.
                   </p>
-                  <p style={{ marginBottom: '5px' }}>
+                  {/* <p style={{ marginBottom: '5px' }}>
                     Nulla malesuada pellentesque elit eget gravida cum sociis
                     natoque penatibus. Consequat semper viverra nam libero justo
                     laoreet sit.
@@ -124,7 +121,7 @@ function WhoWeAre() {
                   <p style={{ marginTop: '0' }}>
                     Facibus scelerisque eleifend donec pretium vulputate sapien.
                     Dui nunc mattis enim ut tellus elemntum suscipt biben.
-                  </p>
+                  </p> */}
                   <Link to='/about'><Button className="more-about-us-btn " onClick={goToAbout}>More About Us</Button></Link>
                 </div>
               </Plx>
