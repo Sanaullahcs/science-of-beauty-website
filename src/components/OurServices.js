@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import next from "../assets/images/services-next.png";
 import prev from "../assets/images/services-prev.png";
-import img1 from "../assets/images/makeup.png";
-import img2 from "../assets/images/well.png";
-import img3 from "../assets/images/barber.png";
-import img4 from "../assets/images/fris.png";
-import img5 from "../assets/images/mess.png";
-import img6 from "../assets/images/fod.png";
-import img7 from "../assets/images/makeup.png";
-import img8 from "../assets/images/well.png";
+import img1 from "../assets/images/facials.png";
+import img2 from "../assets/images/PRP.png";
+import img3 from "../assets/images/filler.png";
+import img4 from "../assets/images/IV.png";
+import img5 from "../assets/images/laser.png";
+import img6 from "../assets/images/contouring.png";
+import img7 from "../assets/images/8.png";
+import img8 from "../assets/images/toxin.png";
+import img9 from "../assets/images/peels.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
 import ser1 from "../assets/images/wwd1.png";
@@ -22,15 +23,15 @@ import Plx from "react-plx";
 
 
 const serviceData = [
-  { img: img1, title: "Morpheus 8" },
-  { img: img2, title: "NeuroToxin " },
+  { img: img1, title: "Facials" },
+  { img: img2, title: "PRP Hair Restoration" },
   { img: img3, title: "Dermal Fillers" },
   { img: img4, title: "IV therapy" },
   { img: img5, title: "Laser Hair Removal " },
   { img: img6, title: "Body Contouring " },
-  { img: img6, title: "PRP Hair restoration " },
-  { img: img7, title: "Facials " },
-  { img: img8, title: "Chemical Peels" },
+  { img: img7, title: " Morpheus 8" },
+  { img: img8, title: "NeuroToxin" },
+  { img: img9, title: "Chemical Peels" },
 ];
 
 const OurServices = () => {

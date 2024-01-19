@@ -8,6 +8,7 @@ import BeforeAfter from "./components/BeforeAfter";
 import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
 import Blogs from "./components/Blogs";
+import OurTeam from "./components/OurTeam";
 import Footer from "./components/Footer";
 import AboutUsHeaders from "./components/AboutUsHeader";
 import OurValues from "./components/OurValues";
@@ -60,10 +61,10 @@ function App() {
                 <WhoWeAre />
                 <OurServices />
                 <BeforeAfter />
-                <Testimonials />
                 <Pricing />
                 <ContactUs />
                 <Blogs />
+                <Testimonials />
                 <Footer />
               </>
             }
@@ -76,9 +77,10 @@ function App() {
                 <Navbar />
                 <AboutUsHeaders />
                 <OurValues />
+                <OurTeam/>
                 <WhatIncludes />
                 <Pricing />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
@@ -105,7 +107,7 @@ function App() {
                 <ServicesHeaders />
                 <ServicesMain />
                 <Pricing />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
@@ -118,7 +120,7 @@ function App() {
                 <Navbar />
                 <BlogsHeader />
                 <BlogsMain />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
@@ -130,7 +132,7 @@ function App() {
               <>
                 <Navbar />
                 <Products />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
@@ -142,7 +144,7 @@ function App() {
               <>
                 <Navbar />
                 <SubProducts />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
