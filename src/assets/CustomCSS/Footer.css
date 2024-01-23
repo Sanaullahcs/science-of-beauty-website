@@ -27,7 +27,7 @@ p a {
 }
 
 .main-footer {
-  background: #241520 !important;
+  background: #402524 !important;
   padding-top: 60px;
 }
 
@@ -43,7 +43,7 @@ p a {
 }
 
 .footer-bottom {
-  background-color: #160813;
+  background-color: #482B2A;
   color: white;
   height: 75px;
   display: flex;
@@ -56,13 +56,15 @@ p a {
   min-width: 40px;
 }
 
+.footerSemiSecond-grid {}
+
 .footer-social-div {
   display: flex;
   justify-content: start;
 }
 
 .main-footer {
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 .footer-1-wrapper {
@@ -78,7 +80,7 @@ p a {
 }
 
 .footer-3-wrapper {
-  max-width: 277px !important;
+  max-width: 301px !important;
   text-align: left !important;
   margin-right: auto;
 }

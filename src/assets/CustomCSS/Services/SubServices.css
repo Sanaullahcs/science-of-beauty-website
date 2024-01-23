@@ -1,0 +1,63 @@
+.subServiceContainer-wrapper {
+    background: #E8D1BB;
+}
+
+.subService-heading {
+    color: #422A3C;
+    font-family: Playfair Display;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.35px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.subService-Description {
+    color: #422A3C;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.18%;
+    /* 27.032px */
+    max-width: 554px;
+    text-align: left;
+}
+
+.subService-contactUsBtn {
+    border-radius: 16px !important;
+    border: 1px solid #422A3C !important;
+    color: #422A3C !important;
+    text-align: center;
+    font-family: Poppins !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    width: 240px;
+    height: 78px;
+}
+
+.subServices-content-holder {
+    padding: 0 8% 20px;
+}
+
+.subServices-container {
+    padding: 7% 0;
+}
+
+.subServices-price {
+    margin: 0;
+}
+
+.subservice-contactUsBtn-holder {
+    margin-top: 5%;
+    display: flex;
+    justify-content: start;
+}
+
+.subServices-container .MuiGrid-root img {
+    width: 100%;
+}

@@ -2,28 +2,36 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import next from "../assets/images/services-next.png";
 import prev from "../assets/images/services-prev.png";
-import img1 from "../assets/images/makeup-artist.png";
-import img2 from "../assets/images/Wellnesscenter.png";
-import img3 from "../assets/images/Barbersalon.png";
-import img4 from "../assets/images/Frisorsalon.png";
-import img5 from "../assets/images/Massageklinik.png";
-import img6 from "../assets/images/fodterapeut.png";
+import img1 from "../assets/images/facials.png";
+import img2 from "../assets/images/PRP.png";
+import img3 from "../assets/images/filler.png";
+import img4 from "../assets/images/IV.png";
+import img5 from "../assets/images/laser.png";
+import img6 from "../assets/images/contouring.png";
+import img7 from "../assets/images/8.png";
+import img8 from "../assets/images/toxin.png";
+import img9 from "../assets/images/peels.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
-import ser1 from "../assets/images/services-1.png";
-import ser2 from "../assets/images/services-2.png";
-import ser3 from "../assets/images/services-3.png";
-import ser4 from "../assets/images/services-4.png";
-import ser5 from "../assets/images/services-5.png";
+import ser1 from "../assets/images/wwd1.png";
+import ser2 from "../assets/images/wwd2.png";
+import ser3 from "../assets/images/wwd3.png";
+import ser4 from "../assets/images/wwd4.png";
+import ser5 from "../assets/images/wwd5.png";
+import Plx from "react-plx";
+// import { Parallax } from 'react-scroll-parallax';
+
 
 const serviceData = [
-  { img: img1, title: "Makeup-artist" },
-  { img: img2, title: "Wellnesscenter" },
-  { img: img3, title: "Barbersalon" },
-  { img: img4, title: "Frisørsalon" },
-  { img: img5, title: "Massageklinik" },
-  { img: img6, title: "Fodterapeut" },
-  { img: img6, title: "Fodterapeut" },
+  { img: img1, title: "Facials" },
+  { img: img2, title: "PRP Hair Restoration" },
+  { img: img3, title: "Dermal Fillers" },
+  { img: img4, title: "IV therapy" },
+  { img: img5, title: "Laser Hair Removal " },
+  { img: img6, title: "Body Contouring " },
+  { img: img7, title: " Morpheus 8" },
+  { img: img8, title: "NeuroToxin" },
+  { img: img9, title: "Chemical Peels" },
 ];
 
 const OurServices = () => {
@@ -37,7 +45,7 @@ const OurServices = () => {
           background: `url(${next})`,
           backgroundSize: "cover",
           right: "20px",
-          marginTop: "2%",
+          top: '50%',
           width: "50px",
           height: "50px",
           zIndex: "22",
@@ -58,8 +66,8 @@ const OurServices = () => {
           background: `url(${prev})`,
           backgroundSize: "cover",
           left: "20px",
+          top: '50%',
           zIndex: "2",
-          marginTop: "2%",
           width: "50px",
           height: "50px",
         }}
@@ -74,6 +82,8 @@ const OurServices = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -98,14 +108,74 @@ const OurServices = () => {
     ],
   });
 
+  const parallaxDataServices = [
+    {
+      start: 800,
+      end: 1200,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+    {
+      start: 1000,
+      end: 1400,
+      properties: [
+
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+
+      ],
+    },
+  ];
+  const parallaxDataGrid = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    }
+  ];
+
+
+
   return (
     <>
-      <div>
-        <p className="services-preheading">SERVICES</p>
-        <p className="services-heading">Our Services</p>
+      <div id='services' style={{ overflowX: 'hidden', paddingTop: '5%' }}>
+        <Plx parallaxData={parallaxDataServices}>
+          {/* <Parallax speed={30} tagOuter="figure"> */}
+          <div style={{ zIndex: '999' }}>
+            <p className="services-preheading">SERVICES</p>
+            <p className="services-heading">Our Services</p>
+          </div>
+          {/* </Parallax> */}
+        </Plx>
+        {/* <Plx className="MyAwesomeParallax" parallaxDataServices={parallaxDataServices}> */}
         <Slider className="services-slider" {...sliderSettings}>
           {serviceData.map((service, index) => (
-            <div key={index}>
+            <div className="harm" key={index}>
               <div className="slider">
                 <img src={service.img} alt={`Service ${index + 1}`} />
                 <p>{service.title}</p>
@@ -113,35 +183,49 @@ const OurServices = () => {
             </div>
           ))}
         </Slider>
+        {/* </Plx> */}
+
       </div>
-      <div className="ourservices-second-wrapper">
+      <div id="gallery" className="ourservices-second-wrapper">
         <div className="ourservices-heading-wrapper">
           <p className="sub-heading">
-            We are Experienced in making you very Beautiful
+            What We Do
           </p>
           <p className="sub-description">
-            Lorem ipsum dolor sit amet consectetur. Eu quis enim tempor et proin
-            neque.
+            At The Science of Beauty, we blend cutting-edge science with the artistry of aesthetics to provide meticulously tailored and scientifically proven solutions, ensuring a personalized journey to timeless beauty and wellness that builds trust through our dedication to your individual needs."
           </p>
         </div>
         <div className="grid-system-outer-div">
-          <div className="main-grid-imgs">
-            <div className="testi">
-              <img className="ser1" src={ser1} />
+          <Plx parallaxData={parallaxDataGrid}>
+            <div className="main-grid-imgs">
+
+              <div className="testi">
+
+                <img className="ser1" src={ser1} />
+              </div>
+
+              <div className="testi">
+
+                <img className="ser1" src={ser2} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser4} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser3} />
+
+              </div>
+              <div className="testi">
+
+                <img className="ser1" src={ser5} />
+
+              </div>
             </div>
-            <div className="testi">
-              <img className="ser1" src={ser2} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser3} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser4} />
-            </div>
-            <div className="testi">
-              <img className="ser1" src={ser5} />
-            </div>
-          </div>
+          </Plx>
         </div>
       </div>
     </>

@@ -3,13 +3,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Grid } from "@material-ui/core";
-import startComma from "../assets/images/start-comma.png";
-import endComma from "../assets/images/end-comma.png";
+import startComma from "../assets/images/frontCot.svg";
+import endComma from "../assets/images/backCot.svg";
 import "../assets/CustomCSS/Testimonials.css";
 import next from "../assets/images/next-img.png";
 import prev from "../assets/images/prev-img.png";
+import Plx from "react-plx";
+import { useLocation } from 'react-router-dom';
+
 
 function Testimonials() {
+  const location = useLocation();
+  const isSubProductPage = location.pathname.includes('/sub-products/');
+
+
   // Custom component for the next button
   const NextArrow = (props) => {
     return (
@@ -66,52 +73,106 @@ function Testimonials() {
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <NextArrow className='next-testimonial-button' />,
-    prevArrow: <PrevArrow className='prev-testimonial-button'  />
+    prevArrow: <PrevArrow className='prev-testimonial-button' />
   });
   const testimonialsData = [
     {
       imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "Leslie Alexander",
+      testimonial1: "lorem lorem",
       testimonial2: "Moncton, Canada",
-      testimonialHeading: "Neque porro quisquam est qui dolum",
+      testimonialHeading: "Emily Grace Anderson,",
       testimonialDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English",
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
     },
     {
       imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "David Watson",
+      testimonial1: "Lorem ipsum dolor sit amet",
       testimonial2: "London, England",
-      testimonialHeading: "Neque porro quisquam est qui dolum",
+      testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
-        "The point of using Lorem of distribution it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page is when looking at its layout.",
+        "ease during their treatments, making the experience not only effective but also comfortable and enjoyable. With Felicia, you are in the hands of a skilled professional who prioritizes both expertise and personalized care.",
     },
     {
       imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "John Doe",
+      testimonial1: "Lorem ipsum dolor sit amet,",
       testimonial2: "New York, USA",
-      testimonialHeading: "Lorem Ipsum is simply dummy text",
+      testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi .",
+        " approach, ensures that each patient receives not only the benefits of her technical skill but also the compassionate care synonymous with her background in critical care nursing. At The Science of Beauty, Leah's expertise ensures a transformative and safe journey towards aesthetic enhancement.",
+    },
+    {
+      imgSrc: require("../assets/images/testimonial.png"),
+      testimonial1: "Lorem ipsum dolor sit amet, ",
+      testimonial2: "New York, USA",
+      testimonialHeading: "Emily Grace Anderson ",
+      testimonialDescription:
+        "our practice. Brittany's commitment to creating a space that fosters confidence from within reflects in every aspect of our center, making The Science of Beauty a sanctuary where transformative care and genuine well-being converge under her expert guidance.",
     },
   ];
+  // const parallaxDataImg = [
+  //   // animation for the services page testimonial section
+  //   {
+  //     start: 2000,
+  //     end: 2400,
+  //     properties: [
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "scale",
+  //       },
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "opacity",
+  //       },
+
+  //     ],
+  //   },
+  //   // animation for the home page testimonial section
+  //   {
+  //     start: 3300,
+  //     end: 3800,
+  //     properties: [
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "scale",
+  //       },
+  //       {
+  //         startValue: isSubProductPage ? 1 : 0,
+  //         endValue: 1,
+  //         property: "opacity",
+  //       },
+
+  //     ],
+  //   },
+
+  // ];
 
   return (
     <div className="main-testimonial">
-      <p className="testimonial-prehead">Testimonials</p>
-      <p className="testimonial-heading">What our Customers says...</p>
+
+      <div>
+        <p className="testimonial-prehead">Testimonials</p>
+        <p className="testimonial-heading">What our customers say</p>
+      </div>
+
+
       <Slider className="slider-carausel" style={{ padding: "0px 10%", margin: "3% 0px" }} {...settings}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index} className="sliders">
             <Grid container className="testimonial-slider">
               <Grid item lg={6}>
+                {/* <Plx parallaxData={parallaxDataImg}> */}
                 <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
+                {/* </Plx> */}
               </Grid>
               <Grid item lg={6}>
                 <div className="side-holder">
                   <img src={startComma} alt="Start comma" />
                   <p className="testimonial-1">{testimonial.testimonial1}</p>
                   <p className="testimonial-2">{testimonial.testimonial2}</p>
-                  <p className="testimonial-heading">
+                  <p className="testimonial-subsubheading">
                     {testimonial.testimonialHeading}
                   </p>
                   <p className="testimonial-description">

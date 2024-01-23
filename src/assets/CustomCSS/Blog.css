@@ -9,26 +9,87 @@
   line-height: 130%;
   letter-spacing: -0.45px;
   margin-bottom: 4%;
+  margin-top: 0;
 }
 
 .blog-bg-1 {
-  background-image: url(../images/Blog-Image-1.png);
+  background-image: url(../images/blog-bg-1.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
 }
+
+.blog-bg-1:hover {
+  background-position: right;
+}
+
 
 .blog-bg-2 {
-  background-image: url(../images/Blog-Image-2.png);
+  background-image: url(../images/blog-bg-2.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
 }
 
+.blog-bg-2:hover {
+  background-position: right;
+}
+
+
 .blog-bg-3 {
-  background-image: url(../images/Blog-Image-3.png);
+  background-image: url(../images/blog-bg-3.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-3:hover {
+  background-position: right;
+}
+
+.blog-bg-4 {
+  background-image: url(../images/blog-bg-4.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-4:hover {
+  background-position: right;
+}
+
+.blog-bg-5 {
+  background-image: url(../images/blog-bg-5.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-5:hover {
+  background-position: right;
+}
+
+.blog-bg-6 {
+  background-image: url(../images/blog-bg-6.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-6:hover {
+  background-position: right;
+}
+
+.blog-bg-7 {
+  background-image: url(../images/blog-bg-7.png);
+  background-position: left;
+  transition: background-position 1s ease !important;
+}
+
+.blog-bg-7:hover {
+  background-position: right;
 }
 
 .blog-bg {
+  /* filter: brightness(70%); */
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  width: 420px;
-  height: 350px;
+  width: 340px;
+  height: 240px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -58,6 +119,7 @@
 }
 
 .blog-card-date {
+  /* filter: brightness(0); */
   color: #e5e5e5;
   font-family: Lora;
   font-size: 12px;
@@ -68,6 +130,7 @@
 }
 
 .blog-card-heading {
+  /* filter: brightness(0); */
   color: #fff;
   font-family: Lora;
   font-size: 18px;
@@ -81,6 +144,7 @@
 }
 
 .blog-card-description {
+  /* filter: brightness(0); */
   color: #e5e5e5;
   font-family: Lora;
   font-size: 12px;
@@ -97,8 +161,23 @@
   justify-content: center;
 }
 
+.slide {
+  margin-right: 10px;
+  /* Adjust the right margin as needed */
+}
+
+/* Alternatively, you can also adjust padding to control spacing within each blog item */
+.blog-bg {
+  padding: 10px;
+  /* Adjust the padding as needed */
+}
+
 .blog-container {
-  padding: 5% 0px 20% 0px;
+  padding: 5% 0px 5% 0px;
+}
+
+.spacer-divider-bloggers {
+  height: 50px;
 }
 
 .slick-dots {
@@ -139,4 +218,13 @@
   .blog-bg {
     width: 265px;
   }
+}
+
+
+.slider-blog-card-holder {
+  padding: 0px 10%;
+}
+
+.slider-blog-card-holder .slick-dots {
+  position: relative;
 }

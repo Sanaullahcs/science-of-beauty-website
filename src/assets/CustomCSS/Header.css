@@ -1,10 +1,48 @@
 .bg-home-banner {
-  background-image: url(../images/homeBanner.png);
+  background-image: url(../images/home1bg.png);
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
+  /* background: linear-gradient(90deg, #FEF9F4 8.99%, rgba(217, 217, 217, 0.00) 100%); */
   background-size: cover;
-  padding: 10% 5%;
+  padding: 7% 5%;
+  animation: changeBackground 16s infinite;
+}
+
+@keyframes changeBackground {
+  20% {
+    background-image: url(../images/home1bg.png);
+  }
+
+  40% {
+    background-image: url(../images/home2bg.png);
+  }
+
+  60% {
+    background-image: url(../images/home3bg.png);
+  }
+  80% {
+    background-image: url(../images/home4.png);
+  }
+
+  to {
+    background-image: url(../images/home1bg.png);
+  }
+}
+
+.exploremoreHeaderBtn {
+  border-radius: 16px !important;
+  border: 1px solid #422A3C !important;
+  color: #422A3C !important;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 256px;
+  height: 78px;
+  cursor: pointer;
 }
 
 .salon-img {
@@ -87,7 +125,7 @@
 
 .searchBtnHeader {
   border-radius: 56px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #f8f8f8 !important;
   font-family: Manrope;
   font-size: 24px !important;
@@ -97,6 +135,11 @@
   width: 211px;
   height: 66px;
   margin: 10px !important;
+  text-transform: capitalize !important;
+}
+
+.searchIcon-svg {
+  margin-right: 20px;
 }
 
 .header-form-wrapper {
@@ -109,7 +152,7 @@
 
 .form-field {
   margin: 0;
-  color: #ba7894;
+  color: #A75E5B;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -131,11 +174,11 @@
 }
 
 .form-field-text-area .MuiFormLabel-root.Mui-focused {
-  color: #ba7894;
+  color: #A75E5B;
 }
 
 .form-field-text-area .MuiInput-underline:after {
-  border-bottom: 2px solid #ba7894;
+  border-bottom: 2px solid #A75E5B;
 }
 
 .search-div-wrapper {

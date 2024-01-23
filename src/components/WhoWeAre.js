@@ -1,39 +1,130 @@
 import React from "react";
 import { Grid, Button } from "@material-ui/core";
-import whoWeAre from "../assets/images/whoWeAreimg.png";
+import whoWeAre1 from "../assets/images/updatedwww1.png";
+import whoWeAre2 from "../assets/images/updatedwww2.png";
 import "../assets/CustomCSS/WhoWeAre.css";
+import Plx from "react-plx";
+import { Link } from 'react-router-dom'
 
 function WhoWeAre() {
+  const goToAbout = () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const parallaxDataWWWTop = [
+    {
+      start: 0,
+      end: 700,
+      properties: [
+        {
+          startValue: -500,
+          endValue: 0,
+          property: "translateY",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+    {
+      start: 1000,
+      end: 1500,
+      properties: [
+
+        {
+          startValue: 1,
+          endValue: 0,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataWWWBottom = [
+    {
+      start: 0,
+      end: 700,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+    {
+      start: 1000,
+      end: 1500,
+      properties: [
+
+        {
+          startValue: 1,
+          endValue: 0,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataWWWLeft = [
+    {
+      start: 1000,
+      end: 1500,
+      properties: [
+
+        {
+          startValue: 1,
+          endValue: 0,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
   return (
     <>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div className="whoWeAre-container">
           <Grid container>
             <Grid items lg="6" md="6" sm="12" xs="12">
+              {/* <Plx parallaxData={parallaxDataWWWRight}> */}
               <div className="whoweare-the-wrapper-img">
-                <img className="whoWeAreImg-main" src={whoWeAre} />
+                <Plx parallaxData={parallaxDataWWWTop}>
+                  <img className="whoWeAreImg-main" src={whoWeAre1} />
+                </Plx>
+                <Plx parallaxData={parallaxDataWWWBottom}>
+                  <img className="whoWeAreImg-main" src={whoWeAre2} />
+                </Plx>
               </div>
+              {/* </Plx> */}
             </Grid>
             <Grid items lg="6" md="6" sm="12" xs="12">
-              <div className="whoweare-wrapper">
-                <p className="main-main">WHO WE ARE</p>
-                <p className="www-description">
-                  An award winning Hair Salon based in UK. Silverclip offers a
-                  haven of calm and indulgent luxury lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua diam valupat.
-                </p>
-                <p style={{marginBottom: '5px'}}>
-                  Nulla malesuada pellentesque elit eget gravida cum sociis
-                  natoque penatibus. Consequat semper viverra nam libero justo
-                  laoreet sit.
-                </p>
-                <p style={{marginTop: '0'}}>
-                  Facibus scelerisque eleifend donec pretium vulputate sapien.
-                  Dui nunc mattis enim ut tellus elemntum suscipt biben.
-                </p>
-                <Button className="more-about-us-btn ">More About Us</Button>
-              </div>
+              <Plx parallaxData={parallaxDataWWWLeft}>
+                <div className="whoweare-wrapper">
+                  <p className="main-main">WHO WE ARE</p>
+                  <p className="www-description">
+                    At The Science of Beauty, we embody the convergence of cutting-edge science and the artistry of aesthetics. Rooted in a foundation of research-based practices, our medspa is a sanctuary where beauty meets innovation. Led by a medical director with expertise in stem cell, PRP, and exosomes, complemented by our founder's extensive background in aesthetics, we redefine beauty and wellness. Our focus revolves around the intricate fusion of scientific advancements and the pursuit of timeless beauty, specializing in anti-aging solutions. With an unwavering commitment to excellence, we strive to unveil the true essence of beauty through meticulous care and scientifically proven methodologies, setting new standards in rejuvenation and holistic wellness. Our slogan, "Research-Based Beauty and Wellness," encapsulates our dedication to leveraging scientific breakthroughs for enhancing and preserving your natural radiance.
+                  </p>
+                  {/* <p style={{ marginBottom: '5px' }}>
+                    Nulla malesuada pellentesque elit eget gravida cum sociis
+                    natoque penatibus. Consequat semper viverra nam libero justo
+                    laoreet sit.
+                  </p>
+                  <p style={{ marginTop: '0' }}>
+                    Facibus scelerisque eleifend donec pretium vulputate sapien.
+                    Dui nunc mattis enim ut tellus elemntum suscipt biben.
+                  </p> */}
+                  <Link to='/about'><Button className="more-about-us-btn " onClick={goToAbout}>More About Us</Button></Link>
+                </div>
+              </Plx>
             </Grid>
           </Grid>
         </div>

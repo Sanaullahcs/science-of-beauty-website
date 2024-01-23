@@ -1,12 +1,32 @@
 .ContactUsHeader-bg {
-  background-image: url(../images/contactBanner.png);
+  background-image: url(../images/greyContactBanner.png);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* animation: changeBackgroundContact 15s infinite; */
 }
+/* @keyframes changeBackgroundContact {
+  25% {
+    background-image: url(../images/greyContactBanner.png);
+
+  }
+
+  50% {
+    background-image: url(../images/homeBanner.png);
+  }
+
+  75% {
+    background-image: url(../images/homebanner2.png);
+  }
+
+  to {
+    background-image: url(../images/greyContactBanner.png);
+  }
+} */
 .ContactUsHeader-minheading {
   color: #ecbfd3;
   text-align: center;

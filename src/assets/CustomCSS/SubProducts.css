@@ -1,12 +1,33 @@
 .subProductsHeader-bg {
-  background-color: #241520;
+  /* background-color: #241520; */
+  background-image: url(../images/productPageBanner.png);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* animation: changeBackgroundSubProducts 15s infinite; */
+
 }
+/* @keyframes changeBackgroundSubProducts {
+  25% {
+    background-image: url(../images/greyBlogBanner.png);
+  }
+
+  50% {
+    background-image: url(../images/homeBanner.png);
+  }
+
+  75% {
+    background-image: url(../images/homebanner2.png);
+  }
+
+  to {
+    background-image: url(../images/greyBlogBanner.png);
+  }
+} */
 
 .subproductsHeader-minheading {
   color: #ecbfd3;
@@ -65,7 +86,7 @@
 }
 
 .subproduct-pricing {
-  color: #ba7894;
+  color: #A75E5B;
   font-family: Playfair Display;
   font-size: 24px;
   text-align: left;
@@ -97,7 +118,7 @@
 
 .subproduct-addtocart-btn {
   border-radius: 5px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   width: 131px;
   height: 52px;
   color: #fff !important;
@@ -154,13 +175,13 @@
 }
 
 .subproducts-descriptive-btn-wrapper .active {
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #eee !important;
   border: 0px !important;
 }
 
 .related-products-wrapper {
-  padding: 5% 0 10% 0;
+  padding: 0 0 10% 0;
 }
 
 .subproducts-description-btn {
@@ -221,6 +242,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
+  background: white;
 }
 
 .related-products-heading {
@@ -232,10 +254,11 @@
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.45px;
+  margin-top: 0;
 }
 
 .small-img-div {
-  max-width: 200px;
+  /* max-width: 200px; */
   /* margin-left: auto; */
 }
 
@@ -268,14 +291,25 @@
 }
 
 @media (min-width: 600px) {
-  .subproduct-img-wrapper {
+
+  /* .subproduct-img-wrapper {
     grid-template-areas: "one four four" "two four four" "three four four";
+  } */
+  .subproduct-img-wrapper {
+    grid-template-areas:
+      "one four four four four four four four four four four"
+      "two four four four four four four four four four four"
+      "three four four four four four four four four four four";
   }
 }
 
 @media (max-width: 599px) {
   .subproduct-img-wrapper {
-    grid-template-areas: "one four four" "two four four" "three four four";
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
   }
 }
 

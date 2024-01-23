@@ -1,5 +1,5 @@
 .bg-component {
-  background: linear-gradient(270deg, #ba7894 0%, #fff 100%);
+  background: #F8DBD5;
   /* margin-top: 3%; */
   padding: 5% 0%;
 }
@@ -13,7 +13,7 @@
   max-width: 536px;
 }
 .main-head {
-  color: #fff;
+  color: #422A3C;
   font-family: Playfair Display;
   font-size: 56px;
   font-style: normal;
@@ -22,7 +22,7 @@
   letter-spacing: -1.68px;
 }
 .main-description {
-  color: #fff;
+  color: #422A3C;
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
@@ -32,8 +32,8 @@
 }
 .main-btn {
   border-radius: 16px !important;
-  border: 3px solid #fff !important;
-  color: #fff !important;
+  border: 3px solid #422A3C !important;
+  color: #422A3C !important;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 20px !important;

@@ -37,7 +37,7 @@
 }
 
 .cool-span {
-  color: #ba7894;
+  color: #A75E5B;
 }
 
 .contact-buttons {
@@ -45,7 +45,7 @@
   /* background: #ba7894 !important; */
   color: #000000 !important;
   font-family: Poppins !important;
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-style: normal;
   font-weight: 500 !important;
   line-height: normal;
@@ -62,7 +62,7 @@
 }
 
 .active-contact-btn {
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #fff !important;
 }
 
@@ -79,6 +79,7 @@
 
 .social-icons-span {
   min-width: 50px !important;
+  background: rgba(167, 94, 91, 0.5) !important;
   min-height: 50px !important;
   border-radius: 100%;
   background-color: #ffffff;
@@ -90,7 +91,7 @@
 }
 
 .active-social-btn {
-  background-color: #ba7894;
+  background-color: #A75E5B !important;
 }
 
 .contact-interested-heading {
@@ -102,7 +103,10 @@
   line-height: normal;
   text-align: left;
 }
-
+.sendMessageBtn-div{
+  display: flex;
+    justify-content: start;
+}
 .category-btn {
   width: 190px;
   height: 62px !important;
@@ -125,7 +129,7 @@
 }
 
 .active-category-btn {
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #eee !important;
   border: 0 !important;
 }
@@ -145,7 +149,7 @@
   width: 315px !important;
   height: 78px !important;
   border-radius: 16px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #eee !important;
   text-align: center !important;
   font-family: Poppins !important;

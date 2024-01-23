@@ -1,12 +1,35 @@
 .servicesHeader-bg {
-  background-image: url(../images/BlogBanner.png);
+  background-image: url(../images/womenBanner.png);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* animation: changeBackgroundServices 15s infinite; */
 }
+
+/* @keyframes changeBackgroundServices {
+  25% {
+    background-image: url(../images/womenBanner.png);
+
+  }
+
+  50% {
+    background-image: url(../images/homeBanner.png);
+  }
+
+  75% {
+    background-image: url(../images/homebanner2.png);
+  }
+
+  to {
+    background-image: url(../images/womenBanner.png);
+  }
+
+} */
+
 .servicespage-minheading {
   color: #ecbfd3;
   text-align: center;
@@ -14,11 +37,13 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+
 .servicespage-heading {
   color: #f7e5c1;
   text-align: center;
@@ -26,7 +51,8 @@
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 66px */
+  line-height: 120%;
+  /* 66px */
   letter-spacing: -0.55px;
   margin: 0px;
 }
@@ -36,10 +62,12 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 519px) {
   .servicespage-minheading {
     font-size: 13px;
   }
+
   .servicespage-heading {
     font-size: 30px;
     margin-top: 0;

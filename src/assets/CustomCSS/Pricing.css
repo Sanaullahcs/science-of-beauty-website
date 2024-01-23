@@ -16,9 +16,9 @@
   padding: 5%;
 }
 
-.middle-carousel {
+/* .middle-carousel {
   background-color: black !important;
-}
+} */
 
 /* * {
   margin: 0;
@@ -51,6 +51,180 @@
   letter-spacing: -0.45px;
   margin-top: 0;
   margin-bottom: 5%;
+}
+
+.pricingCard {
+  border-radius: 40px;
+  background: #A75E5B;
+  max-width: 481px;
+  /* max-height: 471px; */
+  padding-bottom: 60px;
+}
+
+/* ================ */
+.flip-card {
+  background-color: transparent;
+  width: 480px;
+  height: 455px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  border-radius: 40px;
+  background: linear-gradient(90deg, #A75E5B 0%, rgba(167, 94, 91, 0.70) 100%);
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  /* min-height: 461px; */
+  height: auto;
+}
+
+.flip-divider {
+  opacity: 0.2;
+  background: #FFF;
+}
+
+.flip-card-buy-btn {
+  border-radius: 16px !important;
+  background: #E8D1BB !important;
+  color: #A75E5B !important;
+  text-align: center !important;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Manrope !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 24px;
+  width: 191px;
+  height: 59px;
+  margin: 22px auto 33px !important;
+}
+
+.pricingServices {
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.pricingServicesHeading {
+  margin: 20px 0;
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  /* max-width: 320px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-back-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 440px;  
+  /* padding-top: 40px; */
+}
+
+/* ================ */
+
+.princg-pack-btn {
+  border-radius: 60px !important;
+  border: 2px solid rgba(255, 255, 255, 0.70) !important;
+  color: #FFF !important;
+  text-align: center;
+  font-family: Manrope !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154.5%;
+  /* 24.72px */
+  letter-spacing: 1.6px;
+  width: 240px;
+  height: 30px;
+  margin: 20px 0 30px 0 !important;
+}
+
+.pricingCardHolder1 {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.pricingCardHolder2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pricingCardHolder3 {
+  display: flex;
+  justify-content: start;
+  padding: 20px;
+}
+
+.pricngCardPrice {
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.5%;
+  margin-bottom: 60px !important;
+}
+
+.perPack {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.5%;
+  /* 24.3px */
+  text-decoration-line: strikethrough;
+}
+
+.pricingCardPackageList {
+  padding: 0 3%;
+}
+
+.pricingCardImg {
+  border-radius: 40px 40px 0 0;
+  width: 100%;
 }
 
 .card-heading {
@@ -111,7 +285,9 @@
 }
 
 .pricing-div-wrapper {
-  padding: 5% 0%;
+  padding: 2% 0%;
+  z-index: 232323;
+  position: relative;
 }
 
 /* .slick-current {
@@ -145,4 +321,18 @@
     max-width: 35px !important;
     max-height: 35px !important;
   } */
+}
+
+@media (max-width:1199px) {
+  .pricingCardHolder1 {
+    justify-content: center;
+  }
+
+  .pricingCardHolder2 {
+    justify-content: center;
+  }
+
+  .pricingCardHolder3 {
+    justify-content: center;
+  }
 }

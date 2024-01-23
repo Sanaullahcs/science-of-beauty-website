@@ -8,12 +8,30 @@
   text-align: left;
 }
 
+.blogExpand {
+  background: rgb(167, 94, 91);
+  border-radius: 0 0 10px 10px;
+  margin-top: -12px;
+  min-height: 172px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 .blogPageContainer-wrapper {
   margin: 5% 0;
 }
 
+.blog-link {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+  /* Inherit the color from the parent */
+}
+
 .blog-postWrapper {
   margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .blog-textarea-heading {
@@ -27,6 +45,12 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
 }
 
 .blog-textarea-description {
@@ -54,7 +78,7 @@
 
 .blog-read-more {
   border-radius: 16px !important;
-  background: #ba7894 !important;
+  background: #A75E5B !important;
   color: #eee !important;
   text-align: center !important;
   font-family: Poppins !important;

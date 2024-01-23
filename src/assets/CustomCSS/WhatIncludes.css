@@ -1,5 +1,5 @@
 .whatIncludes-min-heading {
-  color: #ba7894;
+  color: #A75E5B;
   font-family: Manrope;
   font-size: 15px;
   font-style: normal;
@@ -11,8 +11,23 @@
   margin-bottom: 0;
 }
 
+.viewMethDialog .MuiPaper-root {
+  background-color: #fff !important;
+  width: 80vw !important;
+  padding: 0 2% 2%;
+  border-radius: 40px;
+}
+
+.viewMethDialog .MuiDialog-paperWidthSm {
+  max-width: 1150px !important;
+}
+
 .whatincludes-section-grid {
-  margin: 8% 0% 5%;
+  margin: 4% 0%;
+}
+
+.viewMethBtn {
+  background-color: #fff !important;
 }
 
 .what-includes-heading {
@@ -73,17 +88,19 @@
   /* 31.5px */
   text-align: left;
   margin: 0;
-  max-width: 440px;
+  /* max-width: 440px; */
 }
 
 .what-includes-side-div {
   max-width: 700px;
+  padding-bottom: 4%;
 }
 
 .side-grid {
   display: flex;
   justify-content: center;
   /* padding: 5% 3%; */
+  padding: 20px;
 }
 
 .whatincludes-section-grid {
