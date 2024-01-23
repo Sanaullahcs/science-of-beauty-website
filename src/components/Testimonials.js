@@ -80,7 +80,7 @@ function Testimonials() {
       imgSrc: require("../assets/images/testimonial.png"),
       testimonial1: "lorem lorem",
       testimonial2: "Moncton, Canada",
-      testimonialHeading: "Lorem ipsum dolor sit amet,",
+      testimonialHeading: "Emily Grace Anderson,",
       testimonialDescription:
         " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
     },
@@ -88,7 +88,7 @@ function Testimonials() {
       imgSrc: require("../assets/images/testimonial.png"),
       testimonial1: "Lorem ipsum dolor sit amet",
       testimonial2: "London, England",
-      testimonialHeading: "Lorem ipsum dolor sit amet,",
+      testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
         "ease during their treatments, making the experience not only effective but also comfortable and enjoyable. With Felicia, you are in the hands of a skilled professional who prioritizes both expertise and personalized care.",
     },
@@ -96,7 +96,7 @@ function Testimonials() {
       imgSrc: require("../assets/images/testimonial.png"),
       testimonial1: "Lorem ipsum dolor sit amet,",
       testimonial2: "New York, USA",
-      testimonialHeading: "Lorem ipsum dolor sit amet,,",
+      testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
         " approach, ensures that each patient receives not only the benefits of her technical skill but also the compassionate care synonymous with her background in critical care nursing. At The Science of Beauty, Leah's expertise ensures a transformative and safe journey towards aesthetic enhancement.",
     },
@@ -104,7 +104,7 @@ function Testimonials() {
       imgSrc: require("../assets/images/testimonial.png"),
       testimonial1: "Lorem ipsum dolor sit amet, ",
       testimonial2: "New York, USA",
-      testimonialHeading: "Lorem ipsum dolor sit amet, ",
+      testimonialHeading: "Emily Grace Anderson ",
       testimonialDescription:
         "our practice. Brittany's commitment to creating a space that fosters confidence from within reflects in every aspect of our center, making The Science of Beauty a sanctuary where transformative care and genuine well-being converge under her expert guidance.",
     },

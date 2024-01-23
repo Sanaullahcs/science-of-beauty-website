@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices10.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -15,7 +17,7 @@ const AntiAgingFacial = () => {
                             <div>
                                 <p className='subService-heading'>Anti Aging Facial</p>
                                 <p className='subService-Description'>
-                                Our correction, prevention and nutrition system targets fine lines and wrinkles, loss of elasticity and dull skin for a firmer and more youthful appearance.
+                                    Our correction, prevention and nutrition system targets fine lines and wrinkles, loss of elasticity and dull skin for a firmer and more youthful appearance.
                                 </p>
                                 {/* <p className='subService-Description'>WHAT CAN MORPHEUS 8 ADDRESS?</p>
                                 <div>
@@ -32,7 +34,9 @@ const AntiAgingFacial = () => {
                                 <p className='subService-Description subServices-price'>$1,250 (1)</p> */}
                             </div>
                             <div className='subservice-contactUsBtn-holder'>
-                                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                <Link to={`/contact`}>
+                                    <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                </Link>
                             </div>
                         </div>
                     </Grid>

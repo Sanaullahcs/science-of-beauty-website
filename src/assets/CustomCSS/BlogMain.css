@@ -8,8 +8,24 @@
   text-align: left;
 }
 
+.blogExpand {
+  background: rgb(167, 94, 91);
+  border-radius: 0 0 10px 10px;
+  margin-top: -12px;
+  min-height: 172px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 .blogPageContainer-wrapper {
   margin: 5% 0;
+}
+
+.blog-link {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+  /* Inherit the color from the parent */
 }
 
 .blog-postWrapper {

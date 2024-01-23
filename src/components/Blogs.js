@@ -5,9 +5,11 @@ import "../assets/CustomCSS/Blog.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
 import Plx from "react-plx";
+import { Link } from 'react-router-dom';
 
 
-function Blogs() {
+
+function Blogs({ blogs }) {
   const NextArrow = (props) => {
     return (
       <div
@@ -102,11 +104,11 @@ function Blogs() {
       <div style={{ overflowX: 'hidden' }}>
         <div className="blog-container">
           <Plx parallaxData={parallaxDataTxt}>
-            <h1 className="blog-heading">Blog</h1>
+            <h1 className="blog-heading">Blogs</h1>
           </Plx>
 
           <Slider style={{ marginleft: "50px" }} {...sliderSettings} className="slider-blog-card-holder">
-            <div style={{ overflow: 'hidden' }} className="slide">
+            {/* <div style={{ overflow: 'hidden' }} className="slide">
               <div className="blog-bg-1 blog-bg">
                 <div className="fashion-div-wrapper">
                   <Button className="fashion-btn">FASHION</Button>
@@ -169,7 +171,26 @@ function Blogs() {
                   seamless data.
                 </p>
               </div>
-            </div>
+            </div> */}
+            {blogs.map((blog) => (
+              <div key={blog.id} className="slide">
+                <Link to={`/blogs/${blog.id}`} className="blog-link">
+                  <div className={`blog-bg-${blog.id} blog-bg`}>
+                    <div className="fashion-div-wrapper">
+                      <Button className="fashion-btn">Fashion</Button>
+                    </div>
+                    {/* <p className="blog-card-date">{blog.date}</p>
+                    <p className="blog-card-heading">{blog.title}</p>
+                    <p className="blog-card-description">{blog.content}</p> */}
+                  </div>
+                  <div className="blogExpand">
+                      <p className="blog-card-date">{blog.date}</p>
+                      <p className="blog-card-heading">{blog.title}</p>
+                      <p className="blog-card-description">{blog.content}</p>
+                    </div>
+                </Link>
+              </div>
+            ))}
           </Slider>
         </div>
         <div className="spacer-divider-bloggers">

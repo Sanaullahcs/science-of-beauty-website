@@ -6,7 +6,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from '@mui/icons-material/X';
 import send from "../assets/images/send.png";
 import Plx from "react-plx";
 
@@ -80,7 +80,7 @@ function ContactUs() {
   };
   return (
     <>
-      <div style={{ padding: '4 % 0', overflow: 'hidden', paddingTop: '5%' }}>
+      <div style={{ padding: '4 % 0', overflow: 'hidden', padding: '2% 0' }}>
         <Plx parallaxData={parallaxDataTxt}>
           <div className="contact-card">
             <Grid container>
@@ -96,7 +96,7 @@ function ContactUs() {
                       onClick={() => handleButtonClick("email")}
                     >
                       <MailOutlineIcon style={{ color: "#A75E5B" }} />
-                      <span>user12345@gmail.com</span>
+                      <span>Info@thescienceofbeautydallas.com</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "phone" ? "active-contact-btn" : ""}`}
@@ -131,12 +131,12 @@ function ContactUs() {
                           <InstagramIcon style={{ color: "#eee" }} />
                         </div>
                       </a>
-                      <a href="" target="_blank">
+                      <a href="#" target="_blank">
                         <div
                           className={`social-icons-span ${activeSocialButton === "twitter" ? "active-social-btn" : ""}`}
                           onClick={() => handleSocialButtonClick("twitter")}
                         >
-                          <TwitterIcon style={{ color: "#eee" }} />
+                          <XIcon style={{ color: "#eee" }} />
                         </div>
                       </a>
                     </div>

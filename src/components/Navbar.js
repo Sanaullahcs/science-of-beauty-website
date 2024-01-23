@@ -2,9 +2,9 @@ import { React, useState } from "react";
 import "../assets/CustomCSS/Navbar.css";
 import { Link } from "react-router-dom";
 import { Grid, Fab, TextField, Tooltip } from "@material-ui/core";
-import Callimg from "../assets/images/nav-call.png";
-import emailimg from "../assets/images/nav-gmail.png";
-import logoNavbar from "../assets/images/Your_design.png";
+import Callimg from "../assets/images/nav-call.svg";
+import emailimg from "../assets/images/nav-gmail.svg";
+import logoNavbar from "../assets/images/youLogo.svg";
 import search from "../assets/images/search.png";
 import FormControl from "@material-ui/core/FormControl";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -20,6 +20,9 @@ import down from '../assets/images/chevon-down.svg'
 import { useNavigate } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import fb from '../assets/images/fb-real.svg'
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from '@mui/icons-material/X';
 import twitter from '../assets/images/x-real.svg'
 import insta from '../assets/images/insta-real.svg'
 import WidgetsIcon from '@mui/icons-material/Widgets';
@@ -104,22 +107,60 @@ function Navbar() {
   ];
   return (
     <>
-      <div style={{ background: "#FFF3F8" }}>
-        <Grid container>
-          <Grid item lg={7} md={5} sm={0} xs={0}></Grid>
-          <Grid item lg={2} md={3} sm={12} xs={12}>
-            <p className="navbar-top-dail">
-              {" "}
-              <img className="img-margin" src={Callimg} />
-              123 456 7890
-            </p>
+      <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc" }}>
+        <Grid container style={{ padding: "0 2%" }}>
+          <Grid item lg={4} md={12} sm={0} xs={0} style={{ display: 'flex', alignItems: 'center' }}>
+            <div>
+              <div className="social-row socisal-row-nav">
+                <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
+                  <div
+                    className={`social-icons-span active-social-btn`}
+                  // onClick={() => handleSocialButtonClick("facebook")}
+                  >
+                    <FacebookIcon style={{ color: "#eee" }} />
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                  <div
+                    className={`social-icons-span active-social-btn`}
+                  // onClick={() => handleSocialButtonClick("instagram")}
+                  >
+                    <InstagramIcon style={{ color: "#eee" }} />
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div
+                    className={`social-icons-span active-social-btn`}
+                  // onClick={() => handleSocialButtonClick("twitter")}
+                  >
+                    <XIcon style={{ color: "#eee" }} />
+                  </div>
+                </a>
+              </div>
+            </div>
           </Grid>
-          <Grid item lg={3} md={4} sm={12} xs={12}>
-            <p className="navbar-top-email">
-              {" "}
-              <img className="img-margin" src={emailimg} />
-              Info@thescienceofbeautydallas.com
-            </p>
+          <Grid item lg={4} md={5} sm={0} xs={0} className="grid-1">
+            <div className="logo" style={{ zIndex: "2" }}>
+              <Link to="/">
+                <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
+              </Link>
+            </div>
+          </Grid>
+          <Grid item lg={4} md={12} sm={12} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2">
+            <div className="toptopNav">
+              <p className="navbar-top-dail">
+                {" "}
+                <img className="img-margin" src={Callimg} />
+                123 456 7890
+              </p>
+
+
+              <p className="navbar-top-email">
+                {" "}
+                <img className="img-margin" src={emailimg} />
+                Info@thescienceofbeautydallas.com
+              </p>
+            </div>
           </Grid>
         </Grid>
       </div>
@@ -167,49 +208,51 @@ function Navbar() {
               RESEARCH & BLOGS
             </Link>
           </li>
+          {/* <li className="listForlogoForLargeScreen">
+            <div className="logo" style={{ zIndex: "2" }}>
+              <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
+            </div>
+          </li> */}
           <li>
             <Link to="/contact" onClick={closeMenu}>
               CONNECT
             </Link>
-          </li>
-          <li className="listForlogoForLargeScreen">
-            <div className="logo" style={{ zIndex: "2" }}>
-              <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
-            </div>
           </li>
           <li>
             <Link to="/products" onClick={closeMenu}>
               SELF CARE
             </Link>
           </li>
-          <li className="langauge-select">
-            <FormControl sx={{ m: 1, minWidth: 300 }} className="languageSelecter">
-              <img className="down-arrow" src={down} />
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                value={age}
-                onChange={handleChange}
-                className="languageSelect"
-              >
-                {/* <MenuItem value="">
+          <div style={{ position: 'absolute', right: '5px', display: 'flex' }}>
+            <li className="langauge-select">
+              <FormControl sx={{ m: 1, minWidth: 300 }} className="languageSelecter">
+                <img className="down-arrow" src={down} />
+                <Select
+                  labelId="demo-select-small-label"
+                  id="demo-select-small"
+                  value={age}
+                  onChange={handleChange}
+                  className="languageSelect"
+                >
+                  {/* <MenuItem value="">
                   <em>None</em>
                 </MenuItem> */}
-                <MenuItem value={10}>EN</MenuItem>
-                <MenuItem value={20}>ES</MenuItem>
-                <MenuItem value={30}>FR</MenuItem>
-              </Select>
-            </FormControl>
-          </li>
-          <li>
-            <Button className="login-btn">Login</Button>
-          </li>
-          <li>
-            <Button className="signup-btn">Signup</Button>
-          </li>
-          <li>
+                  <MenuItem value={10}>EN</MenuItem>
+                  <MenuItem value={20}>ES</MenuItem>
+                  <MenuItem value={30}>FR</MenuItem>
+                </Select>
+              </FormControl>
+            </li>
+            <li>
+              <Button className="login-btn">Login</Button>
+            </li>
+            <li>
+              <Button className="signup-btn">Signup</Button>
+            </li>
+          </div>
+          {/* <li>
             <img src={search} />
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className="chatbot-icons">
@@ -296,7 +339,7 @@ function Navbar() {
 
       </div>
       {/* ====== assistive touch */}
-      <Tooltip title="Social Platforms" placement="top">
+      {/* <Tooltip title="Social Platforms" placement="top">
         <div
           id="drager"
           className="draggable"
@@ -316,7 +359,7 @@ function Navbar() {
           )}
           <div></div>
         </div>
-      </Tooltip>
+      </Tooltip> */}
 
 
       {/* ====== assistive touch */}

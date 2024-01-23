@@ -12,11 +12,9 @@ function Pricing() {
   return (
     <>
       <div id="pricing" className="pricing-div-wrapper">
-        <div>
+        <div style={{marginBottom:'-40px'}}>
           <p className="pre-heading">Pricing</p>
           <p className="heading">Right plan for you</p>
-        </div>
-        <div>
         </div>
         <div>
           <div>
@@ -42,6 +40,7 @@ function Pricing() {
                       </div>
                       <div class="flip-card-back">
                         <div className="flip-card-back-inner">
+                          <div></div>
                           <div className="pricingCardPackageList">
                             <p className="pricingServices">1 IV Therapy treatment (limit 500CC)</p>
                             <Divider className="flip-divider" />

@@ -163,7 +163,7 @@ const OurServices = () => {
 
   return (
     <>
-      <div style={{ overflowX: 'hidden', paddingTop: '5%' }}>
+      <div id='services' style={{ overflowX: 'hidden', paddingTop: '5%' }}>
         <Plx parallaxData={parallaxDataServices}>
           {/* <Parallax speed={30} tagOuter="figure"> */}
           <div style={{ zIndex: '999' }}>

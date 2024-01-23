@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices7.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ const CRYOFacial = () => {
               <div>
                 <p className='subService-heading'>CRYO Facial</p>
                 <p className='subService-Description'>
-                Reduce fine lines and wrinkles. CryoFacial treatments use cold temperatures to increase blood flow and oxygen, which boosts collagen production, reduces the appearance of wrinkles and pores and improves skin elasticity. A natural, non-invasive way to look younger and more radiant. we recommend a package of 3-5 sessions
+                  Reduce fine lines and wrinkles. CryoFacial treatments use cold temperatures to increase blood flow and oxygen, which boosts collagen production, reduces the appearance of wrinkles and pores and improves skin elasticity. A natural, non-invasive way to look younger and more radiant. we recommend a package of 3-5 sessions
                 </p>
                 {/* <p className='subService-Description'>WHAT CAN MORPHEUS 8 ADDRESS?</p>
                 <div>
@@ -32,7 +33,9 @@ const CRYOFacial = () => {
                 <p className='subService-Description subServices-price'>$1,250 (1)</p> */}
               </div>
               <div className='subservice-contactUsBtn-holder'>
-                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                <Link to={`/contact`}>
+                  <Button className='subService-contactUsBtn '>Contact Us</Button>
+                </Link>
               </div>
             </div>
           </Grid>

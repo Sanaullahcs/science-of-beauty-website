@@ -1,14 +1,33 @@
 .bg-aboutbanner {
-  background-image: url(../images/womenBanner.png);
+  background-image: url(../images/headerAboutUs.png);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  /* background-attachment: fixed; */
+  /* animation: changeBackground 15s infinite; */
 }
+
+/* @keyframes changeBackground {
+  25% {
+    background-image: url(../images/homeBanner.png);
+
+  }
+
+  50% {
+    background-image: url(../images/womenBanner.png);
+  }
+
+  75% {
+    background-image: url(../images/homebanner2.png);
+  }
+
+  to {
+    background-image: url(../images/homeBanner.png);
+  }
+} */
 
 .aboutPreHeading {
   color: var(--Secondary, #ecbfd3);

@@ -3,10 +3,11 @@ import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import insta from "../assets/images/Insta.png";
 import facebook from "../assets/images/fb.png";
-import twitter from "../assets/images/twitter.png";
+import twitter from "../assets/images/x.svg";
 import "../assets/CustomCSS/Footer.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -111,7 +112,7 @@ function Footer() {
         </Grid>
       </div>
       <div className="footer-bottom">
-        <p>&copy; Copyright 2023, ServiceMarket.dk | All rights reserved.</p>
+        <p>&copy; {currentYear}, The Science of Beauty | All rights reserved.</p>
       </div>
     </>
   );

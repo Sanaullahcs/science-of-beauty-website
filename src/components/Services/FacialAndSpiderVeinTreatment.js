@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices6.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
-
+import { Link } from 'react-router-dom';
 
 
 const FacialAndSpiderVeinTreatment = () => {
@@ -33,7 +33,9 @@ const FacialAndSpiderVeinTreatment = () => {
                 <p className='subService-Description subServices-price'>Pricing may vary</p>
               </div>
               <div className='subservice-contactUsBtn-holder'>
-                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                <Link to={`/contact`}>
+                  <Button className='subService-contactUsBtn '>Contact Us</Button>
+                </Link>
               </div>
             </div>
           </Grid>

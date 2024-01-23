@@ -1,5 +1,7 @@
 // import logo from "./logo.svg";
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// ===================================== Components ============================================= 
 import Navbar from "./components/Navbar";
 import Headers from "./components/Header";
 import WhoWeAre from "./components/WhoWeAre";
@@ -37,9 +39,11 @@ import BeClearPurifyingFacial from './components/Services/BeClearPurifyingFacial
 import CustomizedChemicalPeel from './components/Services/CustomizedChemicalPeel'
 import BrowLamination from './components/Services/BrowLamination'
 import LashLiftAndTint from './components/Services/LashLiftAndTint'
+import BlogDetails from './components/BlogDetails'
+import BlogCard from './JSONData/BlogCard'
 
 
-
+// =============================== Assets ===================================
 import React from "react";
 import "./assets/CustomCSS/Main.css";
 import "slick-carousel/slick/slick.css";
@@ -47,6 +51,11 @@ import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []); // The empty dependency array ensures that this effect runs only once when the component mounts
+
   return (
     <Router>
       <div className="App">
@@ -63,7 +72,7 @@ function App() {
                 <BeforeAfter />
                 <Pricing />
                 <ContactUs />
-                <Blogs />
+                <Blogs blogs={BlogCard} />
                 <Testimonials />
                 <Footer />
               </>
@@ -77,10 +86,9 @@ function App() {
                 <Navbar />
                 <AboutUsHeaders />
                 <OurValues />
-                <OurTeam/>
+                <OurTeam />
                 <WhatIncludes />
                 <Pricing />
-                {/* <Testimonials /> */}
                 <Footer />
               </>
             }
@@ -119,8 +127,19 @@ function App() {
               <>
                 <Navbar />
                 <BlogsHeader />
-                <BlogsMain />
+                <BlogsMain blogs={BlogCard} />
                 {/* <Testimonials /> */}
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/blogs/:id"}
+            element={
+              <>
+                <Navbar />
+                <BlogDetails blogs={BlogCard} />
                 <Footer />
               </>
             }

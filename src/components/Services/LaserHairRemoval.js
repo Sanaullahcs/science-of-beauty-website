@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices4.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,7 +43,9 @@ const LaserHairRemoval = () => {
                                 <p className='subService-Description subServices-price'>See an area not listed, Please feel free to ask for a Quote</p>
                             </div>
                             <div className='subservice-contactUsBtn-holder'>
-                                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                <Link to={`/contact`}>
+                                    <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                </Link>
                             </div>
                         </div>
                     </Grid>

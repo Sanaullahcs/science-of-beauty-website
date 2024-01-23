@@ -1,10 +1,48 @@
 .bg-home-banner {
-  background-image: url(../images/homebanner2.png);
+  background-image: url(../images/home1bg.png);
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
+  /* background: linear-gradient(90deg, #FEF9F4 8.99%, rgba(217, 217, 217, 0.00) 100%); */
   background-size: cover;
-  padding: 10% 5%;
+  padding: 7% 5%;
+  animation: changeBackground 16s infinite;
+}
+
+@keyframes changeBackground {
+  20% {
+    background-image: url(../images/home1bg.png);
+  }
+
+  40% {
+    background-image: url(../images/home2bg.png);
+  }
+
+  60% {
+    background-image: url(../images/home3bg.png);
+  }
+  80% {
+    background-image: url(../images/home4.png);
+  }
+
+  to {
+    background-image: url(../images/home1bg.png);
+  }
+}
+
+.exploremoreHeaderBtn {
+  border-radius: 16px !important;
+  border: 1px solid #422A3C !important;
+  color: #422A3C !important;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 256px;
+  height: 78px;
+  cursor: pointer;
 }
 
 .salon-img {

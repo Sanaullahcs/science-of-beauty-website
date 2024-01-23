@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices11.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ const IlluminatingFacial = () => {
                             <div>
                                 <p className='subService-heading'>Illuminating Facial</p>
                                 <p className='subService-Description'>
-                                This comprehensive brightening treatment combines the latest innovationsin skin lightening technology to correct all forms ofhyperpigmentation without drying the skin.
+                                    This comprehensive brightening treatment combines the latest innovationsin skin lightening technology to correct all forms ofhyperpigmentation without drying the skin.
                                 </p>
                                 {/* <p className='subService-Description'>WHAT CAN MORPHEUS 8 ADDRESS?</p>
                                 <div>
@@ -32,7 +33,9 @@ const IlluminatingFacial = () => {
                                 <p className='subService-Description subServices-price'>$1,250 (1)</p> */}
                             </div>
                             <div className='subservice-contactUsBtn-holder'>
-                                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                <Link to={`/contact`}>
+                                    <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                </Link>
                             </div>
                         </div>
                     </Grid>

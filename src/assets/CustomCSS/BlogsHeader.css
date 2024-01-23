@@ -6,8 +6,30 @@
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  /* animation: changeBackgroundBolgs 15s infinite; */
+
 }
+
+/* @keyframes changeBackgroundBolgs {
+  25% {
+    background-image: url(../images/greyBlogBanner.png);
+
+  }
+
+  50% {
+    background-image: url(../images/homeBanner.png);
+  }
+
+  75% {
+    background-image: url(../images/homebanner2.png);
+  }
+
+  to {
+    background-image: url(../images/greyBlogBanner.png);
+  }
+
+} */
 .latestblog-minheading {
   color: #ecbfd3;
   text-align: center;

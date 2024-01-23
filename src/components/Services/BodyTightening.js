@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Grid } from "@material-ui/core";
 import serviceImg from '../../assets/images/newServices2.png'
 import '../../assets/CustomCSS/Services/SubServices.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,7 +35,9 @@ const BodyTightening = () => {
                                 <p className='subService-Description subServices-price'>$4,500 for a package of 3</p>
                             </div>
                             <div className='subservice-contactUsBtn-holder'>
-                                <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                <Link to={`/contact`}>
+                                    <Button className='subService-contactUsBtn '>Contact Us</Button>
+                                </Link>
                             </div>
                         </div>
                     </Grid>

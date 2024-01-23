@@ -2,15 +2,23 @@ import React from "react";
 import "../assets/CustomCSS/Header.css";
 import salon from "../assets/images/minLogo.svg";
 import Button from "@material-ui/core/Button";
-import { Grid, TextField } from "@material-ui/core";
-import SearchIcon from "@mui/icons-material/Search";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import searchIcon from '../assets/images/searchIcon.svg'
+import { Grid
+  // TextField
+ } from "@material-ui/core";
+// import SearchIcon from "@mui/icons-material/Search";
+// import LocationOnIcon from "@mui/icons-material/LocationOn";
+// import searchIcon from '../assets/images/searchIcon.svg'
 // import InputAdornment from '@mui/material/InputAdornment';
 // import AccountCircle from '@mui/icons-material/AccountCircle';
 import Plx from "react-plx";
 
 function Header() {
+  const handleClick = () => {
+    const servicesDiv = document.getElementById('services');
+    if (servicesDiv) {
+      servicesDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const parallaxData = [
     {
       start: 200,
@@ -47,7 +55,10 @@ function Header() {
                     There are many variation of passages are Ipsum available,
                     majority have suffered alteration in some form.
                   </p>
-                  <div>
+                  <div style={{ display: "flex", justifyContent: "start" }}>
+                    <Button  class='exploremoreHeaderBtn' disableTouchRipple onClick={handleClick}>Explore More</Button>
+                  </div>
+                  {/* <div>
                     <div>
                       <Grid container className="header-form-wrapper">
                         <Grid items lg="4" md="6" sm="12" xs="12">
@@ -91,7 +102,7 @@ function Header() {
                         </Grid>
                       </Grid>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </Plx>
             </Grid>
