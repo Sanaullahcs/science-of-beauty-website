@@ -77,8 +77,8 @@ function WhoWeAre() {
   ];
   const parallaxDataWWWLeft = [
     {
-      start: 1000,
-      end: 1500,
+      start: 1200,
+      end: 2000,
       properties: [
 
         {

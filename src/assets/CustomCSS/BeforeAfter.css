@@ -1,5 +1,6 @@
 .bg-component {
-  background: #F8DBD5;
+  /* background: #F8DBD5; */
+  background: rgba(224, 183, 117, 0.50);
   /* margin-top: 3%; */
   padding: 5% 0%;
 }
@@ -11,6 +12,7 @@
   margin: 20px 0px;
   width: 100%;
   max-width: 536px;
+  border-radius: 20px;
 }
 .main-head {
   color: #422A3C;
@@ -48,7 +50,7 @@
 }
 @media (max-width: 1279px) {
   .bg-component {
-    background: #ba7894;
+    background: rgba(224, 183, 117, 0.50);
   }
 }
 @media only screen and (max-width: 520px) {

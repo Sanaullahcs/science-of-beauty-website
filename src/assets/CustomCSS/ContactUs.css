@@ -103,10 +103,12 @@
   line-height: normal;
   text-align: left;
 }
-.sendMessageBtn-div{
+
+.sendMessageBtn-div {
   display: flex;
-    justify-content: start;
+  justify-content: start;
 }
+
 .category-btn {
   width: 190px;
   height: 62px !important;
@@ -184,7 +186,7 @@
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   .starting-contact-heading {
     font-size: 35px;
   }
@@ -208,8 +210,18 @@
     height: 65px !important;
     font-size: 16px !important;
   }
-}
 
+  .social-icons-span {
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+}
+@media (max-width: 490px) {
+  .contact-buttons {
+    max-width: 250px !important;
+    overflow: hidden;
+  }
+}
 @media (max-width: 419px) {
   .contact-heading {
     font-size: 35px;

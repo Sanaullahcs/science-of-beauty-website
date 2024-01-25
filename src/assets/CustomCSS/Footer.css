@@ -19,6 +19,7 @@
   letter-spacing: -0.17px;
   text-decoration: none;
   color: #fff !important;
+  margin: 10px 0;
 }
 
 p a {
@@ -110,5 +111,11 @@ p a {
 
   .footer-heading {
     margin-top: 60px;
+  }
+}
+
+@media (max-width:520px) {
+  .common-txt {
+    margin: 5px 0;
   }
 }

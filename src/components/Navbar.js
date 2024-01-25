@@ -100,16 +100,16 @@ function Navbar() {
   const handleDoubleClick = () => {
     setIsAssistiveMenuOpen(!isAssistiveMenuOpen);
   };
-  const menuOptions = [
-    { label: "Option 1", action: () => console.log("Option 1 clicked") },
-    { label: "Option 2", action: () => console.log("Option 2 clicked") },
-    // Add more menu options as needed
-  ];
+  // const menuOptions = [
+  //   { label: "Option 1", action: () => console.log("Option 1 clicked") },
+  //   { label: "Option 2", action: () => console.log("Option 2 clicked") },
+  //   // Add more menu options as needed
+  // ];
   return (
     <>
       <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc" }}>
         <Grid container style={{ padding: "0 2%" }}>
-          <Grid item lg={4} md={12} sm={0} xs={0} style={{ display: 'flex', alignItems: 'center' }}>
+          <Grid item lg={4} md={4} sm={4} xs={0} style={{ display: 'flex', alignItems: 'center' }}>
             <div>
               <div className="social-row socisal-row-nav">
                 <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
@@ -139,14 +139,14 @@ function Navbar() {
               </div>
             </div>
           </Grid>
-          <Grid item lg={4} md={5} sm={0} xs={0} className="grid-1">
+          <Grid item lg={4} md={4} sm={0} xs={0} className="grid-1">
             <div className="logo" style={{ zIndex: "2" }}>
               <Link to="/">
                 <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
               </Link>
             </div>
           </Grid>
-          <Grid item lg={4} md={12} sm={12} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2">
+          <Grid item lg={4} md={4} sm={6} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2">
             <div className="toptopNav">
               <p className="navbar-top-dail">
                 {" "}
@@ -165,6 +165,7 @@ function Navbar() {
         </Grid>
       </div>
       <nav className="navbar">
+        <div style={{color:'white'}}>span span</div>
         <div className="logo" style={{ zIndex: "2" }}>
           <img className="web-logo logoForSmallScreen" src={logoNavbar} alt="Logo" />
         </div>
@@ -223,7 +224,7 @@ function Navbar() {
               SELF CARE
             </Link>
           </li>
-          <div style={{ position: 'absolute', right: '5px', display: 'flex' }}>
+          <div className="langaugeSelectorHolder">
             <li className="langauge-select">
               <FormControl sx={{ m: 1, minWidth: 300 }} className="languageSelecter">
                 <img className="down-arrow" src={down} />

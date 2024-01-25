@@ -1,7 +1,7 @@
 import React from "react";
-import pricing1 from '../assets/images/pricing1.png'
+import pricing1 from '../assets/images/lll.jpg'
 import pricing2 from '../assets/images/pricing2.png'
-import pricing3 from '../assets/images/pricing3.png'
+import pricing3 from '../assets/images/black4.jpg'
 import { Grid, Divider } from "@mui/material";
 
 import "../assets/CustomCSS/Pricing.css";
