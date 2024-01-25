@@ -5,6 +5,7 @@
   background-color: #fff;
   color: #000000;
   padding: 0.5rem 20px 5px;
+  position: relative;
 }
 
 .logo {
@@ -37,6 +38,7 @@
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: center;
   z-index: 1;
   padding-left: 0;
   width: 100%;
@@ -333,6 +335,13 @@ ul a:hover {
   /* 30.9px */
 }
 
+.langaugeSelectorHolder {
+  position: absolute;
+  right: 5px;
+  display: flex;
+  margin-top: 7px;
+}
+
 .navbar-top-dail {
   margin-right: 19px;
 }
@@ -384,7 +393,17 @@ ul a:hover {
 .languageSelecter .MuiInput-underline:after {
   display: none;
 }
-
+@media only screen and (max-width: 1400px) {
+ .langaugeSelectorHolder{
+  position: relative;
+  right: none;
+ }
+}
+@media only screen and (max-width: 1320px) {
+  .toptopNav {
+    display: block;
+}
+ }
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 1279px) {
   .nav-links a {
@@ -405,6 +424,11 @@ ul a:hover {
 @media only screen and (max-width: 1209px) {
   .listForlogoForLargeScreen {
     display: none;
+  }
+  .langaugeSelectorHolder{
+    position: relative;
+    right: none;
+    display: block;
   }
 
   .grid-1 {
@@ -428,17 +452,19 @@ ul a:hover {
 
   .nav-links.open {
     display: flex;
-    margin-top: 50px;
+    /* margin-top: 110px; */
   }
 
   .nav-links li {
     margin: 1rem 0;
+    margin-left: 25px;
   }
 }
 
 @media only screen and (max-width: 959px) {
   .navbar-top-dail {
     margin-bottom: 0;
+    margin-top: 9px;
   }
 
   .navbar-top-email {

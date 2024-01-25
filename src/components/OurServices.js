@@ -13,11 +13,11 @@ import img8 from "../assets/images/toxin.png";
 import img9 from "../assets/images/peels.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
-import ser1 from "../assets/images/wwd1.png";
-import ser2 from "../assets/images/wwd2.png";
-import ser3 from "../assets/images/wwd3.png";
+import ser1 from "../assets/images/black.png";
+import ser2 from "../assets/images/black2.png";
+import ser3 from "../assets/images/asia.jpg";
 import ser4 from "../assets/images/wwd4.png";
-import ser5 from "../assets/images/wwd5.png";
+import ser5 from "../assets/images/compress.jpg";
 import Plx from "react-plx";
 // import { Parallax } from 'react-scroll-parallax';
 

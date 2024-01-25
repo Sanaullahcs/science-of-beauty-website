@@ -216,7 +216,10 @@
 
 @media only screen and (max-width: 520px) {
   .blog-bg {
-    width: 265px;
+    /* width: 265px; */
+  }
+  .slider-blog-card-holder {
+    padding: 0 !important;
   }
 }
 

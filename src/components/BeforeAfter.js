@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/CustomCSS/BeforeAfter.css";
 import { Button, Grid } from "@material-ui/core";
-import mask from "../assets/images/mask.png";
+import mask from "../assets/images/beforeAfterUpdated.png";
 import Plx from "react-plx";
 import { Parallax } from 'react-scroll-parallax';
 import { Link as ScrollLink } from 'react-scroll';
