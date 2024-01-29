@@ -2,9 +2,14 @@ import React from "react";
 import "../assets/CustomCSS/Header.css";
 import salon from "../assets/images/minLogo.svg";
 import Button from "@material-ui/core/Button";
-import { Grid
+import headerImg from '../assets/images/headerForSmall.png'
+import headerImg1 from '../assets/images/headerforSmall2.png'
+import headerImg2 from '../assets/images/headerforSmall3.png'
+import headerImg3 from '../assets/images/headerforSmall4.png'
+import {
+  Grid
   // TextField
- } from "@material-ui/core";
+} from "@material-ui/core";
 // import SearchIcon from "@mui/icons-material/Search";
 // import LocationOnIcon from "@mui/icons-material/LocationOn";
 // import searchIcon from '../assets/images/searchIcon.svg'
@@ -19,46 +24,52 @@ function Header() {
       servicesDiv.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  const parallaxData = [
-    {
-      start: 200,
-      end: 500,
-      properties: [
-        {
-          startValue: 1,
-          endValue: 0,
-          property: "opacity",
-        },
-      ],
-    },
-  ];
+  // const parallaxData = [
+  //   {
+  //     start: 200,
+  //     end: 500,
+  //     properties: [
+  //       {
+  //         startValue: 1,
+  //         endValue: 0,
+  //         property: "opacity",
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <>
+      <div class="image-container">
+        <img className="smallScreenImg" src={headerImg} />
+        {/* <img className="smallScreenImg" src={headerImg2} />
+        <img className="smallScreenImg" src={headerImg3} />
+        <img className="smallScreenImg" src={headerImg1} /> */}
+      </div>
       <div className="bg-home-banner">
         <div>
           <Grid container>
             <Grid items lg={7}>
-              <Plx parallaxData={parallaxData}>
-                <div>
-                  <div className="img-text-div">
-                    <img className="salon-img" src={salon} />
-                    <p className="text-img-heading">
-                      Science, Beauty, Wellness
-                    </p>
-                  </div>
-                  <p className="heading-header">Face | Skin | Body</p>
-                  <p className="header-header-by">
-                    {/* <span className="preHeading1">by</span>{" "} */}
-                    <span className="preHeading2">Research Based Beauty and wellness</span>
+              {/* <Plx parallaxData={parallaxData}> */}
+              <div>
+                <div className="img-text-div">
+                  <img className="salon-img" src={salon} />
+                  <p className="text-img-heading">
+                    Science, Beauty, Wellness
                   </p>
-                  <p className="banner-description">
-                    There are many variation of passages are Ipsum available,
-                    majority have suffered alteration in some form.
-                  </p>
-                  <div style={{ display: "flex", justifyContent: "start" }}>
-                    <Button  class='exploremoreHeaderBtn' disableTouchRipple onClick={handleClick}>Explore More</Button>
-                  </div>
-                  {/* <div>
+                </div>
+                <p className="heading-header">Face | Skin | Body</p>
+                <p className="header-header-by">
+                  {/* <span className="preHeading1">by</span>{" "} */}
+                  <span className="preHeading2">Research Based Beauty and wellness</span>
+                </p>
+                <p className="banner-description">
+                  There are many variation of passages are Ipsum available,
+                  majority have suffered alteration in some form.
+                </p>
+                <div style={{ display: "flex", justifyContent: "start" }}>
+                  <Button class='exploremoreHeaderBtn' disableTouchRipple onClick={handleClick}>Explore More</Button>
+                </div>
+                {/* <div>
                     <div>
                       <Grid container className="header-form-wrapper">
                         <Grid items lg="4" md="6" sm="12" xs="12">
@@ -103,8 +114,8 @@ function Header() {
                       </Grid>
                     </div>
                   </div> */}
-                </div>
-              </Plx>
+              </div>
+              {/* </Plx> */}
             </Grid>
             <Grid items lg={0}></Grid>
           </Grid>

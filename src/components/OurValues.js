@@ -4,8 +4,8 @@ import "../assets/CustomCSS/OurValue.css";
 import beautyExpert from "../assets/images/beauty-expert.svg";
 import greatServices from "../assets/images/great-services.svg";
 import Genuine from "../assets/images/genuine.svg";
-import towel from "../assets/images/slice.jpg";
-import ourValueImg from '../assets/images/whatIncludes.jpg'
+import towel from "../assets/images/slicec.jpg";
+import ourValueImg from '../assets/images/whatIncludesc.jpg'
 import Plx from "react-plx";
 
 function OurValues() {
@@ -161,7 +161,7 @@ function OurValues() {
         </div>
         <div className="about-second-section">
           <Grid container className="about-second-section-grid">
-            <Grid items lg={6} md={6} sm={12} xs={12}>
+            <Grid items lg={6} md={6} sm={12} xs={12} className="gridFutureSecond">
               {/* <Plx parallaxData={ParallaxDataAboutLeft}> */}
               <div className="second-section-img-holder">
                 <img style={{ zIndex: "99" }} className="towel-img" src={towel} />

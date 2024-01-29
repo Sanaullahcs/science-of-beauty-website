@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/CustomCSS/GetInTouch.css";
 import { Grid } from "@material-ui/core";
-import getInTouch from "../assets/images/getInTouch.png";
+import getInTouch from "../assets/images/getInTouchc.png";
 import icon1 from "../assets/images/Icon1.png";
 import icon2 from "../assets/images/Icon2.png";
 import icon3 from "../assets/images/Icon3.png";

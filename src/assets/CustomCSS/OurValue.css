@@ -67,6 +67,13 @@
   margin-top: 0;
 }
 
+@media (max-width: 1279px) {
+
+  .gridFutureSecond {
+    order: 2;
+  }
+}
+
 .ourValuesSmall-gridWrapper {
   margin: 3% 0;
 }
@@ -108,12 +115,15 @@
   text-align: left;
   margin-bottom: 0;
 }
-.second-section-heading-dialog{
+
+.second-section-heading-dialog {
   max-width: 1400px !important;
 }
-.second-section-description-dialog{
+
+.second-section-description-dialog {
   max-width: 1400px !important;
 }
+
 .second-section-description {
   color: #fff;
   font-family: Manrope;
@@ -160,7 +170,8 @@
   width: 80vw !important;
   padding: 0 2%;
 }
-.readMoreDialog .MuiDialog-paperWidthSm{
+
+.readMoreDialog .MuiDialog-paperWidthSm {
   max-width: 1150px !important;
 }
 
@@ -172,9 +183,9 @@
   color: white !important;
   font-weight: 600 !important;
   background: transparent;
-    border-radius: 25px;
-    height: 40px;
-    font-size: 18px;
+  border-radius: 25px;
+  height: 40px;
+  font-size: 18px;
 }
 
 .ourvalueMainImag {

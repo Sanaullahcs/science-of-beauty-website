@@ -1,5 +1,5 @@
 .bg-home-banner {
-  background-image: url(../images/home1bg.png);
+  background-image: url(../images/home1bgc.png);
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,22 +11,23 @@
 
 @keyframes changeBackground {
   20% {
-    background-image: url(../images/home1bg.png);
+    background-image: url(../images/home1bgc.png);
   }
 
   40% {
-    background-image: url(../images/home2bg.png);
+    background-image: url(../images/home2bgc.png);
   }
 
   60% {
-    background-image: url(../images/home3bg.png);
+    background-image: url(../images/home3bgc.png);
   }
+
   80% {
-    background-image: url(../images/home4.png);
+    background-image: url(../images/home4c.png);
   }
 
   to {
-    background-image: url(../images/home1bg.png);
+    background-image: url(../images/home1bgc.png);
   }
 }
 
@@ -203,6 +204,11 @@
     font-size: 55px;
   }
 
+  .exploremoreHeaderBtn {
+    width: 170px;
+    height: 54px;
+  }
+
   .text-img-heading {
     font-size: 12px;
   }
@@ -230,7 +236,23 @@
   }
 }
 
+.smallScreenImg {
+  display: none;
+}
+
 @media only screen and (max-width: 520px) {
+  .smallScreenImg {
+    display: block;
+    width: 100%;
+    max-height: 590px;
+    object-fit: cover;
+  }
+
+  .bg-home-banner {
+    background-image: none;
+    animation: none;
+  }
+
   .heading-header {
     font-size: 45px;
   }
@@ -257,3 +279,45 @@
     font-size: 15px;
   }
 }
+
+
+/* .image-container {
+  position: relative;
+  
+  img {
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    &:nth-of-type(1) {
+      animation-delay: 6s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 2s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 0;
+    }
+  }
+}
+
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+} */

@@ -116,6 +116,10 @@ ul a:hover {
 
 }
 
+.ml-18 {
+  margin-right: 18px
+}
+
 .chatbot-icons {
   /* style={{ position: "fixed", bottom: "5px", right: "5px", zIndex: "5" }} */
   position: fixed;
@@ -166,6 +170,12 @@ ul a:hover {
   height: 86px;
 }
 
+.navSocialIconsHolder {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .chat-head-icon-wrapper {
   /* display: block; */
   width: 69px;
@@ -190,6 +200,7 @@ ul a:hover {
 
 .web-logo {
   width: 150px;
+  margin-left: 75px;
 }
 
 .proper-chat-screen::-webkit-scrollbar-thumb {
@@ -393,17 +404,20 @@ ul a:hover {
 .languageSelecter .MuiInput-underline:after {
   display: none;
 }
+
 @media only screen and (max-width: 1400px) {
- .langaugeSelectorHolder{
-  position: relative;
-  right: none;
- }
+  .langaugeSelectorHolder {
+    position: relative;
+    right: none;
+  }
 }
+
 @media only screen and (max-width: 1320px) {
   .toptopNav {
     display: block;
+  }
 }
- }
+
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 1279px) {
   .nav-links a {
@@ -425,7 +439,8 @@ ul a:hover {
   .listForlogoForLargeScreen {
     display: none;
   }
-  .langaugeSelectorHolder{
+
+  .langaugeSelectorHolder {
     position: relative;
     right: none;
     display: block;
@@ -469,6 +484,30 @@ ul a:hover {
 
   .navbar-top-email {
     margin-top: 8px;
+  }
+
+  .navSocialIconsHolder {
+
+    /* justify-content: center; */
+  }
+}
+
+.smallScreenEMailHolder {
+  display: none;
+}
+
+@media only screen and (max-width: 1209px) {
+  .emailNavGrid {
+    display: none !important;
+  }
+
+  .smallScreenEMailHolder {
+    display: block;
+  }
+
+  .navSocialIconsHolder {
+    min-width: 100% !important;
+    justify-content: space-between;
   }
 }
 

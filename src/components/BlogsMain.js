@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Divider, Grid } from "@material-ui/core";
-import lady from "../assets/images/lady.png";
+import lady from "../assets/images/ladyc.png";
 import "../assets/CustomCSS/BlogMain.css";
 import "../assets/CustomCSS/Blog.css"
 import { Link } from 'react-router-dom';
