@@ -1,7 +1,8 @@
 import { React, useState } from "react";
 import "../assets/CustomCSS/Navbar.css";
 import { Link } from "react-router-dom";
-import { Grid, Fab, TextField, Tooltip } from "@material-ui/core";
+import { Grid, Fab, TextField } from "@material-ui/core";
+import { Tooltip } from "@material-ui/core";
 import Callimg from "../assets/images/nav-call.svg";
 import emailimg from "../assets/images/nav-gmail.svg";
 import logoNavbar from "../assets/images/youLogo.svg";
@@ -109,7 +110,7 @@ function Navbar() {
     <>
       <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc" }}>
         <Grid container style={{ padding: "0 2%" }}>
-          <Grid item lg={4} md={4} sm={4} xs={0} style={{ display: 'flex', alignItems: 'center' }}>
+          <Grid item lg={4} md={4} sm={12} xs={12} className="navSocialIconsHolder">
             <div>
               <div className="social-row socisal-row-nav">
                 <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
@@ -138,6 +139,14 @@ function Navbar() {
                 </a>
               </div>
             </div>
+            <div className="smallScreenEMailHolder">
+              <Tooltip title="123 456 7890" placement="top">
+                <img className="img-margin ml-18" src={Callimg} />
+              </Tooltip>
+              <Tooltip title="Info@thescienceofbeautydallas.com" placement="top">
+                <img className="img-margin" src={emailimg} />
+              </Tooltip>
+            </div>
           </Grid>
           <Grid item lg={4} md={4} sm={0} xs={0} className="grid-1">
             <div className="logo" style={{ zIndex: "2" }}>
@@ -146,7 +155,7 @@ function Navbar() {
               </Link>
             </div>
           </Grid>
-          <Grid item lg={4} md={4} sm={6} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2">
+          <Grid item lg={4} md={4} sm={6} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2 emailNavGrid">
             <div className="toptopNav">
               <p className="navbar-top-dail">
                 {" "}
@@ -165,7 +174,7 @@ function Navbar() {
         </Grid>
       </div>
       <nav className="navbar">
-        <div style={{color:'white'}}>span span</div>
+        <div style={{ color: 'white' }}><span style={{minWidth:'20px'}}></span></div>
         <div className="logo" style={{ zIndex: "2" }}>
           <img className="web-logo logoForSmallScreen" src={logoNavbar} alt="Logo" />
         </div>

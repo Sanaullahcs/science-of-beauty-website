@@ -1,10 +1,10 @@
-const blog1 = require('../assets/images/laseblogimg.png');
-const blog2 = require('../assets/images/radioblogimg.png');
-const blog3 = require('../assets/images/prpBlogimg.png');
-const blog4 = require('../assets/images/IvBlogimg.png');
-const blog5 = require('../assets/images/fillerblogimg.png');
-const blog6 = require('../assets/images/neurotoxinBlogImg.png');
-const blog7 = require('../assets/images/8blogimg.png');
+const blog1 = require('../assets/images/laseblogimgc.png');
+const blog2 = require('../assets/images/radioblogimgc.png');
+const blog3 = require('../assets/images/prpBlogimgc.png');
+const blog4 = require('../assets/images/IvBlogimgc.png');
+const blog5 = require('../assets/images/fillerblogimgc.png');
+const blog6 = require('../assets/images/neurotoxinBlogImgc.png');
+const blog7 = require('../assets/images/8blogimgc.png');
 const BlogCard = [
     {
         id: 1,

@@ -20,6 +20,15 @@ import ser4 from "../assets/images/wwd4.png";
 import ser5 from "../assets/images/compress.jpg";
 import Plx from "react-plx";
 // import { Parallax } from 'react-scroll-parallax';
+// =======================================================FOR THE LIGHT GALLERY======================================
+// import LightGallery from 'lightgallery/react';
+// import 'lightgallery/css/lightgallery.css';
+// import 'lightgallery/css/lg-zoom.css';
+// import 'lightgallery/css/lg-thumbnail.css';
+// import lgThumbnail from 'lightgallery/plugins/thumbnail';
+// import lgZoom from 'lightgallery/plugins/zoom';
+
+
 
 
 const serviceData = [
@@ -159,7 +168,9 @@ const OurServices = () => {
     }
   ];
 
-
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+  };
 
   return (
     <>
@@ -197,13 +208,12 @@ const OurServices = () => {
         </div>
         <div className="grid-system-outer-div">
           <Plx parallaxData={parallaxDataGrid}>
-            <div className="main-grid-imgs">
+            {/* <div className="main-grid-imgs">
 
               <div className="testi">
 
                 <img className="ser1" src={ser1} />
               </div>
-
               <div className="testi">
 
                 <img className="ser1" src={ser2} />
@@ -224,10 +234,56 @@ const OurServices = () => {
                 <img className="ser1" src={ser5} />
 
               </div>
-            </div>
+            </div> */}
+            {/* <LightGallery
+              onInit={onInit}
+              speed={500}
+              plugins={[lgThumbnail, lgZoom]}
+            > */}
+              <div className="main-grid-imgs">
+                <div className="testi">
+                  {/* <a href={ser1}> */}
+                    <img className="ser1" src={ser1} alt="ser1" />
+                  {/* </a> */}
+                </div>
+                <div className="testi">
+                  {/* <a href={ser2}> */}
+                    <img className="ser1" src={ser2} alt="ser2" />
+                  {/* </a> */}
+                </div>
+                <div className="testi">
+                  {/* <a href={ser4}> */}
+                    <img className="ser1" src={ser4} alt="ser4" />
+                  {/* </a> */}
+                </div>
+                <div className="testi">
+                  {/* <a href={ser3}> */}
+                    <img className="ser1" src={ser3} alt="ser3" />
+                  {/* </a> */}
+                </div>
+                <div className="testi">
+                  {/* <a href={ser5}> */}
+                    <img className="ser1" src={ser5} alt="ser5" />
+                  {/* </a> */}
+                </div>
+              </div>
+            {/* </LightGallery> */}
+
           </Plx>
         </div>
       </div>
+      {/* <LightGallery
+        onInit={onInit}
+        speed={500}
+        plugins={[lgThumbnail, lgZoom]}
+      >
+        <a href={ser1}>
+          <img alt="ser1" src={ser1} />
+        </a>
+        <a href={ser2}>
+          <img alt="ser2" src={ser2} />
+        </a>
+      </LightGallery> */}
     </>
   );
 };

@@ -1,5 +1,5 @@
 .bg-aboutbanner {
-  background-image: url(../images/headerAboutUs.png);
+  background-image: url(../images/headerAboutUsc.png);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.55px;
-  margin: 0px;
+  margin: 0px 7%;
   max-width: 649px;
 }
 

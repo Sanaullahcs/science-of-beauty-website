@@ -17,7 +17,7 @@ function WhoWeAre() {
 
   const parallaxDataWWWTop = [
     {
-      start: 0,
+      start:  0,
       end: 700,
       properties: [
         {
@@ -32,18 +32,18 @@ function WhoWeAre() {
         },
       ],
     },
-    {
-      start: 1000,
-      end: 1500,
-      properties: [
+    // {
+    //   start: 1000,
+    //   end: 1500,
+    //   properties: [
 
-        {
-          startValue: 1,
-          endValue: 0,
-          property: "opacity",
-        },
-      ],
-    },
+    //     {
+    //       startValue: 1,
+    //       endValue: 0,
+    //       property: "opacity",
+    //     },
+    //   ],
+    // },
   ];
   const parallaxDataWWWBottom = [
     {
@@ -62,32 +62,32 @@ function WhoWeAre() {
         },
       ],
     },
-    {
-      start: 1000,
-      end: 1500,
-      properties: [
+    // {
+    //   start: 1000,
+    //   end: 1500,
+    //   properties: [
 
-        {
-          startValue: 1,
-          endValue: 0,
-          property: "opacity",
-        },
-      ],
-    },
+    //     {
+    //       startValue: 1,
+    //       endValue: 0,
+    //       property: "opacity",
+    //     },
+    //   ],
+    // },
   ];
   const parallaxDataWWWLeft = [
-    {
-      start: 1200,
-      end: 2000,
-      properties: [
+    // {
+    //   start: 1200,
+    //   end: 2000,
+    //   properties: [
 
-        {
-          startValue: 1,
-          endValue: 0,
-          property: "opacity",
-        },
-      ],
-    },
+    //     {
+    //       startValue: 1,
+    //       endValue: 0,
+    //       property: "opacity",
+    //     },
+    //   ],
+    // },
   ];
   return (
     <>

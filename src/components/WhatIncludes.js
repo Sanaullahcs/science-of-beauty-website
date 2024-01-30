@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Grid, Button, Dialog, DialogActions } from "@material-ui/core";
 import check from "../assets/images/check.svg";
 import "../assets/CustomCSS/WhatIncludes.css";
-import mainIMG from "../assets/images/whatIncludes.jpg";
+import mainIMG from "../assets/images/whatIncludesc.jpg";
 import CloseIcon from '@mui/icons-material/Close';
 import Plx from "react-plx";
 
