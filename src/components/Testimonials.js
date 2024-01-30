@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Grid } from "@material-ui/core";
+import Rating from "@mui/material/Rating";
 import startComma from "../assets/images/frontCot.svg";
 import endComma from "../assets/images/backCot.svg";
 import "../assets/CustomCSS/Testimonials.css";
@@ -27,9 +27,9 @@ function Testimonials() {
           display: "block",
           background: `url(${next})`,
           backgroundSize: "cover",
-          right: "47%",
+          right: "30px",
           transform: "translateX(50%)",
-          top: "100%",
+          // top: "100%",
           marginTop: "2%",
           width: "50px", // Adjust the width as needed
           height: "50px", // Adjust the height as needed
@@ -50,11 +50,11 @@ function Testimonials() {
           display: "block",
           background: `url(${prev})`,
           backgroundSize: "cover",
-          left: "47%",
+          left: "30px",
           transform: "translateX(-50%)",
           bottom: "2px",
           zIndex: "2",
-          top: "100%",
+          // top: "100%",
           marginTop: "2%",
           width: "50px", // Adjust the width as needed
           height: "50px", // Adjust the height as neede
@@ -68,8 +68,8 @@ function Testimonials() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    fade: true,
+    slidesToShow: 3,
+    // fade: true,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <NextArrow className='next-testimonial-button' />,
@@ -77,36 +77,52 @@ function Testimonials() {
   });
   const testimonialsData = [
     {
-      imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "lorem lorem",
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "lorem lorem1",
       testimonial2: "Moncton, Canada",
       testimonialHeading: "Emily Grace Anderson,",
       testimonialDescription:
         " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
     },
     {
-      imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "Lorem ipsum dolor sit amet",
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "lorem lorem2",
+      testimonial2: "Moncton, Canada",
+      testimonialHeading: "Emily Grace Anderson,",
+      testimonialDescription:
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
+    },
+    {
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "lorem lorem3",
+      testimonial2: "Moncton, Canada",
+      testimonialHeading: "Emily Grace Anderson,",
+      testimonialDescription:
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
+    },
+    {
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "Lorem ipsum dolor sit amet4",
       testimonial2: "London, England",
       testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
-        "ease during their treatments, making the experience not only effective but also comfortable and enjoyable. With Felicia, you are in the hands of a skilled professional who prioritizes both expertise and personalized care.",
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
     },
     {
-      imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "Lorem ipsum dolor sit amet,",
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "Lorem ipsum dolor sit amet5,",
       testimonial2: "New York, USA",
       testimonialHeading: "Benjamin Thomas Davis",
       testimonialDescription:
-        " approach, ensures that each patient receives not only the benefits of her technical skill but also the compassionate care synonymous with her background in critical care nursing. At The Science of Beauty, Leah's expertise ensures a transformative and safe journey towards aesthetic enhancement.",
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
     },
     {
-      imgSrc: require("../assets/images/testimonial.png"),
-      testimonial1: "Lorem ipsum dolor sit amet, ",
+      imgSrc: require("../assets/images/newTest.png"),
+      testimonial1: "Lorem ipsum dolor sit amet6, ",
       testimonial2: "New York, USA",
       testimonialHeading: "Emily Grace Anderson ",
       testimonialDescription:
-        "our practice. Brittany's commitment to creating a space that fosters confidence from within reflects in every aspect of our center, making The Science of Beauty a sanctuary where transformative care and genuine well-being converge under her expert guidance.",
+        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
     },
   ];
   // const parallaxDataImg = [
@@ -158,14 +174,14 @@ function Testimonials() {
       </div>
 
 
-      <Slider className="slider-carausel" style={{ padding: "0px 10%", margin: "3% 0px" }} {...settings}>
+      <Slider className="slider-carausel" {...settings}>
         {testimonialsData.map((testimonial, index) => (
           <div key={index} className="sliders">
-            <Grid container className="testimonial-slider">
+            {/* <Grid container className="testimonial-slider">
               <Grid item lg={6}>
-                {/* <Plx parallaxData={parallaxDataImg}> */}
+               
                 <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
-                {/* </Plx> */}
+               
               </Grid>
               <Grid item lg={6}>
                 <div className="side-holder">
@@ -181,7 +197,20 @@ function Testimonials() {
                   <img className="end-comma" src={endComma} alt="End comma" />
                 </div>
               </Grid>
-            </Grid>
+            </Grid> */}
+            <div>
+              <div>
+                <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
+              </div>
+              <div>
+                <img src={startComma} alt="Start comma" />
+                <p className="testimonial-1">{testimonial.testimonial1}</p>
+                <Rating name="read-only" value='4' readOnly />
+                <p className="testimonial-description">
+                  {testimonial.testimonialDescription}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>
