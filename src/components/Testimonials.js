@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rating from "@mui/material/Rating";
-import startComma from "../assets/images/frontCot.svg";
+import startComma from "../assets/images/cot.png";
 import endComma from "../assets/images/backCot.svg";
 import "../assets/CustomCSS/Testimonials.css";
 import next from "../assets/images/next-img.png";
@@ -20,21 +20,7 @@ function Testimonials() {
   // Custom component for the next button
   const NextArrow = (props) => {
     return (
-      <div
-        {...props}
-        style={{
-          ...props.style,
-          display: "block",
-          background: `url(${next})`,
-          backgroundSize: "cover",
-          right: "30px",
-          transform: "translateX(50%)",
-          // top: "100%",
-          marginTop: "2%",
-          width: "50px", // Adjust the width as needed
-          height: "50px", // Adjust the height as needed
-        }}
-      >
+      <div {...props}>
         Next
       </div>
     );
@@ -43,23 +29,7 @@ function Testimonials() {
   // Custom component for the previous button
   const PrevArrow = (props) => {
     return (
-      <div
-        {...props}
-        style={{
-          ...props.style,
-          display: "block",
-          background: `url(${prev})`,
-          backgroundSize: "cover",
-          left: "30px",
-          transform: "translateX(-50%)",
-          bottom: "2px",
-          zIndex: "2",
-          // top: "100%",
-          marginTop: "2%",
-          width: "50px", // Adjust the width as needed
-          height: "50px", // Adjust the height as neede
-        }}
-      >
+      <div {...props}>
         Prev
       </div>
     );
@@ -72,6 +42,20 @@ function Testimonials() {
     // fade: true,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
     nextArrow: <NextArrow className='next-testimonial-button' />,
     prevArrow: <PrevArrow className='prev-testimonial-button' />
   });
@@ -203,9 +187,9 @@ function Testimonials() {
                 <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
               </div>
               <div>
-                <img src={startComma} alt="Start comma" />
+                <img className="commas-test" src={startComma} alt="Start comma" />
                 <p className="testimonial-1">{testimonial.testimonial1}</p>
-                <Rating name="read-only" value='4' readOnly />
+                <Rating className="test-rating" name="read-only" value='4' readOnly />
                 <p className="testimonial-description">
                   {testimonial.testimonialDescription}
                 </p>
