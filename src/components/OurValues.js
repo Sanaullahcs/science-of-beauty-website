@@ -5,7 +5,7 @@ import beautyExpert from "../assets/images/beauty-expert.svg";
 import greatServices from "../assets/images/great-services.svg";
 import Genuine from "../assets/images/genuine.svg";
 import towel from "../assets/images/slicec.jpg";
-import ourValueImg from '../assets/images/whatIncludesc.jpg'
+import ourValueImg from '../assets/images/blackbeauty.jpg'
 import Plx from "react-plx";
 
 function OurValues() {
