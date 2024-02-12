@@ -1,6 +1,8 @@
 .bg-component {
   /* background: #F8DBD5; */
-  background: rgba(224, 183, 117, 0.50);
+  /* background: rgba(224, 183, 117, 0.50); */
+  background: #A75E5B !important;
+  /* background: #9d4a43; */
   /* margin-top: 3%; */
   padding: 5% 0%;
 }
@@ -15,7 +17,7 @@
   border-radius: 20px;
 }
 .main-head {
-  color: #422A3C;
+  color: #fff;
   font-family: Playfair Display;
   font-size: 56px;
   font-style: normal;
@@ -24,7 +26,7 @@
   letter-spacing: -1.68px;
 }
 .main-description {
-  color: #422A3C;
+  color: #fff;
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
@@ -34,8 +36,8 @@
 }
 .main-btn {
   border-radius: 16px !important;
-  border: 3px solid #422A3C !important;
-  color: #422A3C !important;
+  border: 3px solid #fff !important;
+  color: #fff !important;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 20px !important;
