@@ -41,6 +41,8 @@ import BrowLamination from './components/Services/BrowLamination'
 import LashLiftAndTint from './components/Services/LashLiftAndTint'
 import BlogDetails from './components/BlogDetails'
 import BlogCard from './JSONData/BlogCard'
+import LoginComponent from './components/LoginAndSignUp/LoginCom'
+import SignupComponent from './components/LoginAndSignUp/SignUpComponent'
 
 
 // =============================== Assets ===================================
@@ -331,6 +333,24 @@ function App() {
                 <Navbar />
                 <LashLiftAndTint />
                 <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/login"}
+            element={
+              <>
+                <LoginComponent />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/signup"}
+            element={
+              <>
+                <SignupComponent />
               </>
             }
           />

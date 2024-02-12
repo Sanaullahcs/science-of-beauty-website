@@ -174,7 +174,7 @@ function Navbar() {
         </Grid>
       </div>
       <nav className="navbar">
-        <div style={{ color: 'white' }}><span style={{minWidth:'20px'}}></span></div>
+        <div style={{ color: 'white' }}><span style={{ minWidth: '20px' }}></span></div>
         <div className="logo" style={{ zIndex: "2" }}>
           <img className="web-logo logoForSmallScreen" src={logoNavbar} alt="Logo" />
         </div>
@@ -254,10 +254,13 @@ function Navbar() {
               </FormControl>
             </li>
             <li>
-              <Button className="login-btn">Login</Button>
+              <Link to='/login'>
+                <Button className="login-btn">Login</Button></Link>
             </li>
             <li>
-              <Button className="signup-btn">Signup</Button>
+              <Link to='/signup'>
+                <Button className="signup-btn">Signup</Button>
+              </Link>
             </li>
           </div>
           {/* <li>
