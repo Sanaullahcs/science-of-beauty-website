@@ -360,7 +360,7 @@ function Navbar() {
           onMouseDown={handleMouseDown}
           onClick={handleDoubleClick}
         >
-          <WidgetsIcon style={{ color: '#A75E5B' }} />
+          <WidgetsIcon style={{ color: '#9d4a43' }} />
           {isAssistiveMenuOpen && (
             <>
               <div className="menu-options">

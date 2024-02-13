@@ -82,7 +82,7 @@ function Header() {
                               variant="standard"
                               InputProps={{
                                 endAdornment: (
-                                  <SearchIcon style={{ color: "#A75E5B" }} />
+                                  <SearchIcon style={{ color: "#9d4a43" }} />
                                 ),
                               }}
                             />
@@ -98,7 +98,7 @@ function Header() {
                               variant="standard"
                               InputProps={{
                                 endAdornment: (
-                                  <LocationOnIcon style={{ color: "#A75E5B" }} />
+                                  <LocationOnIcon style={{ color: "#9d4a43" }} />
                                 ),
                               }}
                             />

@@ -54,7 +54,7 @@
 
 .pricingCard {
   border-radius: 40px;
-  background: #A75E5B;
+  background: #9d4a43;
   max-width: 481px;
   /* max-height: 471px; */
   padding-bottom: 60px;
@@ -96,7 +96,7 @@
 
 .flip-card-back {
   border-radius: 40px;
-  background: linear-gradient(90deg, #A75E5B 0%, rgba(167, 94, 91, 0.70) 100%);
+  background: linear-gradient(90deg, #9d4a43 0%, rgba(167, 94, 91, 0.70) 100%);
   color: white;
   transform: rotateY(180deg);
   width: 100%;
@@ -112,7 +112,7 @@
 .flip-card-buy-btn {
   border-radius: 16px !important;
   background: #E8D1BB !important;
-  color: #A75E5B !important;
+  color: #9d4a43 !important;
   text-align: center !important;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Manrope !important;

@@ -95,21 +95,21 @@ function ContactUs() {
                       className={`contact-buttons ${activeButton === "email" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("email")}
                     >
-                      <MailOutlineIcon style={{ color: "#A75E5B" }} />
+                      <MailOutlineIcon style={{ color: "#9d4a43" }} />
                       <span>Info@thescienceofbeautydallas.com</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "phone" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("phone")}
                     >
-                      <CallIcon style={{ color: "#A75E5B" }} />
+                      <CallIcon style={{ color: "#9d4a43" }} />
                       <span>+123 456 789</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "location" ? "active-contact-btn" : ""}`}
                       onClick={() => handleButtonClick("location")}
                     >
-                      <LocationOnIcon style={{ color: "#A75E5B" }} />
+                      <LocationOnIcon style={{ color: "#9d4a43" }} />
                       <span>123 Street 456 House</span>
                     </Button>
                   </div>

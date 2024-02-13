@@ -86,7 +86,7 @@
 }
 
 .subproduct-pricing {
-  color: #A75E5B;
+  color: #9d4a43;
   font-family: Playfair Display;
   font-size: 24px;
   text-align: left;
@@ -118,7 +118,7 @@
 
 .subproduct-addtocart-btn {
   border-radius: 5px !important;
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   width: 131px;
   height: 52px;
   color: #fff !important;
@@ -175,7 +175,7 @@
 }
 
 .subproducts-descriptive-btn-wrapper .active {
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: #eee !important;
   border: 0px !important;
 }

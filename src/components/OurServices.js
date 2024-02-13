@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import next from "../assets/images/services-next.png";
 import prev from "../assets/images/services-prev.png";
-import img1 from "../assets/images/facials.png";
-import img2 from "../assets/images/PRP.png";
-import img3 from "../assets/images/filler.png";
-import img4 from "../assets/images/IV.png";
-import img5 from "../assets/images/laser.png";
-import img6 from "../assets/images/contouring.png";
-import img7 from "../assets/images/8.png";
-import img8 from "../assets/images/toxin.png";
-import img9 from "../assets/images/peels.png";
+import img1 from "../assets/images/facials1.png";
+import img2 from "../assets/images/PRP1.png";
+import img3 from "../assets/images/filler1.png";
+import img4 from "../assets/images/IV1.png";
+import img5 from "../assets/images/laser1.png";
+import img6 from "../assets/images/contouring1.png";
+import img7 from "../assets/images/81.png";
+import img8 from "../assets/images/toxin1.png";
+import img9 from "../assets/images/peels1.png";
 import "../assets/CustomCSS/OurServices.css";
 // import { Grid } from "@material-ui/core";
 import ser1 from "../assets/images/black.png";
@@ -188,7 +188,7 @@ const OurServices = () => {
           {serviceData.map((service, index) => (
             <div className="harm" key={index}>
               <div className="slider">
-                <img src={service.img} alt={`Service ${index + 1}`} />
+                <img className="w-120" src={service.img} alt={`Service ${index + 1}`} />
                 <p>{service.title}</p>
               </div>
             </div>
