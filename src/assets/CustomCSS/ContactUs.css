@@ -37,7 +37,7 @@
 }
 
 .cool-span {
-  color: #A75E5B;
+  color: #9d4a43;
 }
 
 .contact-buttons {
@@ -62,7 +62,7 @@
 }
 
 .active-contact-btn {
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: #fff !important;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .active-social-btn {
-  background-color: #A75E5B !important;
+  background-color: #9d4a43 !important;
 }
 
 .contact-interested-heading {
@@ -131,7 +131,7 @@
 }
 
 .active-category-btn {
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: #eee !important;
   border: 0 !important;
 }
@@ -151,7 +151,7 @@
   width: 315px !important;
   height: 78px !important;
   border-radius: 16px !important;
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: #eee !important;
   text-align: center !important;
   font-family: Poppins !important;

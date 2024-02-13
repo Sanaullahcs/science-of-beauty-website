@@ -16,7 +16,7 @@
 }
 
 .services-preheading {
-  color: #A75E5B;
+  color: #9d4a43;
   text-align: center;
   font-family: Manrope;
   font-size: 15px;
@@ -149,4 +149,8 @@
   .sub-description {
     font-size: 15px;
   }
+}
+
+.w-120{
+  width: 120px;
 }

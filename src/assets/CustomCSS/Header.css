@@ -126,7 +126,7 @@
 
 .searchBtnHeader {
   border-radius: 56px !important;
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: #f8f8f8 !important;
   font-family: Manrope;
   font-size: 24px !important;
@@ -153,7 +153,7 @@
 
 .form-field {
   margin: 0;
-  color: #A75E5B;
+  color: #9d4a43;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -175,11 +175,11 @@
 }
 
 .form-field-text-area .MuiFormLabel-root.Mui-focused {
-  color: #A75E5B;
+  color: #9d4a43;
 }
 
 .form-field-text-area .MuiInput-underline:after {
-  border-bottom: 2px solid #A75E5B;
+  border-bottom: 2px solid #9d4a43;
 }
 
 .search-div-wrapper {

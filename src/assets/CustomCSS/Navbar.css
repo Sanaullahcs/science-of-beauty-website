@@ -67,7 +67,7 @@ ul a {
 }
 
 ul a:hover {
-  color: #A75E5B;
+  color: #9d4a43;
 }
 
 .img-margin {
@@ -85,8 +85,8 @@ ul a:hover {
 } */
 .login-btn {
   border-radius: 5px !important;
-  border: 1.5px solid #A75E5B !important;
-  color: #A75E5B !important;
+  border: 1.5px solid #9d4a43 !important;
+  color: #9d4a43 !important;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Manrope !important;
@@ -101,7 +101,7 @@ ul a:hover {
 
 .signup-btn {
   border-radius: 5px !important;
-  background: #A75E5B !important;
+  background: #9d4a43 !important;
   color: var(--White, #fff) !important;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -204,7 +204,7 @@ ul a:hover {
 }
 
 .proper-chat-screen::-webkit-scrollbar-thumb {
-  background-color: #A75E5B;
+  background-color: #9d4a43;
   border-radius: 6px;
 }
 
@@ -287,7 +287,7 @@ ul a:hover {
 .my-chat {
   border-radius: 30px;
   margin: 5px;
-  background: #A75E5B;
+  background: #9d4a43;
   color: #fff;
   text-align: right;
   font-family: Manrope;
@@ -316,7 +316,7 @@ ul a:hover {
 }
 
 .chat-head-div {
-  background-color: #A75E5B;
+  background-color: #9d4a43;
   border-radius: 17px 17px 0 0;
 }
 

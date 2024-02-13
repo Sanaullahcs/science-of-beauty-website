@@ -74,9 +74,9 @@ function Products() {
                 style={{ padding: '2%' }}
               >
                 <div className="product-div-wrapper" style={{
-                  border: hoveredProductId === product.id ? '1px solid #A75E5B' : 'none',
+                  border: hoveredProductId === product.id ? '1px solid #9d4a43' : 'none',
                   boxShadow: hoveredProductId === product.id
-                    ? '0 0 8px #A75E5B'
+                    ? '0 0 8px #9d4a43'
                     : 'none',
                 }}>
                   <img
