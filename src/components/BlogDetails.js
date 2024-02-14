@@ -9,7 +9,7 @@ const BlogDetails = ({ blogs }) => {
     const { id } = useParams();
 
     // Find the blog post with the matching id
-    const blog = blogs.find((blog) => blog.id === parseInt(id, 10));
+    const blog = blogs.find((blog) => blog.id === parseInt(id, 15));
 
     // If the blog is not found, you can display an error or redirect to a 404 page
     if (!blog) {

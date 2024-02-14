@@ -11,76 +11,12 @@
   margin-bottom: 4%;
   margin-top: 0;
 }
-
-.blog-bg-1 {
-  background-image: url(../images/blog-bg-1.png);
+.blog-bg {
   background-position: left;
   transition: background-position 1s ease !important;
 }
 
-.blog-bg-1:hover {
-  background-position: right;
-}
-
-
-.blog-bg-2 {
-  background-image: url(../images/blog-bg-2.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-2:hover {
-  background-position: right;
-}
-
-
-.blog-bg-3 {
-  background-image: url(../images/blog-bg-3.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-3:hover {
-  background-position: right;
-}
-
-.blog-bg-4 {
-  background-image: url(../images/blog-bg-4.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-4:hover {
-  background-position: right;
-}
-
-.blog-bg-5 {
-  background-image: url(../images/blog-bg-5.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-5:hover {
-  background-position: right;
-}
-
-.blog-bg-6 {
-  background-image: url(../images/blog-bg-6.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-6:hover {
-  background-position: right;
-}
-
-.blog-bg-7 {
-  background-image: url(../images/blog-bg-7.png);
-  background-position: left;
-  transition: background-position 1s ease !important;
-}
-
-.blog-bg-7:hover {
+.blog-bg:hover {
   background-position: right;
 }
 

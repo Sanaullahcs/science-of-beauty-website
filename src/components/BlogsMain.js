@@ -20,8 +20,7 @@ function BlogsMain({ blogs }) {
               <Grid key={blog.id} items lg={4} md={6} sm={12} xs={12}>
                 <div className="blog-postWrapper">
                   <Link to={`/blogs/${blog.id}`} className="blog-link">
-                    <div className={`blog-bg-${blog.id} blog-bg`}>
-                      {/* Adjust the class based on the blog ID to have different styles */}
+                    <div style={{backgroundImage: `url(${blog.image})`}}  className={`blog-bg-${blog.id} blog-bg`}>
                       <div className="fashion-div-wrapper">
                         <Button className="fashion-btn">FASHION</Button>
                       </div>
