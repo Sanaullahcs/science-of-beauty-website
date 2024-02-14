@@ -175,7 +175,7 @@ function Blogs({ blogs }) {
             {blogs.map((blog) => (
               <div key={blog.id} className="slide">
                 <Link to={`/blogs/${blog.id}`} className="blog-link">
-                  <div className={`blog-bg-${blog.id} blog-bg`}>
+                  <div  style={{backgroundImage: `url(${blog.image})`}} className={`blog-bg`}>
                     <div className="fashion-div-wrapper">
                       <Button className="fashion-btn">Fashion</Button>
                     </div>

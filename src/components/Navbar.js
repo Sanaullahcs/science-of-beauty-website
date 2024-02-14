@@ -108,7 +108,7 @@ function Navbar() {
   // ];
   return (
     <>
-      <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc" }}>
+      <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc",    background: '#FDF7F3' }}>
         <Grid container style={{ padding: "0 2%" }}>
           <Grid item lg={4} md={4} sm={12} xs={12} className="navSocialIconsHolder">
             <div>

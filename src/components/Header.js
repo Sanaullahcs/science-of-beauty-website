@@ -2,12 +2,12 @@ import React from "react";
 import "../assets/CustomCSS/Header.css";
 import salon from "../assets/images/minLogo.svg";
 import Button from "@material-ui/core/Button";
-import headerImg from '../assets/images/headerForSmall.png'
-import headerImg1 from '../assets/images/headerforSmall2.png'
-import headerImg2 from '../assets/images/headerforSmall3.png'
-import headerImg3 from '../assets/images/headerforSmall4.png'
+import headerImg from "../assets/images/headerForSmall.png";
+import headerImg1 from "../assets/images/headerforSmall2.png";
+import headerImg2 from "../assets/images/headerforSmall3.png";
+import headerImg3 from "../assets/images/headerforSmall4.png";
 import {
-  Grid
+  Grid,
   // TextField
 } from "@material-ui/core";
 // import SearchIcon from "@mui/icons-material/Search";
@@ -19,9 +19,9 @@ import Plx from "react-plx";
 
 function Header() {
   const handleClick = () => {
-    const servicesDiv = document.getElementById('services');
+    const servicesDiv = document.getElementById("services");
     if (servicesDiv) {
-      servicesDiv.scrollIntoView({ behavior: 'smooth' });
+      servicesDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
   // const parallaxData = [
@@ -51,23 +51,31 @@ function Header() {
             <Grid items lg={7}>
               {/* <Plx parallaxData={parallaxData}> */}
               <div>
-                <div className="img-text-div">
+                {/* <div className="img-text-div">
                   <img className="salon-img" src={salon} />
-                  <p className="text-img-heading">
-                    Science, Beauty, Wellness
-                  </p>
-                </div>
-                <p className="heading-header">Face | Skin | Body</p>
+                  <p className="text-img-heading">Science, Beauty, Wellness</p>
+                </div> */}
+                <p className="heading-header">
+                  Welcome to <br/> The Science of Beauty
+                </p>
                 <p className="header-header-by">
                   {/* <span className="preHeading1">by</span>{" "} */}
-                  <span className="preHeading2">Research Based Beauty and wellness</span>
+                  <span className="preHeading2">
+                    Research Based Beauty and wellness
+                  </span>
                 </p>
-                <p className="banner-description">
+                {/* <p className="banner-description">
                   There are many variation of passages are Ipsum available,
                   majority have suffered alteration in some form.
-                </p>
+                </p> */}
                 <div style={{ display: "flex", justifyContent: "start" }}>
-                  <Button class='exploremoreHeaderBtn' disableTouchRipple onClick={handleClick}>Explore More</Button>
+                  <Button
+                    class="exploremoreHeaderBtn"
+                    disableTouchRipple
+                    onClick={handleClick}
+                  >
+                    Explore More
+                  </Button>
                 </div>
                 {/* <div>
                     <div>
