@@ -246,14 +246,28 @@
     max-height: 590px;
     object-fit: cover;
   }
+  .smallScreenCard {
+    border-radius: 40px;
+    border: 1px solid #000;
+    opacity: 0.7;
+    background: #fef9f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7%;
+  }
 
   .bg-home-banner {
-    background-image: none;
+    background-image: url(../../assets/images/headerForSmall.png);
     animation: none;
+    display: flex;
+    align-items: center;
   }
 
   .heading-header {
     font-size: 45px;
+    text-align: center;
   }
 
   .text-img-heading {

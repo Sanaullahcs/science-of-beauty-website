@@ -5,7 +5,7 @@ import { Grid, Fab, TextField } from "@material-ui/core";
 import { Tooltip } from "@material-ui/core";
 import Callimg from "../assets/images/nav-call.svg";
 import emailimg from "../assets/images/nav-gmail.svg";
-import logoNavbar from "../assets/images/youLogo.svg";
+import logoNavbar from "../assets/images/logo14.png";
 import search from "../assets/images/search.png";
 import FormControl from "@material-ui/core/FormControl";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -108,7 +108,7 @@ function Navbar() {
   // ];
   return (
     <>
-      <div style={{ padding: '2% 0 17px', borderBottom: "1px solid #ccc",    background: '#FDF7F3' }}>
+      <div style={{ padding: '1% 0 17px', borderBottom: "1px solid #ccc",    background: '#FDF7F3' }}>
         <Grid container style={{ padding: "0 2%" }}>
           <Grid item lg={4} md={4} sm={12} xs={12} className="navSocialIconsHolder">
             <div>
@@ -253,7 +253,7 @@ function Navbar() {
                 </Select>
               </FormControl>
             </li>
-            <li>
+            {/* <li>
               <Link to='/login'>
                 <Button className="login-btn">Login</Button></Link>
             </li>
@@ -261,7 +261,7 @@ function Navbar() {
               <Link to='/signup'>
                 <Button className="signup-btn">Signup</Button>
               </Link>
-            </li>
+            </li> */}
           </div>
           {/* <li>
             <img src={search} />
