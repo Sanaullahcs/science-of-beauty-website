@@ -35,7 +35,7 @@ const BlogCard = [
         id: 4,
         date: '08.08.2021',
         image: blog4,
-        title: "Laser hair removal being safe for all skin types",
+        title: "Laser hkkair removal being safe for all skin types",
         content: "Laser hair removal has revolutionized the landscape of hair removal treatments, boasting not only efficacy but also a remarkable safety....",
         MainFullContent: "Laser hair removal has revolutionized the landscape of hair removal treatments, boasting not only efficacy but also a remarkable safety profile across diverse skin types.This innovative procedure utilizes concentrated beams of light to target and disable hair follicles, rendering them unable to produce new hair.What sets laser hair removal apart is its ability to accommodate various skin tones and types, a feat achieved through advancements in laser technology.The procedure's versatility stems from the availability of different laser wavelengths, allowing practitioners to tailor the treatment to the specific melanin levels in the skin. Whether one has fair or dark skin, laser hair removal offers a safe and effective solution, minimizing the risk of adverse effects while delivering long-lasting results. Moreover, with continuous technological enhancements, modern laser systems come equipped with built-in cooling mechanisms to ensure patient comfort during the procedure. As a non-invasive and practically painless method for achieving smooth, hair-free skin, laser hair removal stands at the forefront of cosmetic treatments, providing a reliable and inclusive option for individuals across the spectrum of skin types."
 },

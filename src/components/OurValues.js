@@ -4,13 +4,13 @@ import "../assets/CustomCSS/OurValue.css";
 import beautyExpert from "../assets/images/beauty-expert.svg";
 import greatServices from "../assets/images/great-services.svg";
 import Genuine from "../assets/images/genuine.svg";
-import towel from "../assets/images/slicec.jpg";
+import towel from "../assets/images/Slice001.png";
 import ourValueImg from '../assets/images/blackbeauty.jpg'
 import Plx from "react-plx";
 
 function OurValues() {
   const [dialogOpen, setDialogOpen] = useState(false);
-
+  
   const handleOpenDialog = () => {
     setDialogOpen(true);
   };

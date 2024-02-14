@@ -48,7 +48,7 @@
 }
 
 .sub-heading {
-  color: #422a3c;
+  color: #fff;
   text-align: center;
   font-family: Playfair Display;
   font-size: 45px;
@@ -62,7 +62,7 @@
 }
 
 .sub-description {
-  color: #555;
+  color: #fff;
   text-align: center;
   font-family: Manrope;
   font-size: 20px;
@@ -83,7 +83,7 @@
 }
 
 .ourservices-second-wrapper {
-  background: #EEEFE7;
+  background: #ab8b73;
   padding: 3% 5% 5% 5%;
   margin-top: 3%;
 }

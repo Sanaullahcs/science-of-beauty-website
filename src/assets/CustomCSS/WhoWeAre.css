@@ -4,16 +4,18 @@
   line-height: 47.81px;
   text-align: left;
   font-size: 35px;
+  color: #fff;
 }
 
 .whoWeAre-container {
   padding: 5% 0%;
   /* background-color: rgba(224, 183, 117, 0.50); */
-  background-color: #dbd3c7;
+  background-color: #ab8b73;
 
 }
 
 .www-description {
+  color: #fff;
   font-family: Manrope;
   font-weight: 400;
   line-height: 24.59px;
@@ -23,8 +25,8 @@
 
 .more-about-us-btn {
   border-radius: 4px;
-  border: 1px solid #353535 !important;
-  color: #000;
+  border: 1px solid #fff !important;
+  /* color: #000; */
   text-align: center;
   font-family: Manrope !important;
   font-size: 18px !important;
