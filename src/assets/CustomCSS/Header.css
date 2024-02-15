@@ -246,14 +246,50 @@
     max-height: 590px;
     object-fit: cover;
   }
+  .smallScreenCard {
+    border-radius: 40px;
+    border: 1px solid #000;
+    opacity: 0.7;
+    background: #fef9f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7%;
+  }
 
   .bg-home-banner {
-    background-image: none;
+    background-image: url(../../assets/images/headerForSmall.png);
     animation: none;
+    display: flex;
+    align-items: center;
+    animation: changeBackgroundSmall 16s infinite;
+  }
+  @keyframes changeBackgroundSmall {
+    20% {
+      background-image: url(../images/headerForSmall.png);
+    }
+  
+    40% {
+      background-image: url(../images/smallScreenbg1.png);
+    }
+  
+    60% {
+      background-image: url(../images/smallScreenbg2.png);
+    }
+  
+    80% {
+      background-image: url(../images/smallScreenbg3.png);
+    }
+  
+    to {
+      background-image: url(../images/headerForSmall.png);
+    }
   }
 
   .heading-header {
     font-size: 45px;
+    text-align: center;
   }
 
   .text-img-heading {

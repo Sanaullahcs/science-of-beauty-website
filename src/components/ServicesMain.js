@@ -86,6 +86,28 @@ function ServicesMain() {
     <>
       <div style={{ overflow: 'hidden' }}>
         <div className="main-blog-content">
+          {/* ==================== */}
+          {/* <Grid container className="main-main-blogs">
+            <Grid items lg={6} style={{ order: 2 }}>
+              <div className="blog-main-div">
+                <p className="blog-main-heading">Face & Neck</p>
+                <p className="blog-description-heading">
+                  Morpheus8 is a micro-needling device that utilizes radio frequency energy to remodel and contour the face and body. This fractional treatment penetrates deep into the skin and fat for a smoother…
+                </p>
+                <div className="contactus-btn-div">
+                  <Link to="/services/face-and-neck">  <Button className="blog-contact-btn" onClick={handleReadMoreClick}>Read More</Button></Link>
+                </div>
+              </div>
+            </Grid>
+            <Grid items lg={6} style={{ order: 1 }}>
+              <Plx parallaxData={imageParallaxDataOne} >
+                <div className="services-img-holderHolder">
+                  <img className="blog-img-holder" src={ser1} />
+                </div>
+              </Plx>
+            </Grid>
+            </Grid> */}
+          {/* ==================== */}
           <Grid container className="main-main-blogs">
             <Grid items lg={6}>
               <div className="blog-main-div">
@@ -99,7 +121,7 @@ function ServicesMain() {
               </div>
             </Grid>
             <Grid items lg={6}>
-              <Plx parallaxData={imageParallaxDataOne}>
+              <Plx parallaxData={imageParallaxDataOne} >
                 <div className="services-img-holderHolder">
                   <img className="blog-img-holder" src={ser1} />
                 </div>

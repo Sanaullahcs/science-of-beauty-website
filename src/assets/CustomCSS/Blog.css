@@ -35,6 +35,16 @@
   border-radius: 5px;
   position: relative;
 }
+@media only screen and (max-width: 420px) {
+  .blog-link{
+    width: 80%;
+  }
+  .blog-bg{
+    width: auto;
+    /* object-fit: cover; */
+  }
+}
+
 
 .fashion-div-wrapper {
   position: absolute;

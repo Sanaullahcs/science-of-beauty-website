@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
-import { useEffect } from 'react'
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// ===================================== Components ============================================= 
+// ===================================== Components =============================================
 import Navbar from "./components/Navbar";
 import Headers from "./components/Header";
 import WhoWeAre from "./components/WhoWeAre";
@@ -24,26 +24,26 @@ import BlogsHeader from "./components/BlogsHeader";
 import BlogsMain from "./components/BlogsMain";
 import Products from "./components/Products/index";
 import SubProducts from "./components/Products/SubProducts";
-import FaceAndNeck from './components/Services/FaceAndNeck'
-import BodyTightening from './components/Services/BodyTightening'
-import BodyScarring from './components/Services/BodyScarring'
-import LaserHairRemoval from './components/Services/LaserHairRemoval'
-import Pigmentation from './components/Services/Pigmentation'
-import FacialAndSpiderVeinTreatment from './components/Services/FacialAndSpiderVeinTreatment'
-import CRYOFacial from './components/Services/CRYOFacial'
-import BodyToning from './components/Services/BodyToning'
-import BodySlimming from './components/Services/BodySlimming'
-import AntiAgingFacial from './components/Services/AntiAgingFacial'
-import IlluminatingFacial from './components/Services/IlluminatingFacial'
-import BeClearPurifyingFacial from './components/Services/BeClearPurifyingFacial'
-import CustomizedChemicalPeel from './components/Services/CustomizedChemicalPeel'
-import BrowLamination from './components/Services/BrowLamination'
-import LashLiftAndTint from './components/Services/LashLiftAndTint'
-import BlogDetails from './components/BlogDetails'
-import BlogCard from './JSONData/BlogCard'
-import LoginComponent from './components/LoginAndSignUp/LoginCom'
-import SignupComponent from './components/LoginAndSignUp/SignUpComponent'
-
+import FaceAndNeck from "./components/Services/FaceAndNeck";
+import BodyTightening from "./components/Services/BodyTightening";
+import BodyScarring from "./components/Services/BodyScarring";
+import LaserHairRemoval from "./components/Services/LaserHairRemoval";
+import Pigmentation from "./components/Services/Pigmentation";
+import FacialAndSpiderVeinTreatment from "./components/Services/FacialAndSpiderVeinTreatment";
+import CRYOFacial from "./components/Services/CRYOFacial";
+import BodyToning from "./components/Services/BodyToning";
+import BodySlimming from "./components/Services/BodySlimming";
+import AntiAgingFacial from "./components/Services/AntiAgingFacial";
+import IlluminatingFacial from "./components/Services/IlluminatingFacial";
+import BeClearPurifyingFacial from "./components/Services/BeClearPurifyingFacial";
+import CustomizedChemicalPeel from "./components/Services/CustomizedChemicalPeel";
+import BrowLamination from "./components/Services/BrowLamination";
+import LashLiftAndTint from "./components/Services/LashLiftAndTint";
+import BlogDetails from "./components/BlogDetails";
+import BlogCard from "./JSONData/BlogCard";
+import LoginComponent from "./components/LoginAndSignUp/LoginCom";
+import SignupComponent from "./components/LoginAndSignUp/SignUpComponent";
+import Appoinments from "./components/Appointments";
 
 // =============================== Assets ===================================
 import React from "react";
@@ -75,6 +75,7 @@ function App() {
                 <Pricing />
                 <ContactUs />
                 <Blogs blogs={BlogCard} />
+                <Appoinments />
                 <Testimonials />
                 <Footer />
               </>

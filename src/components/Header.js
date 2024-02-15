@@ -40,7 +40,7 @@ function Header() {
   return (
     <>
       <div class="image-container">
-        <img className="smallScreenImg" src={headerImg} />
+        {/* <img className="smallScreenImg" src={headerImg} /> */}
         {/* <img className="smallScreenImg" src={headerImg2} />
         <img className="smallScreenImg" src={headerImg3} />
         <img className="smallScreenImg" src={headerImg1} /> */}
@@ -50,7 +50,7 @@ function Header() {
           <Grid container>
             <Grid items lg={7}>
               {/* <Plx parallaxData={parallaxData}> */}
-              <div>
+              <div className="smallScreenCard">
                 {/* <div className="img-text-div">
                   <img className="salon-img" src={salon} />
                   <p className="text-img-heading">Science, Beauty, Wellness</p>

@@ -201,7 +201,7 @@
 
   .category-btn {
     font-size: 15px !important;
-    width: 170px !important;
+    width: 47% !important;
     height: 52px !important;
   }
 
@@ -215,11 +215,18 @@
     min-width: 40px !important;
     min-height: 40px !important;
   }
+  .contact-card{
+    padding: 0 10px;
+  }
 }
 @media (max-width: 490px) {
   .contact-buttons {
     max-width: 250px !important;
     overflow: hidden;
+    display: none !important;
+  }
+  .social-row{
+    margin-top: 0;
   }
 }
 @media (max-width: 419px) {
