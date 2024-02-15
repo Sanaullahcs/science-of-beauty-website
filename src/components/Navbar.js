@@ -27,6 +27,9 @@ import XIcon from '@mui/icons-material/X';
 import twitter from '../assets/images/x-real.svg'
 import insta from '../assets/images/insta-real.svg'
 import WidgetsIcon from '@mui/icons-material/Widgets';
+import america from '../assets/images/us.jpg'
+import spain from '../assets/images/spain.jpg'
+import france from '../assets/images/french.jpg'
 
 
 function Navbar() {
@@ -160,7 +163,7 @@ function Navbar() {
               <p className="navbar-top-dail">
                 {" "}
                 <img className="img-margin" src={Callimg} />
-                123 456 7890
+                (818) 415-0083.
               </p>
 
 
@@ -247,9 +250,9 @@ function Navbar() {
                   {/* <MenuItem value="">
                   <em>None</em>
                 </MenuItem> */}
-                  <MenuItem value={10}>EN</MenuItem>
-                  <MenuItem value={20}>ES</MenuItem>
-                  <MenuItem value={30}>FR</MenuItem>
+                  <MenuItem value={10}><img className="flagImage"  src={america}/></MenuItem>
+                  <MenuItem value={20}><img className="flagImage" src={spain}/></MenuItem>
+                  <MenuItem value={30}><img className="flagImage" src={france}/></MenuItem>
                 </Select>
               </FormControl>
             </li>
@@ -268,7 +271,7 @@ function Navbar() {
           </li> */}
         </ul>
       </nav>
-      <div className="chatbot-icons">
+      {/* <div className="chatbot-icons">
         <div className={`chatscreen${isChatVisible ? " visible" : ""}`}>
           <div className="chat-head-div">
             <Grid container className="chat-head-container">
@@ -350,7 +353,7 @@ function Navbar() {
           <img className="fabIcon-Img" src={fabIcon} />
         </Fab>
 
-      </div>
+      </div> */}
       {/* ====== assistive touch */}
       {/* <Tooltip title="Social Platforms" placement="top">
         <div

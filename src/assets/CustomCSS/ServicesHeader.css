@@ -67,6 +67,11 @@
   .servicespage-minheading {
     font-size: 13px;
   }
+  .servicesHeader-bg {
+    background-image: url(../images/servicesSmallScreenbg.png);
+    background-size: cover;
+
+  }
 
   .servicespage-heading {
     font-size: 30px;

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+// import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Home from "../pages/Home";
@@ -9,6 +10,10 @@ import Packages from "./pages/Packages";
 import Blogs from "./pages/Blogs";
 
 function App() {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Router>
       <Navbar />

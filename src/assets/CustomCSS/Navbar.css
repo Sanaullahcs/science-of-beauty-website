@@ -475,7 +475,9 @@ ul a:hover {
     margin-left: 25px;
   }
 }
-
+.flagImage{
+  width: 30px;
+}
 @media only screen and (max-width: 959px) {
   .navbar-top-dail {
     margin-bottom: 0;

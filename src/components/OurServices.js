@@ -5,7 +5,7 @@ import prev from "../assets/images/services-prev.png";
 import img1 from "../assets/images/facials1.png";
 import img2 from "../assets/images/PRP1.png";
 import img3 from "../assets/images/filler1.png";
-import img4 from "../assets/images/IV1.png";
+import img4 from "../assets/images/autoY.png";
 import img5 from "../assets/images/laser1.png";
 import img6 from "../assets/images/contouring1.png";
 import img7 from "../assets/images/81.png";
@@ -19,6 +19,7 @@ import ser3 from "../assets/images/asia.jpg";
 import ser4 from "../assets/images/wwd4.png";
 import ser5 from "../assets/images/compress.jpg";
 import Plx from "react-plx";
+import { Link } from "react-router-dom";
 // import { Parallax } from 'react-scroll-parallax';
 // =======================================================FOR THE LIGHT GALLERY======================================
 // import LightGallery from 'lightgallery/react';
@@ -27,9 +28,6 @@ import Plx from "react-plx";
 // import 'lightgallery/css/lg-thumbnail.css';
 // import lgThumbnail from 'lightgallery/plugins/thumbnail';
 // import lgZoom from 'lightgallery/plugins/zoom';
-
-
-
 
 const serviceData = [
   { img: img1, title: "Facials" },
@@ -54,7 +52,7 @@ const OurServices = () => {
           background: `url(${next})`,
           backgroundSize: "cover",
           right: "20px",
-          top: '50%',
+          top: "50%",
           width: "50px",
           height: "50px",
           zIndex: "22",
@@ -75,7 +73,7 @@ const OurServices = () => {
           background: `url(${prev})`,
           backgroundSize: "cover",
           left: "20px",
-          top: '50%',
+          top: "50%",
           zIndex: "2",
           width: "50px",
           height: "50px",
@@ -133,13 +131,11 @@ const OurServices = () => {
       start: 1000,
       end: 1400,
       properties: [
-
         {
           startValue: 0,
           endValue: 1,
           property: "opacity",
         },
-
       ],
     },
   ];
@@ -165,19 +161,19 @@ const OurServices = () => {
           property: "opacity",
         },
       ],
-    }
+    },
   ];
 
   const onInit = () => {
-    console.log('lightGallery has been initialized');
+    console.log("lightGallery has been initialized");
   };
 
   return (
     <>
-      <div id='services' style={{ overflowX: 'hidden', paddingTop: '5%' }}>
+      <div id="services" style={{ overflowX: "hidden", paddingTop: "2%" }}>
         <Plx parallaxData={parallaxDataServices}>
           {/* <Parallax speed={30} tagOuter="figure"> */}
-          <div style={{ zIndex: '999' }}>
+          <div style={{ zIndex: "999" }}>
             <p className="services-preheading">SERVICES</p>
             <p className="services-heading">Our Services</p>
           </div>
@@ -188,22 +184,29 @@ const OurServices = () => {
           {serviceData.map((service, index) => (
             <div className="harm" key={index}>
               <div className="slider">
-                <img className="w-120" src={service.img} alt={`Service ${index + 1}`} />
-                <p>{service.title}</p>
+                <Link to={`/services`}>
+                  <img
+                    className="w-120"
+                    src={service.img}
+                    alt={`Service ${index + 1}`}
+                  />
+                </Link>
+                <p className="servicesTitleControl">{service.title}</p>
               </div>
             </div>
           ))}
         </Slider>
         {/* </Plx> */}
-
       </div>
       <div id="gallery" className="ourservices-second-wrapper">
         <div className="ourservices-heading-wrapper">
-          <p className="sub-heading">
-            What We Do
-          </p>
+          <p className="sub-heading">What We Do</p>
           <p className="sub-description">
-            At The Science of Beauty, we blend cutting-edge science with the artistry of aesthetics to provide meticulously tailored and scientifically proven solutions, ensuring a personalized journey to timeless beauty and wellness that builds trust through our dedication to your individual needs."
+            At The Science of Beauty, we blend cutting-edge science with the
+            artistry of aesthetics to provide meticulously tailored and
+            scientifically proven solutions, ensuring a personalized journey to
+            timeless beauty and wellness that builds trust through our
+            dedication to your individual needs."
           </p>
         </div>
         <div className="grid-system-outer-div">
@@ -240,35 +243,34 @@ const OurServices = () => {
               speed={500}
               plugins={[lgThumbnail, lgZoom]}
             > */}
-              <div className="main-grid-imgs">
-                <div className="testi">
-                  {/* <a href={ser1}> */}
-                    <img className="ser1" src={ser1} alt="ser1" />
-                  {/* </a> */}
-                </div>
-                <div className="testi">
-                  {/* <a href={ser2}> */}
-                    <img className="ser1" src={ser2} alt="ser2" />
-                  {/* </a> */}
-                </div>
-                <div className="testi">
-                  {/* <a href={ser4}> */}
-                    <img className="ser1" src={ser4} alt="ser4" />
-                  {/* </a> */}
-                </div>
-                <div className="testi">
-                  {/* <a href={ser3}> */}
-                    <img className="ser1" src={ser3} alt="ser3" />
-                  {/* </a> */}
-                </div>
-                <div className="testi">
-                  {/* <a href={ser5}> */}
-                    <img className="ser1" src={ser5} alt="ser5" />
-                  {/* </a> */}
-                </div>
+            <div className="main-grid-imgs">
+              <div className="testi">
+                {/* <a href={ser1}> */}
+                <img className="ser1" src={ser1} alt="ser1" />
+                {/* </a> */}
               </div>
+              <div className="testi">
+                {/* <a href={ser2}> */}
+                <img className="ser1" src={ser2} alt="ser2" />
+                {/* </a> */}
+              </div>
+              <div className="testi">
+                {/* <a href={ser4}> */}
+                <img className="ser1" src={ser4} alt="ser4" />
+                {/* </a> */}
+              </div>
+              <div className="testi">
+                {/* <a href={ser3}> */}
+                <img className="ser1" src={ser3} alt="ser3" />
+                {/* </a> */}
+              </div>
+              <div className="testi">
+                {/* <a href={ser5}> */}
+                <img className="ser1" src={ser5} alt="ser5" />
+                {/* </a> */}
+              </div>
+            </div>
             {/* </LightGallery> */}
-
           </Plx>
         </div>
       </div>
