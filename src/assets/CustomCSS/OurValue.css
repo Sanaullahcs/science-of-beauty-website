@@ -68,7 +68,6 @@
 }
 
 @media (max-width: 1279px) {
-
   .gridFutureSecond {
     order: 2;
   }
@@ -144,7 +143,7 @@
   border-radius: 21px !important;
   color: white !important;
   font-size: 16px !important;
-  font-family: 'Poppins' !important;
+  font-family: "Poppins" !important;
   margin-top: 30px !important;
   margin-bottom: 20px !important;
 }
@@ -178,7 +177,7 @@
 .closeBtnDialogReadMore {
   width: 110px !important;
   border: 2px solid white !important;
-  font-family: 'Poppins' !important;
+  font-family: "Poppins" !important;
   text-transform: capitalize !important;
   color: white !important;
   font-weight: 600 !important;
@@ -189,7 +188,7 @@
 }
 
 .ourvalueMainImag {
-  max-width: 670px !important;
+  max-width: 440px !important;
   width: 100%;
 }
 

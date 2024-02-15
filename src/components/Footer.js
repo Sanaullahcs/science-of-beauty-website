@@ -22,20 +22,30 @@ function Footer() {
             <div className="footer-1-wrapper">
               <h1 className="footer-heading">Explore</h1>
               <p className="common-txt">
-                <Link to="/" onClick={scrollToTop}>Home</Link>
+                <Link to="/" onClick={scrollToTop}>
+                  Home
+                </Link>
               </p>
               <p className="common-txt">
-                <Link to="/about" onClick={scrollToTop}>About Us</Link>
+                <Link to="/about" onClick={scrollToTop}>
+                  About Us
+                </Link>
               </p>
               <p className="common-txt">
                 {" "}
-                <Link to="/services" onClick={scrollToTop}>Services</Link>
+                <Link to="/services" onClick={scrollToTop}>
+                  Services
+                </Link>
               </p>
               <p className="common-txt">
-                <Link to="/blogs" onClick={scrollToTop}>Blog</Link>
+                <Link to="/blogs" onClick={scrollToTop}>
+                  Blog
+                </Link>
               </p>
               <p className="common-txt">
-                <Link to="/contact" onClick={scrollToTop}>Contact</Link>
+                <Link to="/contact" onClick={scrollToTop}>
+                  Contact
+                </Link>
               </p>
             </div>
           </Grid>
@@ -69,40 +79,74 @@ function Footer() {
                   <Grid items lg={4} md={4} sm={4} xs={12}>
                     <p className="common-txt bold">Address:</p>
                   </Grid>
-                  <Grid items lg={8} md={8} sm={8} xs={12} className="footerSemiSecond-grid">
-                    <p className="common-txt">Mariendalsvej 50D 2 2000 Frederiksberg.</p>
+                  <Grid
+                    items
+                    lg={8}
+                    md={8}
+                    sm={8}
+                    xs={12}
+                    className="footerSemiSecond-grid"
+                  >
+                    <p className="common-txt">
+                      1902 S Harwood St, Dallas, TX 75215.
+                    </p>
                   </Grid>
                 </Grid>
                 <Grid container>
                   <Grid items lg={4} md={4} sm={4} xs={12}>
                     <p className="common-txt bold">Mail:</p>
                   </Grid>
-                  <Grid items lg={8} md={8} sm={8} xs={12} className="footerSemiSecond-grid">
-                    <p className="common-txt">support@servicemarket.com</p>
+                  <Grid
+                    items
+                    lg={8}
+                    md={8}
+                    sm={8}
+                    xs={12}
+                    className="footerSemiSecond-grid"
+                  >
+                    <p className="common-txt">
+                      Info@thescienceofbeautydallas.com
+                    </p>
                   </Grid>
                 </Grid>
                 <Grid container>
                   <Grid items lg={4} md={4} sm={4} xs={12}>
                     <p className="common-txt bold">Phone:</p>
                   </Grid>
-                  <Grid items lg={8} md={8} sm={8} xs={12} className="footerSemiSecond-grid">
-                    <p className="common-txt">(+22) 123 - 4567 - 900</p>
+                  <Grid
+                    items
+                    lg={8}
+                    md={8}
+                    sm={8}
+                    xs={12}
+                    className="footerSemiSecond-grid"
+                  >
+                    <p className="common-txt">(818) 415-0083.</p>
                   </Grid>
                 </Grid>
               </div>
               <div className="footer-social-div">
                 <span className="img-holder">
-                  <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
+                  <a
+                    href="https://www.facebook.com/Goddesshairxo"
+                    target="_blank"
+                  >
                     <img src={facebook} />
                   </a>
                 </span>
                 <span className="img-holder">
-                  <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/thescienceofbeautydallas/"
+                    target="_blank"
+                  >
                     <img src={insta} />
                   </a>
                 </span>
                 <span className="img-holder">
-                  <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/thescienceofbeautydallas/"
+                    target="_blank"
+                  >
                     <img src={twitter} />
                   </a>
                 </span>
@@ -112,7 +156,9 @@ function Footer() {
         </Grid>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {currentYear}, The Science of Beauty | All rights reserved.</p>
+        <p>
+          &copy; {currentYear}, The Science of Beauty | All rights reserved.
+        </p>
       </div>
     </>
   );
