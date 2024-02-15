@@ -263,6 +263,28 @@
     animation: none;
     display: flex;
     align-items: center;
+    animation: changeBackgroundSmall 16s infinite;
+  }
+  @keyframes changeBackgroundSmall {
+    20% {
+      background-image: url(../images/headerForSmall.png);
+    }
+  
+    40% {
+      background-image: url(../images/smallScreenbg1.png);
+    }
+  
+    60% {
+      background-image: url(../images/smallScreenbg2.png);
+    }
+  
+    80% {
+      background-image: url(../images/smallScreenbg3.png);
+    }
+  
+    to {
+      background-image: url(../images/headerForSmall.png);
+    }
   }
 
   .heading-header {

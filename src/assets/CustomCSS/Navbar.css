@@ -200,7 +200,7 @@ ul a:hover {
 
 .web-logo {
   width: 200px;
-  margin-left: 75px;
+  margin-left: 50px;
 }
 
 .proper-chat-screen::-webkit-scrollbar-thumb {
@@ -467,7 +467,7 @@ ul a:hover {
 
   .nav-links.open {
     display: flex;
-    /* margin-top: 110px; */
+    margin-top: 80px;
   }
 
   .nav-links li {
