@@ -62,6 +62,6 @@
   }
   .bookAppointmentButton{
     height: 60px;
-    font-size: 17px;
+    font-size: 17px !important;
   }
 }
