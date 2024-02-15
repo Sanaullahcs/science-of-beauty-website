@@ -13,7 +13,7 @@
 
 .services-slider .slick-track {
   height: 235px;
-  padding-top: 4%;
+  padding-top: 1%;
 }
 
 .services-preheading {
@@ -39,7 +39,7 @@
   line-height: 130%;
   /* 58.5px */
   letter-spacing: -0.45px;
-  margin: -10px 0px 5% 0px;
+  margin: -10px 0px 0 0px;
 }
 
 .ourservices-heading-wrapper {
@@ -86,7 +86,7 @@
 .ourservices-second-wrapper {
   background: #ab8b73;
   padding: 3% 5% 5% 5%;
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 
 .main-grid-imgs {
@@ -95,7 +95,6 @@
   border-radius: 40px;
   overflow: hidden;
   grid-template-areas: "one" "two" "three" "four" "five";
-
 }
 
 .testi:nth-child(1) {
@@ -152,6 +151,16 @@
   }
 }
 
-.w-120{
+.w-120 {
   width: 120px;
+}
+
+.servicesTitleControl {
+  color: #422a3c;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

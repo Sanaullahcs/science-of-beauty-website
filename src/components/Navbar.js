@@ -27,6 +27,9 @@ import XIcon from '@mui/icons-material/X';
 import twitter from '../assets/images/x-real.svg'
 import insta from '../assets/images/insta-real.svg'
 import WidgetsIcon from '@mui/icons-material/Widgets';
+import america from '../assets/images/us.jpg'
+import spain from '../assets/images/spain.jpg'
+import france from '../assets/images/french.jpg'
 
 
 function Navbar() {
@@ -247,9 +250,9 @@ function Navbar() {
                   {/* <MenuItem value="">
                   <em>None</em>
                 </MenuItem> */}
-                  <MenuItem value={10}>EN</MenuItem>
-                  <MenuItem value={20}>ES</MenuItem>
-                  <MenuItem value={30}>FR</MenuItem>
+                  <MenuItem value={10}><img className="flagImage"  src={america}/></MenuItem>
+                  <MenuItem value={20}><img className="flagImage" src={spain}/></MenuItem>
+                  <MenuItem value={30}><img className="flagImage" src={france}/></MenuItem>
                 </Select>
               </FormControl>
             </li>
