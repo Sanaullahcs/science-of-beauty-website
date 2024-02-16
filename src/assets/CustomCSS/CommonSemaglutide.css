@@ -46,7 +46,6 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 50%; */
   letter-spacing: -0.45px;
 }
 .commonTheme {
@@ -59,7 +58,6 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  /* line-height: 16px; */
 }
 
 .platHead {
@@ -69,13 +67,10 @@
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 50%;  */
   letter-spacing: -0.45px;
 }
 .themeBg {
   background-color: #9a4b44;
-  /* position: relative;
-  min-height: 250px; */
   height: 240px;
   margin-bottom: 180px;
   padding-bottom: 20px;
@@ -93,25 +88,29 @@
   align-items: center;
 }
 .containerMargin {
-  margin: 3% 5%;
+  margin: 5%;
 }
 .platCardTxt {
   color: #141414;
   text-align: center;
+  width: 80%;
   font-family: "Playfair Display";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
 }
 .platRowMargin {
   margin: 0 8%;
-  /* position: absolute;
-  bottom: -18%; */
+}
+.commonTextMargin {
+  margin: 0 5%;
 }
 
 .mainMainDia {
   width: 100%;
+  border-radius: 20px;
+  margin: 3% 0;
 }
 .flexBox {
   display: flex;
@@ -123,7 +122,7 @@
   color: #9a4b44 !important;
   font-weight: 700 !important;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .semiHeader {
     font-size: 55px;
   }
@@ -140,10 +139,36 @@
     height: auto;
   }
   .platCardTxt {
-    width: 80%;
     font-size: 22px;
   }
   .platHead {
     font-size: 35px;
+  }
+}
+@media (max-width: 525px) {
+  .semiSubHeader {
+    font-size: 15px;
+    margin: 0 6%;
+  }
+  .mainCommonHeading {
+    font-size: 26px;
+  }
+  .semiHeader {
+    font-size: 32px;
+  }
+  .platHead {
+    font-size: 25px;
+  }
+  .themeBg {
+    padding: 5% 6% 0;
+  }
+  .mainMainDia {
+    border-radius: 10px;
+  }
+  .BookTheAppo {
+    width: 231px;
+    height: 57px;
+    font-size: 16px !important;
+    margin-top: 20px;
   }
 }

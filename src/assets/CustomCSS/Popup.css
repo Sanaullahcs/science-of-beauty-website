@@ -36,6 +36,7 @@
 }
 .closer {
   width: 45px;
+  cursor: pointer;
 }
 .hrPopup {
   width: 30%;
