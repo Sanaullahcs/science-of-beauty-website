@@ -9,30 +9,20 @@ import "../assets/CustomCSS/Testimonials.css";
 import next from "../assets/images/next-img.png";
 import prev from "../assets/images/prev-img.png";
 import Plx from "react-plx";
-import { useLocation } from 'react-router-dom';
-
+import { useLocation } from "react-router-dom";
 
 function Testimonials() {
   const location = useLocation();
-  const isSubProductPage = location.pathname.includes('/sub-products/');
-
+  const isSubProductPage = location.pathname.includes("/sub-products/");
 
   // Custom component for the next button
   const NextArrow = (props) => {
-    return (
-      <div {...props}>
-        Next
-      </div>
-    );
+    return <div {...props}>Next</div>;
   };
 
   // Custom component for the previous button
   const PrevArrow = (props) => {
-    return (
-      <div {...props}>
-        Prev
-      </div>
-    );
+    return <div {...props}>Prev</div>;
   };
   const [settings] = useState({
     dots: false,
@@ -56,57 +46,57 @@ function Testimonials() {
         },
       },
     ],
-    nextArrow: <NextArrow className='next-testimonial-button' />,
-    prevArrow: <PrevArrow className='prev-testimonial-button' />
+    nextArrow: <NextArrow className="next-testimonial-button" />,
+    prevArrow: <PrevArrow className="prev-testimonial-button" />,
   });
   const testimonialsData = [
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "lorem lorem1",
       testimonial2: "Moncton, Canada",
-      testimonialHeading: "Emily Grace Anderson,",
+      testimonialHeading: "Emily,",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
+        " I absolutely love this moisturizer! It leaves my skin feeling hydrated and silky smooth without any greasiness. The scent is divine too!.",
     },
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "lorem lorem2",
       testimonial2: "Moncton, Canada",
-      testimonialHeading: "Emily Grace Anderson,",
+      testimonialHeading: " Grace ,",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
+        " This lipstick is my new go-to! The color is rich and long-lasting, and the formula feels so comfortable on my lips. I've gotten so many compliments since I started wearing it!",
     },
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "lorem lorem3",
       testimonial2: "Moncton, Canada",
-      testimonialHeading: "Emily Grace Anderson,",
+      testimonialHeading: "  Anderson,",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness.",
+        " I've struggled with acne for years, but this acne treatment serum has been a game-changer for me. It's cleared up my skin without drying it out or causing irritation. I can finally say goodbye to breakouts!",
     },
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "Lorem ipsum dolor sit amet4",
       testimonial2: "London, England",
-      testimonialHeading: "Benjamin Thomas Davis",
+      testimonialHeading: "Benjamin",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
+        " I'm obsessed with this eyeshadow palette! The shades are stunning and blend effortlessly. I can create so many different looks with just one palette. Definitely a must-have in my makeup collection!",
     },
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "Lorem ipsum dolor sit amet5,",
       testimonial2: "New York, USA",
-      testimonialHeading: "Benjamin Thomas Davis",
+      testimonialHeading: " Thomas ",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
+        " I've been using this shampoo and conditioner duo for a few weeks now, and I'm amazed at how soft and shiny it's made my hair. Plus, it smells amazing! I'll definitely be repurchasing.",
     },
     {
       imgSrc: require("../assets/images/newTest.png"),
       testimonial1: "Lorem ipsum dolor sit amet6, ",
       testimonial2: "New York, USA",
-      testimonialHeading: "Emily Grace Anderson ",
+      testimonialHeading: "Davis ",
       testimonialDescription:
-        " Dr. Rozier's commitment to innovation and personalized care defines our approach, making The Science of Beauty Medspa a trusted destination for transformative and regenerative wellness."
+        " I've been searching for a good sunscreen for ages, and I finally found it with this one! It's lightweight, non-greasy, and absorbs quickly into my skin",
     },
   ];
   // const parallaxDataImg = [
@@ -151,12 +141,10 @@ function Testimonials() {
 
   return (
     <div className="main-testimonial">
-
       <div>
         <p className="testimonial-prehead">Testimonials</p>
         <p className="testimonial-heading">What our customers say</p>
       </div>
-
 
       <Slider className="slider-carausel" {...settings}>
         {testimonialsData.map((testimonial, index) => (
@@ -184,12 +172,27 @@ function Testimonials() {
             </Grid> */}
             <div>
               <div>
-                <img className="test-img" src={testimonial.imgSrc} alt="Image goes here" />
+                <img
+                  className="test-img"
+                  src={testimonial.imgSrc}
+                  alt="Image goes here"
+                />
               </div>
               <div>
-                <img className="commas-test" src={startComma} alt="Start comma" />
-                <p className="testimonial-1">{testimonial.testimonial1}</p>
-                <Rating className="test-rating" name="read-only" value='4' readOnly />
+                <img
+                  className="commas-test"
+                  src={startComma}
+                  alt="Start comma"
+                />
+                <p className="testimonial-1">
+                  {testimonial.testimonialHeading}
+                </p>
+                <Rating
+                  className="test-rating"
+                  name="read-only"
+                  value="4"
+                  readOnly
+                />
                 <p className="testimonial-description">
                   {testimonial.testimonialDescription}
                 </p>
