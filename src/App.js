@@ -44,6 +44,9 @@ import BlogCard from "./JSONData/BlogCard";
 import LoginComponent from "./components/LoginAndSignUp/LoginCom";
 import SignupComponent from "./components/LoginAndSignUp/SignUpComponent";
 import Appoinments from "./components/Appointments";
+import SemaglutideHeader from "./components/SemaglutideHeader.js";
+import SemaglutideMain from "./components/SemaglutideMain.js";
+import SemaglutideNavbar from "./components/SemaglutideNavbar.js";
 
 // =============================== Assets ===================================
 import React from "react";
@@ -132,6 +135,19 @@ function App() {
                 <BlogsHeader />
                 <BlogsMain blogs={BlogCard} />
                 {/* <Testimonials /> */}
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/semaglutide"}
+            element={
+              <>
+                <SemaglutideNavbar />
+                <SemaglutideHeader />
+                <SemaglutideMain />
+                <Appoinments />
                 <Footer />
               </>
             }

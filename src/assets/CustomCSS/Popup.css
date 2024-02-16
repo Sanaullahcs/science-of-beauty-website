@@ -1,0 +1,118 @@
+.popup {
+  background-color: white;
+  position: fixed;
+  width: 60%;
+  z-index: 9088888888888888888;
+  border-radius: 10px;
+  padding: 10px;
+}
+.popupIMage {
+  width: 100%;
+  border-radius: 10px;
+}
+.overlayPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.GoToSemaglutide {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+.closeButtonPopup {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background: transparent;
+  border: 0;
+}
+.closer {
+  width: 45px;
+}
+.hrPopup {
+  width: 30%;
+  height: 2px;
+  background-color: #141414;
+  opacity: 0.7;
+  margin-top: 2%;
+}
+.popHead-heading {
+  color: #141414;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.45px;
+  margin: -10px 0px 0 0px;
+  margin: 3% 0;
+}
+
+.GoToSemaglutide {
+  width: 258px !important;
+  height: 71px !important;
+  border-radius: 16px !important;
+  background: #9d4a43 !important;
+  color: #eee !important;
+  text-align: center !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  /* margin-top: 150px !important; */
+  text-transform: capitalize !important;
+  border: 0px;
+}
+
+@media only screen and (max-width: 920px) {
+  .popHead-heading {
+    font-size: 35px;
+  }
+  .closer {
+    width: 30px;
+  }
+  .GoToSemaglutide {
+    width: 210px !important;
+    height: 56px !important;
+    border-radius: 16px !important;
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .popHead-heading {
+    font-size: 26px;
+  }
+  .closer {
+    width: 20px;
+  }
+  .GoToSemaglutide {
+    width: 167px !important;
+    height: 45px !important;
+    border-radius: 13px !important;
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .popHead-heading {
+    font-size: 19px;
+  }
+  .closer {
+    width: 20px;
+  }
+  .GoToSemaglutide {
+    width: 167px !important;
+    height: 45px !important;
+    border-radius: 13px !important;
+    font-size: 14px !important;
+  }
+}
