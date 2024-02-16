@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/CustomCSS/Header.css";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
+import Popup from './Popup';
+
 
 function Header() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const visitedBefore = localStorage.getItem("visitedBefore");
+    if (!visitedBefore) {
+      setShowPopup(true);
+      localStorage.setItem("visitedBefore", true);
+    }
+  }, []);
   const handleClick = () => {
     const servicesDiv = document.getElementById("services");
     if (servicesDiv) {
       servicesDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
       <div class="image-container"></div>
       <div className="bg-home-banner">
         <div>
+          {showPopup && <Popup onClose={handleClosePopup} />}
           <Grid container>
             <Grid items lg={7}>
               <div className="smallScreenCard">

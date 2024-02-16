@@ -1,0 +1,149 @@
+.semiBg {
+  background-image: url(../images/diabHeader.png);
+  height: 500px;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.semiHeader {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+.semiSubHeader {
+  color: #f1f1f1;
+  font-family: Manrope;
+  font-size: 24px;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+.BookTheAppo {
+  width: 296px;
+  height: 71px;
+  border-radius: 16px !important;
+  background: #fff !important;
+  color: #141414 !important;
+  text-align: center;
+  font-family: Poppins !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.mainCommonHeading {
+  color: #141414;
+  font-family: "Playfair Display";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 50%; */
+  letter-spacing: -0.45px;
+}
+.commonTheme {
+  color: #9a4b44 !important;
+}
+.commonText {
+  color: #555;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 16px; */
+}
+
+.platHead {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 50%;  */
+  letter-spacing: -0.45px;
+}
+.themeBg {
+  background-color: #9a4b44;
+  /* position: relative;
+  min-height: 250px; */
+  height: 240px;
+  margin-bottom: 180px;
+  padding-bottom: 20px;
+  padding: 5% 0 0 0;
+}
+.themeSubBg {
+  background-color: #dbd3c8;
+  max-width: 90%;
+  min-height: 218px;
+  border-radius: 17px;
+  background: #dbd3c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerMargin {
+  margin: 3% 5%;
+}
+.platCardTxt {
+  color: #141414;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+}
+.platRowMargin {
+  margin: 0 8%;
+  /* position: absolute;
+  bottom: -18%; */
+}
+
+.mainMainDia {
+  width: 100%;
+}
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.commonTextTheme {
+  color: #9a4b44 !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 1280px) {
+  .semiHeader {
+    font-size: 55px;
+  }
+  .semiSubHeader {
+    font-size: 22px;
+  }
+  .mainCommonHeading {
+    font-size: 36px;
+  }
+  .commonText {
+    font-size: 15px;
+  }
+  .themeBg {
+    height: auto;
+  }
+  .platCardTxt {
+    width: 80%;
+    font-size: 22px;
+  }
+  .platHead {
+    font-size: 35px;
+  }
+}
