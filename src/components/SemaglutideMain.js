@@ -15,7 +15,7 @@ export default function SemaglutideMain() {
           <span className="commonTheme">Semaglutide:</span><br/> The Diabetes
           Treatment Turned Weight Loss Revolution
         </p>
-        <p className="commonText">
+        <p className="commonText commonTextMargin">
           For over 15 years, Semaglutide has been prescribed for Type 2 diabetes
           patients because of its insulin producing abilities. However, its
           significant weight loss side effects have recently attracted a much

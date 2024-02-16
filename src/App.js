@@ -144,7 +144,8 @@ function App() {
             path={"/semaglutide"}
             element={
               <>
-                <SemaglutideNavbar />
+                {/* <SemaglutideNavbar /> */}
+                <Navbar />
                 <SemaglutideHeader />
                 <SemaglutideMain />
                 <Appoinments />
