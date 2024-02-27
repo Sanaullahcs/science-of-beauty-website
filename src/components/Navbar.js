@@ -141,6 +141,7 @@ function Navbar() {
                   </div>
                 </a>
               </div>
+              
             </div>
             <div className="smallScreenEMailHolder">
               <Tooltip title="123 456 7890" placement="top">
@@ -205,27 +206,13 @@ function Navbar() {
               SERVICES
             </Link>
           </li>
-          {/* <li>
-            <ScrollLink to="pricing" smooth duration={500}>
-              <a
-                href='/#pricing'
-                onClick={handleLinkClick}
-
-              >
-                PRICING
-              </a>
-            </ScrollLink>
-          </li> */}
+         
           <li>
             <Link to="/blogs" onClick={closeMenu}>
               RESEARCH & BLOGS
             </Link>
           </li>
-          {/* <li className="listForlogoForLargeScreen">
-            <div className="logo" style={{ zIndex: "2" }}>
-              <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
-            </div>
-          </li> */}
+       
           <li>
             <Link to="/contact" onClick={closeMenu}>
               CONNECT

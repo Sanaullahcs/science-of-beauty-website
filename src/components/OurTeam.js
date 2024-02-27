@@ -13,18 +13,26 @@ function OurTeam() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(Base_URL);
+        const response = await fetch(Base_URL, {
+          headers: {
+            'Access-Control-Allow-Origin': 'http://localhost:3000' // Replace with your allowed origin
+          }
+        });
         console.log("Response:", response);
         const data = await response.json();
         console.log("Data:", data);
         setMembers(data);
       } catch (error) {    
-
         console.error("Error:", error.message); 
-      }
+      } 
     }
     fetchData();
   }, []);
+
+
+
+  
+  
 
   // const fetc = async  () =>{
   //   try {
