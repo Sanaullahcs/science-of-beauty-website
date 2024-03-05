@@ -5,6 +5,7 @@
   z-index: 9088888888888888888;
   border-radius: 10px;
   padding: 10px;
+  animation: fadeInSlideIn 0.5s forwards;
 }
 .popupIMage {
   width: 100%;
@@ -21,6 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes fadeInSlideIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    top: -100%; /* Start the animation from above the viewport */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+    top: 5%; /* Move the popup to the top of the viewport */
+  }
 }
 .GoToSemaglutide {
   display: block;
