@@ -54,23 +54,37 @@ import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 const AnimatedComponent = ({ children }) => (
   <motion.div
+    //   example 1============================
     // initial={{ opacity: 0 }}
     // animate={{ opacity: 1 }}
     // exit={{ opacity: 0 }}
-    // initial={{
-    //   opacity: 0,
-    //   x: "100vh", // Start off-screen at the bottom
-    // }}
-    // animate={{ opacity: 1, x: 0 }}
-    // transition={{ duration: 0.2 }}
+    // example 2===========================
     initial={{
       opacity: 0,
-      x: "-10vw",
+      x: "-100px",
     }}
-    animate={{ opacity: 1, 
+    animate={{ opacity: 1,
         x: 0
      }}
     transition={{ duration: 0.2 }}
+    // example 3==============================
+    // initial={{ opacity: 0, scale: 0.5 }}
+    // animate={{ opacity: 1, scale: 1 }}
+    // transition={{ duration: 0.5 }}
+    // example 4 ===========================
+    // layoutId="underline"
+    // transition={{ duration: 0.1 }}
+    // example 5 ======================
+    // initial={{
+    //   y: 100,
+    //   //  opacity: 0
+    // }}
+    // animate={{
+    //   y: 0,
+    //   // opacity: 1
+    // }}
+    // transition={{ duration: 0.2, opacity: 0 }}
+    // transition={{ delay: 0 }}
   >
     {children}
   </motion.div>
@@ -85,8 +99,8 @@ function AnimatedRoutes() {
           path={"/"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <Headers />
                 <WhoWeAre />
                 <OurServices />
@@ -105,8 +119,8 @@ function AnimatedRoutes() {
           path={"/about"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <AboutUsHeaders />
                 <OurValues />
                 <OurTeam />
@@ -122,8 +136,8 @@ function AnimatedRoutes() {
           path={"/contact"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <ContactUsHeaders />
                 <ContactUs />
                 <GetInTouch />
@@ -137,8 +151,8 @@ function AnimatedRoutes() {
           path={"/services"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <ServicesHeaders />
                 <ServicesMain />
                 <Pricing />
@@ -153,8 +167,8 @@ function AnimatedRoutes() {
           path={"/blogs"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BlogsHeader />
                 <BlogsMain blogs={BlogCard} />
                 {/* <Testimonials /> */}
@@ -168,9 +182,9 @@ function AnimatedRoutes() {
           path={"/semaglutide"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
                 {/* <SemaglutideNavbar /> */}
-                <Navbar />
                 <SemaglutideHeader />
                 <SemaglutideMain />
                 <Appoinments />
@@ -184,8 +198,8 @@ function AnimatedRoutes() {
           path={"/blogs/:id"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BlogDetails blogs={BlogCard} />
                 <Footer />
               </AnimatedComponent>
@@ -197,8 +211,8 @@ function AnimatedRoutes() {
           path={"/products"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <Products />
                 {/* <Testimonials /> */}
                 <Footer />
@@ -211,8 +225,8 @@ function AnimatedRoutes() {
           path={"/sub-products/:productId"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <SubProducts />
                 {/* <Testimonials /> */}
                 <Footer />
@@ -226,8 +240,8 @@ function AnimatedRoutes() {
           path={"/services/face-and-neck"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <FaceAndNeck />
                 <Footer />
               </AnimatedComponent>
@@ -239,8 +253,8 @@ function AnimatedRoutes() {
           path={"/services/body-tightening"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BodyTightening />
                 <Footer />
               </AnimatedComponent>
@@ -252,8 +266,8 @@ function AnimatedRoutes() {
           path={"/services/body-scarring"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BodyScarring />
                 <Footer />
               </AnimatedComponent>
@@ -265,8 +279,8 @@ function AnimatedRoutes() {
           path={"/services/LaserHairRemoval"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <LaserHairRemoval />
                 <Footer />
               </AnimatedComponent>
@@ -278,8 +292,8 @@ function AnimatedRoutes() {
           path={"/services/Pigmentation"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <Pigmentation />
                 <Footer />
               </AnimatedComponent>
@@ -291,8 +305,8 @@ function AnimatedRoutes() {
           path={"/services/facial-spidervein-treatment"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <FacialAndSpiderVeinTreatment />
                 <Footer />
               </AnimatedComponent>
@@ -304,8 +318,8 @@ function AnimatedRoutes() {
           path={"/services/cryo-facial"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <CRYOFacial />
                 <Footer />
               </AnimatedComponent>
@@ -317,8 +331,8 @@ function AnimatedRoutes() {
           path={"/services/body-toning"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BodyToning />
                 <Footer />
               </AnimatedComponent>
@@ -330,8 +344,8 @@ function AnimatedRoutes() {
           path={"/services/body-slimming"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BodySlimming />
                 <Footer />
               </AnimatedComponent>
@@ -343,8 +357,8 @@ function AnimatedRoutes() {
           path={"/services/anti-aging-facial"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <AntiAgingFacial />
                 <Footer />
               </AnimatedComponent>
@@ -356,8 +370,8 @@ function AnimatedRoutes() {
           path={"/services/illuminating-facial"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <IlluminatingFacial />
                 <Footer />
               </AnimatedComponent>
@@ -369,8 +383,8 @@ function AnimatedRoutes() {
           path={"/services/purifying-facial"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BeClearPurifyingFacial />
                 <Footer />
               </AnimatedComponent>
@@ -382,8 +396,8 @@ function AnimatedRoutes() {
           path={"/services/customized-chemicl-peel"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <CustomizedChemicalPeel />
                 <Footer />
               </AnimatedComponent>
@@ -395,8 +409,8 @@ function AnimatedRoutes() {
           path={"/services/brow-lamination"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <BrowLamination />
                 <Footer />
               </AnimatedComponent>
@@ -408,8 +422,8 @@ function AnimatedRoutes() {
           path={"/services/lash-lift-and-tint"}
           element={
             <>
+              <Navbar />
               <AnimatedComponent>
-                <Navbar />
                 <LashLiftAndTint />
                 <Footer />
               </AnimatedComponent>
