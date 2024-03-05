@@ -15,7 +15,9 @@ function Header() {
     //   localStorage.setItem("visitedBefore", true);
     // }
     if (!visitedBefore && isHomePage) {
-      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(true);
+      }, 600);
       // localStorage.setItem("visitedBefore", true);
     }
   }, []);
