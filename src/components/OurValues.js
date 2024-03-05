@@ -185,7 +185,7 @@ function OurValues() {
                     </div>
                     {/* this is the dialog open when the read more is clicked  */}
                     {/* Dialog Component */}
-                    <Dialog open={dialogOpen} onClose={handleCloseDialog} class='readMoreDialog'>
+                    <Dialog open={dialogOpen} onClose={handleCloseDialog} className='readMoreDialog'>
                       <p className="second-section-about">ABOUT US</p>
                       <h1 className="second-section-heading second-section-heading-dialog">
                         The bridge between Science & Beauty
@@ -194,7 +194,7 @@ function OurValues() {
                       <p className="second-section-description second-section-description-dialog">Complementing this expertise is Brittany Deen, our co-owner, whose extensive background in medical aesthetics and ownership of a r enowned salon and spa infuses our approach with an artistic touch. Together, our team's collective experience spans over 35 years, fusing medical precision with aesthetic artistry to curate a space where science seamlessly intertwines with the pursuit of timeless beauty.</p>
                       <p className="second-section-description second-section-description-dialog">At The Science of Beauty Medspa and wellness center, we blend innovation and artistry to craft personalized journeys that transcend expectations, ensuring each client receives tailored solutions backed by years of expertise and a passion for excellence. Join us in embracing the harmony of science and aesthetics, and let us guide you on your path to radiant beauty and holistic wellness.</p>
                       <DialogActions>
-                        <Button class='closeBtnDialogReadMore' onClick={handleCloseDialog}>
+                        <Button className='closeBtnDialogReadMore' onClick={handleCloseDialog}>
                           Close
                         </Button>
                       </DialogActions>

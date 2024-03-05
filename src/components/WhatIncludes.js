@@ -54,7 +54,7 @@ function WhatIncludes() {
                     websites, each with their own booking system.
                   </p>
                   <div style={{ display: 'flex' }}>
-                    <Button class='main-btn viewMethBtn' onClick={handleOpenDialog}>View Methodologies</Button>
+                    <Button className='main-btn viewMethBtn' onClick={handleOpenDialog}>View Methodologies</Button>
                   </div>
 
                 </div>
@@ -70,7 +70,7 @@ function WhatIncludes() {
       </div>
       {/* this is the dialog open when the viewMethodologies is clicked  */}
       {/* Dialog Component */}
-      <Dialog open={dialogOpen} onClose={handleCloseDialog} class='viewMethDialog'>
+      <Dialog open={dialogOpen} onClose={handleCloseDialog} className='viewMethDialog'>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p className="meta-heading">Our Methodology :</p>
           <CloseIcon onClick={handleCloseDialog} color='red' />

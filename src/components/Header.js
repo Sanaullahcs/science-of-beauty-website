@@ -2,17 +2,21 @@ import React, { useState, useEffect } from "react";
 import "../assets/CustomCSS/Header.css";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
-import Popup from './Popup';
-
+import Popup from "./Popup";
 
 function Header() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const visitedBefore = localStorage.getItem("visitedBefore");
-    if (!visitedBefore) {
+    const isHomePage = window.location.pathname === "/";
+    // if (!visitedBefore) {
+    //   setShowPopup(true);
+    //   localStorage.setItem("visitedBefore", true);
+    // }
+    if (!visitedBefore && isHomePage) {
       setShowPopup(true);
-      localStorage.setItem("visitedBefore", true);
+      // localStorage.setItem("visitedBefore", true);
     }
   }, []);
   const handleClick = () => {
@@ -26,7 +30,7 @@ function Header() {
   };
   return (
     <>
-      <div class="image-container"></div>
+      <div className="image-container"></div>
       <div className="bg-home-banner">
         <div>
           {showPopup && <Popup onClose={handleClosePopup} />}
