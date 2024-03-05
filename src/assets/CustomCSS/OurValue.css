@@ -163,6 +163,19 @@
   display: flex;
   justify-content: end;
 }
+.readMoreDialog{
+  animation: fadeInSlideInread 0.5s forwards;
+}
+@keyframes fadeInSlideInread {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
 
 .readMoreDialog .MuiPaper-root {
   background-color: #9d4a43 !important;

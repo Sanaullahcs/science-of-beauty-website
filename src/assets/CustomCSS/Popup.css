@@ -25,12 +25,12 @@
 }
 @keyframes fadeInSlideIn {
   from {
-    opacity: 0; /* Start with opacity 0 */
-    top: -100%; /* Start the animation from above the viewport */
+    opacity: 0;
+    top: -100%;
   }
   to {
-    opacity: 1; /* Fade in to full opacity */
-    top: 5%; /* Move the popup to the top of the viewport */
+    opacity: 1;
+    top: 10%;
   }
 }
 .GoToSemaglutide {

@@ -22,9 +22,9 @@ function Pricing() {
               <Grid items lg={4} md={12} sm={12} xs={12}>
                 <div className="pricingCardHolder1">
 
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
                         <div className="pricingCard">
                           <img className="pricingCardImg" src={pricing1} />
                           <div>
@@ -38,7 +38,7 @@ function Pricing() {
                           <span className="perPack">/month</span>
                         </div>
                       </div>
-                      <div class="flip-card-back">
+                      <div className="flip-card-back">
                         <div className="flip-card-back-inner">
                           <div></div>
                           <div className="pricingCardPackageList">
@@ -61,9 +61,9 @@ function Pricing() {
               <Grid items lg={4} md={12} sm={12} xs={12}>
                 <div className="pricingCardHolder2">
 
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
                         <div className="pricingCard">
                           <img className="pricingCardImg" src={pricing2} />
                           <div>
@@ -77,7 +77,7 @@ function Pricing() {
                           <span className="perPack">/month</span>
                         </div>
                       </div>
-                      <div class="flip-card-back">
+                      <div className="flip-card-back">
                         <div className="flip-card-back-inner">
                           <div className="pricingCardPackageList">
                             <p className="pricingServicesHeading">Choice of 1 of the following</p>
@@ -99,9 +99,9 @@ function Pricing() {
               <Grid items lg={4} md={12} sm={12} xs={12}>
                 <div className="pricingCardHolder3">
 
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
                         <div className="pricingCard">
                           <img className="pricingCardImg" src={pricing3} />
                           <div>
@@ -115,7 +115,7 @@ function Pricing() {
                           <span className="perPack">/month</span>
                         </div>
                       </div>
-                      <div class="flip-card-back">
+                      <div className="flip-card-back">
                         <div className="flip-card-back-inner">
                           <div className="pricingCardPackageList">
                             <p className="pricingServicesHeading">Choose 2 of the following</p>

@@ -3,15 +3,10 @@ import { useParams } from 'react-router-dom';
 
 const BlogDetails = ({ blogs }) => {
     useEffect(() => {
-        // Scroll to the top when the component mounts
         window.scrollTo(0, 0);
     }, []);
     const { id } = useParams();
-
-    // Find the blog post with the matching id
     const blog = blogs.find((blog) => blog.id === parseInt(id, 15));
-
-    // If the blog is not found, you can display an error or redirect to a 404 page
     if (!blog) {
         return <div>Blog not found</div>;
     }
