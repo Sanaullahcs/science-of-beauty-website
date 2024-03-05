@@ -55,11 +55,11 @@
 }
 
 ul a {
-  color: #000;
+  color: #000000c9;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 120%;
   /* 19.2px */
   letter-spacing: 0.88px;
@@ -570,4 +570,26 @@ ul a:hover {
   margin: 10px 0 !important;
   width: 45px;
 
+}
+
+
+
+
+/* ================= */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
