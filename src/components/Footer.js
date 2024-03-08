@@ -105,7 +105,7 @@ function Footer() {
                     className="footerSemiSecond-grid"
                   >
                     <p className="common-txt">
-                      Info@thescienceofbeautydallas.com
+                      Info@thescienceofbeauty.co
                     </p>
                   </Grid>
                 </Grid>
