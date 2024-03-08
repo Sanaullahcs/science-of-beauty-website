@@ -84,6 +84,7 @@
   /* margin-top: 150px !important; */
   text-transform: capitalize !important;
   border: 0px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 920px) {
