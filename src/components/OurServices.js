@@ -163,6 +163,151 @@ const OurServices = () => {
       ],
     },
   ];
+  const parallaxDataOne = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        {
+          startValue: -100,
+          endValue: 0,
+          property: "translateX",
+        },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataTwo = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        // {
+        //   startValue: 500,
+        //   endValue: 0,
+        //   property: "translateX",
+        // },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataThree = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        {
+          startValue: 100,
+          endValue: 0,
+          property: "translateX",
+        },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataFour = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        // {
+        //   startValue: 100,
+        //   endValue: 0,
+        //   property: "translateX",
+        // },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+  const parallaxDataFive = [
+    {
+      start: 1800,
+      end: 2300,
+      properties: [
+        {
+          startValue: 500,
+          endValue: 0,
+          property: "translateY",
+        },
+        {
+          startValue: 100,
+          endValue: 0,
+          property: "translateX",
+        },
+      ],
+    },
+    {
+      start: 1800,
+      end: 2400,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
 
   const onInit = () => {
     console.log("lightGallery has been initialized");
@@ -210,68 +355,35 @@ const OurServices = () => {
           </p>
         </div>
         <div className="grid-system-outer-div">
-          <Plx parallaxData={parallaxDataGrid}>
-            {/* <div className="main-grid-imgs">
-
-              <div className="testi">
-
+          {/* <Plx parallaxData={parallaxDataGrid}> */}
+          <div className="main-grid-imgs">
+            <div className="testi">
+              <Plx className="widthHeight100" parallaxData={parallaxDataOne}>
                 <img className="ser1" src={ser1} />
-              </div>
-              <div className="testi">
-
-                <img className="ser1" src={ser2} />
-
-              </div>
-              <div className="testi">
-
-                <img className="ser1" src={ser4} />
-
-              </div>
-              <div className="testi">
-
-                <img className="ser1" src={ser3} />
-
-              </div>
-              <div className="testi">
-
-                <img className="ser1" src={ser5} />
-
-              </div>
-            </div> */}
-            {/* <LightGallery
-              onInit={onInit}
-              speed={500}
-              plugins={[lgThumbnail, lgZoom]}
-            > */}
-            <div className="main-grid-imgs">
-              <div className="testi">
-                {/* <a href={ser1}> */}
-                <img className="ser1" src={ser1} alt="ser1" />
-                {/* </a> */}
-              </div>
-              <div className="testi">
-                {/* <a href={ser2}> */}
-                <img className="ser1" src={ser2} alt="ser2" />
-                {/* </a> */}
-              </div>
-              <div className="testi">
-                {/* <a href={ser4}> */}
-                <img className="ser1" src={ser4} alt="ser4" />
-                {/* </a> */}
-              </div>
-              <div className="testi">
-                {/* <a href={ser3}> */}
-                <img className="ser1" src={ser3} alt="ser3" />
-                {/* </a> */}
-              </div>
-              <div className="testi">
-                {/* <a href={ser5}> */}
-                <img className="ser1" src={ser5} alt="ser5" />
-                {/* </a> */}
-              </div>
+              </Plx>
             </div>
-            {/* </LightGallery> */}
-          </Plx>
+            <div className="testi">
+              <Plx className="widthHeight100" parallaxData={parallaxDataTwo}>
+                <img className="ser1" src={ser2} />
+              </Plx>
+            </div>
+            <div className="testi">
+              <Plx className="widthHeight100" parallaxData={parallaxDataThree}>
+                <img className="ser1" src={ser4} />
+              </Plx>
+            </div>
+            <div className="testi">
+              <Plx className="widthHeight100" parallaxData={parallaxDataFour}>
+                <img className="ser1" src={ser3} />
+              </Plx>
+            </div>
+            <div className="testi">
+              <Plx className="widthHeight100" parallaxData={parallaxDataFive}>
+                <img className="ser1" src={ser5} />
+              </Plx>
+            </div>
+          </div>
+          {/* </Plx> */}
         </div>
       </div>
       {/* <LightGallery

@@ -96,7 +96,7 @@ function ContactUs() {
                       onClick={() => handleButtonClick("email")}
                     >
                       <MailOutlineIcon style={{ color: "#9d4a43" }} />
-                      <span>Info@thescienceofbeautydallas.com</span>
+                      <span>Info@thescienceofbeauty.co</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${activeButton === "phone" ? "active-contact-btn" : ""}`}

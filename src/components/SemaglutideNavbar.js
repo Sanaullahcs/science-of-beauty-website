@@ -58,10 +58,7 @@ function SemaglutideNavbar() {
               <Tooltip title="123 456 7890" placement="top">
                 <img className="img-margin ml-18" src={Callimg} />
               </Tooltip>
-              <Tooltip
-                title="Info@thescienceofbeautydallas.com"
-                placement="top"
-              >
+              <Tooltip title="Info@thescienceofbeauty.co" placement="top">
                 <img className="img-margin" src={emailimg} />
               </Tooltip>
             </div>
@@ -69,11 +66,7 @@ function SemaglutideNavbar() {
           <Grid item lg={4} md={4} sm={0} xs={0} className="grid-1">
             <div className="logo" style={{ zIndex: "2" }}>
               <Link to="/">
-                <img
-                  className="web-logo"
-                  src={logoNavbar}
-                  alt="Logo"
-                />
+                <img className="web-logo" src={logoNavbar} alt="Logo" />
               </Link>
             </div>
           </Grid>
@@ -100,7 +93,7 @@ function SemaglutideNavbar() {
               <p className="navbar-top-email">
                 {" "}
                 <img className="img-margin" src={emailimg} />
-                Info@thescienceofbeautydallas.com
+                Info@thescienceofbeauty.co
               </p>
             </div>
           </Grid>
