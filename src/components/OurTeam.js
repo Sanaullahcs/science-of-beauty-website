@@ -177,7 +177,8 @@ function OurTeam() {
           </Plx>
 
           <Slider {...sliderSettings} className="slider-blog-card-holder">
-            {members && members.length > 0 ? (
+            {
+            members && members.length > 0 ? (
               members.map((member, index) => (
                 <div key={index} className="teamMainCard">
                   <div>
@@ -218,7 +219,8 @@ function OurTeam() {
               ))
             ) : (
               <p>Loading...</p>
-            )}
+            )
+            }
           </Slider>
         </div>
         <div className="spacer-divider-bloggers"></div>
