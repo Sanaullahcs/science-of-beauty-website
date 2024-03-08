@@ -10,7 +10,7 @@ export default function Appointments() {
       <div className="cardAppintments">
         <p className="subscribeHeading">Subscribe</p>
         <p className="AppoinmentsHeading">The Science of Beauty</p>
-        <p className="appointmentEmail">@thescienceofbeautydallas</p>
+        <p className="appointmentEmail">@thescienceofbeauty.co</p>
         <Button className="bookAppointmentButton" onClick={redirectToLink}>
           Book an Appointment
         </Button>

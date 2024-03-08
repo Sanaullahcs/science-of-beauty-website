@@ -1,6 +1,6 @@
 .bookAppointmentButton {
   border-radius: 16px !important;
-  background: #9a4b44 !important;
+  background: #ab8b73 !important;
   color: #fff !important;
   text-align: center;
   font-family: Poppins;
@@ -47,7 +47,7 @@
   text-transform: uppercase;
 }
 .cardAppintments {
-  background-color: #ab8b73;
+  background-color: #9a4b44;
   border-radius: 10px;
   margin: 3% 5%;
   padding: 5%;

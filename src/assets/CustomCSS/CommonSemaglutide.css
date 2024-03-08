@@ -12,11 +12,35 @@
   color: #fff;
   text-align: center;
   font-family: "Playfair Display";
-  font-size: 64px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 0;
+  max-width: 1200px;
+}
+.compressTxt {
+  margin: 0;
+}
+.themeText {
+  color: #9a4b44;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.commonSegHead {
+  color: #555;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
 }
 .semiSubHeader {
   color: #f1f1f1;
@@ -108,7 +132,7 @@
 }
 
 .mainMainDia {
-  width: 100%;
+  width: 85%;
   border-radius: 20px;
   margin: 3% 0;
 }
@@ -146,6 +170,9 @@
   }
 }
 @media (max-width: 525px) {
+  .semiBg{
+    background-image: url(../images/semmd.png);
+  }
   .semiSubHeader {
     font-size: 15px;
     margin: 0 6%;

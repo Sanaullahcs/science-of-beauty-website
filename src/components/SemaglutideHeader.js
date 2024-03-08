@@ -10,10 +10,13 @@ export default function SemaglutideHeader() {
     <div>
       <div className="semiBg">
         <div>
-          <p className="semiHeader">Semaglutide Demand Continues to Soar</p>
+          <p className="semiHeader">
+            Semaglutide: A Revolutionary Approach to Wellness at The Science of
+            Beauty
+          </p>
           <p className="semiSubHeader">
             {" "}
-            Is your Semaglutide marketing in place to convert the most bookings?
+            A groundbreaking treatment offering a new horizon in weight management and type 2 diabetes care.
           </p>
           <Button className="BookTheAppo" onClick={redirectToLink}>
             Book an Appointment

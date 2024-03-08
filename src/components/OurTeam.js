@@ -3,10 +3,11 @@ import Slider from "react-slick";
 import "../assets/CustomCSS/OurTeam.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
+import dump from '../assets/images/dumpp.jpg'
 import Plx from "react-plx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@material-ui/core";
-const Base_URL = "http://127.0.0.1:8000/api/fetchmembers";
+const Base_URL = "https://thescienceofbeauty.co/api/fetchmembers/";
 
 function OurTeam() {
   const [members, setMembers] = useState();
@@ -15,24 +16,19 @@ function OurTeam() {
       try {
         const response = await fetch(Base_URL, {
           headers: {
-            'Access-Control-Allow-Origin': 'http://localhost:3000' // Replace with your allowed origin
-          }
+            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
+          },
         });
         console.log("Response:", response);
         const data = await response.json();
-        console.log("Data:", data);
-        setMembers(data);
-      } catch (error) {    
-        console.error("Error:", error.message); 
-      } 
+        console.log("Data:", data.Members);
+        setMembers(data.Members);
+      } catch (error) {
+        console.error("Error:", error.message);
+      }
     }
     fetchData();
   }, []);
-
-
-
-  
-  
 
   // const fetc = async  () =>{
   //   try {
@@ -41,7 +37,7 @@ function OurTeam() {
   //     const data = await response.json();
   //     console.log("Data:", data);
   //     setMembers(data);
-  //   } catch (error) {    
+  //   } catch (error) {
 
   //     console.error("Error:", error.message);
   //   }
@@ -181,31 +177,53 @@ function OurTeam() {
           </Plx>
 
           <Slider {...sliderSettings} className="slider-blog-card-holder">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="teamMainCard">
-                <div>
-                  <img className="teamImg" src={member.img} alt={member.name} />
-                </div>
-                <div className="cardDescription">
+            {
+            members && members.length > 0 ? (
+              members.map((member, index) => (
+                <div key={index} className="teamMainCard">
                   <div>
-                    <p className="teamName">{member.name}</p>
-                    <p className="teamTitle">{member.role}</p>
+                    {member.image ? (
+                      <img
+                        className="teamImg"
+                        src={member.image}
+                        alt={member.name}
+                      />
+                    ) : (
+                      <img
+                        className="teamImg"
+                        src={dump}
+                        alt="Placeholder"
+                      />
+                    )}
                   </div>
-                  <div>
-                    <IconButton onClick={() => handleToggle(index)}>
-                      <ExpandMoreIcon style={{ color: "#fff" }} color="#fff" />
-                    </IconButton>
+                  <div className="cardDescription">
+                    <div>
+                      <p className="teamName">{member.name}</p>
+                      <p className="teamTitle">{member.position}</p>
+                    </div>
+                    <div>
+                      <IconButton onClick={() => handleToggle(index)}>
+                        <ExpandMoreIcon
+                          style={{ color: "#fff" }}
+                          color="#fff"
+                        />
+                      </IconButton>
+                    </div>
+                    <Collapse in={expandedStates[index]}>
+                      <div className="teamDescription">
+                        {member.description}
+                      </div>
+                    </Collapse>
                   </div>
-                  <Collapse in={expandedStates[index]}>
-                    <div className="teamDescription">{member.description}</div>
-                  </Collapse>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p>Loading...</p>
+            )
+            }
           </Slider>
         </div>
         <div className="spacer-divider-bloggers"></div>
-       
       </div>
     </>
   );
