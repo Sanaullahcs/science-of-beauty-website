@@ -1,15 +1,33 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Slider from "react-slick";
 import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Blog.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
 import Plx from "react-plx";
-import { Link } from 'react-router-dom';
-
-
+import { Link } from "react-router-dom";
+const Base_URL = "http://127.0.0.1:8000/api/fetchblog/";
 
 function Blogs({ blogs }) {
+  const [Blog, setBlog] = useState();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(Base_URL, {
+          headers: {
+            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
+          },
+        });
+        console.log("Response:", response);
+        const data = await response.json();
+        console.log("BlogDatamIN MAINN:", data.blogs);
+        setBlog(data.blogs);
+      } catch (error) {
+        console.error("Error:", error.message);
+      }
+    }
+    fetchData();
+  }, []);
   const NextArrow = (props) => {
     return (
       <div
@@ -84,7 +102,6 @@ function Blogs({ blogs }) {
           endValue: 1,
           property: "scale",
         },
-
       ],
     },
     {
@@ -101,13 +118,17 @@ function Blogs({ blogs }) {
   ];
   return (
     <>
-      <div style={{ overflowX: 'hidden' }}>
+      <div style={{ overflowX: "hidden" }}>
         <div className="blog-container">
           <Plx parallaxData={parallaxDataTxt}>
             <h1 className="blog-heading">Blogs</h1>
           </Plx>
 
-          <Slider style={{ marginleft: "50px" }} {...sliderSettings} className="slider-blog-card-holder">
+          <Slider
+            style={{ marginleft: "50px" }}
+            {...sliderSettings}
+            className="slider-blog-card-holder"
+          >
             {/* <div style={{ overflow: 'hidden' }} className="slide">
               <div className="blog-bg-1 blog-bg">
                 <div className="fashion-div-wrapper">
@@ -172,10 +193,13 @@ function Blogs({ blogs }) {
                 </p>
               </div>
             </div> */}
-            {blogs.map((blog) => (
+            {Blog && Blog.map((blog) => (
               <div key={blog.id} className="slide">
                 <Link to={`/blogs/${blog.id}`} className="blog-link">
-                  <div  style={{backgroundImage: `url(${blog.image})`}} className={`blog-bg`}>
+                  <div
+                    style={{ backgroundImage: `url(${blog.image})` }}
+                    className={`blog-bg`}
+                  >
                     <div className="fashion-div-wrapper">
                       <Button className="fashion-btn">Fashion</Button>
                     </div>
@@ -184,18 +208,16 @@ function Blogs({ blogs }) {
                     <p className="blog-card-description">{blog.content}</p> */}
                   </div>
                   <div className="blogExpand">
-                      <p className="blog-card-date">{blog.date}</p>
-                      <p className="blog-card-heading">{blog.title}</p>
-                      <p className="blog-card-description">{blog.content}</p>
-                    </div>
+                    <p className="blog-card-date">{blog.date}</p>
+                    <p className="blog-card-heading">{blog.title}</p>
+                    <p className="blog-card-description">{blog.description}</p>
+                  </div>
                 </Link>
               </div>
             ))}
           </Slider>
         </div>
-        <div className="spacer-divider-bloggers">
-
-        </div>
+        <div className="spacer-divider-bloggers"></div>
       </div>
     </>
   );
