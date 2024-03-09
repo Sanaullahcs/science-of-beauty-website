@@ -1,12 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Divider, Grid } from "@material-ui/core";
 import lady from "../assets/images/ladyc.png";
 import "../assets/CustomCSS/BlogMain.css";
-import "../assets/CustomCSS/Blog.css"
-import { Link } from 'react-router-dom';
+import "../assets/CustomCSS/Blog.css";
+import { Link } from "react-router-dom";
+
+const Base_URL = "http://127.0.0.1:8000/api/fetchblog/";
 
 function BlogsMain({ blogs }) {
   const [isContentVisible, setIsContentVisible] = useState(true);
+  const [Blog, setBlog] = useState();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(Base_URL, {
+          headers: {
+            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
+          },
+        });
+        console.log("Response:", response);
+        const data = await response.json();
+        console.log("BlogData:", data.blogs);
+        setBlog(data.blogs);
+      } catch (error) {
+        console.error("Error:", error.message);
+      }
+    }
+    fetchData();
+  }, []);
+  const truncateDescription = (description) => {
+    // Create a temporary element to parse HTML string
+    const tempElement = document.createElement("div");
+    tempElement.innerHTML = description;
+
+    // Extract text content from the temporary element
+    let textContent = tempElement.innerText;
+
+    // Split the text content into words
+    const words = textContent.split(" ");
+
+    // Check if the number of words is greater than 30
+    if (words.length > 30) {
+      // Join the first 30 words and add ellipsis
+      return words.slice(0, 30).join(" ") + "...";
+    }
+
+    // Return the original text content if less than or equal to 30 words
+    return textContent;
+  };
 
   const handleReadMoreClick = () => {
     setIsContentVisible(!isContentVisible);
@@ -15,25 +56,36 @@ function BlogsMain({ blogs }) {
     <>
       <div>
         <div>
-          <Grid container className="blogPageContainer-wrapper" style={{padding: '0 8%'}}>
-            {blogs.map((blog) => (
-              <Grid key={blog.id} items lg={4} md={6} sm={12} xs={12}>
-                <div className="blog-postWrapper">
-                  <Link to={`/blogs/${blog.id}`} className="blog-link">
-                    <div style={{backgroundImage: `url(${blog.image})`}}  className={`blog-bg-${blog.id} blog-bg`}>
-                      <div className="fashion-div-wrapper">
-                        <Button className="fashion-btn">FASHION</Button>
+          <Grid
+            container
+            className="blogPageContainer-wrapper"
+            style={{ padding: "0 8%" }}
+          >
+            {Blog &&
+              Blog.map((blog) => (
+                <Grid key={blog.id} items lg={4} md={6} sm={12} xs={12}>
+                  <div className="blog-postWrapper">
+                    <Link to={`/blogs/${blog.id}`} className="blog-link">
+                      <div
+                        style={{ backgroundImage: `url(${blog.image})` }}
+                        className={`blog-bg-${blog.id} blog-bg`}
+                      >
+                        <div className="fashion-div-wrapper">
+                          <Button className="fashion-btn">FASHION</Button>
+                        </div>
                       </div>
-                    </div>
-                    <div className="blogExpand">
-                      <p className="blog-card-date">{blog.date}</p>
-                      <p className="blog-card-heading">{blog.title}</p>
-                      <p className="blog-card-description">{blog.content}</p>
-                    </div>
-                  </Link>
-                </div>
-              </Grid>
-            ))}
+                      <div className="blogExpand">
+                        <p className="blog-card-date">{blog.date}</p>
+                        <p className="blog-card-heading">{blog.title}</p>
+                        <p className="blog-card-description">
+                          {" "}
+                          {truncateDescription(blog.description)}
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                </Grid>
+              ))}
             {/* <Grid items lg={4} md={6} sm={12} xs={12}>
 
               <div className="blog-postWrapper">
@@ -210,7 +262,6 @@ function BlogsMain({ blogs }) {
             <Grid container>
               <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div className="flex-center">
-
                   <div className="blog-bg-1 blog-bg">
                     <div className="fashion-div-wrapper">
                       <Button className="fashion-btn">FASHION</Button>
@@ -221,15 +272,14 @@ function BlogsMain({ blogs }) {
                     </p>
                     <p className="blog-card-description">
                       Progressively incentivize cooperative systems through
-                      technically sound functionalities. The credibly productivate
-                      seamless data.
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
                     </p>
                   </div>
                 </div>
               </Grid>
               <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div className="flex-center">
-
                   <div className="blog-bg-2 blog-bg">
                     <div className="fashion-div-wrapper">
                       <Button className="fashion-btn">FASHION</Button>
@@ -240,15 +290,14 @@ function BlogsMain({ blogs }) {
                     </p>
                     <p className="blog-card-description">
                       Progressively incentivize cooperative systems through
-                      technically sound functionalities. The credibly productivate
-                      seamless data.
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
                     </p>
                   </div>
                 </div>
               </Grid>
               <Grid items lg={4} md={6} sm={12} xs={12}>
                 <div className="flex-center">
-
                   <div className="blog-bg-3 blog-bg">
                     <div className="fashion-div-wrapper">
                       <Button className="fashion-btn">FASHION</Button>
@@ -259,8 +308,8 @@ function BlogsMain({ blogs }) {
                     </p>
                     <p className="blog-card-description">
                       Progressively incentivize cooperative systems through
-                      technically sound functionalities. The credibly productivate
-                      seamless data.
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
                     </p>
                   </div>
                 </div>

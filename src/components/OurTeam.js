@@ -7,7 +7,7 @@ import dump from '../assets/images/dumpp.jpg'
 import Plx from "react-plx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@material-ui/core";
-const Base_URL = "https://thescienceofbeauty.co/api/fetchmembers/";
+const Base_URL = "http://127.0.0.1:8000/api/fetchmembers/";
 
 function OurTeam() {
   const [members, setMembers] = useState();
