@@ -5,7 +5,7 @@ import "../assets/CustomCSS/BlogMain.css";
 import "../assets/CustomCSS/Blog.css";
 import { Link } from "react-router-dom";
 
-const Base_URL = "http://127.0.0.1:8000/api/fetchblog/";
+import { FETCH_BLOG_URL } from "../env/apiConfig";
 
 function BlogsMain({ blogs }) {
   const [isContentVisible, setIsContentVisible] = useState(true);
@@ -13,7 +13,7 @@ function BlogsMain({ blogs }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(Base_URL, {
+        const response = await fetch(FETCH_BLOG_URL, {
           headers: {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },

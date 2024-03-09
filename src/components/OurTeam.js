@@ -3,18 +3,17 @@ import Slider from "react-slick";
 import "../assets/CustomCSS/OurTeam.css";
 import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
-import dump from '../assets/images/dumpp.jpg'
+import dump from "../assets/images/dumpp.jpg";
 import Plx from "react-plx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@material-ui/core";
-const Base_URL = "http://127.0.0.1:8000/api/fetchmembers/";
-
+import { FETCH_MEMBERS } from "../env/apiConfig";
 function OurTeam() {
   const [members, setMembers] = useState();
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(Base_URL, {
+        const response = await fetch(FETCH_MEMBERS, {
           headers: {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
@@ -177,8 +176,7 @@ function OurTeam() {
           </Plx>
 
           <Slider {...sliderSettings} className="slider-blog-card-holder">
-            {
-            members && members.length > 0 ? (
+            {members && members.length > 0 ? (
               members.map((member, index) => (
                 <div key={index} className="teamMainCard">
                   <div>
@@ -189,11 +187,7 @@ function OurTeam() {
                         alt={member.name}
                       />
                     ) : (
-                      <img
-                        className="teamImg"
-                        src={dump}
-                        alt="Placeholder"
-                      />
+                      <img className="teamImg" src={dump} alt="Placeholder" />
                     )}
                   </div>
                   <div className="cardDescription">
@@ -219,8 +213,7 @@ function OurTeam() {
               ))
             ) : (
               <p>Loading...</p>
-            )
-            }
+            )}
           </Slider>
         </div>
         <div className="spacer-divider-bloggers"></div>

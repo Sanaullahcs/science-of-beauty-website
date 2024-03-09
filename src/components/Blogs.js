@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Blog.css";
@@ -6,14 +6,14 @@ import next from "../assets/images/next-blog-arrow.png";
 import prev from "../assets/images/prev-blog-arrow.png";
 import Plx from "react-plx";
 import { Link } from "react-router-dom";
-const Base_URL = "http://127.0.0.1:8000/api/fetchblog/";
+import { FETCH_BLOG_URL } from "../env/apiConfig";
 
 function Blogs({ blogs }) {
   const [Blog, setBlog] = useState();
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(Base_URL, {
+        const response = await fetch(FETCH_BLOG_URL, {
           headers: {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
@@ -116,6 +116,26 @@ function Blogs({ blogs }) {
       ],
     },
   ];
+  const truncateDescription = (description) => {
+    // Create a temporary element to parse HTML string
+    const tempElement = document.createElement("div");
+    tempElement.innerHTML = description;
+
+    // Extract text content from the temporary element
+    let textContent = tempElement.innerText;
+
+    // Split the text content into words
+    const words = textContent.split(" ");
+
+    // Check if the number of words is greater than 30
+    if (words.length > 30) {
+      // Join the first 30 words and add ellipsis
+      return words.slice(0, 30).join(" ") + "...";
+    }
+
+    // Return the original text content if less than or equal to 30 words
+    return textContent;
+  };
   return (
     <>
       <div style={{ overflowX: "hidden" }}>
@@ -193,28 +213,31 @@ function Blogs({ blogs }) {
                 </p>
               </div>
             </div> */}
-            {Blog && Blog.map((blog) => (
-              <div key={blog.id} className="slide">
-                <Link to={`/blogs/${blog.id}`} className="blog-link">
-                  <div
-                    style={{ backgroundImage: `url(${blog.image})` }}
-                    className={`blog-bg`}
-                  >
-                    <div className="fashion-div-wrapper">
-                      <Button className="fashion-btn">Fashion</Button>
-                    </div>
-                    {/* <p className="blog-card-date">{blog.date}</p>
+            {Blog &&
+              Blog.map((blog) => (
+                <div key={blog.id} className="slide">
+                  <Link to={`/blogs/${blog.id}`} className="blog-link">
+                    <div
+                      style={{ backgroundImage: `url(${blog.image})` }}
+                      className={`blog-bg`}
+                    >
+                      <div className="fashion-div-wrapper">
+                        <Button className="fashion-btn">Fashion</Button>
+                      </div>
+                      {/* <p className="blog-card-date">{blog.date}</p>
                     <p className="blog-card-heading">{blog.title}</p>
                     <p className="blog-card-description">{blog.content}</p> */}
-                  </div>
-                  <div className="blogExpand">
-                    <p className="blog-card-date">{blog.date}</p>
-                    <p className="blog-card-heading">{blog.title}</p>
-                    <p className="blog-card-description">{blog.description}</p>
-                  </div>
-                </Link>
-              </div>
-            ))}
+                    </div>
+                    <div className="blogExpand">
+                      <p className="blog-card-date">{blog.date}</p>
+                      <p className="blog-card-heading">{blog.title}</p>
+                      <p className="blog-card-description">
+                        {truncateDescription(blog.description)}
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              ))}
           </Slider>
         </div>
         <div className="spacer-divider-bloggers"></div>

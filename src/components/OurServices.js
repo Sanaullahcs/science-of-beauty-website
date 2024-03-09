@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import next from "../assets/images/services-next.png";
 import prev from "../assets/images/services-prev.png";
@@ -20,6 +20,7 @@ import ser4 from "../assets/images/wwd4.png";
 import ser5 from "../assets/images/compress.jpg";
 import Plx from "react-plx";
 import { Link } from "react-router-dom";
+import { FETCH_GALLERY } from "../env/apiConfig";
 // import { Parallax } from 'react-scroll-parallax';
 // =======================================================FOR THE LIGHT GALLERY======================================
 // import LightGallery from 'lightgallery/react';
@@ -36,12 +37,31 @@ const serviceData = [
   { img: img4, title: "IV therapy" },
   { img: img5, title: "Laser Hair Removal " },
   { img: img6, title: "Body Contouring " },
-  { img: img7, title: " Morpheus 8" },
+  { img: img7, title: " Morpheus 8" }, 
   { img: img8, title: "NeuroToxin" },
   { img: img9, title: "Chemical Peels" },
 ];
 
 const OurServices = () => {
+  const [image, setImage] = useState();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(FETCH_GALLERY, {
+          headers: {
+            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
+          },
+        });
+        console.log("Response:", response);
+        const data = await response.json();
+        console.log("Galery:", data.Images);
+        setImage(data.Images);
+      } catch (error) {
+        console.error("Error:", error.message);
+      }
+    }
+    fetchData();
+  }, []);
   const NextArrow = (props) => {
     return (
       <div
@@ -308,6 +328,22 @@ const OurServices = () => {
       ],
     },
   ];
+  if (!image || !Array.isArray(image) || image.length === 0) {
+    return null; // Or handle the case where image is not defined
+  }
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array; 
+  };
+
+ 
+  const shuffledImages = shuffleArray(image);
+
+  
+  const randomImages = shuffledImages.slice(0, 5);
 
   const onInit = () => {
     console.log("lightGallery has been initialized");
@@ -355,31 +391,46 @@ const OurServices = () => {
           </p>
         </div>
         <div className="grid-system-outer-div">
+        {/* {image && image.map((image, index) => (
+        <div key={index}>
+          <img src={image.filename} alt={`Image ${index}`} />
+        </div>
+      ))} */}
+       {/* <div className="grid-system-outer-div">
+        {image && randomImages.map((img, index) => (
+        <div className="testi" key={index}>
+          <Plx className="widthHeight100" parallaxData={parallaxDataOne}>
+            <img className="ser1" src={img.filename} alt={`Random Image ${index}`} />
+          </Plx>
+        </div>
+        
+      ))}
+      </div> */}
           {/* <Plx parallaxData={parallaxDataGrid}> */}
           <div className="main-grid-imgs">
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataOne}>
-                <img className="ser1" src={ser1} />
+                <img className="ser1" src={randomImages[0].filename} />
               </Plx>
             </div>
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataTwo}>
-                <img className="ser1" src={ser2} />
+                <img className="ser1" src={randomImages[1].filename} />
               </Plx>
             </div>
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataThree}>
-                <img className="ser1" src={ser4} />
+                <img className="ser1" src={randomImages[2].filename}/>
               </Plx>
             </div>
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataFour}>
-                <img className="ser1" src={ser3} />
+                <img className="ser1" src={randomImages[3].filename} />
               </Plx>
             </div>
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataFive}>
-                <img className="ser1" src={ser5} />
+                <img className="ser1" src={randomImages[4].filename} />
               </Plx>
             </div>
           </div>
