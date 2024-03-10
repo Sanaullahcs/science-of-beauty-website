@@ -37,13 +37,14 @@ const serviceData = [
   { img: img4, title: "IV therapy" },
   { img: img5, title: "Laser Hair Removal " },
   { img: img6, title: "Body Contouring " },
-  { img: img7, title: " Morpheus 8" }, 
+  { img: img7, title: " Morpheus 8" },
   { img: img8, title: "NeuroToxin" },
   { img: img9, title: "Chemical Peels" },
 ];
 
 const OurServices = () => {
   const [image, setImage] = useState();
+  const [randomImage, setRandomImage] = useState([]);
   useEffect(() => {
     async function fetchData() {
       try {
@@ -328,6 +329,17 @@ const OurServices = () => {
       ],
     },
   ];
+  useEffect(() => {
+    if (image && Array.isArray(image) && image.length > 0) {
+      const interval = setInterval(() => {
+        const shuffledImages = shuffleArray(image);
+        const newRandomImages = shuffledImages.slice(0, 5);
+        setRandomImage(newRandomImages);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [image]);
   if (!image || !Array.isArray(image) || image.length === 0) {
     return null; // Or handle the case where image is not defined
   }
@@ -336,13 +348,11 @@ const OurServices = () => {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-    return array; 
+    return array;
   };
 
- 
   const shuffledImages = shuffleArray(image);
 
-  
   const randomImages = shuffledImages.slice(0, 5);
 
   const onInit = () => {
@@ -391,22 +401,6 @@ const OurServices = () => {
           </p>
         </div>
         <div className="grid-system-outer-div">
-        {/* {image && image.map((image, index) => (
-        <div key={index}>
-          <img src={image.filename} alt={`Image ${index}`} />
-        </div>
-      ))} */}
-       {/* <div className="grid-system-outer-div">
-        {image && randomImages.map((img, index) => (
-        <div className="testi" key={index}>
-          <Plx className="widthHeight100" parallaxData={parallaxDataOne}>
-            <img className="ser1" src={img.filename} alt={`Random Image ${index}`} />
-          </Plx>
-        </div>
-        
-      ))}
-      </div> */}
-          {/* <Plx parallaxData={parallaxDataGrid}> */}
           <div className="main-grid-imgs">
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataOne}>
@@ -420,7 +414,7 @@ const OurServices = () => {
             </div>
             <div className="testi">
               <Plx className="widthHeight100" parallaxData={parallaxDataThree}>
-                <img className="ser1" src={randomImages[2].filename}/>
+                <img className="ser1" src={randomImages[2].filename} />
               </Plx>
             </div>
             <div className="testi">
@@ -434,7 +428,6 @@ const OurServices = () => {
               </Plx>
             </div>
           </div>
-          {/* </Plx> */}
         </div>
       </div>
       {/* <LightGallery

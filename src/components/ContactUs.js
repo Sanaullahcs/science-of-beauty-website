@@ -145,10 +145,10 @@ function ContactUs() {
               </Grid>
               <Grid items lg={6} md={12}>
                 <div className="additional-div">
-                  <p className="contact-interested-heading">
+                  {/* <p className="contact-interested-heading">
                     I’m interested in...
-                  </p>
-                  <div className="btn-wrap">
+                  </p> */}
+                  {/* <div className="btn-wrap">
                     <Button
                       className={`category-btn ${activeCategories.has("Makeup Artist") ? "active-category-btn" : ""}`}
                       onClick={() => handleCategoryButtonClick("Makeup Artist")}
@@ -179,7 +179,7 @@ function ContactUs() {
                     >
                       Other
                     </Button>
-                  </div>
+                  </div> */}
                   <div className="contact-textField-div">
                     <TextField
                       className="contact-form-fields"
