@@ -1,7 +1,8 @@
 .blog-img-holder {
   width: 100% !important;
-  /* height: 100% !important; */
+  height: 100% !important;
   max-height: 606px;
+  object-fit: cover;
 }
 
 .services-img-holderHolder {
@@ -81,7 +82,7 @@
 .exploreMoreBtn {
   border-radius: 16px !important;
   background: #9d4a43 !important;
-  color: #EEE !important;
+  color: #eee !important;
   text-align: center;
   font-family: Poppins !important;
   font-size: 20px !important;

@@ -44,6 +44,7 @@ import BrowLamination from "../components/Services/BrowLamination";
 import LashLiftAndTint from "../components/Services/LashLiftAndTint";
 import BlogDetails from "../components/BlogDetails";
 import BlogCard from "../JSONData/BlogCard";
+import SingleService from "../components/Services/SingleService.js"
 import LoginComponent from "../components/LoginAndSignUp/LoginCom";
 import SignupComponent from "../components/LoginAndSignUp/SignUpComponent";
 import Appoinments from "../components/Appointments";
@@ -235,6 +236,20 @@ function AnimatedRoutes() {
           }
         />
         {/* services sub routes */}
+        <Route
+          exact
+          path={"/services/:id"}
+          element={
+            <>
+              <Navbar />
+              <AnimatedComponent>
+                <SingleService />
+                {/* <FaceAndNeck /> */}
+                <Footer />
+              </AnimatedComponent>
+            </>
+          }
+        />
         <Route
           exact
           path={"/services/face-and-neck"}
