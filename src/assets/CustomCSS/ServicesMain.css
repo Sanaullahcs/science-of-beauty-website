@@ -119,3 +119,20 @@
     font-size: 17px !important;
   }
 }
+
+@media (min-width: 1280px) {
+  .ForSmall {
+    display: none !important;
+  }
+  .ForLarge {
+    display: flex !important;
+  }
+}
+@media (max-width: 1280px) {
+  .ForLarge {
+    display: none !important;
+  }
+  .ForSmall {
+    display: flex !important;
+  }
+}

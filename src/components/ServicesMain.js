@@ -120,13 +120,14 @@ function ServicesMain() {
     <>
       <div style={{ overflow: "hidden" }}>
         <div className="main-blog-content">
-          <Grid container className="main-main-blogs">
+        <Grid container className="main-main-blogs ForSmall">
             {services &&
               services.map((item, index) => (
                 <React.Fragment key={index}>
-                  {index % 2 === 0 ? ( // Check if index is even
-                    <>
-                      <Grid item lg={6}>
+                 
+                    
+                      <Grid item lg={6} md={12}>
+                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
                         {item.image && (
                           <div className="services-img-holderHolder">
                             <img
@@ -136,6 +137,48 @@ function ServicesMain() {
                             />
                           </div>
                         )}
+                        {/* </Plx> */}
+                      </Grid>
+                      <Grid item lg={6} md={12}>
+                        <div className="blog-main-div">
+                          <p className="blog-main-heading">{item.title}</p>
+                          <p className="blog-description-heading">
+                            {truncateDescription(item.description)}
+                          </p>
+                          <div className="contactus-btn-div">
+                            <Link to={`/services/${item.id}`}>
+                              <Button
+                                className="blog-contact-btn"
+                                onClick={handleReadMoreClick}
+                              >
+                                Read More
+                              </Button>
+                            </Link>
+                          </div>
+                        </div>
+                      </Grid>
+                 
+                </React.Fragment>
+              ))}
+          </Grid>
+          <Grid container className="main-main-blogs ForLarge">
+            {services &&
+              services.map((item, index) => (
+                <React.Fragment key={index}>
+                  {index % 2 === 0 ? ( // Check if index is even
+                    <>
+                      <Grid item lg={6}>
+                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
+                        {item.image && (
+                          <div className="services-img-holderHolder">
+                            <img
+                              className="blog-img-holder"
+                              src={item.image}
+                              alt={`Image ${index}`}
+                            />
+                          </div>
+                        )}
+                        {/* </Plx> */}
                       </Grid>
                       <Grid item lg={6}>
                         <div className="blog-main-div">
@@ -177,6 +220,7 @@ function ServicesMain() {
                         </div>
                       </Grid>
                       <Grid item lg={6}>
+                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
                         {item.image && (
                           <div className="services-img-holderHolder">
                             <img
@@ -186,6 +230,7 @@ function ServicesMain() {
                             />
                           </div>
                         )}
+                        {/* </Plx> */}
                       </Grid>
                     </>
                   )}
