@@ -120,6 +120,7 @@ function ServicesMain() {
     <>
       <div style={{ overflow: "hidden" }}>
         <div className="main-blog-content">
+          {/* THIS IS THE DIV ONLY FOR THE MD AND SM SCREEN */}
         <Grid container className="main-main-blogs ForSmall">
             {services &&
               services.map((item, index) => (
@@ -161,6 +162,7 @@ function ServicesMain() {
                 </React.Fragment>
               ))}
           </Grid>
+          {/* THIS IS HTE DIV ONLY FOR THE LG AND FURTHER SCREEN */}
           <Grid container className="main-main-blogs ForLarge">
             {services &&
               services.map((item, index) => (
