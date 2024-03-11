@@ -249,47 +249,47 @@ function ContactUs() {
                     <div className="btn-wrap">
                       <Button
                         className={`category-btn ${
-                          activeCategories.has("Makeup Artist")
+                          activeCategories.has("Semaglutide")
                             ? "active-category-btn"
                             : ""
                         }`}
                         onClick={() =>
-                          handleCategoryButtonClick("Makeup Artist")
+                          handleCategoryButtonClick("Semaglutide")
                         }
                       >
-                        Makeup Artist
+                        Semaglutide
                       </Button>
                       <Button
                         className={`category-btn ${
-                          activeCategories.has("Barbersalon")
+                          activeCategories.has("Face & Neck")
                             ? "active-category-btn"
                             : ""
                         }`}
-                        onClick={() => handleCategoryButtonClick("Barbersalon")}
+                        onClick={() => handleCategoryButtonClick("Face & Neck")}
                       >
-                        Barbersalon
+                        Face & Neck
                       </Button>
                       <Button
                         className={`category-btn ${
-                          activeCategories.has("Frisorsalon")
+                          activeCategories.has("BodyTightening")
                             ? "active-category-btn"
                             : ""
                         }`}
-                        onClick={() => handleCategoryButtonClick("Frisorsalon")}
+                        onClick={() => handleCategoryButtonClick("BodyTightening")}
                       >
-                        Frisorsalon
+                        BodyTightening
                       </Button>
                       <Button
                         className={`category-btn ${
-                          activeCategories.has("Massageclinic")
+                          activeCategories.has("BodyScarring")
                             ? "active-category-btn"
                             : ""
                         }`}
                         onClick={() =>
-                          handleCategoryButtonClick("Massageclinic")
+                          handleCategoryButtonClick("BodyScarring")
                         }
                       >
-                        Massageclinic
+                        BodyScarring
                       </Button>
                       <Button
                         className={`category-btn other-contact-btn ${
