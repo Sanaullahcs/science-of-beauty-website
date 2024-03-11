@@ -95,16 +95,16 @@ function ContactUs() {
       });
 
       if (response.ok) {
-       console.log("Success")
-       setButtonText("Delivered");
-       setFormData({ name: "", email: "", message: "", interested: [] });
+        console.log("Success");
+        setButtonText("Delivered");
+        setFormData({ name: "", email: "", message: "", interested: [] });
       } else {
         // Handle error
         console.error("Failed to send message");
-        setButtonText("Undelivered");
       }
     } catch (error) {
       console.error("Error:", error);
+      setButtonText("Undelivered");
     }
   };
   const parallaxDataTxt = [
