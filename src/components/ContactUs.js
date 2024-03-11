@@ -12,6 +12,7 @@ import Plx from "react-plx";
 import { POST_CONTACT } from "../env/apiConfig";
 
 function ContactUs() {
+  const [buttonText, setButtonText] = useState("Send Messages");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -95,9 +96,12 @@ function ContactUs() {
 
       if (response.ok) {
        console.log("Success")
+       setButtonText("Delivered");
+       setFormData({ name: "", email: "", message: "", interested: [] });
       } else {
         // Handle error
         console.error("Failed to send message");
+        setButtonText("Undelivered");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -331,7 +335,8 @@ function ContactUs() {
                       <Button type="submit" className="send-message-btn">
                         <img src={send} />
                         <span className="send-messages-span">
-                          Send Messages
+                          {/* Send Messages */}
+                          {buttonText}
                         </span>
                       </Button>
                     </div>
