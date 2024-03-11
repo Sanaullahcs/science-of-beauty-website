@@ -17,9 +17,9 @@ function Pricing() {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+        
         const data = await response.json();
-        console.log("Pricing:", data.pricing);
+        
         setPrice(data.pricing);
       } catch (error) {
         console.error("Error:", error.message);

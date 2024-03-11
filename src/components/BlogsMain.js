@@ -18,9 +18,9 @@ function BlogsMain({ blogs }) {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+      
         const data = await response.json();
-        console.log("BlogData:", data.blogs);
+       
         setBlog(data.blogs);
       } catch (error) {
         console.error("Error:", error.message);

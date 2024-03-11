@@ -18,9 +18,9 @@ function OurTeam() {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+
         const data = await response.json();
-        console.log("Data:", data.Members);
+
         setMembers(data.Members);
       } catch (error) {
         console.error("Error:", error.message);
@@ -28,19 +28,6 @@ function OurTeam() {
     }
     fetchData();
   }, []);
-
-  // const fetc = async  () =>{
-  //   try {
-  //     const response = await fetch('http://127.0.0.1:8000/api/fetchmembers');
-  //     console.log("Response:", response);
-  //     const data = await response.json();
-  //     console.log("Data:", data);
-  //     setMembers(data);
-  //   } catch (error) {
-
-  //     console.error("Error:", error.message);
-  //   }
-  // }
   const teamMembers = [
     {
       img: require("../assets/images/antonio.png"),

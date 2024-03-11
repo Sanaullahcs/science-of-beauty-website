@@ -61,13 +61,13 @@ function Navbar() {
     closeMenu();
     navigate('/#pricing');
     handleLinkClicktest(event)
-    console.log('one');
+  
   };
   const handleLinkClicktest = (event) => {
     // event.preventDefault();
     closeMenu();
     navigate('/#pricing');
-    console.log('two');
+   
 
   };
 
@@ -104,11 +104,6 @@ function Navbar() {
   const handleDoubleClick = () => {
     setIsAssistiveMenuOpen(!isAssistiveMenuOpen);
   };
-  // const menuOptions = [
-  //   { label: "Option 1", action: () => console.log("Option 1 clicked") },
-  //   { label: "Option 2", action: () => console.log("Option 2 clicked") },
-  //   // Add more menu options as needed
-  // ];
   return (
     <>
       <div style={{ padding: '1% 0 17px', borderBottom: "1px solid #ccc",    background: '#FDF7F3' }}>

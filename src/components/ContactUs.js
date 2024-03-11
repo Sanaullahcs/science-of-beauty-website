@@ -12,6 +12,7 @@ import Plx from "react-plx";
 import { POST_CONTACT } from "../env/apiConfig";
 
 function ContactUs() {
+  const [buttonText, setButtonText] = useState("Send Messages");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -80,8 +81,10 @@ function ContactUs() {
 
     try {
       const formDataWithCategories = {
-        ...formData,
-        interested: Array.from(activeCategories),
+        username: formData.name,
+        user_email: formData.email,
+        interested_in: Array.from(activeCategories),
+        user_message: formData.message,
       };
       const response = await fetch(POST_CONTACT, {
         method: "POST",
@@ -92,14 +95,16 @@ function ContactUs() {
       });
 
       if (response.ok) {
-        // Handle success
-        console.log("Message sent successfully");
+        console.log("Success");
+        setButtonText("Delivered");
+        setFormData({ name: "", email: "", message: "", interested: [] });
       } else {
         // Handle error
         console.error("Failed to send message");
       }
     } catch (error) {
       console.error("Error:", error);
+      setButtonText("Undelivered");
     }
   };
   const parallaxDataTxt = [
@@ -330,7 +335,8 @@ function ContactUs() {
                       <Button type="submit" className="send-message-btn">
                         <img src={send} />
                         <span className="send-messages-span">
-                          Send Messages
+                          {/* Send Messages */}
+                          {buttonText}
                         </span>
                       </Button>
                     </div>

@@ -16,9 +16,9 @@ const SingleService = () => {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+       
         const data = await response.json();
-        console.log("ServicesData:", data.services);
+       
         setServices(data.services);
       } catch (error) {
         console.error("Error:", error.message);
@@ -28,11 +28,11 @@ const SingleService = () => {
     fetchData();
   }, []);
   const { id } = useParams();
-  console.log(id);
+
   const serviceOne = services
     ? services.find((item) => item.id === parseInt(id))
     : null;
-  console.log(serviceOne);
+
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="subServiceContainer-wrapper">
