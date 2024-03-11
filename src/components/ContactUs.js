@@ -9,9 +9,99 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import send from "../assets/images/send.png";
 import Plx from "react-plx";
-import POST_CONTACT from "../env/apiConfig";
+import { POST_CONTACT } from "../env/apiConfig";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    interested: [],
+  });
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value, checked, type } = e.target;
+
+    if (type === "checkbox") {
+      const updatedInterested = checked
+        ? [...formData.interested, value]
+        : formData.interested.filter((item) => item !== value);
+
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        interested: updatedInterested,
+      }));
+    } else {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: value,
+      }));
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let valid = true;
+    const errors = {};
+
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+      valid = false;
+    } else if (!/^[a-zA-Z\s]+$/.test(formData.name)) {
+      errors.name = "Name should only contain letters and spaces";
+      valid = false;
+    } else if (formData.name.length > 25) {
+      errors.name = "Name should be less than 25 characters";
+      valid = false;
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is not valid";
+      valid = false;
+    }
+
+    if (!formData.message.trim()) {
+      errors.message = "Message is required";
+      valid = false;
+    }
+
+    if (!valid) {
+      setFormErrors(errors);
+      return;
+    }
+
+    try {
+      const formDataWithCategories = {
+        ...formData,
+        interested: Array.from(activeCategories),
+      };
+      const response = await fetch(POST_CONTACT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formDataWithCategories),
+      });
+
+      if (response.ok) {
+        // Handle success
+        console.log("Message sent successfully");
+      } else {
+        // Handle error
+        console.error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
   const parallaxDataTxt = [
     {
       start: 0,
@@ -146,89 +236,106 @@ function ContactUs() {
                 </div>
               </Grid>
               <Grid items lg={6} md={12}>
-                <div className="additional-div">
-                  <p className="contact-interested-heading">
-                    I’m interested in...
-                  </p>
-                  <div className="btn-wrap">
-                    <Button
-                      className={`category-btn ${
-                        activeCategories.has("Makeup Artist")
-                          ? "active-category-btn"
-                          : ""
-                      }`}
-                      onClick={() => handleCategoryButtonClick("Makeup Artist")}
-                    >
-                      Makeup Artist
-                    </Button>
-                    <Button
-                      className={`category-btn ${
-                        activeCategories.has("Barbersalon")
-                          ? "active-category-btn"
-                          : ""
-                      }`}
-                      onClick={() => handleCategoryButtonClick("Barbersalon")}
-                    >
-                      Barbersalon
-                    </Button>
-                    <Button
-                      className={`category-btn ${
-                        activeCategories.has("Frisorsalon")
-                          ? "active-category-btn"
-                          : ""
-                      }`}
-                      onClick={() => handleCategoryButtonClick("Frisorsalon")}
-                    >
-                      Frisorsalon
-                    </Button>
-                    <Button
-                      className={`category-btn ${
-                        activeCategories.has("Massageclinic")
-                          ? "active-category-btn"
-                          : ""
-                      }`}
-                      onClick={() => handleCategoryButtonClick("Massageclinic")}
-                    >
-                      Massageclinic
-                    </Button>
-                    <Button
-                      className={`category-btn other-contact-btn ${
-                        activeCategories.has("Other")
-                          ? "active-category-btn"
-                          : ""
-                      }`}
-                      onClick={() => handleCategoryButtonClick("Other")}
-                    >
-                      Other
-                    </Button>
+                <form onSubmit={handleSubmit}>
+                  <div className="additional-div">
+                    <p className="contact-interested-heading">
+                      I’m interested in...
+                    </p>
+                    <div className="btn-wrap">
+                      <Button
+                        className={`category-btn ${
+                          activeCategories.has("Makeup Artist")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() =>
+                          handleCategoryButtonClick("Makeup Artist")
+                        }
+                      >
+                        Makeup Artist
+                      </Button>
+                      <Button
+                        className={`category-btn ${
+                          activeCategories.has("Barbersalon")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() => handleCategoryButtonClick("Barbersalon")}
+                      >
+                        Barbersalon
+                      </Button>
+                      <Button
+                        className={`category-btn ${
+                          activeCategories.has("Frisorsalon")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() => handleCategoryButtonClick("Frisorsalon")}
+                      >
+                        Frisorsalon
+                      </Button>
+                      <Button
+                        className={`category-btn ${
+                          activeCategories.has("Massageclinic")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() =>
+                          handleCategoryButtonClick("Massageclinic")
+                        }
+                      >
+                        Massageclinic
+                      </Button>
+                      <Button
+                        className={`category-btn other-contact-btn ${
+                          activeCategories.has("Other")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() => handleCategoryButtonClick("Other")}
+                      >
+                        Other
+                      </Button>
+                    </div>
+                    <div className="contact-textField-div">
+                      <TextField
+                        className="contact-form-fields"
+                        id="standard-basic"
+                        name="name"
+                        label="Your name"
+                        variant="standard"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                      <TextField
+                        className="contact-form-fields"
+                        id="standard-basic"
+                        name="email"
+                        label="Your email"
+                        value={formData.email}
+                        variant="standard"
+                        onChange={handleChange}
+                      />
+                      <TextField
+                        className="contact-form-fields"
+                        id="standard-basic"
+                        name="message"
+                        value={formData.message}
+                        label="Your message"
+                        variant="standard"
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="sendMessageBtn-div">
+                      <Button type="submit" className="send-message-btn">
+                        <img src={send} />
+                        <span className="send-messages-span">
+                          Send Messages
+                        </span>
+                      </Button>
+                    </div>
                   </div>
-                  <div className="contact-textField-div">
-                    <TextField
-                      className="contact-form-fields"
-                      id="standard-basic"
-                      label="Your name"
-                      variant="standard"
-                    />
-                    <TextField
-                      className="contact-form-fields"
-                      id="standard-basic"
-                      label="Your email"
-                      variant="standard"
-                    />
-                    <TextField
-                      className="contact-form-fields"
-                      id="standard-basic"
-                      label="Your message"
-                      variant="standard"
-                    />
-                  </div>
-                  <div className="sendMessageBtn-div">
-                    <Button className="send-message-btn">
-                      <img src={send} />
-                      <span className="send-messages-span">Send Messages</span>
-                    </Button>
-                  </div>
-                </div>
+                </form>
               </Grid>
             </Grid>
           </div>
