@@ -80,8 +80,10 @@ function ContactUs() {
 
     try {
       const formDataWithCategories = {
-        ...formData,
-        interested: Array.from(activeCategories),
+        username: formData.name,
+        user_email: formData.email,
+        interested_in: Array.from(activeCategories),
+        user_message: formData.message,
       };
       const response = await fetch(POST_CONTACT, {
         method: "POST",
@@ -92,8 +94,7 @@ function ContactUs() {
       });
 
       if (response.ok) {
-        // Handle success
-        console.log("Message sent successfully");
+       console.log("Success")
       } else {
         // Handle error
         console.error("Failed to send message");

@@ -53,9 +53,9 @@ const OurServices = () => {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+
         const data = await response.json();
-        console.log("Galery:", data.Images);
+
         setImage(data.Images);
       } catch (error) {
         console.error("Error:", error.message);
@@ -356,7 +356,7 @@ const OurServices = () => {
   const randomImages = shuffledImages.slice(0, 5);
 
   const onInit = () => {
-    console.log("lightGallery has been initialized");
+    // console.log("lightGallery has been initialized");
   };
 
   return (

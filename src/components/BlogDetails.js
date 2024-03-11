@@ -12,9 +12,9 @@ const BlogDetails = ({ blogs }) => {
             "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
           },
         });
-        console.log("Response:", response);
+       
         const data = await response.json();
-        console.log("BlogDatamain:", data.blogs);
+        
         setBlog(data.blogs);
       } catch (error) {
         console.error("Error:", error.message);
@@ -32,10 +32,9 @@ const BlogDetails = ({ blogs }) => {
     window.scrollTo(0, 0);
   }, []);
   const { id } = useParams();
-  console.log(id);
-  console.log(blog);
+ 
   const blogItem = blog.find((item) => item.id === parseInt(id));
-  console.log(blogItem);
+ 
   return (
     <div>
       {blogItem && (
