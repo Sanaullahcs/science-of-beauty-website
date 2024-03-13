@@ -12,9 +12,7 @@ const SingleService = () => {
     async function fetchData() {
       try {
         const response = await fetch(FETCH_SERVICES, {
-          headers: {
-            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
-          },
+         
         });
        
         const data = await response.json();

@@ -88,9 +88,7 @@ function ContactUs() {
       };
       const response = await fetch(POST_CONTACT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        
         body: JSON.stringify(formDataWithCategories),
       });
 
