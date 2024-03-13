@@ -14,9 +14,8 @@ function Blogs({ blogs }) {
     async function fetchData() {
       try {
         const response = await fetch(FETCH_BLOG_URL, {
-          headers: {
-            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
-          },
+         
+          
         });
         
         const data = await response.json();

@@ -14,9 +14,7 @@ function BlogsMain({ blogs }) {
     async function fetchData() {
       try {
         const response = await fetch(FETCH_BLOG_URL, {
-          headers: {
-            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
-          },
+        
         });
       
         const data = await response.json();
@@ -210,12 +208,12 @@ function BlogsMain({ blogs }) {
             </Grid> */}
           </Grid>
         </div>
-        <div>
+        {/* <div>
           <div className="lady-div-wrapper">
             <img className="lady" src={lady} />
           </div>
-        </div>
-        <div style={{ margin: "0px 5%" }}>
+        </div> */}
+        {/* <div style={{ margin: "0px 5%" }}>
           <p className="blog-textarea-date">08.08.2021</p>
           <p className="blog-textarea-heading">
             Richird Norton photorealistic rendering as real photos
@@ -255,9 +253,9 @@ function BlogsMain({ blogs }) {
             est pulvinar ullamcorper. Nulla facilisi.
           </p>
           <Divider className="blogs-divider" />
-        </div>
+        </div> */}
 
-        {!isContentVisible && (
+        {/* {!isContentVisible && (
           <div style={{ margin: "4% 0 0 0" }}>
             <Grid container>
               <Grid items lg={4} md={6} sm={12} xs={12}>
@@ -316,11 +314,11 @@ function BlogsMain({ blogs }) {
               </Grid>
             </Grid>
           </div>
-        )}
-        <Button className="blog-read-more" onClick={handleReadMoreClick}>
+        )} */}
+        {/* <Button className="blog-read-more" onClick={handleReadMoreClick}>
           {" "}
           {isContentVisible ? "Read More" : "Read Less"}
-        </Button>
+        </Button> */}
       </div>
     </>
   );

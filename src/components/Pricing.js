@@ -13,9 +13,7 @@ function Pricing() {
     async function fetchData() {
       try {
         const response = await fetch(FETCH_PRICE, {
-          headers: {
-            "Access-Control-Allow-Origin": "http://localhost:3000", // Replace with your allowed origin
-          },
+         
         });
         
         const data = await response.json();
