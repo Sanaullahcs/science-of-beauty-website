@@ -13,11 +13,8 @@ function Blogs({ blogs }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(FETCH_BLOG_URL, {
-         
-          
-        });
-        
+        const response = await fetch(FETCH_BLOG_URL, {});
+
         const data = await response.json();
         setBlog(data.blogs);
       } catch (error) {
