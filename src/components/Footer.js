@@ -104,9 +104,7 @@ function Footer() {
                     xs={12}
                     className="footerSemiSecond-grid"
                   >
-                    <p className="common-txt">
-                      Info@thescienceofbeauty.co
-                    </p>
+                    <p className="common-txt">Info@thescienceofbeauty.co</p>
                   </Grid>
                 </Grid>
                 <Grid container>

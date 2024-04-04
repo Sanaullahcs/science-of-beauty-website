@@ -13,9 +13,7 @@ function OurTeam() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(FETCH_MEMBERS, {
-        
-        });
+        const response = await fetch(FETCH_MEMBERS, {});
 
         const data = await response.json();
 

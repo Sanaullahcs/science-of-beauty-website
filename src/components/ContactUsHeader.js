@@ -2,7 +2,6 @@ import React from "react";
 import "../assets/CustomCSS/ContactUsHeader.css";
 import Plx from "react-plx";
 
-
 function ContactUsHeader() {
   const parallaxDataTxt = [
     {
@@ -14,7 +13,6 @@ function ContactUsHeader() {
           endValue: 2,
           property: "scale",
         },
-
       ],
     },
     {
@@ -41,7 +39,6 @@ function ContactUsHeader() {
               </p>
             </div>
           </Plx>
-
         </div>
       </div>
     </>

@@ -88,7 +88,7 @@ function ContactUs() {
       };
       const response = await fetch(POST_CONTACT, {
         method: "POST",
-        
+
         body: JSON.stringify(formDataWithCategories),
       });
 
@@ -251,9 +251,7 @@ function ContactUs() {
                             ? "active-category-btn"
                             : ""
                         }`}
-                        onClick={() =>
-                          handleCategoryButtonClick("Semaglutide")
-                        }
+                        onClick={() => handleCategoryButtonClick("Semaglutide")}
                       >
                         Semaglutide
                       </Button>
@@ -273,7 +271,9 @@ function ContactUs() {
                             ? "active-category-btn"
                             : ""
                         }`}
-                        onClick={() => handleCategoryButtonClick("BodyTightening")}
+                        onClick={() =>
+                          handleCategoryButtonClick("BodyTightening")
+                        }
                       >
                         BodyTightening
                       </Button>

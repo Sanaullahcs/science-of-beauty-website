@@ -17,20 +17,19 @@ import chatbot from "../assets/images/chatbot.svg";
 import InputAdornment from "@mui/material/InputAdornment";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import SendIcon from "@mui/icons-material/Send";
-import down from '../assets/images/chevon-down.svg'
-import { useNavigate } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
-import fb from '../assets/images/fb-real.svg'
+import down from "../assets/images/chevon-down.svg";
+import { useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import fb from "../assets/images/fb-real.svg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from '@mui/icons-material/X';
-import twitter from '../assets/images/x-real.svg'
-import insta from '../assets/images/insta-real.svg'
-import WidgetsIcon from '@mui/icons-material/Widgets';
-import america from '../assets/images/us.jpg'
-import spain from '../assets/images/spain.jpg'
-import france from '../assets/images/french.jpg'
-
+import XIcon from "@mui/icons-material/X";
+import twitter from "../assets/images/x-real.svg";
+import insta from "../assets/images/insta-real.svg";
+import WidgetsIcon from "@mui/icons-material/Widgets";
+import america from "../assets/images/us.jpg";
+import spain from "../assets/images/spain.jpg";
+import france from "../assets/images/french.jpg";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -54,23 +53,19 @@ function Navbar() {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen)
+    setMenuOpen(!isMenuOpen);
   };
   const handleLinkClick = (event) => {
     event.preventDefault();
     closeMenu();
-    navigate('/#pricing');
-    handleLinkClicktest(event)
-  
+    navigate("/#pricing");
+    handleLinkClicktest(event);
   };
   const handleLinkClicktest = (event) => {
     // event.preventDefault();
     closeMenu();
-    navigate('/#pricing');
-   
-
+    navigate("/#pricing");
   };
-
 
   const handleMouseDown = (e) => {
     // Record initial mouse position
@@ -106,23 +101,42 @@ function Navbar() {
   };
   return (
     <>
-      <div style={{ padding: '1% 0 17px', borderBottom: "1px solid #ccc",    background: '#FDF7F3' }}>
+      <div
+        style={{
+          padding: "1% 0 17px",
+          borderBottom: "1px solid #ccc",
+          background: "#FDF7F3",
+        }}
+      >
         <Grid container style={{ padding: "0 2%" }}>
-          <Grid item lg={4} md={4} sm={12} xs={12} className="navSocialIconsHolder">
+          <Grid
+            item
+            lg={4}
+            md={4}
+            sm={12}
+            xs={12}
+            className="navSocialIconsHolder"
+          >
             <div>
               <div className="social-row socisal-row-nav">
-                <a href="https://www.facebook.com/Goddesshairxo" target="_blank">
+                <a
+                  href="https://www.facebook.com/Goddesshairxo"
+                  target="_blank"
+                >
                   <div
                     className={`social-icons-span active-social-btn`}
-                  // onClick={() => handleSocialButtonClick("facebook")}
+                    // onClick={() => handleSocialButtonClick("facebook")}
                   >
                     <FacebookIcon style={{ color: "#eee" }} />
                   </div>
                 </a>
-                <a href="https://www.instagram.com/thescienceofbeautydallas/" target="_blank">
+                <a
+                  href="https://www.instagram.com/thescienceofbeautydallas/"
+                  target="_blank"
+                >
                   <div
                     className={`social-icons-span active-social-btn`}
-                  // onClick={() => handleSocialButtonClick("instagram")}
+                    // onClick={() => handleSocialButtonClick("instagram")}
                   >
                     <InstagramIcon style={{ color: "#eee" }} />
                   </div>
@@ -130,13 +144,12 @@ function Navbar() {
                 <a href="" target="_blank">
                   <div
                     className={`social-icons-span active-social-btn`}
-                  // onClick={() => handleSocialButtonClick("twitter")}
+                    // onClick={() => handleSocialButtonClick("twitter")}
                   >
                     <XIcon style={{ color: "#eee" }} />
                   </div>
                 </a>
               </div>
-              
             </div>
             <div className="smallScreenEMailHolder">
               <Tooltip title="123 456 7890" placement="top">
@@ -150,18 +163,33 @@ function Navbar() {
           <Grid item lg={4} md={4} sm={0} xs={0} className="grid-1">
             <div className="logo" style={{ zIndex: "2" }}>
               <Link to="/">
-                <img className="web-logo logoForLargeScreen" src={logoNavbar} alt="Logo" />
+                <img
+                  className="web-logo logoForLargeScreen"
+                  src={logoNavbar}
+                  alt="Logo"
+                />
               </Link>
             </div>
           </Grid>
-          <Grid item lg={4} md={4} sm={6} xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'end' }} className="grid-2 emailNavGrid">
+          <Grid
+            item
+            lg={4}
+            md={4}
+            sm={6}
+            xs={12}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "end",
+            }}
+            className="grid-2 emailNavGrid"
+          >
             <div className="toptopNav">
               <p className="navbar-top-dail">
                 {" "}
                 <img className="img-margin" src={Callimg} />
                 (818) 415-0083.
               </p>
-
 
               <p className="navbar-top-email">
                 {" "}
@@ -173,9 +201,15 @@ function Navbar() {
         </Grid>
       </div>
       <nav className="navbar">
-        <div style={{ color: 'white' }}><span style={{ minWidth: '20px' }}></span></div>
+        <div style={{ color: "white" }}>
+          <span style={{ minWidth: "20px" }}></span>
+        </div>
         <div className="logo" style={{ zIndex: "2" }}>
-          <img className="web-logo logoForSmallScreen" src={logoNavbar} alt="Logo" />
+          <img
+            className="web-logo logoForSmallScreen"
+            src={logoNavbar}
+            alt="Logo"
+          />
         </div>
         <div
           style={{ zIndex: "2" }}
@@ -201,13 +235,13 @@ function Navbar() {
               SERVICES
             </Link>
           </li>
-         
+
           <li>
             <Link to="/blogs" onClick={closeMenu}>
               RESEARCH & BLOGS
             </Link>
           </li>
-       
+
           <li>
             <Link to="/contact" onClick={closeMenu}>
               CONNECT
@@ -220,7 +254,10 @@ function Navbar() {
           </li>
           <div className="langaugeSelectorHolder">
             <li className="langauge-select">
-              <FormControl sx={{ m: 1, minWidth: 300 }} className="languageSelecter">
+              <FormControl
+                sx={{ m: 1, minWidth: 300 }}
+                className="languageSelecter"
+              >
                 <img className="down-arrow" src={down} />
                 <Select
                   labelId="demo-select-small-label"
@@ -232,9 +269,15 @@ function Navbar() {
                   {/* <MenuItem value="">
                   <em>None</em>
                 </MenuItem> */}
-                  <MenuItem value={10}><img className="flagImage"  src={america}/></MenuItem>
-                  <MenuItem value={20}><img className="flagImage" src={spain}/></MenuItem>
-                  <MenuItem value={30}><img className="flagImage" src={france}/></MenuItem>
+                  <MenuItem value={10}>
+                    <img className="flagImage" src={america} />
+                  </MenuItem>
+                  <MenuItem value={20}>
+                    <img className="flagImage" src={spain} />
+                  </MenuItem>
+                  <MenuItem value={30}>
+                    <img className="flagImage" src={france} />
+                  </MenuItem>
                 </Select>
               </FormControl>
             </li>
@@ -358,7 +401,6 @@ function Navbar() {
           <div></div>
         </div>
       </Tooltip> */}
-
 
       {/* ====== assistive touch */}
     </>
