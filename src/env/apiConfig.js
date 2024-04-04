@@ -1,4 +1,5 @@
 const BASE_URL = "https://admin.thescienceofbeauty.co/api/";
+
 // const BASE_URL = "http://127.0.0.1:8000/api/";
 
 const FETCH_BLOG_URL = BASE_URL + "fetchblog";
