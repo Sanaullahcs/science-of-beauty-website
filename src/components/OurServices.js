@@ -48,9 +48,7 @@ const OurServices = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(FETCH_GALLERY, {
-         
-        });
+        const response = await fetch(FETCH_GALLERY, {});
 
         const data = await response.json();
 
