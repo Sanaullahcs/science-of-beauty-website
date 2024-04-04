@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Appointments.css";
 function redirectToLink() {
-    window.open("https://direct.me/thescienceofbeautydallas", "_blank");
+  window.open("https://direct.me/thescienceofbeautydallas", "_blank");
 }
 export default function Appointments() {
   return (

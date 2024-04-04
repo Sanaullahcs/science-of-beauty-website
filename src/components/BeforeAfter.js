@@ -3,10 +3,8 @@ import "../assets/CustomCSS/BeforeAfter.css";
 import { Button, Grid } from "@material-ui/core";
 import mask from "../assets/images/beforeAfterUpdatedc.png";
 import Plx from "react-plx";
-import { Parallax } from 'react-scroll-parallax';
-import { Link as ScrollLink } from 'react-scroll';
-
-
+import { Parallax } from "react-scroll-parallax";
+import { Link as ScrollLink } from "react-scroll";
 
 function BeforeAfter() {
   const parallaxDataTxt = [
@@ -23,7 +21,7 @@ function BeforeAfter() {
           startValue: 500,
           endValue: 0,
           property: "translateY",
-          factor: 0.3
+          factor: 0.3,
         },
         {
           startValue: 0,
@@ -36,7 +34,7 @@ function BeforeAfter() {
 
   return (
     <>
-      <div style={{ overflow: 'hidden' }}>
+      <div style={{ overflow: "hidden" }}>
         <div className="bg-component">
           <Grid container className="afterbefore-grid">
             <Grid items lg={6}>
@@ -56,16 +54,20 @@ function BeforeAfter() {
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>
                   <p className="main-description">
-                    Explore our Before & After Gallery, a visual narrative of transformative journeys. Witness the stunning evolution from initial beauty concerns to the remarkable, radiant results achieved through our tailored treatments. Let these compelling visuals inspire your own path to rejuvenation and confidence."
+                    Explore our Before & After Gallery, a visual narrative of
+                    transformative journeys. Witness the stunning evolution from
+                    initial beauty concerns to the remarkable, radiant results
+                    achieved through our tailored treatments. Let these
+                    compelling visuals inspire your own path to rejuvenation and
+                    confidence."
                   </p>
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>
                   <ScrollLink to="gallery" smooth duration={500}>
-                    <Button className="main-btn" > View Gallery</Button>
+                    <Button className="main-btn"> View Gallery</Button>
                   </ScrollLink>
                 </Plx>
               </div>
-
             </Grid>
           </Grid>
         </div>
@@ -74,4 +76,3 @@ function BeforeAfter() {
   );
 }
 export default BeforeAfter;
-
