@@ -14,6 +14,11 @@ import towel from "../assets/images/Slice001.png";
 import ourValueImg from "../assets/images/po.jpg";
 import Plx from "react-plx";
 
+
+
+
+
+
 function OurValues() {
   const [dialogOpen, setDialogOpen] = useState(false);
 
