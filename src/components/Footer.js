@@ -88,7 +88,7 @@ function Footer() {
                     className="footerSemiSecond-grid"
                   >
                     <p className="common-txt">
-                      1902 S Harwood St, Dallas, TX 75215.
+                    4101 Bryan st suite 100 Dallas tx 75204
                     </p>
                   </Grid>
                 </Grid>
@@ -126,7 +126,7 @@ function Footer() {
               <div className="footer-social-div">
                 <span className="img-holder">
                   <a
-                    href="https://www.facebook.com/Goddesshairxo"
+                   href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
                     target="_blank"
                   >
                     <img src={facebook} />
@@ -134,7 +134,7 @@ function Footer() {
                 </span>
                 <span className="img-holder">
                   <a
-                    href="https://www.instagram.com/thescienceofbeautydallas/"
+                    href="https://www.instagram.com/thescienceofbeauty.co/"
                     target="_blank"
                   >
                     <img src={insta} />
@@ -142,7 +142,7 @@ function Footer() {
                 </span>
                 <span className="img-holder">
                   <a
-                    href="https://www.instagram.com/thescienceofbeautydallas/"
+                    href="https://www.instagram.com/thescienceofbeauty.co/"
                     target="_blank"
                   >
                     <img src={twitter} />

@@ -33,7 +33,8 @@
 .what-includes-heading {
   color: #422a3c;
   font-family: Playfair Display;
-  font-size: 45px;
+  font-size: 29px;
+    padding-top: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -46,7 +47,7 @@
 .description {
   color: #555;
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 175%;

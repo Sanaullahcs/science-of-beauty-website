@@ -2,7 +2,11 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Appointments.css";
 function redirectToLink() {
-  window.open("https://direct.me/thescienceofbeautydallas", "_blank");
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.href = "tel:+18184150083"; // Open phone call on mobile devices
+  }  else {
+    window.location.href = "mailto:Info@thescienceofbeauty.co"; // Open email client on desktop/laptop
+  }
 }
 export default function Appointments() {
   return (

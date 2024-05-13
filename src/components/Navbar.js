@@ -120,7 +120,7 @@ function Navbar() {
             <div>
               <div className="social-row socisal-row-nav">
                 <a
-                  href="https://www.facebook.com/Goddesshairxo"
+                   href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
                   target="_blank"
                 >
                   <div
@@ -131,7 +131,7 @@ function Navbar() {
                   </div>
                 </a>
                 <a
-                  href="https://www.instagram.com/thescienceofbeautydallas/"
+                  href="https://www.instagram.com/thescienceofbeauty.co/"
                   target="_blank"
                 >
                   <div
@@ -249,7 +249,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/products" onClick={closeMenu}>
-              SELF CARE
+            AT HOME SELF CARE
             </Link>
           </li>
           <div className="langaugeSelectorHolder">

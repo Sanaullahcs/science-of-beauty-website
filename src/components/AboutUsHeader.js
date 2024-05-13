@@ -35,7 +35,8 @@ function AboutUsHeader() {
         <div className="bg-aboutbanner">
           <Plx parallaxData={parallaxDataTxt}>
             <div>
-              <p className="aboutPreHeading">Short Story About Us</p>
+              {/* <p className="aboutPreHeading">Short Story About Us</p> */}
+              <p className="aboutPreHeading">start your aesthetic wellness plan today</p>
               <p
                 className="aboutHeading"
               > The experts behind the science of beauty</p>
