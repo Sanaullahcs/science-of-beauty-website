@@ -178,7 +178,7 @@ function ContactUs() {
                       onClick={() => handleButtonClick("phone")}
                     >
                       <CallIcon style={{ color: "#9d4a43" }} />
-                      <span>+123 456 789</span>
+                      <span>(818) 415-0083</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${
@@ -187,13 +187,13 @@ function ContactUs() {
                       onClick={() => handleButtonClick("location")}
                     >
                       <LocationOnIcon style={{ color: "#9d4a43" }} />
-                      <span>123 Street 456 House</span>
+                      <span>4101 Bryan st suite 100 Dallas tx 75204</span>
                     </Button>
                   </div>
                   <div>
                     <div className="social-row">
                       <a
-                        href="https://www.facebook.com/Goddesshairxo"
+                        href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
                         target="_blank"
                       >
                         <div
@@ -208,7 +208,7 @@ function ContactUs() {
                         </div>
                       </a>
                       <a
-                        href="https://www.instagram.com/thescienceofbeautydallas/"
+                        href="https://www.instagram.com/thescienceofbeauty.co/"
                         target="_blank"
                       >
                         <div

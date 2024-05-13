@@ -37,21 +37,24 @@ function WhatIncludes() {
             <Grid item className="side-grid" lg={7}>
               <Plx parallaxData={ParallaxDataAboutLeft}>
                 <div className="what-includes-side-div">
-                  <p className="whatIncludes-min-heading">WHAT INCLUDES?</p>
+                  <p className="whatIncludes-min-heading">Our Methodology</p>
                   <p className="what-includes-heading">
-                    The start of the journey
+                  1. Precision Blending Protocols:
                   </p>
                   <p className="description">
-                    ServiceMarket.dk was founded in 2021 by two young
-                    entrepreneurs who saw a problem with the fragmented service
-                    industry in Denmark. There were thousands of small businesses
-                    offering services, but it was difficult for consumers to find
-                    them and know which ones to choose. They developed the idea of
-                    creating a platform that would bring all these service
-                    providers together in one place, making it easier for
-                    consumers to find what they need and get their issues resolved
-                    quickly and easily. Without having to go to many different
-                    websites, each with their own booking system.
+                  - Implementing meticulous and precision-based treatment protocols that leverage the synergy between Dr. Rozier's medical expertise and Brittany Deen's, aesthetic proficiency. This approach involves combining Innovative medical techniques such as PRP with advanced aesthetic procedures like Morpheus 8 to achieve harmonious and natural-looking results, emphasizing precision in every aspect of the client's journey.
+                  </p>
+                  <p className="what-includes-heading">
+                  2. Skill-Driven Treatment Excellence:
+                  </p>
+                  <p className="description">
+                  - Emphasizing our commitment to excellence, each treatment at The Science of Beauty Medspa is conducted by our highly skilled and trained staff. Our practitioners bring a wealth of experience and a deep understanding of medical aesthetics to every session. Through skillful application and attention to detail, our team ensures that each client receives the highest level of care, showcasing the proficiency and expertise of our trained staff.
+                  </p>
+                  <p className="what-includes-heading">
+                  3. Personalized Care Paths:
+                  </p>
+                  <p className="description">
+                  - At The Science of Beauty Medspa, our trained staff crafts personalized care paths for each client. Drawing on their expertise in medical aesthetics, our practitioners assess individual needs and design tailored treatment plans. This methodology highlights our staff's dedication to providing a unique and personalized experience, ensuring that clients receive the most effective and specialized care for their aesthetic goals.
                   </p>
                   <div style={{ display: 'flex' }}>
                     <Button className='main-btn viewMethBtn' onClick={handleOpenDialog}>View Methodologies</Button>

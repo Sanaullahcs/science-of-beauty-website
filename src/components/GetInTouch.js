@@ -25,9 +25,12 @@ function GetInTouch() {
                     We are here to help you always...
                   </p>
                   <p className="touch-description">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, buying to many desktop publishing packages.
+                  Science of Beauty, we merge cutting-edge science with aesthetic artistry,
+                  we redefine beauty and wellness with a
+                     focus on anti-aging solutions.
+                   offering research-based practices in our medspa sanctuary. Led by experts
+                    in stem cell, PRP, and exosomes, Our commitment to excellence and scientifically
+                      proven methodologies sets new standards in rejuvenation and holistic wellness.
                   </p>
                 </div>
                 <div>
@@ -41,7 +44,7 @@ function GetInTouch() {
                       <div className="minor-margin-left">
                         <p className="touch-contact-heading">Visit Us:</p>
                         <p className="touch-contact-preheading">
-                          Mariendalsvej 50D 2 2000 Frederiksberg.
+                        4101 Bryan st suite 100 Dallas tx 75204
                         </p>
                       </div>
                     </Grid>
@@ -56,7 +59,7 @@ function GetInTouch() {
                       <div className="minor-margin-left">
                         <p className="touch-contact-heading">Drop Us :</p>
                         <p className="touch-contact-preheading">
-                          support@beautyness.com
+                        Info@thescienceofbeauty.co
                         </p>
                       </div>
                     </Grid>
@@ -71,7 +74,7 @@ function GetInTouch() {
                       <div className="minor-margin-left">
                         <p className="touch-contact-heading">Call Us :</p>
                         <p className="touch-contact-preheading">
-                          Call: 1-800-123-9999
+                          Call: (818) 415-0083
                         </p>
                       </div>
                     </Grid>
