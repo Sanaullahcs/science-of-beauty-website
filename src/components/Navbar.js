@@ -120,12 +120,12 @@ function Navbar() {
             <div>
               <div className="social-row socisal-row-nav">
                 <a
-                   href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
+                  href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
                   target="_blank"
                 >
                   <div
                     className={`social-icons-span active-social-btn`}
-                    // onClick={() => handleSocialButtonClick("facebook")}
+                  // onClick={() => handleSocialButtonClick("facebook")}
                   >
                     <FacebookIcon style={{ color: "#eee" }} />
                   </div>
@@ -136,7 +136,7 @@ function Navbar() {
                 >
                   <div
                     className={`social-icons-span active-social-btn`}
-                    // onClick={() => handleSocialButtonClick("instagram")}
+                  // onClick={() => handleSocialButtonClick("instagram")}
                   >
                     <InstagramIcon style={{ color: "#eee" }} />
                   </div>
@@ -144,7 +144,7 @@ function Navbar() {
                 <a href="" target="_blank">
                   <div
                     className={`social-icons-span active-social-btn`}
-                    // onClick={() => handleSocialButtonClick("twitter")}
+                  // onClick={() => handleSocialButtonClick("twitter")}
                   >
                     <XIcon style={{ color: "#eee" }} />
                   </div>
@@ -249,7 +249,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/products" onClick={closeMenu}>
-            AT HOME SELF CARE
+              AT HOME SELF CARE
             </Link>
           </li>
           <div className="langaugeSelectorHolder">
