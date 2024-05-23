@@ -50,6 +50,8 @@ import SignupComponent from "../components/LoginAndSignUp/SignUpComponent";
 import Appoinments from "../components/Appointments";
 import SemaglutideHeader from "../components/SemaglutideHeader.js";
 import SemaglutideMain from "../components/SemaglutideMain.js";
+import Gallery from "../components/Gallery.js";
+import GalleryHeader from "../components/GalleryHeader.js";
 import SemaglutideNavbar from "../components/SemaglutideNavbar.js";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
@@ -173,6 +175,22 @@ function AnimatedRoutes() {
                 <BlogsHeader />
                 <BlogsMain blogs={BlogCard} />
                 {/* <Testimonials /> */}
+                <Footer />
+              </AnimatedComponent>
+            </>
+          }
+        />
+         <Route
+          exact
+          path={"/gallery"}
+          element={
+            <>
+              <Navbar />
+              <AnimatedComponent>
+                <GalleryHeader/>
+                <Gallery />
+                <Appoinments />
+                <Testimonials/>
                 <Footer />
               </AnimatedComponent>
             </>

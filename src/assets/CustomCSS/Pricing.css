@@ -153,6 +153,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   min-height: 440px;
   /* padding-top: 40px; */
@@ -219,6 +220,10 @@
 
 .pricingCardPackageList {
   padding: 0 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pricingCardImg {

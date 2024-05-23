@@ -3,6 +3,7 @@ import "../assets/CustomCSS/BeforeAfter.css";
 import { Button, Grid } from "@material-ui/core";
 import mask from "../assets/images/beforeAfterUpdatedc.png";
 import Plx from "react-plx";
+import { Link } from 'react-router-dom';
 import { Parallax } from "react-scroll-parallax";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -63,9 +64,9 @@ function BeforeAfter() {
                   </p>
                 </Plx>
                 <Plx parallaxData={parallaxDataTxt}>
-                  <ScrollLink to="gallery" smooth duration={500}>
-                    <Button className="main-btn"> View Gallery</Button>
-                  </ScrollLink>
+                <Link to="/gallery">
+          <Button className="main-btn">View Gallery</Button>
+        </Link>
                 </Plx>
               </div>
             </Grid>

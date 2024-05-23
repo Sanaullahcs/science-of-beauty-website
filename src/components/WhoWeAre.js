@@ -111,7 +111,7 @@ function WhoWeAre() {
                 <div className="whoweare-wrapper">
                   <p className="main-main">WHO WE ARE</p>
                   <p className="www-description">
-                    At The Science of Beauty, we embody the convergence of cutting-edge science and the artistry of aesthetics. Rooted in a foundation of research-based practices, our medspa is a sanctuary where beauty meets innovation. Led by a medical director with expertise in stem cell, PRP, and exosomes, complemented by our founder's extensive background in aesthetics, we redefine beauty and wellness. Our focus revolves around the intricate fusion of scientific advancements and the pursuit of timeless beauty, specializing in anti-aging solutions. With an unwavering commitment to excellence, we strive to unveil the true essence of beauty through meticulous care and scientifically proven methodologies, setting new standards in rejuvenation and holistic wellness. Our slogan, "Research-Based Beauty and Wellness," encapsulates our dedication to leveraging scientific breakthroughs for enhancing and preserving your natural radiance.
+                  At The Science of Beauty, we blend advanced science and artistic aesthetics. Our medspa, led by a medical director specializing in stem cell, PRP, and exosomes, alongside our founder's aesthetic expertise, redefines beauty and wellness. We focus on anti-aging solutions, setting new standards in rejuvenation and holistic wellness. Our commitment to "Research-Based Beauty and Wellness" showcases our dedication to enhancing and preserving your natural radiance.
                   </p>
                   {/* <p style={{ marginBottom: '5px' }}>
                     Nulla malesuada pellentesque elit eget gravida cum sociis

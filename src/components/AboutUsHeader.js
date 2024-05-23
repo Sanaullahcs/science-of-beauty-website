@@ -36,7 +36,7 @@ function AboutUsHeader() {
           <Plx parallaxData={parallaxDataTxt}>
             <div>
               {/* <p className="aboutPreHeading">Short Story About Us</p> */}
-              <p className="aboutPreHeading">start your aesthetic wellness plan today</p>
+              <p className="aboutPreHeading">Start Your Aesthetic Wellness Plan Today</p>
               <p
                 className="aboutHeading"
               > The experts behind the science of beauty</p>

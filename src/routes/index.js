@@ -8,6 +8,7 @@ import Contact from "../pages/Contact";
 import Services from "./pages/Services";
 import Packages from "./pages/Packages";
 import Blogs from "./pages/Blogs";
+import Gallery from './pages/Gallery';
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Services" component={Services} />
         <Route path="/Packages" component={Packages} />
         <Route path="/Blogs" component={Blogs} />
+        <Route path="/gallery" component={Gallery} />
       </Switch>
     </Router>
   );
