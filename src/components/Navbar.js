@@ -118,7 +118,7 @@ function Navbar() {
             className="navSocialIconsHolder"
           >
             <div>
-              <div className="social-row socisal-row-nav">
+              {/* <div className="social-row socisal-row-nav">
                 <a
                   href="https://m.facebook.com/profile.php?id=100083188941922&name=xhp_nt_"
                   target="_blank"
@@ -149,7 +149,7 @@ function Navbar() {
                     <XIcon style={{ color: "#eee" }} />
                   </div>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="smallScreenEMailHolder">
               <Tooltip title="123 456 7890" placement="top">
@@ -241,17 +241,21 @@ function Navbar() {
               RESEARCH & BLOGS
             </Link>
           </li>
-
+          <li>
+            <Link to="/gallery" onClick={closeMenu}>
+              GALLERY
+            </Link>
+          </li>
           <li>
             <Link to="/contact" onClick={closeMenu}>
               CONNECT
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/products" onClick={closeMenu}>
               AT HOME SELF CARE
             </Link>
-          </li>
+          </li> */}
           <div className="langaugeSelectorHolder">
             <li className="langauge-select">
               <FormControl

@@ -158,8 +158,8 @@ function ContactUs() {
               <Grid items lg={6} md={12}>
                 <div>
                   <p className="contact-heading">
-                    Let’s discuss on something{" "}
-                    <span className="cool-span">cool</span> together
+                  Start Your Aesthetic  {" "}
+                    <span className="cool-span">Wellness</span> Plan Today
                   </p>
                   <div className="btn-wrapper">
                     <Button

@@ -1,0 +1,121 @@
+.gallery-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .gallery-item {
+    padding: 10px;
+    
+  }
+  
+  .gallery-image {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  /* .slider .animated{
+   transform: none !important;
+  } */
+  .carousel-content {
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .carousel .slide img {
+    max-width: 100%; /* Ensure images fit within the Carousel */
+    height: auto; /* Maintain aspect ratio */
+    /* margin-left: 50%; */
+  }
+  
+  /* Adjust Carousel styles */
+  .carousel .thumbs-wrapper {
+    display: none; /* Hide thumbnail navigation */
+  }
+  
+  .carousel .carousel-slider {
+    display: flex; /* Ensure slides are displayed in a row */
+    justify-content: center; /* Center slides horizontally */
+  }
+  
+  .carousel .slide {
+    flex: 0 0 auto; /* Ensure each slide takes its content width */
+    max-width: 100%; /* Ensure each slide fits within the Carousel */
+  }
+  
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: none!important;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel .control-dots .dot {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .show-more-button{
+    background-color: #9a4b44;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    margin-top: 64px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+  }
+
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    image-rendering: auto;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 50%!important;
+    transition: all 1s ease;
+    margin-top: 30px;
+  }
+  
+  .load-more-button:hover {
+    background-color: darkviolet;
+  }
+  
