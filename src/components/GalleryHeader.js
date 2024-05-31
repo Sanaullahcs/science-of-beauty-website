@@ -33,8 +33,8 @@ function BlogsHeader() {
         <div className="latest-bg">
           <Plx parallaxData={parallaxDataTxt}>
             <div>
-              <p className="latestblog-minheading">Gallery</p>
-              <p className="latestblog-heading"> Our Gallery</p>
+              {/* <p className="latestblog-minheading">Gallery</p> */}
+              <p className="latestblog-heading"> Results</p>
             </div>
           </Plx>
         </div>

@@ -155,7 +155,7 @@ function Navbar() {
               <Tooltip title="123 456 7890" placement="top">
                 <img className="img-margin ml-18" src={Callimg} />
               </Tooltip>
-              <Tooltip title="Info@thescienceofbeauty.co" placement="top">
+              <Tooltip title="Info@thebeautyofsciencedallas.com" placement="top">
                 <img className="img-margin" src={emailimg} />
               </Tooltip>
             </div>
@@ -188,13 +188,15 @@ function Navbar() {
               <p className="navbar-top-dail">
                 {" "}
                 <img className="img-margin" src={Callimg} />
-                (818) 415-0083.
+                {/* (818) 415-0083. */}
+                (214) 272-9240
               </p>
 
               <p className="navbar-top-email">
                 {" "}
                 <img className="img-margin" src={emailimg} />
-                Info@thescienceofbeauty.co
+                {/* Info@thescienceofbeauty.co */}
+                Info@thebeautyofsciencedallas.com
               </p>
             </div>
           </Grid>
@@ -243,7 +245,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/gallery" onClick={closeMenu}>
-              GALLERY
+             RESULTS
             </Link>
           </li>
           <li>

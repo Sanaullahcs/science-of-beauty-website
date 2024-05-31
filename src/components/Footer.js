@@ -104,7 +104,7 @@ function Footer() {
                     xs={12}
                     className="footerSemiSecond-grid"
                   >
-                    <p className="common-txt">Info@thescienceofbeauty.co</p>
+                    <p className="common-txt">Info@thebeautyofsciencedallas.com</p>
                   </Grid>
                 </Grid>
                 <Grid container>
@@ -119,7 +119,8 @@ function Footer() {
                     xs={12}
                     className="footerSemiSecond-grid"
                   >
-                    <p className="common-txt">(818) 415-0083.</p>
+                    {/* <p className="common-txt">(818) 415-0083.</p> */}
+                    <p className="common-txt">(214) 272-9240.</p>
                   </Grid>
                 </Grid>
               </div>

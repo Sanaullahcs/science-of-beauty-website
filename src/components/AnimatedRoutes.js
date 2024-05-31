@@ -190,7 +190,6 @@ function AnimatedRoutes() {
                 <GalleryHeader/>
                 <Gallery />
                 <Appoinments />
-                <Testimonials/>
                 <Footer />
               </AnimatedComponent>
             </>
