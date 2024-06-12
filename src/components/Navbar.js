@@ -155,7 +155,7 @@ function Navbar() {
               <Tooltip title="123 456 7890" placement="top">
                 <img className="img-margin ml-18" src={Callimg} />
               </Tooltip>
-              <Tooltip title="Info@thebeautyofsciencedallas.com" placement="top">
+              <Tooltip title="Info@thescienceofbeautydallas.com" placement="top">
                 <img className="img-margin" src={emailimg} />
               </Tooltip>
             </div>
@@ -196,7 +196,7 @@ function Navbar() {
                 {" "}
                 <img className="img-margin" src={emailimg} />
                 {/* Info@thescienceofbeauty.co */}
-                Info@thebeautyofsciencedallas.com
+                Info@thescienceofbeautydallas.com
               </p>
             </div>
           </Grid>

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/CustomCSS/GalleryHeader.css";
 import Plx from "react-plx";
 
-function BlogsHeader() {
+function GalleryHeader() {
   const parallaxDataTxt = [
     {
       start: 0,
@@ -27,19 +27,23 @@ function BlogsHeader() {
       ],
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <>
-      <div>
-        <div className="latest-bg">
-          <Plx parallaxData={parallaxDataTxt}>
-            <div>
-              {/* <p className="latestblog-minheading">Gallery</p> */}
-              <p className="latestblog-heading"> Results</p>
-            </div>
-          </Plx>
-        </div>
+    <div>
+      <div className="latest-bg">
+        <Plx parallaxData={parallaxDataTxt}>
+          <div>
+            {/* <p className="latestblog-minheading">Gallery</p> */}
+            <p className="latestblog-heading">Results</p>
+          </div>
+        </Plx>
       </div>
-    </>
+    </div>
   );
 }
-export default BlogsHeader;
+
+export default GalleryHeader;

@@ -59,7 +59,7 @@ function GetInTouch() {
                       <div className="minor-margin-left">
                         <p className="touch-contact-heading">Drop Us :</p>
                         <p className="touch-contact-preheading">
-                        Info@thebeautyofsciencedallas.com
+                        Info@thescienceofbeautydallas.com
                         </p>
                       </div>
                     </Grid>

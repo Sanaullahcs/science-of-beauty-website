@@ -30,6 +30,9 @@ function Header() {
   const handleClosePopup = () => {
     setShowPopup(false);
   };
+  function redirectToLink() {
+    window.location.href = "https://ghkuz.myaestheticrecord.com/online-booking";
+  };
   return (
     <>
       <div className="image-container"></div>
@@ -47,13 +50,14 @@ function Header() {
                     Research Based Beauty and wellness
                   </span>
                 </p>
-                <div style={{ display: "flex", justifyContent: "start" }}>
+                <div className="Screen-700" style={{ display: "flex", justifyContent: "start" }}>
+              
                   <Button
-                    class="exploremoreHeaderBtn"
+                    class="exploremoreHeaderBtn1"
                     disableTouchRipple
-                    onClick={handleClick}
+                    onClick={redirectToLink}
                   >
-                    Explore More
+                    Book An Appointment
                   </Button>
                 </div>
               </div>

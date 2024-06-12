@@ -7,7 +7,7 @@ export default function SemaglutideHeader() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       window.location.href = "tel:+18184150083"; // Open phone call on mobile devices
     }  else {
-      window.location.href = "mailto:Info@thebeautyofsciencedallas.com"; // Open email client on desktop/laptop
+      window.location.href = "mailto:Info@thescienceofbeautydallas.com"; // Open email client on desktop/laptop
     }
   }
 

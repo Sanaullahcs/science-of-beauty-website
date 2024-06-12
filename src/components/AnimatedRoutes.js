@@ -106,7 +106,7 @@ function AnimatedRoutes() {
               <AnimatedComponent>
                 <Headers />
                 <WhoWeAre />
-                <OurServices />
+                {/* <OurServices /> */}
                 <BeforeAfter />
                 <Pricing />
                 <ContactUs />
