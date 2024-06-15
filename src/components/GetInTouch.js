@@ -74,7 +74,7 @@ function GetInTouch() {
                       <div className="minor-margin-left">
                         <p className="touch-contact-heading">Call Us :</p>
                         <p className="touch-contact-preheading">
-                          Call: (818) 415-0083
+                          Call: (214) 272-9240
                         </p>
                       </div>
                     </Grid>

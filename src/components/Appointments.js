@@ -9,8 +9,12 @@ import "../assets/CustomCSS/Appointments.css";
 //   }
 // }
 function redirectToLink() {
-  window.location.href = "https://ghkuz.myaestheticrecord.com/online-booking";
+  window.open(
+    "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking",
+    "_blank"
+  );
 }
+
 export default function Appointments() {
   return (
     <div>
@@ -18,7 +22,11 @@ export default function Appointments() {
         <p className="subscribeHeading">Subscribe</p>
         <p className="AppoinmentsHeading">The Science of Beauty</p>
         <p className="appointmentEmail">Info@thescienceofbeautydallas.com</p>
-        <Button className="bookAppointmentButton" onClick={redirectToLink}>
+        <Button
+          className="bookAppointmentButton"
+          target="_blank"
+          onClick={redirectToLink}
+        >
           Book an Appointment
         </Button>
       </div>

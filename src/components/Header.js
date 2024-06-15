@@ -31,8 +31,12 @@ function Header() {
     setShowPopup(false);
   };
   function redirectToLink() {
-    window.location.href = "https://ghkuz.myaestheticrecord.com/online-booking";
-  };
+    window.open(
+      "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking",
+      "_blank"
+    );
+  }
+
   return (
     <>
       <div className="image-container"></div>
@@ -50,8 +54,10 @@ function Header() {
                     Research Based Beauty and wellness
                   </span>
                 </p>
-                <div className="Screen-700" style={{ display: "flex", justifyContent: "start" }}>
-              
+                <div
+                  className="Screen-700"
+                  style={{ display: "flex", justifyContent: "start" }}
+                >
                   <Button
                     class="exploremoreHeaderBtn1"
                     disableTouchRipple
