@@ -296,7 +296,7 @@
   }
 
   .bg-home-banner {
-    background-image: url(../../assets/images/headerForSmall.png);
+    background-image: url(../../assets/images/clinic8.jpg);
     animation: none;
     display: flex;
     align-items: center;
@@ -304,23 +304,23 @@
   }
   @keyframes changeBackgroundSmall {
     20% {
-      background-image: url(../images/headerForSmall.png);
+      background-image: url(../images/clinic8.jpg);
     }
   
     40% {
-      background-image: url(../images/smallScreenbg1.png);
+      background-image: url(../images/clinic9.jpg);
     }
   
     60% {
-      background-image: url(../images/smallScreenbg2.png);
+      background-image: url(../images/clinic11.jpg);
     }
   
     80% {
-      background-image: url(../images/smallScreenbg3.png);
+      background-image: url(../images/clinic1.jpg);
     }
   
     to {
-      background-image: url(../images/headerForSmall.png);
+      background-image: url(../images/clinic8.jpg);
     }
   }
 
