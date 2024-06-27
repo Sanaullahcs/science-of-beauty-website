@@ -34,7 +34,7 @@ function GalleryHeader() {
 
   return (
     <div>
-      <div className="latest-bg">
+      <div className="latest-bg-gallery">
         <Plx parallaxData={parallaxDataTxt}>
           <div>
             {/* <p className="latestblog-minheading">Gallery</p> */}

@@ -66,6 +66,14 @@ function Navbar() {
     closeMenu();
     navigate("/#pricing");
   };
+  const calling = () => {
+    window.location.href = "tel:+2142729240";
+    console.log("caling ");
+  };
+  const mail = () => { 
+    window.location.href = "mailto:Info@thescienceofbeautydallas.com";
+    console.log("mailing ");
+  };
 
   const handleMouseDown = (e) => {
     // Record initial mouse position
@@ -155,7 +163,10 @@ function Navbar() {
               <Tooltip title="123 456 7890" placement="top">
                 <img className="img-margin ml-18" src={Callimg} />
               </Tooltip>
-              <Tooltip title="Info@thescienceofbeautydallas.com" placement="top">
+              <Tooltip
+                title="Info@thescienceofbeautydallas.com"
+                placement="top"
+              >
                 <img className="img-margin" src={emailimg} />
               </Tooltip>
             </div>
@@ -187,14 +198,14 @@ function Navbar() {
             <div className="toptopNav">
               <p className="navbar-top-dail">
                 {" "}
-                <img className="img-margin" src={Callimg} />
+                <img className="img-margin" onClick={calling} src={Callimg} />
                 {/* (818) 415-0083. */}
                 (214) 272-9240
               </p>
 
               <p className="navbar-top-email">
                 {" "}
-                <img className="img-margin" src={emailimg} />
+                <img className="img-margin" onClick={mail} src={emailimg} />
                 {/* Info@thescienceofbeauty.co */}
                 Info@thescienceofbeautydallas.com
               </p>
@@ -245,7 +256,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/gallery" onClick={closeMenu}>
-             RESULTS
+              RESULTS
             </Link>
           </li>
           <li>

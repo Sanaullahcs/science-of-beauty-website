@@ -1,5 +1,5 @@
 .bg-home-banner {
-  background-image: url(../images/home1bgc.png);
+  background-image: url(../images/clinic8.jpg);
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,23 +11,23 @@
 
 @keyframes changeBackground {
   20% {
-    background-image: url(../images/home1bgc.png);
+    background-image: url(../images/clinic8.jpg);
   }
 
   40% {
-    background-image: url(../images/home2bgc.png);
+    background-image: url(../images/clinic9.jpg);
   }
 
   60% {
-    background-image: url(../images/home3bgc.png);
+    background-image: url(../images/clinic11.jpg);
   }
 
   80% {
-    background-image: url(../images/home4c.png);
+    background-image: url(../images/clinic1.jpg);
   }
 
   to {
-    background-image: url(../images/home1bgc.png);
+    background-image: url(../images/clinic8.jpg);
   }
 }
 .exploremoreHeaderBtn1:hover{
