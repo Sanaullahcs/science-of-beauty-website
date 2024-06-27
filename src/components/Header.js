@@ -30,6 +30,13 @@ function Header() {
   const handleClosePopup = () => {
     setShowPopup(false);
   };
+  function redirectToLink() {
+    window.open(
+      "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking",
+      "_blank"
+    );
+  }
+
   return (
     <>
       <div className="image-container"></div>
@@ -47,13 +54,16 @@ function Header() {
                     Research Based Beauty and wellness
                   </span>
                 </p>
-                <div style={{ display: "flex", justifyContent: "start" }}>
+                <div
+                  className="Screen-700"
+                  style={{ display: "flex", justifyContent: "start" }}
+                >
                   <Button
-                    class="exploremoreHeaderBtn"
+                    class="exploremoreHeaderBtn1"
                     disableTouchRipple
-                    onClick={handleClick}
+                    onClick={redirectToLink}
                   >
-                    Explore More
+                    Book An Appointment
                   </Button>
                 </div>
               </div>

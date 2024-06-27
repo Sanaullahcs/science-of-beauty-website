@@ -1,5 +1,5 @@
 .bg-home-banner {
-  background-image: url(../images/home1bgc.png);
+  background-image: url(../images/clinic8.jpg);
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,26 +11,51 @@
 
 @keyframes changeBackground {
   20% {
-    background-image: url(../images/home1bgc.png);
+    background-image: url(../images/clinic8.jpg);
   }
 
   40% {
-    background-image: url(../images/home2bgc.png);
+    background-image: url(../images/clinic9.jpg);
   }
 
   60% {
-    background-image: url(../images/home3bgc.png);
+    background-image: url(../images/clinic11.jpg);
   }
 
   80% {
-    background-image: url(../images/home4c.png);
+    background-image: url(../images/clinic1.jpg);
   }
 
   to {
-    background-image: url(../images/home1bgc.png);
+    background-image: url(../images/clinic8.jpg);
   }
 }
-
+.exploremoreHeaderBtn1:hover{
+    background-color: #ab8b73 !important;
+    border: none!important;
+    color: #fff !important;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal !important;
+}
+.exploremoreHeaderBtn1{
+  border-radius: 16px !important;
+  border: 1px solid #422a3c !important;
+  color: #422a3c !important;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: normal;
+  width: 256px;
+  height: 78px;
+  cursor: pointer;
+}
 .exploremoreHeaderBtn {
   border-radius: 16px !important;
   border: 1px solid #422a3c !important;
@@ -199,14 +224,26 @@
 }
 
 @media only screen and (max-width: 959px) {
+  .Screen-700{
+    flex-direction: column;
+  }
+  .exploremoreHeaderBtn1{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .exploremoreHeaderBtn1 {
+    border-radius: 16px !important;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19px;}
   .heading-header {
     font-size: 55px;
   }
-
-  .exploremoreHeaderBtn {
-    width: 170px;
+  .exploremoreHeaderBtn1{
+    width: 230px;
     height: 54px;
-  }
+}
 
   .text-img-heading {
     font-size: 12px;
@@ -259,7 +296,7 @@
   }
 
   .bg-home-banner {
-    background-image: url(../../assets/images/headerForSmall.png);
+    background-image: url(../../assets/images/clinic8.jpg);
     animation: none;
     display: flex;
     align-items: center;
@@ -267,23 +304,23 @@
   }
   @keyframes changeBackgroundSmall {
     20% {
-      background-image: url(../images/headerForSmall.png);
+      background-image: url(../images/clinic8.jpg);
     }
   
     40% {
-      background-image: url(../images/smallScreenbg1.png);
+      background-image: url(../images/clinic9.jpg);
     }
   
     60% {
-      background-image: url(../images/smallScreenbg2.png);
+      background-image: url(../images/clinic11.jpg);
     }
   
     80% {
-      background-image: url(../images/smallScreenbg3.png);
+      background-image: url(../images/clinic1.jpg);
     }
   
     to {
-      background-image: url(../images/headerForSmall.png);
+      background-image: url(../images/clinic8.jpg);
     }
   }
 

@@ -169,7 +169,7 @@ function ContactUs() {
                       onClick={() => handleButtonClick("email")}
                     >
                       <MailOutlineIcon style={{ color: "#9d4a43" }} />
-                      <span>Info@thescienceofbeauty.co</span>
+                      <span>Info@thescienceofbeautydallas.com</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${
@@ -178,7 +178,7 @@ function ContactUs() {
                       onClick={() => handleButtonClick("phone")}
                     >
                       <CallIcon style={{ color: "#9d4a43" }} />
-                      <span>(818) 415-0083</span>
+                      <span>(214) 272-9240</span>
                     </Button>
                     <Button
                       className={`contact-buttons ${

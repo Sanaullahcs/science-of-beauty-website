@@ -73,6 +73,7 @@ ul a:hover {
 .img-margin {
   margin-bottom: -3px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .langauge-select .MuiFormControl-root {

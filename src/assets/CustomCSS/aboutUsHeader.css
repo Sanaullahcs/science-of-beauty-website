@@ -1,9 +1,14 @@
 .bg-aboutbanner {
-  background-image: url(../images/headerAboutUsc.png);
+   background-image: linear-gradient(
+      rgba(88, 56, 41, 0.767), 
+      rgba(44, 34, 43, 0.7)
+    ), 
+    url(../images/clinic2.jpg);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */

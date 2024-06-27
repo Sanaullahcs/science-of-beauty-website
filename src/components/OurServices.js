@@ -352,7 +352,7 @@ const OurServices = () => {
   const randomImages = shuffledImages.slice(0, 5);
 
   const onInit = () => {
-    // console.log("lightGallery has been initialized");
+    console.log("lightGallery has been initialized");
   };
 
   return (

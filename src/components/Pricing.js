@@ -11,7 +11,7 @@ function Pricing() {
   const [price, setPrice] = useState();
 
   const headings = [
-    '', 
+    'choose 1 of the following services', 
     'choose 1 of the following services',
     'choose 2 of the following services',
     
