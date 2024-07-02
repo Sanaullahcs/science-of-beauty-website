@@ -161,13 +161,13 @@ function Navbar() {
             </div>
             <div className="smallScreenEMailHolder">
               <Tooltip title="123 456 7890" placement="top">
-                <img className="img-margin ml-18" src={Callimg} />
+                <img className="img-margin ml-18" onClick={calling} src={Callimg} />
               </Tooltip>
               <Tooltip
                 title="Info@thescienceofbeautydallas.com"
                 placement="top"
               >
-                <img className="img-margin" src={emailimg} />
+                <img className="img-margin"  onClick={mail} src={emailimg} />
               </Tooltip>
             </div>
           </Grid>
