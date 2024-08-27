@@ -67,12 +67,12 @@ function Navbar() {
     navigate("/#pricing");
   };
   const calling = () => {
-    window.location.href = "tel:+2142729240";
-    console.log("caling ");
+    window.location.href = "tel:2142729240";
+    // console.log("caling ");
   };
   const mail = () => { 
     window.location.href = "mailto:Info@thescienceofbeautydallas.com";
-    console.log("mailing ");
+    // console.log("mailing ");
   };
 
   const handleMouseDown = (e) => {
