@@ -16,6 +16,10 @@ function Pricing() {
     'choose 2 of the following services',
     
   ];
+  const calling = () => {
+    window.location.href = "tel:2142729240";
+    // console.log("caling ");
+  };
   useEffect(() => {
     async function fetchData() {
       try {
@@ -72,7 +76,7 @@ function Pricing() {
                                 </div>
                               ))}
                             </div>
-                            <Button className="flip-card-buy-btn">Buy Now</Button>
+                            <Button className="flip-card-buy-btn" onClick={calling}>Buy Now</Button>
                           </div>
                         </div>
                       </div>
