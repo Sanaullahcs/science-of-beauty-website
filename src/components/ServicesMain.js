@@ -18,6 +18,8 @@ import ser15 from "../assets/images/newServices15c.png";
 import { Link } from "react-router-dom";
 import { FETCH_SERVICES } from "../env/apiConfig";
 import { useNavigate } from "react-router-dom";
+import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
+import fbPixelInit from "../../src/assets/fbPixil";
 
 
 import "../assets/CustomCSS/ServicesMain.css";
@@ -26,6 +28,12 @@ import Plx from "react-plx";
 function ServicesMain() {
   const [services, setServices] = useState();
   // const [showAll, setShowAll] = useState(false);
+  useEffect(() => {
+    fbPixelInit(); // Initialize Facebook Pixel when the app loads
+    ReactPixel.track("PageView", {
+      page: "ServicePage", // Replace 'HomePage' with the actual page name
+    });
+  }, []);
   useEffect(() => {
     async function fetchData() {
       try {

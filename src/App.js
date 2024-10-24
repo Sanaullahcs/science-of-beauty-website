@@ -54,10 +54,12 @@ import "./assets/CustomCSS/Main.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+import fbPixelInit from '../src/assets/fbPixil.js';
 import AnimatedRoutes from "./components/AnimatedRoutes.js";
 
 function App() {
   useEffect(() => {
+    fbPixelInit(); 
     // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
   }, []); // The empty dependency array ensures that this effect runs only once when the component mounts
@@ -66,7 +68,7 @@ function App() {
     <Router>
       <div className="App">
        <AnimatedRoutes/>
-      </div>
+      </div>  
     </Router>
   );
 }

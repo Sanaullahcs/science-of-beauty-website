@@ -10,8 +10,16 @@ import XIcon from "@mui/icons-material/X";
 import send from "../assets/images/send.png";
 import Plx from "react-plx";
 import { POST_CONTACT } from "../env/apiConfig";
+import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
+import fbPixelInit from "../../src/assets/fbPixil";
 
 function ContactUs() {
+  useEffect(() => {
+    fbPixelInit(); // Initialize Facebook Pixel when the app loads
+    ReactPixel.track("PageView", {
+      page: "ContactPage", // Replace 'HomePage' with the actual page name
+    });
+  }, []);
   const [buttonText, setButtonText] = useState("Send Messages");
   const [formData, setFormData] = useState({
     name: "",
@@ -78,6 +86,10 @@ function ContactUs() {
       setFormErrors(errors);
       return;
     }
+
+    ReactPixel.track("Lead", {
+      content_name: "Contact Us Form",
+    });
 
     try {
       const formDataWithCategories = {
@@ -158,7 +170,7 @@ function ContactUs() {
               <Grid items lg={6} md={12}>
                 <div>
                   <p className="contact-heading">
-                  Start Your Aesthetic  {" "}
+                    Start Your Aesthetic  {" "}
                     <span className="cool-span">Wellness</span> Plan Today
                   </p>
                   <div className="btn-wrapper">

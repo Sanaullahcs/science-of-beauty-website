@@ -3,10 +3,17 @@ import "../assets/CustomCSS/Header.css";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
 import Popup from "./Popup";
+import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
+import fbPixelInit from "../../src/assets/fbPixil";
 
 function Header() {
   const [showPopup, setShowPopup] = useState(false);
-
+  useEffect(() => {
+    fbPixelInit(); // Initialize Facebook Pixel when the app loads
+    ReactPixel.track("PageView", {
+      page: "HomePage", // Replace 'HomePage' with the actual page name
+    });
+  }, []);
   useEffect(() => {
     const visitedBefore = localStorage.getItem("visitedBefore");
     const isHomePage = window.location.pathname === "/";
