@@ -7,9 +7,24 @@ import prev from "../assets/images/prev-blog-arrow.png";
 import Plx from "react-plx";
 import { Link } from "react-router-dom";
 import { FETCH_BLOG_URL } from "../env/apiConfig";
+import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
+import fbPixelInit from "../../src/assets/fbPixil";
 
 function Blogs({ blogs }) {
   const [Blog, setBlog] = useState();
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-") // Replace spaces and special characters with hyphens
+      .replace(/(^-|-$)+/g, ""); // Remove leading or trailing hyphens
+  };
+
+  useEffect(() => {
+    fbPixelInit(); // Initialize Facebook Pixel when the app loads
+    ReactPixel.track("PageView", {
+      page: "BlogPage", // Replace 'HomePage' with the actual page name
+    });
+  }, []);
   useEffect(() => {
     async function fetchData() {
       try {
@@ -211,7 +226,10 @@ function Blogs({ blogs }) {
             {Blog &&
               Blog.map((blog) => (
                 <div key={blog.id} className="slide">
-                  <Link to={`/blogs/${blog.id}`} className="blog-link">
+                  <Link
+                    to={`/blogs/${createSlug(blog.title)}`}
+                    className="blog-link"
+                  >
                     <div
                       style={{ backgroundImage: `url(${blog.image})` }}
                       className={`blog-bg`}
@@ -219,9 +237,6 @@ function Blogs({ blogs }) {
                       <div className="fashion-div-wrapper">
                         <Button className="fashion-btn">Fashion</Button>
                       </div>
-                      {/* <p className="blog-card-date">{blog.date}</p>
-                    <p className="blog-card-heading">{blog.title}</p>
-                    <p className="blog-card-description">{blog.content}</p> */}
                     </div>
                     <div className="blogExpand">
                       <p className="blog-card-date">{blog.date}</p>
