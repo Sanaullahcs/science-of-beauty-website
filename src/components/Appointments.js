@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@material-ui/core";
 import "../assets/CustomCSS/Appointments.css";
+import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
+import fbPixelInit from "../../src/assets/fbPixil";
+
 // function redirectToLink() {
 //   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 //     window.location.href = "tel:+18184150083"; // Open phone call on mobile devices
@@ -9,6 +12,9 @@ import "../assets/CustomCSS/Appointments.css";
 //   }
 // }
 function redirectToLink() {
+  ReactPixel.track("Lead", {
+    book: "Book Appointment", // Optional: name of the form
+  });
   window.open(
     "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking",
     "_blank"
