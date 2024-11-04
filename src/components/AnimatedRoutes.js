@@ -44,7 +44,7 @@ import BrowLamination from "../components/Services/BrowLamination";
 import LashLiftAndTint from "../components/Services/LashLiftAndTint";
 import BlogDetails from "../components/BlogDetails";
 import BlogCard from "../JSONData/BlogCard";
-import SingleService from "../components/Services/SingleService.js"
+import SingleService from "../components/Services/SingleService.js";
 import LoginComponent from "../components/LoginAndSignUp/LoginCom";
 import SignupComponent from "../components/LoginAndSignUp/SignUpComponent";
 import Appoinments from "../components/Appointments";
@@ -66,9 +66,7 @@ const AnimatedComponent = ({ children }) => (
       opacity: 0,
       x: "-100px",
     }}
-    animate={{ opacity: 1,
-        x: 0
-     }}
+    animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.2 }}
     // example 3==============================
     // initial={{ opacity: 0, scale: 0.5 }}
@@ -180,14 +178,14 @@ function AnimatedRoutes() {
             </>
           }
         />
-         <Route
+        <Route
           exact
           path={"/gallery"}
           element={
             <>
               <Navbar />
               <AnimatedComponent>
-                <GalleryHeader/>
+                <GalleryHeader />
                 <Gallery />
                 <Appoinments />
                 <Footer />
@@ -213,7 +211,7 @@ function AnimatedRoutes() {
         />
         <Route
           exact
-          path={"/blogs/:id"}
+          path={"/blogs/:slug"}
           element={
             <>
               <Navbar />
@@ -224,6 +222,7 @@ function AnimatedRoutes() {
             </>
           }
         />
+
         <Route
           exact
           path={"/products"}

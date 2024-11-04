@@ -4,6 +4,13 @@ import { FETCH_BLOG_URL } from "../env/apiConfig";
 
 const BlogDetails = ({ blogs }) => {
   const [blog, setBlog] = useState([]);
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-") // Replace spaces and special characters with hyphens
+      .replace(/(^-|-$)+/g, ""); // Remove leading or trailing hyphens
+  };
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -27,9 +34,10 @@ const BlogDetails = ({ blogs }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const { id } = useParams();
+  const { slug } = useParams(); // Get slug from URL
 
-  const blogItem = blog.find((item) => item.id === parseInt(id));
+  // Find the blog by slug
+  const blogItem = blog.find((item) => createSlug(item.title) === slug);
 
   return (
     <div>

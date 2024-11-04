@@ -10,6 +10,13 @@ import { FETCH_BLOG_URL } from "../env/apiConfig";
 function BlogsMain({ blogs }) {
   const [isContentVisible, setIsContentVisible] = useState(true);
   const [Blog, setBlog] = useState();
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-") // Replace spaces and special characters with hyphens
+      .replace(/(^-|-$)+/g, ""); // Remove leading or trailing hyphens
+  };
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -61,7 +68,10 @@ function BlogsMain({ blogs }) {
               Blog.map((blog) => (
                 <Grid key={blog.id} items lg={4} md={6} sm={12} xs={12}>
                   <div className="blog-postWrapper">
-                    <Link to={`/blogs/${blog.id}`} className="blog-link">
+                    <Link
+                      to={`/blogs/${createSlug(blog.title)}`}
+                      className="blog-link"
+                    >
                       <div
                         style={{ backgroundImage: `url(${blog.image})` }}
                         className={`blog-bg-${blog.id} blog-bg`}
