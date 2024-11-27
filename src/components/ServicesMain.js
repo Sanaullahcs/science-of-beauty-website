@@ -20,12 +20,13 @@ import { FETCH_SERVICES } from "../env/apiConfig";
 import { useNavigate } from "react-router-dom";
 import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
 import fbPixelInit from "../../src/assets/fbPixil";
-
+// import DOMPurify from "dompurify";
 
 import "../assets/CustomCSS/ServicesMain.css";
 import Plx from "react-plx";
 
 function ServicesMain() {
+  // const sanitizedDescription = DOMPurify.sanitize(item.description);
   const [services, setServices] = useState();
   // const [showAll, setShowAll] = useState(false);
   useEffect(() => {
@@ -37,12 +38,10 @@ function ServicesMain() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(FETCH_SERVICES, {
-          
-        });
-        
+        const response = await fetch(FETCH_SERVICES, {});
+
         const data = await response.json();
-        
+
         setServices(data.services);
       } catch (error) {
         console.error("Error:", error.message);
@@ -83,7 +82,7 @@ function ServicesMain() {
       ],
     },
   ];
-  // const imageParallaxDataOne = generateParallaxData(0, 500); 
+  // const imageParallaxDataOne = generateParallaxData(0, 500);
   // const imageParallaxDataTwo = generateParallaxData(400, 1200);
   // const imageParallaxDataThree = generateParallaxData(900, 1800);
   // const imageParallaxDataFour = generateParallaxData(1500, 2300);
@@ -128,44 +127,44 @@ function ServicesMain() {
       <div style={{ overflow: "hidden" }}>
         <div className="main-blog-content">
           {/* THIS IS THE DIV ONLY FOR THE MD AND SM SCREEN */}
-        <Grid container className="main-main-blogs ForSmall">
+          <Grid container className="main-main-blogs ForSmall">
             {services &&
               services.map((item, index) => (
                 <React.Fragment key={index}>
-                 
-                    
-                      <Grid item lg={6} md={12}>
-                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
-                        {item.image && (
-                          <div className="services-img-holderHolder">
-                            <img
-                              className="blog-img-holder"
-                              src={item.image}
-                              alt={`Image ${index}`}
-                            />
-                          </div>
-                        )}
-                        {/* </Plx> */}
-                      </Grid>
-                      <Grid item lg={6} md={12}>
-                        <div className="blog-main-div">
-                          <p className="blog-main-heading">{item.title}</p>
-                          <p className="blog-description-heading">
-                            {truncateDescription(item.description)}
-                          </p>
-                          <div className="contactus-btn-div">
-                            <Link to={`/services/${item.id}`}>
-                              <Button
-                                className="blog-contact-btn"
-                                onClick={handleReadMoreClick}
-                              >
-                                Read More
-                              </Button>
-                            </Link>
-                          </div>
-                        </div>
-                      </Grid>
-                 
+                  <Grid item lg={6} md={12}>
+                    {/* <Plx parallaxData={imageParallaxDataOne}> */}
+                    {item.image && (
+                      <div className="services-img-holderHolder">
+                        <img
+                          className="blog-img-holder"
+                          src={item.image}
+                          alt={`Image ${index}`}
+                        />
+                      </div>
+                    )}
+                    {/* </Plx> */}
+                  </Grid>
+                  <Grid item lg={6} md={12}>
+                    <div className="blog-main-div">
+                      <p className="blog-main-heading">{item.title}</p>
+                      <p
+                        className="blog-description-heading"
+                        dangerouslySetInnerHTML={{ __html: truncateDescription(item.description) }}
+                      >
+                        {/* {truncateDescription(item.description)} */}
+                      </p>
+                      <div className="contactus-btn-div">
+                        <Link to={`/services/${item.id}`}>
+                          <Button
+                            className="blog-contact-btn"
+                            onClick={handleReadMoreClick}
+                          >
+                            Read More
+                          </Button>
+                        </Link>
+                      </div>
+                    </div>
+                  </Grid>
                 </React.Fragment>
               ))}
           </Grid>
@@ -174,10 +173,10 @@ function ServicesMain() {
             {services &&
               services.map((item, index) => (
                 <React.Fragment key={index}>
-                  {index % 2 === 0 ? ( // Check if index is even
+                  {index % 2 == 0 ? ( // Check if index is even
                     <>
                       <Grid item lg={6}>
-                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
+                        {/* <Plx parallaxData={imageParallaxDataOne}> */}
                         {item.image && (
                           <div className="services-img-holderHolder">
                             <img
@@ -192,8 +191,8 @@ function ServicesMain() {
                       <Grid item lg={6}>
                         <div className="blog-main-div">
                           <p className="blog-main-heading">{item.title}</p>
-                          <p className="blog-description-heading">
-                            {truncateDescription(item.description)}
+                          <p  dangerouslySetInnerHTML={{ __html: truncateDescription(item.description) }} className="blog-description-heading">
+                            {/* {truncateDescription(item.description)} */}
                           </p>
                           <div className="contactus-btn-div">
                             <Link to={`/services/${item.id}`}>
@@ -213,8 +212,8 @@ function ServicesMain() {
                       <Grid item lg={6}>
                         <div className="blog-main-div">
                           <p className="blog-main-heading">{item.title}</p>
-                          <p className="blog-description-heading">
-                            {truncateDescription(item.description)}
+                          <p  dangerouslySetInnerHTML={{ __html: truncateDescription(item.description) }} className="blog-description-heading">
+                            {/* {truncateDescription(item.description)} */}
                           </p>
                           <div className="contactus-btn-div">
                             <Link to={`/services/${item.id}`}>
@@ -229,7 +228,7 @@ function ServicesMain() {
                         </div>
                       </Grid>
                       <Grid item lg={6}>
-                      {/* <Plx parallaxData={imageParallaxDataOne}> */}
+                        {/* <Plx parallaxData={imageParallaxDataOne}> */}
                         {item.image && (
                           <div className="services-img-holderHolder">
                             <img
