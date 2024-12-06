@@ -2,41 +2,41 @@ import React, { useState, useEffect } from "react";
 import "../assets/CustomCSS/Header.css";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
-import Popup from "./Popup";
+// import Popup from "./Popup";
 import ReactPixel from "react-facebook-pixel"; // Import ReactPixel
 import fbPixelInit from "../../src/assets/fbPixil";
 
 function Header() {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     fbPixelInit(); // Initialize Facebook Pixel when the app loads
     ReactPixel.track("PageView", {
       page: "HomePage", // Replace 'HomePage' with the actual page name
     });
   }, []);
-  useEffect(() => {
-    const visitedBefore = localStorage.getItem("visitedBefore");
-    const isHomePage = window.location.pathname === "/";
-    // if (!visitedBefore) {
-    //   setShowPopup(true);
-    //   localStorage.setItem("visitedBefore", true);
-    // }
-    if (!visitedBefore && isHomePage) {
-      setTimeout(() => {
-        setShowPopup(true);
-      }, 600);
-      // localStorage.setItem("visitedBefore", true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const visitedBefore = localStorage.getItem("visitedBefore");
+  //   const isHomePage = window.location.pathname === "/";
+  //   // if (!visitedBefore) {
+  //   //   setShowPopup(true);
+  //   //   localStorage.setItem("visitedBefore", true);
+  //   // }
+  //   // if (!visitedBefore && isHomePage) {
+  //   //   setTimeout(() => {
+  //   //     setShowPopup(true);
+  //   //   }, 600);
+  //   //   // localStorage.setItem("visitedBefore", true);
+  //   // }
+  // }, []);
   const handleClick = () => {
     const servicesDiv = document.getElementById("services");
     if (servicesDiv) {
       servicesDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
+  // const handleClosePopup = () => {
+  //   setShowPopup(false);
+  // };
   function redirectToLink() {
     window.open(
       "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking",
@@ -49,7 +49,7 @@ function Header() {
       <div className="image-container"></div>
       <div className="bg-home-banner">
         <div>
-          {showPopup && <Popup onClose={handleClosePopup} />}
+          {/* {showPopup && <Popup onClose={handleClosePopup} />} */}
           <Grid container>
             <Grid items lg={7}>
               <div className="smallScreenCard">
