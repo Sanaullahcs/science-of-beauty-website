@@ -14,6 +14,7 @@ export default function SemaglutideHeader() {
   return (
     <div>
       <div className="semiBg">
+        
         <div>
           <p className="semiHeader">
             Semaglutide: A Revolutionary Approach to Wellness at The Science of Beauty

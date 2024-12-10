@@ -7,6 +7,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
+
 import send from "../assets/images/send.png";
 import Plx from "react-plx";
 import { POST_CONTACT } from "../env/apiConfig";
