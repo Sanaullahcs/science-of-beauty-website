@@ -33,7 +33,7 @@ const FinanceAvail = () => {
     window.open("https://www.carecredit.com/go/828DST/", "_blank");
   };
 
-  // Function to handle Cherry button click
+  // Function to handle  Cherry button click
   const handleCherry = () => {
     window.open(
       "https://pay.withcherry.com/brittanydeen?utm_source=practice&utm_medium=email&m=9714",
@@ -49,7 +49,7 @@ const FinanceAvail = () => {
               <Grid items lg={6} md={12} sm={12} xs={12} cols={12}>
                 <div className="d-flex" style={{ margin: "50" }}>
                   <p className="contact-interested-center">
-                    CHERRY- Finance your next purchase at The Science of Beauty
+                    CHERRY- Finance your next purchase at The Science of Beauty 
                     LLC with Cherry
                   </p>
                   <Button onClick={handleCherry} className="blog-contact-btn">
