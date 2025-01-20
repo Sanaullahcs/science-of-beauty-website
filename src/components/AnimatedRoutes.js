@@ -20,6 +20,7 @@ import OurValues from "../components/OurValues";
 import WhatIncludes from "../components/WhatIncludes";
 import ContactUsHeaders from "../components/ContactUsHeader";
 import FinanceHeaders from "../components/FinanceHeader.js";
+import FinanceAvail from "../components/FinanceAvail.js";
 import GetInTouch from "../components/GetInTouch";
 import Pricing from "../components/Pricing";
 import ServicesHeaders from "../components/ServicesHeader";
@@ -132,6 +133,7 @@ function AnimatedRoutes() {
               <Navbar />
               <AnimatedComponent>
                 <FinanceHeaders />
+                <FinanceAvail />
                 <Footer />
               </AnimatedComponent>
             </>

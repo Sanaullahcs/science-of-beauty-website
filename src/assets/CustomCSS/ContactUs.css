@@ -103,6 +103,15 @@
   line-height: normal;
   text-align: left;
 }
+.contact-interested-center {
+  color: #2e0249;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
 
 .sendMessageBtn-div {
   display: flex;
@@ -162,6 +171,21 @@
   margin-top: 150px !important;
   text-transform: capitalize !important;
 }
+.finance-btn {
+  width: 315px !important;
+  height: 78px !important;
+  border-radius: 16px !important;
+  background: #9d4a43 !important;
+  color: #eee !important;
+  text-align: center !important;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  margin: 20px !important;
+  line-height: normal !important;
+  text-transform: capitalize !important;
+}
 
 .contact-form-fields {
   margin-top: 30px !important;
@@ -210,6 +234,11 @@
     height: 65px !important;
     font-size: 16px !important;
   }
+  .finance-btn {
+    width: 250px !important;
+    height: 65px !important;
+    font-size: 16px !important;
+  }
 
   .social-icons-span {
     min-width: 40px !important;
@@ -241,4 +270,7 @@
   .send-message-btn {
     width: 100% !important;
   }
+  /* .finance-btn {
+    width: 100% !important;
+  } */
 }
