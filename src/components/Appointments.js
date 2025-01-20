@@ -16,7 +16,7 @@ function redirectToLink() {
     book: "Book Appointment", // Optional: name of the form
   });
   window.open(
-    "https://app.acuityscheduling.com/schedule.php?owner=33712176",
+    "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking?utm_source=sqmktg_email",
     "_blank"
   );
 }
