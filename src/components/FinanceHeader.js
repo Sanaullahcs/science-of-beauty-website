@@ -32,8 +32,7 @@ function FinanceHeader() {
       <div>
         <div className="ContactUsHeader-bg">
           <Plx parallaxData={parallaxDataTxt}>
-            <div className="contactus-heading-wrapper">
-              {/* <p className="ContactUsHeader-minheading">Get in touch with us</p> */}
+            <div>
               <p className="ContactUsHeader-heading">
                  Finance Available
               </p>
