@@ -57,35 +57,12 @@ import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 const AnimatedComponent = ({ children }) => (
   <motion.div
-    //   example 1============================
-    // initial={{ opacity: 0 }}
-    // animate={{ opacity: 1 }}
-    // exit={{ opacity: 0 }}
-    // example 2===========================
     initial={{
       opacity: 0,
       x: "-100px",
     }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.2 }}
-    // example 3==============================
-    // initial={{ opacity: 0, scale: 0.5 }}
-    // animate={{ opacity: 1, scale: 1 }}
-    // transition={{ duration: 0.5 }}
-    // example 4 ===========================
-    // layoutId="underline"
-    // transition={{ duration: 0.1 }}
-    // example 5 ======================
-    // initial={{
-    //   y: 100,
-    //   //  opacity: 0
-    // }}
-    // animate={{
-    //   y: 0,
-    //   // opacity: 1
-    // }}
-    // transition={{ duration: 0.2, opacity: 0 }}
-    // transition={{ delay: 0 }}
   >
     {children}
   </motion.div>
@@ -104,7 +81,6 @@ function AnimatedRoutes() {
               <AnimatedComponent>
                 <Headers />
                 <WhoWeAre />
-                {/* <OurServices /> */}
                 <BeforeAfter />
                 <Pricing />
                 <ContactUs />
@@ -157,7 +133,6 @@ function AnimatedRoutes() {
                 <ServicesHeaders />
                 <ServicesMain />
                 <Pricing />
-                {/* <Testimonials /> */}
                 <Footer />
               </AnimatedComponent>
             </>
@@ -172,7 +147,6 @@ function AnimatedRoutes() {
               <AnimatedComponent>
                 <BlogsHeader />
                 <BlogsMain blogs={BlogCard} />
-                {/* <Testimonials /> */}
                 <Footer />
               </AnimatedComponent>
             </>
@@ -200,7 +174,6 @@ function AnimatedRoutes() {
             <>
               <Navbar />
               <AnimatedComponent>
-                {/* <SemaglutideNavbar /> */}
                 <SemaglutideHeader />
                 <SemaglutideMain />
                 <Appoinments />
@@ -231,7 +204,6 @@ function AnimatedRoutes() {
               <Navbar />
               <AnimatedComponent>
                 <Products />
-                {/* <Testimonials /> */}
                 <Footer />
               </AnimatedComponent>
             </>
@@ -245,7 +217,6 @@ function AnimatedRoutes() {
               <Navbar />
               <AnimatedComponent>
                 <SubProducts />
-                {/* <Testimonials /> */}
                 <Footer />
               </AnimatedComponent>
             </>
@@ -260,7 +231,6 @@ function AnimatedRoutes() {
               <Navbar />
               <AnimatedComponent>
                 <SingleService />
-                {/* <FaceAndNeck /> */}
                 <Footer />
               </AnimatedComponent>
             </>
