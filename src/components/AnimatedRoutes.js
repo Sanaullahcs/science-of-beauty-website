@@ -19,6 +19,7 @@ import AboutUsHeaders from "../components/AboutUsHeader";
 import OurValues from "../components/OurValues";
 import WhatIncludes from "../components/WhatIncludes";
 import ContactUsHeaders from "../components/ContactUsHeader";
+import FinanceHeaders from "../components/FinanceHeader.js";
 import GetInTouch from "../components/GetInTouch";
 import Pricing from "../components/Pricing";
 import ServicesHeaders from "../components/ServicesHeader";
@@ -118,6 +119,19 @@ function AnimatedRoutes() {
                 <ContactUsHeaders />
                 <ContactUs />
                 <GetInTouch />
+                <Footer />
+              </AnimatedComponent>
+            </>
+          }
+        />
+        <Route
+          exact
+          path={"/finance"}
+          element={
+            <>
+              <Navbar />
+              <AnimatedComponent>
+                <FinanceHeaders />
                 <Footer />
               </AnimatedComponent>
             </>

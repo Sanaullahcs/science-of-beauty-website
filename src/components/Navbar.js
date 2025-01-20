@@ -264,6 +264,11 @@ function Navbar() {
               CONNECT
             </Link>
           </li>
+          <li>
+            <Link to="/finance" onClick={closeMenu}>
+              FINANCE
+            </Link>
+          </li>
           {/* <li>
             <Link to="/products" onClick={closeMenu}>
               AT HOME SELF CARE
