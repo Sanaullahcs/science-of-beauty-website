@@ -251,7 +251,8 @@ function Navbar() {
             <Link onClick={closeMenu}>SERVICES</Link>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/beauty-drip" onClick={closeMenu}>
+                {/* setting the id for the glo drip = 1 */}
+                <Link to="/sub-products/1" onClick={closeMenu}>
                   GLO (Beauty) Drip
                 </Link>
               </li>

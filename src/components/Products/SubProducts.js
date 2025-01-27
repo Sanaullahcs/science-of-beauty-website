@@ -5,12 +5,11 @@ import "../../assets/CustomCSS/Products.css";
 import { Grid, Divider } from "@material-ui/core";
 import Rating from "@mui/material/Rating";
 import { useNavigate } from "react-router-dom";
-import { useParams } from 'react-router-dom';
-import productsData from '../../JSONData/productData'
-import relatedProductsData from "../../JSONData/relatedProductData";
+import { useParams } from "react-router-dom";
+import productsData from "../../JSONData/productData";
+import relatedProductsData from "../../JSONData/productData";
 import Plx from "react-plx";
-
-
+import { Link } from "react-router-dom";
 
 function SubProducts() {
   const parallaxDataHead = [
@@ -23,7 +22,6 @@ function SubProducts() {
           endValue: 2,
           property: "scale",
         },
-
       ],
     },
     {
@@ -48,7 +46,6 @@ function SubProducts() {
           endValue: 0,
           property: "translateX",
         },
-
       ],
     },
     {
@@ -94,7 +91,9 @@ function SubProducts() {
   };
   const { productId } = useParams();
   const selectedProductId = parseInt(productId, 10);
-  const selectedProduct = productsData.find((product) => product.id === selectedProductId);
+  const selectedProduct = productsData.find(
+    (product) => product.id === selectedProductId
+  );
 
   const [hoveredProductId, setHoveredProductId] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -122,20 +121,20 @@ function SubProducts() {
         <div>
           <div className="subProductsHeader-bg">
             <Plx parallaxData={parallaxDataHead}>
-
               <div className="subproducts-heading-wrapper">
-                <p className="subproductsHeader-minheading">PRODUCTS</p>
-                <p className="subproductsHeader-heading">{selectedProduct && selectedProduct.name}</p>
+                <p className="subproductsHeader-minheading">Drips</p>
+                <p className="subproductsHeader-heading">
+                  {selectedProduct && selectedProduct.name}
+                </p>
               </div>
             </Plx>
-
           </div>
         </div>
         <div style={{ padding: " 5% 0 0 0" }}>
-          <Grid container style={{ padding: '0 5%' }}>
+          <Grid container style={{ padding: "0 5%" }}>
             <Grid items lg={6} md={6} sm={12} xs={12} style={{ zIndex: "999" }}>
               <div className="subproduct-img-wrapper">
-                <div className="subproduct-img-div small-img-div">
+                {/* <div className="subproduct-img-div small-img-div">
                   <img
                     className="subproduct-original-img small-imgs"
                     src={selectedProduct && selectedProduct.image}
@@ -152,11 +151,11 @@ function SubProducts() {
                     className="subproduct-original-img small-imgs"
                     src={selectedProduct && selectedProduct.image}
                   />
-                </div>
+                </div> */}
                 <div className="subproduct-img-div">
                   {/* <Plx parallaxData={parallaxDataImage}> */}
                   <img
-                    className="subproduct-original-img small-imgs"
+                    className="subproduct-original-img"
                     src={selectedProduct && selectedProduct.image}
                   />
                   {/* </Plx> */}
@@ -164,25 +163,28 @@ function SubProducts() {
               </div>
             </Grid>
             <Grid items lg={6} md={6} sm={12} xs={12}>
-
               <div className="subproducts-info-wrapper">
                 <Plx parallaxData={parallaxDataSub}>
-                  <p className="subproduct-title">{selectedProduct && selectedProduct.name}</p>
-                  <p className="subproduct-pricing">{selectedProduct && selectedProduct.price}</p>
-                  <div className="subproduct-rating-div">
+                  <p className="subproduct-title">
+                    {selectedProduct && selectedProduct.name}
+                  </p>
+                  <p className="subproduct-pricing">
+                    {selectedProduct && selectedProduct.price}
+                  </p>
+                  {/* <div className="subproduct-rating-div">
                     <Rating
                       className="subproduct-rating"
                       name="read-only"
                       value={selectedProduct && selectedProduct.rating}
                       readOnly
                     />
-                  </div>
-                  <div className="quantity-btn-wrapper">
+                  </div> */}
+                  {/* <div className="quantity-btn-wrapper">
                     <Button className="quantity-btn">1.5gm</Button>
                     <Button className="quantity-btn">2.5gm</Button>
                     <Button className="quantity-btn">3gm</Button>
-                  </div>
-                  <div className="add-cart-btn-div-wrapper">
+                  </div> */}
+                  {/* <div className="add-cart-btn-div-wrapper">
                     <Button className="quantity-btn" onClick={handleDecrement}>
                       -
                     </Button>
@@ -193,23 +195,26 @@ function SubProducts() {
                     <Button className="subproduct-addtocart-btn">
                       Add to cart
                     </Button>
-                  </div>
+                  </div> */}
                   <div>
                     <p className="subproduct-description max-width-700">
-                      ServiceMarket.dk was founded in 2021 by two young
-                      entrepreneurs who saw a problem with the fragmented service
-                      industry in Denmark. There were thousands of small
-                      businesses offering services, but it was difficult for
-                      consumers to find them and know which ones to choose.
+                      {selectedProduct && selectedProduct.description}
                     </p>
+                    <p className="subproduct-description max-width-700">
+                      <b>Ingredients: </b>
+                      {selectedProduct && selectedProduct.ingredients}
+                    </p>
+                    <p className="subproduct-description max-width-700">
+                      {selectedProduct && selectedProduct.upgradePlan}
+                    </p>
+
                   </div>
                 </Plx>
               </div>
-
             </Grid>
           </Grid>
         </div>
-        <div style={{ padding: "3% 5%" }}>
+        {/* <div style={{ padding: "3% 5%" }}>
           <div>
             <div className="subproducts-descriptive-btn-wrapper">
               <Button className={`subproducts-description-btn ${activeSection === "description" ? "active" : ""
@@ -261,16 +266,16 @@ function SubProducts() {
             )}
             {activeSection === "rating" && (
               <p className="subproduct-description">
-                {/* Rating content goes here */}
+               
                 In irure duis reprehenderit consequat adipisicing aliqua dolor amet eu proident labore duis elit. Non laborum ipsum consequat eu veniam qui occaecat irure occaecat proident cillum ea ut. Adipisicing labore aliquip fugiat exercitation.
               </p>
             )}
           </div>
           <Divider className="subproduct-divider" />
-        </div>
+        </div> */}
         <div className="related-products-wrapper">
           <div>
-            <p className="related-products-heading">Related Products</p>
+            <p className="related-products-heading">PEOPLE ALSO SEARCH FOR</p>
           </div>
           <div>
             <Grid container>
@@ -300,7 +305,7 @@ function SubProducts() {
                         className="add-to-cart-btn"
                         onClick={() => handleButtonClick(product.id)}
                       >
-                        Add to Cart
+                        View
                       </Button>
                     )}
                   </div>

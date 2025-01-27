@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import image from "../assets/images/beauty.png";
 import "../assets/CustomCSS/Services/SubServices.css";
+import { Link } from "react-router-dom";
 
 const BeautyDrip = () => {
   return (
@@ -32,15 +33,16 @@ const BeautyDrip = () => {
               <b>INGREDIENTS</b>: Biotin, Vitamin C, ALA, Taurine, Vitamin B12,
               Glutathione (high dose), Electrolytes​
             </p>
-            <p className="subService-heading margin-0">$200</p> 
-
+            <p className="subService-heading margin-0">$200</p>
             <p className="subService-Description">
               Upgrade to our <b>Super Glo Drip</b>: 2,000mg of Glutathione for
               double the detox and double the glow! (+$30)
             </p>
-            <button className="subService-contactUsBtn flexBoxCode">
-              Book Now
-            </button>
+            <Link className="none-decor" to="/contact">
+              <button className="subService-contactUsBtn flexBoxCode">
+                Book Now
+              </button>
+            </Link>
           </div>
         </Grid>
       </Grid>

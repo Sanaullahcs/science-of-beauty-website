@@ -38,7 +38,12 @@
   line-height: normal !important;
   width: 240px;
   height: 78px;
+  text-decoration: none;
   cursor: pointer;
+}
+
+.none-decor{
+  text-decoration: none;
 }
 
 .subServices-content-holder {
