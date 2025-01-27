@@ -248,13 +248,16 @@ function Navbar() {
             </Link>
           </li>
           <li className="dropdown">
-            <Link to="/services" onClick={closeMenu}>
-              SERVICES
-            </Link>
+            <Link onClick={closeMenu}>SERVICES</Link>
             <ul className="dropdown-menu">
               <li>
                 <Link to="/beauty-drip" onClick={closeMenu}>
                   GLO (Beauty) Drip
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" onClick={closeMenu}>
+                  All Services
                 </Link>
               </li>
             </ul>

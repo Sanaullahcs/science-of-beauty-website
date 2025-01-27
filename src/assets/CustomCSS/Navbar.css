@@ -590,7 +590,7 @@ ul a:hover {
 .dropdown-menu {
   width: 270px;
   background: #9d4a43e0;
-  color: white;
+  /* color: white; */
   display: block;
   opacity: 0;
   visibility: hidden;
@@ -602,6 +602,8 @@ ul a:hover {
   z-index: 1000;
   transform: translateX(-10px); /* Slide-up effect */
   transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Parent container for dropdown */
@@ -610,14 +612,23 @@ ul a:hover {
 }
 
 .dropdown-menu li {
-  padding: 10px 20px;
+  padding: 10px 0px;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+.dropdown-menu li:hover {
+  padding: 10px 0px;
+  background-color: #9d4a43e0;
 }
 
 .dropdown-menu li a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
-
+.dropdown-menu li:hover a {
+  color: white;
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
