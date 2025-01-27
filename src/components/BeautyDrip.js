@@ -32,6 +32,8 @@ const BeautyDrip = () => {
               <b>INGREDIENTS</b>: Biotin, Vitamin C, ALA, Taurine, Vitamin B12,
               Glutathione (high dose), Electrolytes​
             </p>
+            <p className="subService-heading margin-0">$200</p> 
+
             <p className="subService-Description">
               Upgrade to our <b>Super Glo Drip</b>: 2,000mg of Glutathione for
               double the detox and double the glow! (+$30)
