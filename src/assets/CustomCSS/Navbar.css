@@ -594,6 +594,7 @@ ul a:hover {
   display: block;
   opacity: 0;
   visibility: hidden;
+  font-family: Playfair Display;
   position: absolute;
   list-style: none;
   padding: 0;
@@ -614,8 +615,10 @@ ul a:hover {
 .dropdown-menu li {
   padding: 10px 0px;
   background-color: white;
-  color: black;
+  font-family: Playfair Display;
+  color: #000000c9;
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .dropdown-menu li:hover {
   padding: 10px 0px;
@@ -623,8 +626,11 @@ ul a:hover {
 }
 
 .dropdown-menu li a {
-  color: black;
+  color: #000000c9;
   text-decoration: none;
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 15px;
 }
 .dropdown-menu li:hover a {
   color: white;
