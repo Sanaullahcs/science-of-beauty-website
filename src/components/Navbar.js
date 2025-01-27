@@ -70,7 +70,7 @@ function Navbar() {
     window.location.href = "tel:2142729240";
     // console.log("caling ");
   };
-  const mail = () => { 
+  const mail = () => {
     window.location.href = "mailto:Info@thescienceofbeautydallas.com";
     // console.log("mailing ");
   };
@@ -161,13 +161,17 @@ function Navbar() {
             </div>
             <div className="smallScreenEMailHolder">
               <Tooltip title="123 456 7890" placement="top">
-                <img className="img-margin ml-18" onClick={calling} src={Callimg} />
+                <img
+                  className="img-margin ml-18"
+                  onClick={calling}
+                  src={Callimg}
+                />
               </Tooltip>
               <Tooltip
                 title="Info@thescienceofbeautydallas.com"
                 placement="top"
               >
-                <img className="img-margin"  onClick={mail} src={emailimg} />
+                <img className="img-margin" onClick={mail} src={emailimg} />
               </Tooltip>
             </div>
           </Grid>
@@ -243,12 +247,18 @@ function Navbar() {
               ABOUT US
             </Link>
           </li>
-          <li>
+          <li className="dropdown">
             <Link to="/services" onClick={closeMenu}>
               SERVICES
             </Link>
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/beauty-drip" onClick={closeMenu}>
+                  GLO (Beauty) Drip
+                </Link>
+              </li>
+            </ul>
           </li>
-
           <li>
             <Link to="/blogs" onClick={closeMenu}>
               RESEARCH & BLOGS
@@ -269,11 +279,6 @@ function Navbar() {
               FINANCE
             </Link>
           </li>
-          {/* <li>
-            <Link to="/products" onClick={closeMenu}>
-              AT HOME SELF CARE
-            </Link>
-          </li> */}
           <div className="langaugeSelectorHolder">
             <li className="langauge-select">
               <FormControl
@@ -288,9 +293,6 @@ function Navbar() {
                   onChange={handleChange}
                   className="languageSelect"
                 >
-                  {/* <MenuItem value="">
-                  <em>None</em>
-                </MenuItem> */}
                   <MenuItem value={10}>
                     <img className="flagImage" src={america} />
                   </MenuItem>
@@ -303,19 +305,7 @@ function Navbar() {
                 </Select>
               </FormControl>
             </li>
-            {/* <li>
-              <Link to='/login'>
-                <Button className="login-btn">Login</Button></Link>
-            </li>
-            <li>
-              <Link to='/signup'>
-                <Button className="signup-btn">Signup</Button>
-              </Link>
-            </li> */}
           </div>
-          {/* <li>
-            <img src={search} />
-          </li> */}
         </ul>
       </nav>
       {/* <div className="chatbot-icons">

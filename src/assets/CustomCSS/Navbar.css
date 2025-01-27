@@ -24,7 +24,6 @@
   margin-top: 0px !important;
 }
 
-
 .bar1,
 .bar2,
 .bar3 {
@@ -114,11 +113,10 @@ ul a:hover {
   width: 100px;
   margin-top: -8px !important;
   text-transform: capitalize !important;
-
 }
 
 .ml-18 {
-  margin-right: 18px
+  margin-right: 18px;
 }
 
 .chatbot-icons {
@@ -322,7 +320,7 @@ ul a:hover {
 }
 
 .chat-head-txt1 {
-  color: #FFF;
+  color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -335,7 +333,7 @@ ul a:hover {
 }
 
 .chat-head-txt2 {
-  color: #FFF;
+  color: #fff;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
@@ -451,7 +449,6 @@ ul a:hover {
     display: none;
   }
 
-
   .menu-icon {
     display: flex;
   }
@@ -476,7 +473,7 @@ ul a:hover {
     margin-left: 25px;
   }
 }
-.flagImage{
+.flagImage {
   width: 30px;
 }
 @media only screen and (max-width: 959px) {
@@ -490,7 +487,6 @@ ul a:hover {
   }
 
   .navSocialIconsHolder {
-
     /* justify-content: center; */
   }
 }
@@ -564,17 +560,12 @@ ul a:hover {
 .dragger-x {
   margin: 10px 0 !important;
   width: 45px;
-
 }
 
 .dragger-insta {
   margin: 10px 0 !important;
   width: 45px;
-
 }
-
-
-
 
 /* ================= */
 .fade-enter {
@@ -593,4 +584,44 @@ ul a:hover {
 .fade-exit-active {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide the dropdown menu by default with opacity and height */
+.dropdown-menu {
+  width: 270px;
+  background: #9d4a43e0;
+  color: white;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transform: translateX(-10px); /* Slide-up effect */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Parent container for dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0); /* Slide-down effect */
 }
