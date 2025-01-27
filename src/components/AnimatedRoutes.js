@@ -24,6 +24,7 @@ import FinanceAvail from "../components/FinanceAvail.js";
 import GetInTouch from "../components/GetInTouch";
 import Pricing from "../components/Pricing";
 import ServicesHeaders from "../components/ServicesHeader";
+import BeautyDrip from "../components/BeautyDrip";
 import ServicesMain from "../components/ServicesMain";
 import BlogsHeader from "../components/BlogsHeader";
 import BlogsMain from "../components/BlogsMain";
@@ -149,6 +150,22 @@ function AnimatedRoutes() {
                 <ServicesHeaders />
                 <ServicesMain />
                 <Pricing />
+                <Footer />
+              </AnimatedComponent>
+            </>
+          }
+        />
+          <Route
+          exact
+          path={"/beauty-drip"}
+          element={
+            <>
+              <Navbar />
+              <AnimatedComponent>
+                {/* <ServicesHeaders />
+                <ServicesMain />
+                <Pricing /> */}
+                <BeautyDrip/>
                 <Footer />
               </AnimatedComponent>
             </>
