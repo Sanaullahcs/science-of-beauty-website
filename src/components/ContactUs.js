@@ -299,7 +299,19 @@ function ContactUs() {
                           handleCategoryButtonClick("BodyScarring")
                         }
                       >
-                        BodyScarring
+                        Body Scarring
+                      </Button>
+                      <Button
+                        className={`category-btn ${
+                          activeCategories.has("IVVitaminDrips")
+                            ? "active-category-btn"
+                            : ""
+                        }`}
+                        onClick={() =>
+                          handleCategoryButtonClick("IVVitaminDrips")
+                        }
+                      >
+                        IV Vitamin Drips
                       </Button>
                       <Button
                         className={`category-btn other-contact-btn ${

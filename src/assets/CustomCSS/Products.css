@@ -136,7 +136,10 @@
   .productsHeader-minheading {
     font-size: 13px;
   }
-
+  .my-product-img {
+    /* width: 90%; */
+    height: 100%;
+  }
   .productsHeader-heading {
     font-size: 30px;
     margin-top: 0;

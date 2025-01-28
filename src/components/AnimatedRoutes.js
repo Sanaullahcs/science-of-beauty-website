@@ -255,6 +255,19 @@ function AnimatedRoutes() {
             </>
           }
         />
+        <Route
+          exact
+          path={"/drips/:productId"}
+          element={
+            <>
+              <Navbar />
+              <AnimatedComponent>
+                <SubProducts />
+                <Footer />
+              </AnimatedComponent>
+            </>
+          }
+        />
         {/* services sub routes */}
         <Route
           exact

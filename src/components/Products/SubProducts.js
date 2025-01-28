@@ -132,7 +132,19 @@ function SubProducts() {
         </div>
         <div style={{ padding: " 5% 0 0 0" }}>
           <Grid container style={{ padding: "0 5%" }}>
-            <Grid items lg={6} md={6} sm={12} xs={12} style={{ zIndex: "999" }}>
+            <Grid
+              items
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              style={{
+                zIndex: "999",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <div className="subproduct-img-wrapper">
                 {/* <div className="subproduct-img-div small-img-div">
                   <img
@@ -153,12 +165,10 @@ function SubProducts() {
                   />
                 </div> */}
                 <div className="subproduct-img-div">
-                  {/* <Plx parallaxData={parallaxDataImage}> */}
                   <img
                     className="subproduct-original-img"
                     src={selectedProduct && selectedProduct.image}
                   />
-                  {/* </Plx> */}
                 </div>
               </div>
             </Grid>
@@ -207,7 +217,11 @@ function SubProducts() {
                     <p className="subproduct-description max-width-700">
                       {selectedProduct && selectedProduct.upgradePlan}
                     </p>
-
+                    <Link className="none-decor" to="/contact">
+                      <button className="bookNow flexBoxCode">
+                        Book Now
+                      </button>
+                    </Link>
                   </div>
                 </Plx>
               </div>
