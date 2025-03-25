@@ -1,8 +1,9 @@
 .latest-bg {
-  background-image:linear-gradient(
-    rgba(88, 56, 41, 0.767), 
-    rgba(44, 34, 43, 0.7)
-  ),  url(../images/clinic6.jpg);
+  background-image: linear-gradient(
+      rgba(88, 56, 41, 0.767),
+      rgba(44, 34, 43, 0.7)
+    ),
+    url(../images/clinic6.jpg);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -12,7 +13,6 @@
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   /* animation: changeBackgroundBolgs 15s infinite; */
-
 }
 
 /* @keyframes changeBackgroundBolgs {
