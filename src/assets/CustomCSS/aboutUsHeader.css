@@ -1,8 +1,8 @@
 .bg-aboutbanner {
-   background-image: linear-gradient(
-      rgba(88, 56, 41, 0.767), 
+  background-image: linear-gradient(
+      rgba(88, 56, 41, 0.767),
       rgba(44, 34, 43, 0.7)
-    ), 
+    ),
     url(../images/clinic2.jpg);
   height: 500px;
   display: flex;
