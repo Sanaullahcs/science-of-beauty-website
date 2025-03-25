@@ -52,7 +52,7 @@
 }
 @media (max-width: 1279px) {
   .bg-component {
-    background: rgba(224, 183, 117, 0.50);
+    background: rgba(224, 183, 117, 0.5);
   }
 }
 @media only screen and (max-width: 520px) {
