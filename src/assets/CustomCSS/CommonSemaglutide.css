@@ -170,7 +170,7 @@
   }
 }
 @media (max-width: 525px) {
-  .semiBg{
+  .semiBg {
     background-image: url(../images/semmd.png);
   }
   .semiSubHeader {
