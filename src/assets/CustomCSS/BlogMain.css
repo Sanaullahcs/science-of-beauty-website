@@ -96,11 +96,10 @@
 
 .lady {
   width: 40%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 5% auto;
-
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 5% auto;
 }
 
 .blogs-divider {
