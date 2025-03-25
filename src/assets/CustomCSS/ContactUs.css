@@ -123,8 +123,8 @@
   height: 62px !important;
   border-radius: 8px !important;
   /* background: #ba7894 !important; */
-  border: 2px solid rgba(46, 2, 73, 0.30) !important;
-  color: rgba(46, 2, 73, 0.30) !important;
+  border: 2px solid rgba(46, 2, 73, 0.3) !important;
+  color: rgba(46, 2, 73, 0.3) !important;
   text-align: center !important;
   font-family: Poppins !important;
   font-size: 20px !important;
@@ -244,7 +244,7 @@
     min-width: 40px !important;
     min-height: 40px !important;
   }
-  .contact-card{
+  .contact-card {
     padding: 0 10px;
   }
 }
@@ -254,7 +254,7 @@
     overflow: hidden;
     display: none !important;
   }
-  .social-row{
+  .social-row {
     margin-top: 0;
   }
 }
