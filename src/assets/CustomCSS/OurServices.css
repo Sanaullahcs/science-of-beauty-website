@@ -6,11 +6,9 @@
   transition: all 1s ease;
   margin-top: 30px;
 }
-
 .slider:hover {
   transform: scale(1.2);
 }
-
 .services-slider .slick-track {
   height: 235px;
   padding-top: 1%;
