@@ -306,7 +306,7 @@
     20% {
       background-image: url(../images/clinic8.jpg);
     }
-  
+
     40% {
       background-image: url(../images/clinic9.jpg);
     }
@@ -336,7 +336,6 @@
   .preHeading1 {
     font-size: 30px !important;
   }
-
   .preHeading2 {
     font-size: 18px !important;
   }
