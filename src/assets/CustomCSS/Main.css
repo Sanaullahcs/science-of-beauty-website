@@ -2,11 +2,9 @@
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #9d4a43; /* Color of the scrollbar thumb */
 }
-
 ::-webkit-scrollbar-track {
   background-color: #f0f0f0; /* Color of the scrollbar track */
 }
