@@ -70,6 +70,7 @@ const AnimatedComponent = ({ children }) => (
     {children}
   </motion.div>
 );
+
 function AnimatedRoutes() {
   const location = useLocation();
   return (
