@@ -74,6 +74,12 @@ function Navbar() {
     window.location.href = "mailto:Info@thescienceofbeautydallas.com";
     // console.log("mailing ");
   };
+  function redirectToLink() {
+    window.open(
+      "https://na02.patientnow.com/a/thescienceofbeautydallas/OnlineBooking.aspx",
+      "_blank"
+    );
+  }
 
   const handleMouseDown = (e) => {
     // Record initial mouse position
@@ -281,6 +287,14 @@ function Navbar() {
           <li>
             <Link to="/finance" onClick={closeMenu}>
               FINANCE
+            </Link>
+          </li>
+          <li>
+            <Link to="/finance" onClick={closeMenu}>
+              {/* BOOK AN APPOINTMENT */}
+              <Button onClick={redirectToLink} variant="outlined">
+                BOOK AN APPOINTMENT
+              </Button>
             </Link>
           </li>
           <div className="langaugeSelectorHolder">

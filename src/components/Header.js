@@ -39,7 +39,7 @@ function Header() {
   // };
   function redirectToLink() {
     window.open(
-      "https://thescienceofbeautydallas.myaestheticrecord.com/online-booking?utm_source=sqmktg_email",
+      "https://na02.patientnow.com/a/thescienceofbeautydallas/OnlineBooking.aspx",
       "_blank"
     );
   }
