@@ -12,6 +12,7 @@
   width: 100%;
   max-width: 650px;
 }
+
 .appointmentEmail {
   color: #dbd3c8;
   text-align: center;
@@ -20,9 +21,11 @@
   margin-top: 10px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
   text-decoration-line: underline;
 }
+
 .AppoinmentsHeading {
   color: #fff;
   text-align: center;
@@ -31,9 +34,11 @@
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 58.5px */
+  line-height: 130%;
+  /* 58.5px */
   letter-spacing: -0.45px;
 }
+
 .subscribeHeading {
   color: #dbd3c8;
   text-align: center;
@@ -42,24 +47,29 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.5%; /* 23.175px */
+  line-height: 154.5%;
+  /* 23.175px */
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 .cardAppintments {
   background-color: #9a4b44;
   border-radius: 10px;
-  margin: 3% 5%;
+  margin: 0% 5% 3% 5%;
   padding: 5%;
 }
+
 @media only screen and (max-width: 520px) {
   .AppoinmentsHeading {
     font-size: 35px;
     margin: 0 10px;
   }
+
   .appointmentEmail {
     font-size: 17px;
   }
+
   .bookAppointmentButton {
     height: 60px;
     font-size: 17px !important;

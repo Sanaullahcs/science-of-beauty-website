@@ -25,7 +25,7 @@ export default function Appointments() {
   return (
     <div>
       <div className="cardAppintments">
-        <p className="subscribeHeading">Subscribe</p>
+        <p className="subscribeHeading">BOOK NOW</p>
         <p className="AppoinmentsHeading">The Science of Beauty</p>
         <p className="appointmentEmail">Info@thescienceofbeautydallas.com</p>
         <Button

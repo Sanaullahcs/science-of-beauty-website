@@ -13,12 +13,24 @@
   border-radius: 0 0 10px 10px;
   margin-top: -12px;
   min-height: 172px;
-  padding-left: 20px;
-  padding-top: 10px;
+  /* padding-left: 20px; */
+  /* padding-top: 10px; */
+  padding: 10px;
+}
+
+.noblogtext {
+  color: #000000c9;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0.88px;
+  text-decoration: none;
 }
 
 .blogPageContainer-wrapper {
-  margin: 5% 0;
+  margin: 2% 0;
 }
 
 .blog-link {
